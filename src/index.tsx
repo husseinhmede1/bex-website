@@ -5,13 +5,16 @@ import { PersistGate } from "redux-persist/integration/react";
 
 import "./index.css";
 import App from "./App";
-import { store, history, persistor } from "./app/store";
+import { store, history, persistor } from "./store/store";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
+    {/* Links store to redux store */}
     <Provider store={store}>
+      {/* Persists redux store using imported persistor */}
       <PersistGate loading={null} persistor={persistor}>
+        {/* App main entry, passes history for propper navigation */}
         <App history={history} />
       </PersistGate>
     </Provider>
@@ -19,7 +22,7 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want your app to work offline and load faster, you can change
+// If you want your store to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();

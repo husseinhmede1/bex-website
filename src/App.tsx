@@ -13,8 +13,11 @@ type AppProps = {
 
 const App = ({ history }: AppProps) => {
   return (
+    // Router connected to redux, here redux is used for navigation integrity
     <ConnectedRouter history={history}>
+      {/* App main routing switch */}
       <Switch>
+        <Route exact path="/login" render={() => <div>Login</div>} />
         <Route exact path="/" render={() => <div>Main</div>} />
         <Route exact path="/counter" render={() => <Counter />} />
       </Switch>

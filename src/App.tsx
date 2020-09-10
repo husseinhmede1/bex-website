@@ -5,6 +5,7 @@ import { History } from "history";
 
 import { Counter } from "./features/counter/Counter";
 import "./App.css";
+import { PrivateRoute } from "./route/protectedRoute";
 
 type AppProps = {
   /** Browser history for routing */
@@ -17,9 +18,9 @@ const App = ({ history }: AppProps) => {
     <ConnectedRouter history={history}>
       {/* App main routing switch */}
       <Switch>
-        <Route exact path="/login" render={() => <div>Login</div>} />
+        <Route exact path="/login" render={() => <div>Login </div>} />
         <Route exact path="/" render={() => <div>Main</div>} />
-        <Route exact path="/counter" render={() => <Counter />} />
+        <PrivateRoute exact path="/counter" component={Counter} />
       </Switch>
     </ConnectedRouter>
   );

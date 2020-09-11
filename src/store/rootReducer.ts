@@ -3,7 +3,7 @@ import { combineReducers } from "redux";
 import { connectRouter } from "connected-react-router";
 import { History } from "history";
 
-import counterReducer from "../features/counter/counter.slice";
+import counterReducer from "@features/counter/counter.slice";
 
 /**
  * Combines reducers of all slices and router into one root reducer

@@ -1,0 +1,130 @@
+const createFeatureTemplate = (name) => {
+  const newName = name.replace(/^./, name[0].toUpperCase());
+  return {
+    componentTemplate: `import React, { useEffect } from "react";
+import { connect, ConnectedProps } from "react-redux";
+
+import { RootState } from "@store/store";
+/**
+ * These are actions imported from the feature slices.
+ * You can use 'useDispatch' hook or 'mapDispatchToProps'
+ * to dispatch these actions
+ */
+import { ${name}Actions } from "./${name}.slice";
+
+type ReduxProps = ConnectedProps<typeof connector>;
+
+const ${newName}Component = (props: ReduxProps) => {
+  /**
+   * useEffect perfeorms side-effects on component rendering.
+   * It takes a function for side-effects and a dependency list.
+   * When dependency list is empty, useEffect runs each time the component rerenders
+   * Adding variables to the dependency list will cause useEffect to run each time a variable changes
+   */
+  useEffect(() => {
+    // Write your side-effects here
+  }, []);
+
+  return <div />;
+};
+
+/**
+ * Maps state variables from redux store to props of currect component
+ * @param state
+ */
+const mapStateToProps = (state: RootState) => ({
+  // Map your redux state to your props here
+});
+
+/**
+ * Maps actions from slices to props
+ */
+const mapDispatchToProps = {
+  // map your actions here ex:
+  // increment : counterActions.increment
+};
+
+/**
+ * Connects component to redux store
+ */
+const connector = connect(mapStateToProps, mapDispatchToProps);
+const ${newName}ComponentRedux = connector(${newName}Component);
+
+export { ${newName}ComponentRedux as ${newName}Component };
+`,
+
+    sliceTemplate: `import { createSlice } from "@reduxjs/toolkit";
+
+import { ${newName} } from "./${name}.type";
+
+/**
+ * Initial state object
+ */
+const initialState: ${newName} = {};
+
+/**
+ * Feature slice Object
+ * Automatically generates actions as per reducers
+ */
+const ${name}Slice = createSlice({
+  /**
+   * Unique feature name
+   */
+  name: "${name}",
+
+  /**
+   * Initial state object
+   */
+  initialState: initialState,
+
+  /**
+   * Reducers are functions that determine changes to an application's state.
+   * They can have two forms:
+   *
+   * 1- Modify the state by providing key-value pairs, ex:
+   *
+   *    setCounter: (state, action) => {
+   *      return { ...state, ...action.payload };
+   *    }
+   *
+   * 2- Apply mutating logic to part of the state.
+   *    Note that this is possible using 'Immer', ex:
+   *
+   *    decrementCounter: (state) => {
+   *      state.value -= 1;
+   *    }
+   */
+  reducers: {
+    set${newName}: (state, action) => {
+      return { ...state, ...action.payload };
+    },
+    reset: () => initialState,
+    // Add here extra reducers
+    // ...
+  },
+});
+
+/**
+ * Reducers are exported so they could be added to store
+ */
+export const ${name}Reducer = ${name}Slice.reducer;
+
+/**
+ * Actions hold the same names as reducers. Actions can be dispached using
+ * 'useDispacth' hook, or by 'mapDispatchToProps' in the redux 'connect' function
+ */
+export const ${name}Actions = { ...${name}Slice.actions };
+`,
+
+    typeTemplate: `/**
+ * This interface is for the initial state of the feature slice
+ */
+export interface ${newName} {
+  // Write your type declerations here
+}
+`,
+  };
+};
+module.exports = {
+  createFeatureTemplate,
+};

@@ -53,7 +53,7 @@ const ${newName}ComponentRedux = connector(${newName}Component);
 export { ${newName}ComponentRedux as ${newName}Component };
 `,
 
-    sliceTemplate: `import { createSlice } from "@reduxjs/toolkit";
+    sliceTemplate: `import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 import { ${newName} } from "./${name}.type";
 
@@ -61,6 +61,20 @@ import { ${newName} } from "./${name}.type";
  * Initial state object
  */
 const initialState: ${newName} = {};
+
+/**
+ * Thunks are used to dispatch actions that return functions rather than objects,
+ * usually used for making api calls or dispatching async actions.
+ * Thunks are dispatched in the same way regular actions are dispatched.
+ * A slice can have multiple thunks
+ */
+const make${newName}ApiCall = createAsyncThunk(
+  // TODO change this method based on usecase
+  "${name}/make${newName}ApiCallStatus",
+  async (request: any) => {
+    // Make your API call here
+  }
+);
 
 /**
  * Feature slice Object
@@ -99,8 +113,23 @@ const ${name}Slice = createSlice({
       return { ...state, ...action.payload };
     },
     reset: () => initialState,
-    // Add here extra reducers
+    // Add here reducers
     // ...
+  },
+  /**
+   * Extra reducers are for handling action types.
+   * Here thunk actions are handled
+   */
+  extraReducers: (builder) => {
+    builder.addCase(make${newName}ApiCall.pending, (state, action) => {
+      // Write pending logic here
+    });
+    builder.addCase(make${newName}ApiCall.fulfilled, (state, action) => {
+      // Write success logic here
+    });
+    builder.addCase(make${newName}ApiCall.rejected, (state, action) => {
+      // Write failure logic here
+    });
   },
 });
 

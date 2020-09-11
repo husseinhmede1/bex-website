@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 import { Login } from "./login.type";
 
@@ -6,6 +6,20 @@ import { Login } from "./login.type";
  * Initial state object
  */
 const initialState: Login = {};
+
+/**
+ * Thunks are used to dispatch actions that return functions rather than objects,
+ * usually used for making api calls or dispatching async actions.
+ * Thunks are dispatched in the same way regular actions are dispatched.
+ * A slice can have multiple thunks
+ */
+const makeLoginApiCall = createAsyncThunk(
+  // TODO change this method based on usecase
+  "login/makeLoginApiCallStatus",
+  async (request: any) => {
+    // Make your API call here
+  }
+);
 
 /**
  * Feature slice Object
@@ -44,8 +58,23 @@ const loginSlice = createSlice({
       return { ...state, ...action.payload };
     },
     reset: () => initialState,
-    // Add here extra reducers
+    // Add here reducers
     // ...
+  },
+  /**
+   * Extra reducers are for handling action types.
+   * Here thunk actions are handled
+   */
+  extraReducers: (builder) => {
+    builder.addCase(makeLoginApiCall.pending, (state, action) => {
+      // Write pending logic here
+    });
+    builder.addCase(makeLoginApiCall.fulfilled, (state, action) => {
+      // Write success logic here
+    });
+    builder.addCase(makeLoginApiCall.rejected, (state, action) => {
+      // Write failure logic here
+    });
   },
 });
 

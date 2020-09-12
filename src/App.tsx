@@ -1,9 +1,8 @@
 import React from "react";
-import { Router, Route, Switch } from "react-router";
+import { Router, Route, Switch, Redirect } from "react-router";
 import { History } from "history";
 
 import "./App.css";
-import { Counter } from "&features/counter/counter.component";
 import { PrivateRoute } from "&route/protectedRoute";
 
 type AppProps = {
@@ -18,7 +17,13 @@ const App = ({ history }: AppProps) => {
       {/* App main routing switch */}
       <Switch>
         <Route exact path="/" render={() => <div>Main</div>} />
-        <PrivateRoute exact path="/counter" component={Counter} />
+        <PrivateRoute
+          exact
+          path="/dashboard"
+          component={() => <div>PageNot Found</div>}
+        />
+        <Route path="/404" render={() => <div>page not found</div>} />
+        <Redirect to="/404" />
       </Switch>
     </Router>
   );

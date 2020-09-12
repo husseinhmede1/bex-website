@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const colors = require("cli-color");
+const figlet = require("figlet");
 
 const {
   questions,
@@ -11,6 +12,7 @@ const handler = require("./choicesHandler");
 const { jsonConcat } = require("./utils/jsonManipulation");
 
 const cliPurple = colors.xterm(13);
+const titleColor = colors.xterm(202);
 
 async function interactiveCLI() {
   const answers = await inquirer.prompt(questions);
@@ -41,7 +43,15 @@ async function proceedOrExit() {
 
 async function main() {
   console.clear();
-  console.log(cliPurple("Areeba's interactive cli tool."));
+  const coolTitle = await figlet.textSync("areeba", {
+    font: "Standard",
+    horizontalLayout: "fitted",
+    verticalLayout: "default",
+    width: 100,
+    whitespaceBreak: true,
+  });
+  console.log(titleColor(coolTitle));
+  console.log(cliPurple("React-redux-ts template builder."));
 
   while (true) {
     await interactiveCLI();

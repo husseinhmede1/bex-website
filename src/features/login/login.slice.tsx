@@ -15,6 +15,8 @@ const initialState: Login = {};
  */
 const makeLoginApiCall = createAsyncThunk(
   // TODO change this method based on usecase
+  // You can add as many thunks as required
+  // Delete this method if not needed
   "login/makeLoginApiCallStatus",
   async (request: any) => {
     // Make your API call here
@@ -66,6 +68,7 @@ const loginSlice = createSlice({
    * Here thunk actions are handled
    */
   extraReducers: (builder) => {
+    // TODO remove extraReducers if there are no thunks
     builder.addCase(makeLoginApiCall.pending, (state, action) => {
       // Write pending logic here
     });
@@ -84,7 +87,8 @@ const loginSlice = createSlice({
 export const loginReducer = loginSlice.reducer;
 
 /**
- * Actions hold the same names as reducers. Actions can be dispached using
- * 'useDispacth' hook, or by 'mapDispatchToProps' in the redux 'connect' function
+ * Actions hold the same names as reducers.
+ * Actions can be dispached using 'useDispacth' hook,
+ * or by 'mapDispatchToProps' in the redux 'connect' function
  */
 export const loginActions = { ...loginSlice.actions };

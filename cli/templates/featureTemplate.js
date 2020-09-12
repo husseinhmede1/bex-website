@@ -70,6 +70,8 @@ const initialState: ${newName} = {};
  */
 const make${newName}ApiCall = createAsyncThunk(
   // TODO change this method based on usecase
+  // You can add as many thunks as required
+  // Delete this method if not needed
   "${name}/make${newName}ApiCallStatus",
   async (request: any) => {
     // Make your API call here
@@ -121,6 +123,7 @@ const ${name}Slice = createSlice({
    * Here thunk actions are handled
    */
   extraReducers: (builder) => {
+    // TODO remove extraReducers if there are no thunks
     builder.addCase(make${newName}ApiCall.pending, (state, action) => {
       // Write pending logic here
     });
@@ -139,8 +142,9 @@ const ${name}Slice = createSlice({
 export const ${name}Reducer = ${name}Slice.reducer;
 
 /**
- * Actions hold the same names as reducers. Actions can be dispached using
- * 'useDispacth' hook, or by 'mapDispatchToProps' in the redux 'connect' function
+ * Actions hold the same names as reducers.
+ * Actions can be dispached using 'useDispacth' hook,
+ * or by 'mapDispatchToProps' in the redux 'connect' function
  */
 export const ${name}Actions = { ...${name}Slice.actions };
 `,

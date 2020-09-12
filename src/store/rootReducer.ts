@@ -15,10 +15,9 @@ const createRootReducer = (history: History<any>) =>
     router: connectRouter(history),
     counter: counterReducer,
 
-    /** rest of your reducers go here in the following format:
-     * ...
-     * feature: featureReducer
-     * ...
-     */
+    // The rest of your reducers go here in the following format:
+    // ...
+    // feature: featureReducer
+    // ...
   });
 export default createRootReducer;

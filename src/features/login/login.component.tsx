@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 
 import { RootState } from "@store/store";
+
 /**
  * These are actions imported from the feature slices.
  * You can use 'useDispatch' hook or 'mapDispatchToProps'
@@ -12,6 +13,7 @@ import { loginActions } from "./login.slice";
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const LoginComponent = (props: ReduxProps) => {
+  const { location } = props;
   /**
    * useEffect perfeorms side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
@@ -20,7 +22,8 @@ const LoginComponent = (props: ReduxProps) => {
    */
   useEffect(() => {
     // Write your side-effects here
-  }, []);
+    console.log(location);
+  }, [location]);
 
   return <div />;
 };
@@ -31,6 +34,7 @@ const LoginComponent = (props: ReduxProps) => {
  */
 const mapStateToProps = (state: RootState) => ({
   // Map your redux state to your props here
+  location: state.router.location,
 });
 
 /**

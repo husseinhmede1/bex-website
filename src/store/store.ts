@@ -20,18 +20,25 @@ import storage from "redux-persist/lib/storage"; // defaults to localStorage for
 
 import createRootReducer from "./rootReducer";
 
-/** Browser history used for routing */
+/**
+ * Browser history used for routing
+ */
 const history = createBrowserHistory();
 
-/** Redux-persist configuration */
+/**
+ * Redux-persist configuration
+ */
 const persistConfig = {
   key: "root",
   version: 1,
-  /** This could be any storage : AsyncStorage, etc... */
+
+  /** This could be any storage : AsyncStorage, WebStorage, etc... */
   storage,
 };
 
-/** Redux-toolkit middlewares array */
+/**
+ * Redux-toolkit middlewares array
+ */
 const middleware = [
   /** Default middle ware with serializable-check to support redux-persist */
   ...getDefaultMiddleware({
@@ -44,7 +51,9 @@ const middleware = [
   routerMiddleware(history),
 ];
 
-/** Persists the combined reduxers using provided persist configuration */
+/**
+ * Persists the combined reduxers using provided persist configuration
+ */
 const persistedReducer = persistReducer(
   persistConfig,
   createRootReducer(history)

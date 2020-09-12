@@ -43,6 +43,10 @@ const persistConfig = {
 
   /** This could be any storage : AsyncStorage, WebStorage, etc... */
   storage,
+
+  /** Reducers that to be persisted in storage */
+  whitelist: [],
+
   /** Reducers that should not be persisted */
   blacklist: ["router"],
 };

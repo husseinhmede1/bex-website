@@ -4,7 +4,7 @@ const createFeatureTemplate = (name) => {
     componentTemplate: `import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 
-import { RootState } from "@store/store";
+import { RootState } from "&store/store";
 /**
  * These are actions imported from the feature slices.
  * You can use 'useDispatch' hook or 'mapDispatchToProps'

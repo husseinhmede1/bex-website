@@ -51,11 +51,11 @@
     "prettier": "2.1.1"
   },
   "_moduleAliases": {
-    "@features/*": "dist/features/*",
-    "@styled/*": "dist/styled/*",
-    "@config/*": "dist/config/*",
-    "@assets/*": "dist/assets/*",
-    "@store/*": "dist/store/*",
-    "@route/*": "dist/route/*"
+    "&features/*": "dist/features/*",
+    "&styled/*": "dist/styled/*",
+    "&config/*": "dist/config/*",
+    "&assets/*": "dist/assets/*",
+    "&store/*": "dist/store/*",
+    "&route/*": "dist/route/*"
   }
 }

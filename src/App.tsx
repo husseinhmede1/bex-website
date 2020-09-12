@@ -3,8 +3,8 @@ import { ConnectedRouter } from "connected-react-router";
 import { Route, Switch, BrowserRouter } from "react-router-dom";
 import { History } from "history";
 
-import { Counter } from "@features/counter/counter.component";
-import { PrivateRoute } from "@route/protectedRoute";
+import { Counter } from "&features/counter/counter.component";
+import { PrivateRoute } from "&route/protectedRoute";
 import "./App.css";
 
 type AppProps = {

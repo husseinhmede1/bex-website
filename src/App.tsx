@@ -16,11 +16,15 @@ const App = ({ history }: AppProps) => {
     <Router history={history}>
       {/* App main routing switch */}
       <Switch>
-        <Route exact path="/" render={() => <div>Main</div>} />
+        <Route
+          exact
+          path="/"
+          render={() => <div>This path is not protected</div>}
+        />
         <PrivateRoute
           exact
           path="/dashboard"
-          component={() => <div>PageNot Found</div>}
+          component={() => <div>This path is protected</div>}
         />
         <Route path="/404" render={() => <div>page not found</div>} />
         <Redirect to="/404" />

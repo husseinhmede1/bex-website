@@ -4,8 +4,8 @@ import {
   ThunkAction,
   Action,
 } from "@reduxjs/toolkit";
-import { routerMiddleware } from "connected-react-router";
 import { createBrowserHistory } from "history";
+import { createReduxHistoryContext } from "redux-first-history";
 import {
   persistStore,
   persistReducer,
@@ -21,9 +21,18 @@ import storage from "redux-persist/lib/storage"; // defaults to localStorage for
 import createRootReducer from "./rootReducer";
 
 /**
- * Browser history used for routing
+ * Browser history context used for routing
  */
-const history = createBrowserHistory();
+const {
+  createReduxHistory,
+  routerMiddleware,
+  routerReducer,
+} = createReduxHistoryContext({
+  history: createBrowserHistory(),
+  routerReducerKey: "router",
+  savePreviousLocations: 3,
+  //other options if needed
+});
 
 /**
  * Redux-persist configuration
@@ -34,6 +43,8 @@ const persistConfig = {
 
   /** This could be any storage : AsyncStorage, WebStorage, etc... */
   storage,
+  /** Reducers that should not be persisted */
+  blacklist: ["router"],
 };
 
 /**
@@ -48,7 +59,7 @@ const middleware = [
   }),
 
   /** Router middleware */
-  routerMiddleware(history),
+  routerMiddleware,
 ];
 
 /**
@@ -56,7 +67,7 @@ const middleware = [
  */
 const persistedReducer = persistReducer(
   persistConfig,
-  createRootReducer(history)
+  createRootReducer(routerReducer)
 );
 
 const store = configureStore({
@@ -74,6 +85,7 @@ const store = configureStore({
 });
 
 let persistor = persistStore(store);
+const history = createReduxHistory(store);
 
 export { history, store, persistor };
 

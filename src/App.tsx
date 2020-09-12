@@ -1,11 +1,10 @@
 import React from "react";
-import { ConnectedRouter } from "connected-react-router";
-import { Route, Switch, BrowserRouter } from "react-router-dom";
+import { Router, Route, Switch } from "react-router";
 import { History } from "history";
 
+import "./App.css";
 import { Counter } from "&features/counter/counter.component";
 import { PrivateRoute } from "&route/protectedRoute";
-import "./App.css";
 
 type AppProps = {
   /** Browser history for routing */
@@ -15,16 +14,13 @@ type AppProps = {
 const App = ({ history }: AppProps) => {
   return (
     // Router connected to redux, here redux is used for navigation integrity
-    <ConnectedRouter history={history}>
-      <BrowserRouter>
-        {/* App main routing switch */}
-        <Switch>
-          <Route exact path="/login" render={() => <div>Login </div>} />
-          <Route exact path="/" render={() => <div>Main</div>} />
-          <PrivateRoute exact path="/counter" component={Counter} />
-        </Switch>
-      </BrowserRouter>
-    </ConnectedRouter>
+    <Router history={history}>
+      {/* App main routing switch */}
+      <Switch>
+        <Route exact path="/" render={() => <div>Main</div>} />
+        <PrivateRoute exact path="/counter" component={Counter} />
+      </Switch>
+    </Router>
   );
 };
 

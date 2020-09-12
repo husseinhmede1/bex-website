@@ -1,20 +1,18 @@
-// reducers.js
-import { combineReducers } from "redux";
-import { connectRouter } from "connected-react-router";
-import { History } from "history";
+import { combineReducers, Reducer } from "redux";
 
 import counterReducer from "&features/counter/counter.slice";
 
 /**
  * Combines reducers of all slices and router into one root reducer
  *
- * @param history Browser history for react-router-dom
+ * @param routerReducer router reducer for redux first history
  */
-const createRootReducer = (history: History<any>) =>
+const createRootReducer = (routerReducer: Reducer) =>
   combineReducers({
-    router: connectRouter(history),
+    router: routerReducer,
     counter: counterReducer,
 
+    // TODO add other reducers
     // The rest of your reducers go here in the following format:
     // ...
     // feature: featureReducer

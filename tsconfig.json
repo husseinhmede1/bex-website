@@ -1,7 +1,12 @@
 {
+  "extends": "./tsconfig.paths.json",
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -13,16 +18,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react",
-    "baseUrl": "./src" /* Base directory to resolve non-absolute module names. */,
-    "paths": {
-      "&features/*": ["features/*"],
-      "&styled/*": ["styled/*"],
-      "&config/*": ["config/*"],
-      "&assets/*": ["assets/*"],
-      "&store/*": ["store/*"],
-      "&route/*": ["route/*"]
-    } /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+    "jsx": "react"
   },
-  "include": ["src"]
+  "include": [
+    "src/**/*"
+  ]
 }

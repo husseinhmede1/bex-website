@@ -22,7 +22,12 @@ const LandingComponent = (props: ReduxProps) => {
     // Write your side-effects here
   }, []);
 
-  return <h1>This is an unprotected Landing Page</h1>;
+  return (
+    <>
+      <h1>This is an unprotected Landing Page</h1>
+      <a href="/login">Login</a>
+    </>
+  );
 };
 
 /**

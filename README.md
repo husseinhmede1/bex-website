@@ -6,27 +6,41 @@ This is a React.js template fully written in Typescript. The template is based o
 
 ## Commands
 
-|       command         |                    action                                  |
-| :------------------:  | :--------------------------------------------------------: |
-|     `yarn install`    |    Downloads project dependencies                          |
-|     `yarn start`      |    Runs the app in the development mode                    |
-|     `yarn test`       |    Launches the test runner in the interactive watch mode  |
-|     `yarn build`      |    Builds the app for production to the build folder       |
-|     `yarn cli:install`|    Downloads the interactive cli dependencies              |
-|     `cli:create`      |    Generate template file/s using the cli tool             |
+|       command               |                    action                                  |
+| :-------------------------: | :--------------------------------------------------------: |
+|     `yarn install`          |    Downloads project dependencies                          |
+|     `yarn start`            |    Runs the app in the development mode                    |
+|     `yarn test`             |    Launches the test runner in the interactive watch mode  |
+|     `yarn build`            |    Builds the app for production to the build folder       |
+|     `yarn serve`            |    Starts a static server to serve production build        |
+|     `yarn yarn package-win` |    Starts a static server to serve production build        |
+|     `yarn cli:install`      |    Downloads the interactive cli dependencies              |
+|     `yarn cli:create`       |    Generate template file/s using the cli tool             |
 
 ## To Use Template
 
 * Change the current working directory to your local project (optional).
 * Go to your project's root directory.
 * Run `git remote set-url origin <your new project url>` to link remote project (if applies).
-* Modify the project name by setting `"name": <your new project name>` inside [`package.json`](package.json) 
+* Inside [`package.json`](package.json), modify the folowing project settings:
+    * Set `"name": <your new project name>`
+    * Set `"description": <your new project description>` 
+* Inside [`public/electron.js`](public/electron.js), set `title: <your project window title>`
 * Run `yarn install` to install the dependencies.
 * Run `yarn start` to start development server.
 * Run `yarn cli:install` to install cli dependencies.
 * Run `yarn cli:create` to generate feature files or styled components.
 * Edit generated files (read about generated files [here](##structure))
 * To generate production build files, run `yarn build`
+
+## Production
+* Web:
+    * run `yarn build` to perform production build
+    * run `yarn serve` to serve production build locally
+* Windows:
+    * run `yarn global add windows-build-tools` to install windows build tools
+    * run `yarn global add grpc --build-from-source`
+    * run `yarn electron-pack` to package as desktop app
 
 ## Structure
 
@@ -334,6 +348,6 @@ To remove demo files:
 1. Delete `demo` folder from [`features`](src/features) folder
 2. Remove related reducers in the `combineReducers` function in [`rootReducer.ts`](src/store/rootReducer.ts)
 3. Remove routes that use demo components in [`App.tsx`](src/App.tsx)
-4. Verify that components inside [`route`](src/route) folder do not use demo reducers.
+4. Verify that [`App.tsx`](src/App.tsx) does not use demo reducers in connect.
 
 

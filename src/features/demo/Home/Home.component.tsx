@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
+import { Button } from "antd";
 
 import { RootState } from "&store/store";
 /**
@@ -8,10 +9,13 @@ import { RootState } from "&store/store";
  * to dispatch these actions
  */
 import { homeActions } from "./home.slice";
+import { loginActions } from "&features/demo/login/login.slice";
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const HomeComponent = (props: ReduxProps) => {
+  const { logout } = props;
+
   /**
    * useEffect performs side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
@@ -22,7 +26,15 @@ const HomeComponent = (props: ReduxProps) => {
     // Write your side-effects here
   }, []);
 
-  return <h1>This is a protected Home Page</h1>;
+  return (
+    <>
+      <h1>This is a protected Home Page</h1>
+      <a href="/">Go to Landing</a>
+      <Button danger type="text" onClick={logout}>
+        Logout
+      </Button>
+    </>
+  );
 };
 
 /**
@@ -39,6 +51,7 @@ const mapStateToProps = (state: RootState) => ({
 const mapDispatchToProps = {
   // map your actions here ex:
   // increment : counterActions.increment
+  logout: loginActions.reset,
 };
 
 /**

@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a React js template fully written in Typescript. The template is based on redux for global state management, following the "features" or "ducks" pattern. This pattern enforces that all files for a feature are the same folder, and that all Redux logic for a feature in a single file. As a result, the template ommits the old component-container pattern resulting in smaller chuncks of code, significanty less file count, easier debugging and limitted use of parent-child props.
+This is a React js template fully written in Typescript. The template is based on redux for global state management, following the "features" or "ducks" pattern. This pattern enforces that all files for a feature are the same folder, and that all Redux logic for a feature in a single file. As a result, the template ommits the old component-container pattern resulting in smaller chunks of code, significantly less file count, easier debugging and limited use of parent-child props.
 
 ## Commands
 
@@ -52,18 +52,18 @@ The project root directory structure is as follows:
 ```
 As mentioned before, following the "features" or "ducks" pattern organizes the folders in the followinf manner: 
 
-* `/build`          for production build files
-* `/cli`            for the interactive cli that generates project template files.
-* `/public`         for public files
-* `/src`            for all source files
-* `src/assets`      for assets (.png, .svg, etc ...)
-* `src/config`      for configuration files (colors, headers, strings, etc ...)
-* `src/features`    for project features (login, register, dashboard, settings ...)
-* `src/roure`       for router middlewares (protectedRoutes ...)
-* `src/store`       for redux configurations (combineReducers, middlewares, persist etc ...)
-* `src/styled`      for multiple use stateless styled components 
+* [`/build`](build)         for production build files
+* [`/cli`](cli)         for the interactive cli that generates project template files.
+* [`/public`](public)         for public files
+* [`/src`](src)            for all source files
+* [`src/assets`](src/assets)      for assets (.png, .svg, etc ...)
+* [`src/config`](src/config)      for configuration files (colors, headers, strings, etc ...)
+* [`src/features`](src/features)    for project features (login, register, dashboard, settings ...)
+* [`src/roure`](src/roure)       for router middlewares (protectedRoutes ...)
+* [`src/store`](src/store)       for redux configurations (combineReducers, middlewares, persist etc ...)
+* [`src/styled`](src/styled)      for multiple use stateless styled components 
 
-The content of `feature` and `styled` folders is further explored here: 
+The content of [`feature`](src/features) and [`styled`](src/styled) folders is further explored here: 
 
 #### features
 
@@ -327,24 +327,13 @@ Notice that the `path` option enables nested styled component or nested features
 - cli tool to generate template files that follow project pattern.
 - path aliases to reduce import statements' length 
 
-## Suggestions
+## Note: Demo Files:
 
-#### List of VS-Code extenstions
+To remove demo files:
 
-- Bable JavaScript
-- DotENV
-- ESLint
-- Flow Language Support
-- Git Blame
-- GitLense - Get supercharged
-- JavaScript (ES6) code snippets
-- npm
-- npm Intellisense
-- Path intellisense
-- Pritter - Code formatter
-- Visual Studio intelliCode
-- yarn
-- Todo Tree
-- Better comments
+  1- Delete `demo` folder from [`features`](src/features) folder
+  2- Remove related reducers in the `combineReducers` function in [`rootReducer.ts`](src/store/rootReducer.ts)
+  3- Remove routes that use demo components in [`App.tsx`](src/App.tsx)
+  4- Verify that components inside [`route`](src/route) folder do not use demo reducers.
 
 

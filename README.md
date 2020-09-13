@@ -48,7 +48,6 @@ The project root directory structure is as follows:
 
 ```
   '|-- <root>',
-  '    |-- build',
   '    |-- cli',
   '    |-- public',
   '    |-- src',
@@ -66,7 +65,6 @@ The project root directory structure is as follows:
 ```
 As mentioned before, following the "features" or "ducks" pattern organizes the folders in the following manner: 
 
-* [`/build`](build)         for production build files
 * [`/cli`](cli)         for the interactive cli that generates project template files.
 * [`/public`](public)         for public files
 * [`/src`](src)            for all source files
@@ -321,7 +319,7 @@ export { LoginComponentRedux as LoginComponent };
 
 #### cli
 
-The command line tool is used to generating styled components and features.
+The command line tool is used for generating styled components and features.
 
 Example
 

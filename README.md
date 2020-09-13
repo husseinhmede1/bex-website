@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a React js template fully written in Typescript. The template is based on redux for global state management, following the "features" or "ducks" pattern. This pattern enforces that all files for a feature are the same folder, and that all Redux logic for a feature in a single file. As a result, the template ommits the old component-container pattern resulting in smaller chunks of code, significantly less file count, easier debugging and limited use of parent-child props.
+This is a React.js template fully written in Typescript. The template is based on [Redux](https://redux.js.org/) for global state management, following the "features" or "ducks" pattern. This pattern enforces that all files for a feature are the same folder, and that all Redux logic for a feature in a single file. As a result, the template ommits the old component-container pattern resulting in smaller chunks of code, significantly less file count, easier debugging and limited use of parent-child props.
 
 ## Commands
 
@@ -20,12 +20,12 @@ This is a React js template fully written in Typescript. The template is based o
 * Change the current working directory to your local project (optional).
 * Go to your project's root directory.
 * Run `git remote set-url origin <your new project url>` to link remote project (if applies).
-* Modify the project name by setting `"name": <your new project name>` inside `package.json` 
+* Modify the project name by setting `"name": <your new project name>` inside [`package.json`](package.json) 
 * Run `yarn install` to install the dependencies.
 * Run `yarn start` to start development server.
 * Run `yarn cli:install` to install cli dependencies.
 * Run `yarn cli:create` to generate feature files or styled components.
-* Edit generated files (read about generated files [here](#structure))
+* Edit generated files (read about generated files [here](##structure))
 * To generate production build files, run `yarn build`
 
 ## Structure
@@ -331,9 +331,9 @@ Notice that the `path` option enables nested styled component or nested features
 
 To remove demo files:
 
-  1- Delete `demo` folder from [`features`](src/features) folder
-  2- Remove related reducers in the `combineReducers` function in [`rootReducer.ts`](src/store/rootReducer.ts)
-  3- Remove routes that use demo components in [`App.tsx`](src/App.tsx)
-  4- Verify that components inside [`route`](src/route) folder do not use demo reducers.
+1. Delete `demo` folder from [`features`](src/features) folder
+2. Remove related reducers in the `combineReducers` function in [`rootReducer.ts`](src/store/rootReducer.ts)
+3. Remove routes that use demo components in [`App.tsx`](src/App.tsx)
+4. Verify that components inside [`route`](src/route) folder do not use demo reducers.
 
 

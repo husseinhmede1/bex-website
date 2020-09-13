@@ -48,7 +48,7 @@ function createFeature({ name, path }) {
   if (path.length > 0 && path[path.length - 1] !== "/") {
     path += "/";
   }
-
+  name = name.toLowerCase();
   var featurePath = config.featurePath + path + `${name}/`;
 
   const {

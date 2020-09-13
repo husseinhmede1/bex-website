@@ -7,13 +7,13 @@ import { RootState } from "&store/store";
  * You can use 'useDispatch' hook or 'mapDispatchToProps'
  * to dispatch these actions
  */
-import { HomeActions } from "./Home.slice";
+import { homeActions } from "./home.slice";
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const HomeComponent = (props: ReduxProps) => {
   /**
-   * useEffect perfeorms side-effects on component rendering.
+   * useEffect performs side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
    * When dependency list is empty, useEffect runs each time the component rerenders
    * Adding variables to the dependency list will cause useEffect to run each time a variable changes
@@ -22,7 +22,7 @@ const HomeComponent = (props: ReduxProps) => {
     // Write your side-effects here
   }, []);
 
-  return <h1>This is protected Home Page</h1>;
+  return <h1>This is a protected Home Page</h1>;
 };
 
 /**

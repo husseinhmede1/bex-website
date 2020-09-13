@@ -9,16 +9,16 @@ import { store, history, persistor } from "./store/store";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <React.StrictMode>
-    {/* Links store to redux store */}
-    <Provider store={store}>
-      {/* Persists redux store using imported persistor */}
-      <PersistGate loading={null} persistor={persistor}>
-        {/* App main entry, passes history for propper navigation */}
-        <App history={history} />
-      </PersistGate>
-    </Provider>
-  </React.StrictMode>,
+  // <React.StrictMode>
+  /* Links store to redux store */
+  <Provider store={store}>
+    {/* Persists redux store using imported persistor */}
+    <PersistGate loading={null} persistor={persistor}>
+      {/* App main entry, passes history for propper navigation */}
+      <App history={history} />
+    </PersistGate>
+  </Provider>,
+  // </React.StrictMode>,
   document.getElementById("root")
 );
 

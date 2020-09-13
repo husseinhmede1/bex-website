@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-import { Landing } from "./Landing.type";
+import { Landing } from "./landing.type";
 
 /**
  * Initial state object
@@ -17,7 +17,7 @@ const makeLandingApiCall = createAsyncThunk(
   // TODO change this method based on usecase
   // You can add as many thunks as required
   // Delete this method if not needed
-  "Landing/makeLandingApiCallStatus",
+  "landing/makeLandingApiCallStatus",
   async (request: any) => {
     // Make your API call here
   }
@@ -27,11 +27,11 @@ const makeLandingApiCall = createAsyncThunk(
  * Feature slice Object
  * Automatically generates actions as per reducers
  */
-const LandingSlice = createSlice({
+const landingSlice = createSlice({
   /**
    * Unique feature name
    */
-  name: "Landing",
+  name: "landing",
 
   /**
    * Initial state object
@@ -84,11 +84,11 @@ const LandingSlice = createSlice({
 /**
  * Reducers are exported so they could be added to store
  */
-export const LandingReducer = LandingSlice.reducer;
+export const landingReducer = landingSlice.reducer;
 
 /**
  * Actions hold the same names as reducers.
  * Actions can be dispached using 'useDispacth' hook,
  * or by 'mapDispatchToProps' in the redux 'connect' function
  */
-export const LandingActions = { ...LandingSlice.actions };
+export const landingActions = { ...landingSlice.actions };

@@ -5,12 +5,13 @@ import { RootState } from "&store/store";
 import { History } from "history";
 
 import "./App.css";
+import "antd/dist/antd.css";
 import { PrivateRoute } from "&route/protectedRoute";
 
 // TODO remove demo routes
-import { HomeComponent } from "&features/demo/Home/Home.component";
-import { LandingComponent } from "&features/demo/Landing/Landing.component";
-import { LoginComponent } from "&features/demo/Login/Login.component";
+import { HomeComponent } from "&features/demo/home/home.component";
+import { LandingComponent } from "&features/demo/landing/landing.component";
+import { LoginComponent } from "&features/demo/login/login.component";
 
 type ReduxProps = ConnectedProps<typeof connector>;
 type AppProps = {
@@ -31,7 +32,7 @@ const App = (props: AppProps & ReduxProps) => {
         <Route exact path="/login" component={LoginComponent} />
         <PrivateRoute
           exact
-          path="/dashboard"
+          path="/home"
           component={HomeComponent}
           isAuthenticated={isAuthenticated}
         />
@@ -49,7 +50,7 @@ const App = (props: AppProps & ReduxProps) => {
  */
 const mapStateToProps = (state: RootState) => ({
   // TODO change this to your real auth validator
-  isAuthenticated: false,
+  isAuthenticated: state.login.isLoggedIn,
 });
 
 /**

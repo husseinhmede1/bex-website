@@ -7,13 +7,13 @@ import { RootState } from "&store/store";
  * You can use 'useDispatch' hook or 'mapDispatchToProps'
  * to dispatch these actions
  */
-import { LandingActions } from "./Landing.slice";
+import { landingActions } from "./landing.slice";
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const LandingComponent = (props: ReduxProps) => {
   /**
-   * useEffect perfeorms side-effects on component rendering.
+   * useEffect performs side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
    * When dependency list is empty, useEffect runs each time the component rerenders
    * Adding variables to the dependency list will cause useEffect to run each time a variable changes

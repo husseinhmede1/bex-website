@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
+import { Input, Button, Form, Card, Checkbox, Col } from "antd";
+import { UserOutlined, LockOutlined } from "@ant-design/icons";
+import { push } from "redux-first-history";
 
 import { RootState } from "&store/store";
 /**
@@ -7,11 +10,12 @@ import { RootState } from "&store/store";
  * You can use 'useDispatch' hook or 'mapDispatchToProps'
  * to dispatch these actions
  */
-import { LoginActions } from "./Login.slice";
+import { loginActions } from "./login.slice";
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const LoginComponent = (props: ReduxProps) => {
+  const { logIn, isLoggedIn, push, previousLocations } = props;
   /**
    * useEffect perfeorms side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
@@ -20,9 +24,72 @@ const LoginComponent = (props: ReduxProps) => {
    */
   useEffect(() => {
     // Write your side-effects here
-  }, []);
+    if (isLoggedIn) {
+      if (previousLocations.length > 1)
+        push(previousLocations[previousLocations.length - 1].location.pathname);
+      else push("/home");
+    }
+  }, [isLoggedIn, previousLocations, previousLocations.length, push]);
 
-  return <div />;
+  const handleLoginFormSubmit = (values: any) => {
+    logIn(values);
+  };
+
+  return (
+    <Col xs={24} sm={24} md={18} lg={8} xl={8}>
+      <Card bordered={false}>
+        <h1>Login Page</h1>
+        <Form
+          name="normal_login"
+          initialValues={{ remember: true }}
+          onFinish={handleLoginFormSubmit}
+        >
+          <Form.Item
+            name="email"
+            rules={[
+              { required: true, message: "Please input your email!" },
+              { type: "email", message: "Please enter a valid email!" },
+            ]}
+          >
+            <Input
+              prefix={<UserOutlined className="site-form-item-icon" />}
+              placeholder="Username"
+            />
+          </Form.Item>
+          <Form.Item
+            name="password"
+            rules={[
+              { required: true, message: "Please input your Password!" },
+              {
+                min: 8,
+                message: "Password should be at least 8 character long!",
+              },
+            ]}
+          >
+            <Input
+              prefix={<LockOutlined className="site-form-item-icon" />}
+              type="password"
+              placeholder="Password"
+            />
+          </Form.Item>
+          <Form.Item>
+            <Form.Item name="remember" valuePropName="checked" noStyle>
+              <Checkbox>Remember me</Checkbox>
+            </Form.Item>
+
+            <a href="/">Forgot password</a>
+          </Form.Item>
+
+          <Form.Item>
+            <Button type="primary" htmlType="submit" block>
+              Log in
+            </Button>
+            Or <a href="/register">register now!</a>
+          </Form.Item>
+        </Form>
+      </Card>
+    </Col>
+  );
 };
 
 /**
@@ -31,6 +98,8 @@ const LoginComponent = (props: ReduxProps) => {
  */
 const mapStateToProps = (state: RootState) => ({
   // Map your redux state to your props here
+  isLoggedIn: state.login.isLoggedIn,
+  previousLocations: state.router.previousLocations,
 });
 
 /**
@@ -39,6 +108,8 @@ const mapStateToProps = (state: RootState) => ({
 const mapDispatchToProps = {
   // map your actions here ex:
   // increment : counterActions.increment
+  logIn: loginActions.makeLoginApiCall,
+  push: push,
 };
 
 /**

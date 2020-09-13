@@ -1,11 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-import { Login } from "./Login.type";
+import { Login } from "./login.type";
 
 /**
  * Initial state object
  */
-const initialState: Login = {};
+const initialState: Login = {
+  email: "",
+  isLoggedIn: false,
+};
 
 /**
  * Thunks are used to dispatch actions that return functions rather than objects,
@@ -17,9 +20,10 @@ const makeLoginApiCall = createAsyncThunk(
   // TODO change this method based on usecase
   // You can add as many thunks as required
   // Delete this method if not needed
-  "Login/makeLoginApiCallStatus",
-  async (request: any) => {
+  "login/makeLoginApiCallStatus",
+  async (body: any, thunkApi) => {
     // Make your API call here
+    return body.email;
   }
 );
 
@@ -27,11 +31,11 @@ const makeLoginApiCall = createAsyncThunk(
  * Feature slice Object
  * Automatically generates actions as per reducers
  */
-const LoginSlice = createSlice({
+const loginSlice = createSlice({
   /**
    * Unique feature name
    */
-  name: "Login",
+  name: "login",
 
   /**
    * Initial state object
@@ -69,26 +73,30 @@ const LoginSlice = createSlice({
    */
   extraReducers: (builder) => {
     // TODO remove extraReducers if there are no thunks
-    builder.addCase(makeLoginApiCall.pending, (state, action) => {
-      // Write pending logic here
-    });
-    builder.addCase(makeLoginApiCall.fulfilled, (state, action) => {
-      // Write success logic here
-    });
-    builder.addCase(makeLoginApiCall.rejected, (state, action) => {
-      // Write failure logic here
-    });
+    builder
+      .addCase(makeLoginApiCall.pending, (state, action) => {
+        // Write pending logic here
+        console.log(action);
+      })
+      .addCase(makeLoginApiCall.fulfilled, (state, action) => {
+        state.isLoggedIn = true;
+        state.email = action.payload;
+      })
+      .addCase(makeLoginApiCall.rejected, (state, action) => {
+        // Write failure logic here
+        state.isLoggedIn = false;
+      });
   },
 });
 
 /**
  * Reducers are exported so they could be added to store
  */
-export const LoginReducer = LoginSlice.reducer;
+export const loginReducer = loginSlice.reducer;
 
 /**
  * Actions hold the same names as reducers.
  * Actions can be dispached using 'useDispacth' hook,
  * or by 'mapDispatchToProps' in the redux 'connect' function
  */
-export const LoginActions = { ...LoginSlice.actions };
+export const loginActions = { ...loginSlice.actions, makeLoginApiCall };

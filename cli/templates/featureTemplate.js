@@ -73,7 +73,7 @@ const make${newName}ApiCall = createAsyncThunk(
   // You can add as many thunks as required
   // Delete this method if not needed
   "${name}/make${newName}ApiCallStatus",
-  async (request: any) => {
+  async (body: any) => {
     // Make your API call here
   }
 );
@@ -146,7 +146,7 @@ export const ${name}Reducer = ${name}Slice.reducer;
  * Actions can be dispached using 'useDispacth' hook,
  * or by 'mapDispatchToProps' in the redux 'connect' function
  */
-export const ${name}Actions = { ...${name}Slice.actions };
+export const ${name}Actions = { ...${name}Slice.actions, make${newName}ApiCall };
 `,
 
     typeTemplate: `/**

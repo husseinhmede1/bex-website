@@ -1,5 +1,7 @@
 import { combineReducers, Reducer } from "redux";
 
+import { loginReducer } from "&features/demo/login/login.slice";
+
 /**
  * Combines reducers of all slices and router into one root reducer
  *
@@ -8,7 +10,7 @@ import { combineReducers, Reducer } from "redux";
 const createRootReducer = (routerReducer: Reducer) =>
   combineReducers({
     router: routerReducer,
-
+    login: loginReducer,
     // TODO add other reducers
     // The rest of your reducers go here in the following format:
     // ...

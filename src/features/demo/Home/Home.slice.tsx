@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-import { Home } from "./Home.type";
+import { Home } from "./home.type";
 
 /**
  * Initial state object
@@ -17,7 +17,7 @@ const makeHomeApiCall = createAsyncThunk(
   // TODO change this method based on usecase
   // You can add as many thunks as required
   // Delete this method if not needed
-  "Home/makeHomeApiCallStatus",
+  "home/makeHomeApiCallStatus",
   async (request: any) => {
     // Make your API call here
   }
@@ -27,11 +27,11 @@ const makeHomeApiCall = createAsyncThunk(
  * Feature slice Object
  * Automatically generates actions as per reducers
  */
-const HomeSlice = createSlice({
+const homeSlice = createSlice({
   /**
    * Unique feature name
    */
-  name: "Home",
+  name: "home",
 
   /**
    * Initial state object
@@ -84,11 +84,11 @@ const HomeSlice = createSlice({
 /**
  * Reducers are exported so they could be added to store
  */
-export const HomeReducer = HomeSlice.reducer;
+export const homeReducer = homeSlice.reducer;
 
 /**
  * Actions hold the same names as reducers.
  * Actions can be dispached using 'useDispacth' hook,
  * or by 'mapDispatchToProps' in the redux 'connect' function
  */
-export const HomeActions = { ...HomeSlice.actions };
+export const homeActions = { ...homeSlice.actions };

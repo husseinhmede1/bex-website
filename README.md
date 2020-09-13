@@ -337,6 +337,7 @@ Notice that the `path` option enables nested styled component or nested features
 - [redux-persist](https://github.com/rt2zz/redux-persist) to persist and rehydrate Redux store
 - [react-router-dom](https://reactrouter.com/web/guides/quick-start) for routing, with [redux-first-history](https://github.com/salvoravida/redux-first-history) middleware
 - [ant-design](https://ant.design/) for responsive high quality reusable components and forms
+- [electron-packager](https://github.com/electron/electron-packager) to compile as desktop apps
 - fully functional components
 - cli tool to generate template files that follow project pattern.
 - path aliases to reduce import statements' length 

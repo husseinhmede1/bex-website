@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a React.js template fully written in Typescript. The template is based on [Redux](https://redux.js.org/) for global state management, following the "features" or "ducks" pattern. This pattern enforces that all files for a feature are the same folder, and that all Redux logic for a feature in a single file. As a result, the template ommits the old component-container pattern resulting in smaller chunks of code, significantly less file count, easier debugging and limited use of parent-child props.
+This is a React.js template fully written in Typescript. The template is based on [Redux](https://redux.js.org/) for global state management, following the "features" or "ducks" pattern. This pattern enforces that all files for a feature are in the same folder, and that all Redux logic for a feature is in a single file. As a result, the template ommits the old component-container pattern resulting in smaller chunks of code, significantly less file count, easier debugging and limited use of parent-child props.
 
 ## Commands
 
@@ -13,7 +13,7 @@ This is a React.js template fully written in Typescript. The template is based o
 |     `yarn test`              |    Launches the test runner in the interactive watch mode  |
 |     `yarn build`             |    Builds the app for production to the build folder       |
 |     `yarn serve`             |    Starts a static server to serve production build        |
-|     `yarn yarn electron-pack`|    Starts a static server to serve production build        |
+|     `yarn electron-pack`     |    Builds desktop app package                              |
 |     `yarn cli:install`       |    Downloads the interactive cli dependencies              |
 |     `yarn cli:create`        |    Generate template file/s using the cli tool             |
 
@@ -64,7 +64,7 @@ The project root directory structure is as follows:
   '        |-- styled',
   ''
 ```
-As mentioned before, following the "features" or "ducks" pattern organizes the folders in the followinf manner: 
+As mentioned before, following the "features" or "ducks" pattern organizes the folders in the following manner: 
 
 * [`/build`](build)         for production build files
 * [`/cli`](cli)         for the interactive cli that generates project template files.
@@ -81,7 +81,7 @@ The content of [`feature`](src/features) and [`styled`](src/styled) folders is f
 
 #### features
 
-As opposed to dividing files into `containers` for logic and `components` for presentation then putting redux logic in a separate folder, this template couples logic, presentation and redux state for each feature separately. Thus, redux state is divided into "slices" where each slice is coupled with a feature. The template also imposes not using directly passed props with connected components.
+As opposed to dividing files into `containers` for logic and `components` for presentation then putting redux logic in a separate folder, this template couples logic, presentation and redux state for each feature separately. Thus, redux state is divided into "slices" where each slice is coupled with a feature. The template also imposes not using own props with connected components.
 
 For example, a login feature contains a slice of the redux state to manage credentials and session, and a component for presenting and submitting the form. 
 

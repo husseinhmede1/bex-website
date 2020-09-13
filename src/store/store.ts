@@ -28,10 +28,16 @@ const {
   routerMiddleware,
   routerReducer,
 } = createReduxHistoryContext({
+  /** Browser History */
   history: createBrowserHistory(),
+
+  /** Reducer key */
   routerReducerKey: "router",
+
+  /** Save upto n previous locations (usefull for redirecetion after login) */
   savePreviousLocations: 3,
-  //other options if needed
+
+  // ... other options if needed
 });
 
 /**

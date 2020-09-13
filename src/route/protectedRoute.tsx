@@ -2,8 +2,11 @@ import React from "react";
 import { Route, Redirect, RouteProps } from "react-router-dom";
 
 type PrivateRouteProps = {
-  /** Component to route to when  */
+  /** Component to route to if authenticated */
   component: React.ComponentType<any>;
+
+  /** Auth check */
+  isAuthenticated: boolean;
 };
 
 /**
@@ -14,13 +17,14 @@ type PrivateRouteProps = {
  */
 const PrivateRoute = ({
   component: Component,
+  isAuthenticated,
   ...rest
 }: PrivateRouteProps & RouteProps) => (
   <Route
     {...rest}
     render={(props) =>
       // TODO change this to token from store
-      true ? <Component {...props} /> : <Redirect to="/login" />
+      isAuthenticated ? <Component {...props} /> : <Redirect to="/login" />
     }
   />
 );

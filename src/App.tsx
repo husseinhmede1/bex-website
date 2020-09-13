@@ -38,7 +38,7 @@ const App = (props: AppProps & ReduxProps) => {
         />
         {/* TODO This block handles unmatched routes. Add your custom 404 component */}
         <Route path="/404" render={() => <div>page not found</div>} />
-        <Redirect to="/404" />
+        <Redirect to="/" />
       </Switch>
     </Router>
   );

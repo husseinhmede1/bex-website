@@ -6,16 +6,16 @@ This is a React.js template fully written in Typescript. The template is based o
 
 ## Commands
 
-|       command               |                    action                                  |
-| :-------------------------: | :--------------------------------------------------------: |
-|     `yarn install`          |    Downloads project dependencies                          |
-|     `yarn start`            |    Runs the app in the development mode                    |
-|     `yarn test`             |    Launches the test runner in the interactive watch mode  |
-|     `yarn build`            |    Builds the app for production to the build folder       |
-|     `yarn serve`            |    Starts a static server to serve production build        |
-|     `yarn yarn package-win` |    Starts a static server to serve production build        |
-|     `yarn cli:install`      |    Downloads the interactive cli dependencies              |
-|     `yarn cli:create`       |    Generate template file/s using the cli tool             |
+|       command                |                    action                                  |
+| :-------------------------:  | :--------------------------------------------------------: |
+|     `yarn install`           |    Downloads project dependencies                          |
+|     `yarn start`             |    Runs the app in the development mode                    |
+|     `yarn test`              |    Launches the test runner in the interactive watch mode  |
+|     `yarn build`             |    Builds the app for production to the build folder       |
+|     `yarn serve`             |    Starts a static server to serve production build        |
+|     `yarn yarn electron-pack`|    Starts a static server to serve production build        |
+|     `yarn cli:install`       |    Downloads the interactive cli dependencies              |
+|     `yarn cli:create`        |    Generate template file/s using the cli tool             |
 
 ## To Use Template
 
@@ -38,8 +38,8 @@ This is a React.js template fully written in Typescript. The template is based o
     * run `yarn build` to perform production build
     * run `yarn serve` to serve production build locally
 * Windows:
-    * run `yarn global add windows-build-tools` to install windows build tools
-    * run `yarn global add grpc --build-from-source`
+    * run `yarn --add-python-to-path='true' --debug add global windows-build-tools` to install windows build tools (run as adminstrator / super user )
+    * run `yarn add grpc --build-from-source`
     * run `yarn electron-pack` to package as desktop app
 
 ## Structure

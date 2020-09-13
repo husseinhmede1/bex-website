@@ -2,367 +2,330 @@
 
 ## Description
 
-This is a 
+This is a React js template fully written in Typescript. The template is based on redux for global state management, following the "features" or "ducks" pattern. This pattern enforces that all files for a feature are the same folder, and that all Redux logic for a feature in a single file. As a result, the template ommits the old component-container pattern resulting in smaller chuncks of code, significanty less file count, easier debugging and limitted use of parent-child props.
 
 ## Commands
 
-|       command        |                    action                     |
-| :------------------: | :-------------------------------------------: |
-|        `yarn`        |           Download the dependencies           |
-|     `yarn start`     |               Start the bundler               |
-|    `yarn android`    | Run a debugging version of the app on android |
-| `yarn android:clean` |           Clean the android project           |
-| `yarn android:build` |             Creates a release apk             |
-|      `yarn ios`      |   Run a debugging version of the app on iOS   |
-|     `yarn lint`      |               Analyse the code                |
-|     `cli:install`    |         Download the cli dependencies         |
-|     `cli:create`     |        Create a file using the cli tool       |
+|       command         |                    action                                  |
+| :------------------:  | :--------------------------------------------------------: |
+|     `yarn install`    |    Downloads project dependencies                          |
+|     `yarn start`      |    Runs the app in the development mode                    |
+|     `yarn test`       |    Launches the test runner in the interactive watch mode  |
+|     `yarn build`      |    Builds the app for production to the build folder       |
+|     `yarn cli:install`|    Downloads the interactive cli dependencies              |
+|     `cli:create`      |    Generate template file/s using the cli tool             |
 
-## How to run
+## To Use Template
 
-* At root directory run `npm install` or `yarn install` to install the dependencies.
-* Add `local.properties` file to your `android\app` directory with your android SDK directory.
-  Ex: sdk.dir = `Your SDK Location`
-  Or add the SDK directory to a system environment variable ANDROID_HOME.
-
-#### Android
-
-* At root directory run `npm install` or `yarn install` to install the dependencies.
-* Add `local.properties` file to your `android\app` directory with your android SDK directory.
-  Ex: sdk.dir = `Your SDK Location`
-  Or add the SDK directory to a system environment variable ANDROID_HOME.
-
-#### iOS
-
-* Run `cd ios/ && pod install`.
-* Then run `react-native run-ios` to run the project on iOS devices or run through Xcode.
+* Change the current working directory to your local project (optional).
+* Go to your project's root directory.
+* Run `git remote set-url origin <your new project url>` to link remote project (if applies).
+* Modify the project name by setting `"name": <your new project name>` inside `package.json` 
+* Run `yarn install` to install the dependencies.
+* Run `yarn start` to start development server.
+* Run `yarn cli:install` to install cli dependencies.
+* Run `yarn cli:create` to generate feature files or styled components.
+* Edit generated files (read about generated files [here](#structure))
+* To generate production build files, run `yarn build`
 
 ## Structure
 
-#### components
+The project root directory structure is as follows:
 
-- In this folder we put the components as a view, the UI that the end user will see, it inheret its properties from its container, so static values are not allow.
+```
+  '|-- <root>',
+  '    |-- build',
+  '    |-- cli',
+  '    |-- public',
+  '    |-- src',
+  '        |-- assets',
+  '        |-- config',
+  '        |-- features',
+  '        |   |-- demo',
+  '        |       |-- home',
+  '        |       |-- landing',
+  '        |       |-- login',
+  '        |-- route',
+  '        |-- store',
+  '        |-- styled',
+  ''
+```
+As mentioned before, following the "features" or "ducks" pattern organizes the folders in the followinf manner: 
+
+* `/build`          for production build files
+* `/cli`            for the interactive cli that generates project template files.
+* `/public`         for public files
+* `/src`            for all source files
+* `src/assets`      for assets (.png, .svg, etc ...)
+* `src/config`      for configuration files (colors, headers, strings, etc ...)
+* `src/features`    for project features (login, register, dashboard, settings ...)
+* `src/roure`       for router middlewares (protectedRoutes ...)
+* `src/store`       for redux configurations (combineReducers, middlewares, persist etc ...)
+* `src/styled`      for multiple use stateless styled components 
+
+The content of `feature` and `styled` folders is further explored here: 
+
+#### features
+
+As opposed to dividing files into `containers` for logic and `components` for presentation then putting redux logic in a separate folder, this template couples logic, presentation and redux state for each feature separately. Thus, redux state is divided into "slices" where each slice is coupled with a feature. The template also imposes not using directly passed props with connected components.
+
+For example, a login feature contains a slice of the redux state to manage credentials and session, and a component for presenting and submitting the form. 
 
 Example
 
-```js
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+```tsx
+// login.slice.tsx
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-interface Props {
-  /** A text to be displayed in the center of this component */
-  title?: string;
+import { Login } from "./login.type";
 
-  characterName?: string;
-}
-
-const ApiExampleComponent = (props: Props) => {
-  const { characterName } = props;
-  return (
-    <View style={styles.conatiner}>
-      <Text>{characterName}</Text>
-    </View>
-  );
+/**
+ * Initial state object
+ */
+const initialState: Login = {
+  email: "",
+  isLoggedIn: false,
 };
 
-const styles = StyleSheet.create({
-  conatiner: {
-    alignItems: 'center',
-    flex: 1,
-    justifyContent: 'center',
+/**
+ * Thunks are used to dispatch actions that return functions rather than objects,
+ * usually used for making api calls or dispatching async actions.
+ * Thunks are dispatched in the same way regular actions are dispatched.
+ * A slice can have multiple thunks
+ */
+const makeLoginApiCall = createAsyncThunk(
+  // TODO change this method based on usecase
+  // You can add as many thunks as required
+  // Delete this method if not needed
+  "login/makeLoginApiCallStatus",
+  async (body: any, thunkApi) => {
+    // Make your API call here
+    return {};
+  }
+);
+
+/**
+ * Feature slice Object
+ * Automatically generates actions as per reducers
+ */
+const loginSlice = createSlice({
+  /**
+   * Unique feature name
+   */
+  name: "login",
+
+  /**
+   * Initial state object
+   */
+  initialState: initialState,
+
+  /**
+   * Reducers are functions that determine changes to an application's state.
+   * They can have two forms:
+   *
+   * 1- Modify the state by providing key-value pairs, ex:
+   *
+   *    setCounter: (state, action) => {
+   *      return { ...state, ...action.payload };
+   *    }
+   *
+   * 2- Apply mutating logic to part of the state.
+   *    Note that this is possible using 'Immer', ex:
+   *
+   *    decrementCounter: (state) => {
+   *      state.value -= 1;
+   *    }
+   */
+  reducers: {
+    setLogin: (state, action) => {
+      return { ...state, ...action.payload };
+    },
+    reset: () => initialState,
+    // Add here reducers
+    // ...
+  },
+  /**
+   * Extra reducers are for handling action types.
+   * Here thunk actions are handled
+   */
+  extraReducers: (builder) => {
+    // TODO remove extraReducers if there are no thunks
+    builder
+      .addCase(makeLoginApiCall.pending, (state, action) => {
+        // Write pending logic here
+      })
+      .addCase(makeLoginApiCall.fulfilled, (state, action) => {
+        state.isLoggedIn = true;
+        state.email = action.payload;
+      })
+      .addCase(makeLoginApiCall.rejected, (state, action) => {
+        // Write failure logic here
+        state.isLoggedIn = false;
+      });
   },
 });
 
-export { ApiExampleComponent };
+/**
+ * Reducers are exported so they could be added to store
+ */
+export const loginReducer = loginSlice.reducer;
+
+/**
+ * Actions hold the same names as reducers.
+ * Actions can be dispached using 'useDispacth' hook,
+ * or by 'mapDispatchToProps' in the redux 'connect' function
+ */
+export const loginActions = { ...loginSlice.actions, makeLoginApiCall };
+
 ```
 
-#### containers
+```tsx
+// login.component.tsx
+import React, { useEffect } from "react";
+import { connect, ConnectedProps } from "react-redux";
+import { Input, Button, Form, Card, Checkbox, Col } from "antd";
+import { UserOutlined, LockOutlined } from "@ant-design/icons";
+import { push } from "redux-first-history";
 
-- Containers are the controllers of the components, in the containers we make the api calls, manage the state, and the logic of the interaction (button press, guesture movement, ...).
+import { RootState } from "&store/store";
 
-Example
+/**
+ * These are actions imported from the feature slices.
+ * You can use 'useDispatch' hook or 'mapDispatchToProps'
+ * to dispatch these actions
+ */
+import { loginActions } from "./login.slice";
 
-```js
-import React, { useEffect, useState } from 'react';
+type ReduxProps = ConnectedProps<typeof connector>;
 
-import { ApiExampleComponent } from '&components/tabs/apiExample.component';
-import { getStarWarsCharacter } from '&api/starWars';
-
-const ApiExampleContainer = () => {
-  const [isLoading, setLoading] = useState<boolean>(true);
-  const [sent, setSent] = useState<boolean>(false);
-  const [response, setRespone] = useState<any>();
-
-  const apiCall = async () => {
-    if (sent) {
-      return;
+const LoginComponent = (props: ReduxProps) => {
+  const { logIn, isLoggedIn, push, previousLocations } = props;
+  /**
+   * useEffect perfeorms side-effects on component rendering.
+   * It takes a function for side-effects and a dependency list.
+   * When dependency list is empty, useEffect runs each time the component rerenders
+   * Adding variables to the dependency list will cause useEffect to run each time a variable changes
+   */
+  useEffect(() => {
+    // Write your side-effects here
+    if (isLoggedIn) {
+      if (previousLocations.length > 1)
+        push(previousLocations[previousLocations.length - 1].location.pathname);
+      else push("/home");
     }
-    setSent(true);
-    const res = await getStarWarsCharacter(1);
-    setRespone(res);
-    setLoading(false);
+  }, [isLoggedIn, previousLocations, previousLocations.length, push]);
+
+  const handleLoginFormSubmit = (values: any) => {
+    logIn(values);
   };
 
-  useEffect(() => {
-    apiCall();
-  }, []);
-
-  return isLoading ? null : (
-    <ApiExampleComponent title="ApiExampleContainer" characterName={response.name} />
-  );
-};
-
-export { ApiExampleContainer };
-
-```
-
-#### components/Styled
-
-- Styled is the place where the repetitve components lives, when making a styled component make it as generic as possible so that it can be used in multiple screns.
-
-Example
-
-```js
-import React from 'react';
-import { View, Text, StyleSheet, Button } from 'react-native';
-
-interface Props {
-  /** A text to be displayed in the center of this component */
-  title: string;
-
-  /** A text to be displayed on the Button */
-  buttonTitle: string;
-
-  /* adding '?' means this property is optional, and we'll handle the default behaviour */
-  /** A function to be exectued when the button is pressed */
-  buttonHandler?: () => void;
-}
-
-const CutsomButton = (props: Props) => {
-  const { title, buttonHandler, buttonTitle } = props;
-
-  /* If buttonHander is undefined use the default behaviour */
-  const onPressButton =
-    buttonHandler ||
-    (() => {
-      console.log(`pressed the ${buttonTitle} `);
-    });
-
   return (
-    <View style={styles.conatiner}>
-      <Text>{title}</Text>
-      <Button title={buttonTitle} onPress={() => onPressButton()} />
-    </View>
+    <Col xs={24} sm={24} md={18} lg={8} xl={8}>
+      <Card bordered={false}>
+        <h1>Login Page</h1>
+        <Form
+          name="normal_login"
+          initialValues={{ remember: true }}
+          onFinish={handleLoginFormSubmit}
+        >
+          <Form.Item
+            name="email"
+            rules={[
+              { required: true, message: "Please input your email!" },
+              { type: "email", message: "Please enter a valid email!" },
+            ]}
+          >
+            <Input
+              prefix={<UserOutlined className="site-form-item-icon" />}
+              placeholder="Username"
+            />
+          </Form.Item>
+          <Form.Item
+            name="password"
+            rules={[
+              { required: true, message: "Please input your Password!" },
+              {
+                min: 8,
+                message: "Password should be at least 8 character long!",
+              },
+            ]}
+          >
+            <Input
+              prefix={<LockOutlined className="site-form-item-icon" />}
+              type="password"
+              placeholder="Password"
+            />
+          </Form.Item>
+          <Form.Item>
+            <Form.Item name="remember" valuePropName="checked" noStyle>
+              <Checkbox>Remember me</Checkbox>
+            </Form.Item>
+
+            <a href="/">Forgot password</a>
+          </Form.Item>
+
+          <Form.Item>
+            <Button type="primary" htmlType="submit" block>
+              Log in
+            </Button>
+            Or <a href="/register">register now!</a>
+          </Form.Item>
+        </Form>
+      </Card>
+    </Col>
   );
 };
 
-const styles = StyleSheet.create({
-  conatiner: {
-    alignItems: 'center',
-    flex: 1,
-    justifyContent: 'center',
-  },
+/**
+ * Maps state variables from redux store to props of currect component
+ * @param state
+ */
+const mapStateToProps = (state: RootState) => ({
+  // Map your redux state to your props here
+  isLoggedIn: state.login.isLoggedIn,
+  previousLocations: state.router.previousLocations,
 });
 
-export { CutsomButton };
-
-```
-
-#### api
-
-- The folder that holds the api calles in details, we write the logic of the api call and export a simple function to be called easily in the container.
-
-Example
-
-```js
-import Axois from 'axios';
-
-const getStarWarsCharacter = async (id: number) => {
-  let result;
-  try {
-    result = await Axois.get(`https://swapi.dev/api/people/${id}/`);
-  } catch (error) {
-    result = {
-      data: {
-        error: 'Failed',
-      },
-    };
-  }
-
-  return result.data;
+/**
+ * Maps actions from slices to props
+ */
+const mapDispatchToProps = {
+  // map your actions here 
+  logIn: loginActions.makeLoginApiCall,
+  push: push,
 };
 
-export { getStarWarsCharacter };
-```
+/**
+ * Connects component to redux store
+ */
+const connector = connect(mapStateToProps, mapDispatchToProps);
+const LoginComponentRedux = connector(LoginComponent);
 
-#### redux
-
-- We'll use redux as a global state managment, if you feel a state should be shared with multiple screens or components then save the state in redux, e.g: sharing the username with other screens.
-
-Example
-
-dispatch (set state)
-
-```js
-import { useDispatch } from 'react-redux';
-const App = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(setUsername(loadData('username')));
-  }, [dispatch]);
-.
-.
-.
-```
-useSelector (get state)
-
-```js
-import { useSelector } from 'react-redux';
-
-const HomeContainer = () => {
-  const { username } = useSelector((state: any) => state.kyc);
-.
-.
-.
+export { LoginComponentRedux as LoginComponent };
 
 ```
-
-#### redux/actions
-
-- Actions are payloads of information that send data from your application to your store. They are the only source of information for the store. You send them to the store using store. dispatch().
-Example
-
-```js
-import { KYC } from '../constants';
-
-const setUsername = (username: string) => {
-  return {
-    type: KYC.SET_USERNAME,
-    payload: username,
-  };
-};
-
-export { setUsername };
-
-```
-
-#### redux/reducers
-
-- Reducers specify how the application's state changes in response to action. The reducer is a function that takes the previous state and an action.
-Example
-
-```js
-import { KYC } from '../constants';
-
-const initialState = {
-  username: '',
-  password: '',
-};
-
-const KycReducer = (state = initialState, action: any) => {
-  switch (action.type) {
-    case KYC.SET_USERNAME:
-      return {
-        ...state,
-        username: action.payload,
-      };
-    default:
-      return state;
-  }
-};
-
-export { KycReducer };
-```
-
-#### redux/constants
-
-- We define all the constancts (type of action) for consistency.
-Example
-
-```js
-export const SET_USERNAME = 'SET_USERNAME';
-export const SET_PASSWORD = 'SET_PASSWORD';
-```
-
-#### realm
-
-- Realm is used for local storage
-Example
-
-Store Data:
-
-```js
-import React, { useState } from 'react';
-
-import { OnboardingComponent } from '&app/components/onboarding/onboarding.component';
-import { storeData } from '&realm';
-
-const OnboardingContainer = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-
-  const storeCredentials = () => {
-    storeData({ username });
-    storeData({ password });
-  };
-
-  return (
-    <OnboardingComponent
-      buttonHandler={() => {
-        storeCredentials();
-      }}
-      buttonTitle="Click me!"
-      onUsernameChange={(text) => setUsername(text)}
-      onPasswordChange={(text) => setPassword(text)}
-    />
-  );
-};
-
-export { OnboardingContainer };
-```
-
-Load Data
-  
-
-```js
-import { isEmpty, loadData } from '&realm';
-
-const App = () => {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    if (!isEmpty()) {
-      dispatch(setUsername(loadData('username')));
-    }
-  }, [dispatch]);
-  .
-  .
-  .
-  .
-```
-
-
-#### utils
-
-- Helper functions that might be useful for multiple files/containers, such as concatination of 2 json objects, hashing function, ...
-
-#### config
-
-- global projects configuration that will be used throught out the project, such as colors and strings.
 
 #### cli
 
-- command line tool for generating styled component, component container, and containers.
-- run `yarn cli:install` to download the cli dependencies then `yarn cli:create` to start the interactive cli.
+The command line tool is used to generating styled components and features.
+
+Example
+
+![Drag Racing](./readme/cli.PNG)
+
+Notice that the `path` option enables nested styled component or nested features. For example, form styled components may all be under the same folder in styled.
+
 
 ## Features
 
-- redux global state managment
-- realm local storage
-- cli tool for files generation
-- path alias
-- using typescirpt instead of javascript
+- [Typescript](https://www.typescriptlang.org/) for scalability, code clarity, ease of debugging, etc ... 
+- [redux-toolkit](https://redux-toolkit.js.org/) toolset for efficient Redux development
+- [redux-persist](https://github.com/rt2zz/redux-persist) to persist and rehydrate Redux store
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start) for routing, with [redux-first-history](https://github.com/salvoravida/redux-first-history) middleware
+- [ant-design](https://ant.design/) for responsive high quality reusable components and forms
+- fully functional components
+- cli tool to generate template files that follow project pattern.
+- path aliases to reduce import statements' length 
 
 ## Suggestions
 
@@ -384,9 +347,4 @@ const App = () => {
 - Todo Tree
 - Better comments
 
-
-#### List of Learing Resources
-
-- [typescirpt clean code](https://github.com/labs42io/clean-code-typescript)
-- [Learn React native](https://youtu.be/Hf4MJH0jDb4)
 

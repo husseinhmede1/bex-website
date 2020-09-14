@@ -27,8 +27,12 @@ const App = (props: AppProps & ReduxProps) => {
     <Router history={history}>
       {/* App main routing switch */}
       <Switch>
-        {/* TODO remove demo routes and add your's */}
+        {/* TODO remove the coming demo routes and add your's */}
         <Route exact path="/" component={LandingComponent} />
+
+        {/* The next line is important for electron in production. Do not remove. */}
+        {window.location.pathname.includes("index.html") && <Redirect to="/" />}
+
         <Route exact path="/login" component={LoginComponent} />
         <PrivateRoute
           exact
@@ -36,9 +40,10 @@ const App = (props: AppProps & ReduxProps) => {
           component={HomeComponent}
           isAuthenticated={isAuthenticated}
         />
+
         {/* TODO This block handles unmatched routes. Add your custom 404 component */}
         <Route path="/404" render={() => <div>page not found</div>} />
-        <Redirect to="/" />
+        <Redirect to="/404" />
       </Switch>
     </Router>
   );

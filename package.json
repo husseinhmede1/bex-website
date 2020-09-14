@@ -33,8 +33,7 @@
     "react-scripts": "3.4.3",
     "redux-first-history": "^4.5.0",
     "redux-persist": "^6.0.0",
-    "typescript": "~3.8.2",
-    "windows-build-tools": "^5.2.2"
+    "typescript": "~3.8.2"
   },
   "scripts": {
     "start": "react-app-rewired start",

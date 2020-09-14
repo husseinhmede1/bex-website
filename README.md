@@ -13,6 +13,7 @@ This is a React.js template fully written in Typescript. The template is based o
 |     `yarn test`              |    Launches the test runner in the interactive watch mode  |
 |     `yarn build`             |    Builds the app for production to the build folder       |
 |     `yarn serve`             |    Starts a static server to serve production build        |
+|     `yarn electron-dev`      |    Runs as desktop app in dev mode                         |
 |     `yarn electron-pack`     |    Builds desktop app package                              |
 |     `yarn cli:install`       |    Downloads the interactive cli dependencies              |
 |     `yarn cli:create`        |    Generate template file/s using the cli tool             |
@@ -37,10 +38,11 @@ This is a React.js template fully written in Typescript. The template is based o
 * Web:
     * run `yarn build` to perform production build
     * run `yarn serve` to serve production build locally
-* Windows:
-    * run `yarn --add-python-to-path='true' --debug add global windows-build-tools` to install windows build tools (run as adminstrator / super user )
-    * run `yarn add grpc --build-from-source`
-    * run `yarn electron-pack` to package as desktop app
+* Desktop:
+  Electron-packager supports packaging the React app on multiple desktop platforms (windows, linuk, MacOS). However, packaging for windows requires the extra step of downloading windows-build-tools. 
+    * Windows: run the global command `npm --add-python-to-path='true' --debug install --global windows-build-tools` (or yarn equivalent) to install windows build tools (run as adminstrator)
+    * run `yarn electron-pack` to package as desktop app (This may take time depending on app size and hardware)
+  Note: To build for desktop in dev-mode, just run `yarn electron-dev`.
 
 ## Structure
 

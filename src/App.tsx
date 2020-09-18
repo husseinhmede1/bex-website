@@ -20,32 +20,37 @@ type AppProps = {
 };
 
 const App = (props: AppProps & ReduxProps) => {
-  const { history, isAuthenticated } = props;
+  const { history, isAuthenticated, pathname } = props;
 
   return (
-    /** Router connected to redux, here redux is used for navigation integrity */
-    <Router history={history}>
-      {/* App main routing switch */}
-      <Switch>
-        {/* TODO remove the coming demo routes and add your's */}
-        <Route exact path="/" component={LandingComponent} />
+    <>
+      <h1>{pathname}</h1>
 
-        {/* The next line is important for electron in production. Do not remove. */}
-        {window.location.pathname.includes("index.html") && <Redirect to="/" />}
+      <Router history={history}>
+        {/* App main routing switch */}
+        <Switch>
+          {/* TODO remove the coming demo routes and add your's */}
+          <Route exact path="/" component={LandingComponent} />
 
-        <Route exact path="/login" component={LoginComponent} />
-        <PrivateRoute
-          exact
-          path="/home"
-          component={HomeComponent}
-          isAuthenticated={isAuthenticated}
-        />
+          {/* The next line is important for electron in production. Do not remove. */}
+          {/* {window.location.pathname.includes("index.html") && (
+            <Redirect to="/" />
+          )} */}
 
-        {/* TODO This block handles unmatched routes. Add your custom 404 component */}
-        <Route path="/404" render={() => <div>page not found</div>} />
-        <Redirect to="/404" />
-      </Switch>
-    </Router>
+          <Route exact path="/login" component={LoginComponent} />
+          <PrivateRoute
+            exact
+            path="/home"
+            component={HomeComponent}
+            isAuthenticated={isAuthenticated}
+          />
+
+          {/* TODO This block handles unmatched routes. Add your custom 404 component */}
+          <Route path="/404" render={() => <div>page not found</div>} />
+          <Redirect to="/404" />
+        </Switch>
+      </Router>
+    </>
   );
 };
 
@@ -56,6 +61,7 @@ const App = (props: AppProps & ReduxProps) => {
 const mapStateToProps = (state: RootState) => ({
   // TODO change this to your real auth validator
   isAuthenticated: state.login.isLoggedIn,
+  pathname: state.router.location.pathname,
 });
 
 /**

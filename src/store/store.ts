@@ -4,7 +4,7 @@ import {
   ThunkAction,
   Action,
 } from "@reduxjs/toolkit";
-import { createBrowserHistory } from "history";
+import { createHashHistory } from "history";
 import { createReduxHistoryContext } from "redux-first-history";
 import {
   persistStore,
@@ -29,7 +29,7 @@ const {
   routerReducer,
 } = createReduxHistoryContext({
   /** Browser History */
-  history: createBrowserHistory(),
+  history: createHashHistory({ hashType: "slash", basename: "/" }),
 
   /** Reducer key */
   routerReducerKey: "router",

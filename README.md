@@ -202,7 +202,6 @@ import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { push } from "redux-first-history";
 
 import { RootState } from "&store/store";
-
 /**
  * These are actions imported from the feature slices.
  * You can use 'useDispatch' hook or 'mapDispatchToProps'
@@ -213,7 +212,7 @@ import { loginActions } from "./login.slice";
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const LoginComponent = (props: ReduxProps) => {
-  const { logIn, isLoggedIn, push, previousLocations } = props;
+  const { logIn, isLoggedIn, push } = props;
   /**
    * useEffect perfeorms side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
@@ -223,11 +222,9 @@ const LoginComponent = (props: ReduxProps) => {
   useEffect(() => {
     // Write your side-effects here
     if (isLoggedIn) {
-      if (previousLocations.length > 1)
-        push(previousLocations[previousLocations.length - 1].location.pathname);
-      else push("/home");
+      push("/home");
     }
-  }, [isLoggedIn, previousLocations, previousLocations.length, push]);
+  }, [isLoggedIn, push]);
 
   const handleLoginFormSubmit = (values: any) => {
     logIn(values);
@@ -275,14 +272,14 @@ const LoginComponent = (props: ReduxProps) => {
               <Checkbox>Remember me</Checkbox>
             </Form.Item>
 
-            <a href="/">Forgot password</a>
+            <a href="#/">Forgot password</a>
           </Form.Item>
 
           <Form.Item>
             <Button type="primary" htmlType="submit" block>
               Log in
             </Button>
-            Or <a href="/register">register now!</a>
+            Or <a href="#/register">register now!</a>
           </Form.Item>
         </Form>
       </Card>
@@ -297,16 +294,16 @@ const LoginComponent = (props: ReduxProps) => {
 const mapStateToProps = (state: RootState) => ({
   // Map your redux state to your props here
   isLoggedIn: state.login.isLoggedIn,
-  previousLocations: state.router.previousLocations,
 });
 
 /**
  * Maps actions from slices to props
  */
 const mapDispatchToProps = {
-  // map your actions here 
+  // map your actions here ex:
+  // increment : counterActions.increment
   logIn: loginActions.makeLoginApiCall,
-  push: push,
+  push,
 };
 
 /**
@@ -316,6 +313,7 @@ const connector = connect(mapStateToProps, mapDispatchToProps);
 const LoginComponentRedux = connector(LoginComponent);
 
 export { LoginComponentRedux as LoginComponent };
+
 
 ```
 

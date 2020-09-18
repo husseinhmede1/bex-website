@@ -29,7 +29,7 @@ const HomeComponent = (props: ReduxProps) => {
   return (
     <>
       <h1>This is a protected Home Page</h1>
-      <a href="/">Go to Landing</a>
+      <a href="#/">Go to Landing</a>
       <Button danger type="text" onClick={logout}>
         Logout
       </Button>

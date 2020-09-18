@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
-import { Input, Button, Form, Card, Checkbox, Col } from "antd";
+import { Input, Button, Form, Card, Checkbox, Col, Row } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { push } from "redux-first-history";
+import { useTranslation } from "react-i18next";
 
 import { RootState } from "&store/store";
 /**
@@ -16,6 +17,12 @@ type ReduxProps = ConnectedProps<typeof connector>;
 
 const LoginComponent = (props: ReduxProps) => {
   const { logIn, isLoggedIn, push } = props;
+  /**
+   * i18n translation function.
+   * Specify which namespace to use.
+   */
+  const { t } = useTranslation(["login"]);
+
   /**
    * useEffect perfeorms side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
@@ -34,59 +41,61 @@ const LoginComponent = (props: ReduxProps) => {
   };
 
   return (
-    <Col xs={24} sm={24} md={18} lg={8} xl={8}>
-      <Card bordered={false}>
-        <h1>Login Page</h1>
-        <Form
-          name="normal_login"
-          initialValues={{ remember: true }}
-          onFinish={handleLoginFormSubmit}
-        >
-          <Form.Item
-            name="email"
-            rules={[
-              { required: true, message: "Please input your email!" },
-              { type: "email", message: "Please enter a valid email!" },
-            ]}
+    <Row justify={"center"}>
+      <Col xs={24} sm={24} md={18} lg={8} xl={8}>
+        <Card bordered={false}>
+          <h1>{t("LOGIN_PAGE")}</h1>
+          <Form
+            name="normal_login"
+            initialValues={{ remember: true }}
+            onFinish={handleLoginFormSubmit}
           >
-            <Input
-              prefix={<UserOutlined className="site-form-item-icon" />}
-              placeholder="Username"
-            />
-          </Form.Item>
-          <Form.Item
-            name="password"
-            rules={[
-              { required: true, message: "Please input your Password!" },
-              {
-                min: 8,
-                message: "Password should be at least 8 character long!",
-              },
-            ]}
-          >
-            <Input
-              prefix={<LockOutlined className="site-form-item-icon" />}
-              type="password"
-              placeholder="Password"
-            />
-          </Form.Item>
-          <Form.Item>
-            <Form.Item name="remember" valuePropName="checked" noStyle>
-              <Checkbox>Remember me</Checkbox>
+            <Form.Item
+              name="email"
+              rules={[
+                { required: true, message: t("REQUIRED_EMAIL") },
+                { type: "email", message: t("VALID_EMAIL") },
+              ]}
+            >
+              <Input
+                prefix={<UserOutlined className="site-form-item-icon" />}
+                placeholder={t("USER_NAME")}
+              />
+            </Form.Item>
+            <Form.Item
+              name="password"
+              rules={[
+                { required: true, message: t("REQUIRED_PASSWORD") },
+                {
+                  min: 8,
+                  message: t("MIN_LENGTH_PASSWORD"),
+                },
+              ]}
+            >
+              <Input
+                prefix={<LockOutlined className="site-form-item-icon" />}
+                type="password"
+                placeholder={t("PASSWORD")}
+              />
+            </Form.Item>
+            <Form.Item>
+              <Form.Item name="remember" valuePropName="checked" noStyle>
+                <Checkbox>{t("REMEMBER_ME")}</Checkbox>
+              </Form.Item>
+
+              <a href="#/">{t("FORGOT_PASSWORD")}</a>
             </Form.Item>
 
-            <a href="#/">Forgot password</a>
-          </Form.Item>
-
-          <Form.Item>
-            <Button type="primary" htmlType="submit" block>
-              Log in
-            </Button>
-            Or <a href="#/register">register now!</a>
-          </Form.Item>
-        </Form>
-      </Card>
-    </Col>
+            <Form.Item>
+              <Button type="primary" htmlType="submit" block>
+                {t("LOG_IN")}
+              </Button>
+              {t("OR")} <a href="#/register">{t("REGISTER_NOW")}</a>
+            </Form.Item>
+          </Form>
+        </Card>
+      </Col>
+    </Row>
   );
 };
 

@@ -2,6 +2,8 @@ import React from "react";
 import { Router, Route, Switch, Redirect } from "react-router";
 import { connect, ConnectedProps } from "react-redux";
 import { RootState } from "&store/store";
+import { Button, Row } from "antd";
+import { useTranslation } from "react-i18next";
 import { History } from "history";
 
 import "./App.css";
@@ -20,12 +22,11 @@ type AppProps = {
 };
 
 const App = (props: AppProps & ReduxProps) => {
-  const { history, isAuthenticated, pathname } = props;
+  const { history, isAuthenticated } = props;
+  const { i18n } = useTranslation();
 
   return (
     <>
-      <h1>{pathname}</h1>
-
       <Router history={history}>
         {/* App main routing switch */}
         <Switch>
@@ -50,6 +51,10 @@ const App = (props: AppProps & ReduxProps) => {
           <Redirect to="/404" />
         </Switch>
       </Router>
+      <Row justify={"center"}>
+        <Button onClick={() => i18n.changeLanguage("en")}>en</Button>
+        <Button onClick={() => i18n.changeLanguage("ar")}>ar</Button>
+      </Row>
     </>
   );
 };
@@ -61,7 +66,6 @@ const App = (props: AppProps & ReduxProps) => {
 const mapStateToProps = (state: RootState) => ({
   // TODO change this to your real auth validator
   isAuthenticated: state.login.isLoggedIn,
-  pathname: state.router.location.pathname,
 });
 
 /**

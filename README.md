@@ -60,6 +60,7 @@ The project root directory structure is as follows:
   '        |       |-- home',
   '        |       |-- landing',
   '        |       |-- login',
+  '        |-- locales',
   '        |-- route',
   '        |-- store',
   '        |-- styled',
@@ -73,7 +74,8 @@ As mentioned before, following the "features" or "ducks" pattern organizes the f
 * [`src/assets`](src/assets)      for assets (.png, .svg, etc ...)
 * [`src/config`](src/config)      for configuration files (colors, headers, strings, etc ...)
 * [`src/features`](src/features)    for project features (login, register, dashboard, settings ...)
-* [`src/roure`](src/roure)       for router middlewares (protectedRoutes ...)
+* [`src/locales`](src/locales)       for i18n localization files (en, ar ...)
+* [`src/roure`](src/route)       for router middlewares (protectedRoutes ...)
 * [`src/store`](src/store)       for redux configurations (combineReducers, middlewares, persist etc ...)
 * [`src/styled`](src/styled)      for multiple use stateless styled components 
 
@@ -194,12 +196,14 @@ export const loginActions = { ...loginSlice.actions, makeLoginApiCall };
 ```
 
 ```tsx
+
 // login.component.tsx
 import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
-import { Input, Button, Form, Card, Checkbox, Col } from "antd";
+import { Input, Button, Form, Card, Checkbox, Col, Row } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { push } from "redux-first-history";
+import { useTranslation } from "react-i18next";
 
 import { RootState } from "&store/store";
 /**
@@ -213,6 +217,13 @@ type ReduxProps = ConnectedProps<typeof connector>;
 
 const LoginComponent = (props: ReduxProps) => {
   const { logIn, isLoggedIn, push } = props;
+
+  /**
+   * i18n translation function.
+   * Takes namespace/s as params and nothing for default.
+   */
+  const { t } = useTranslation(["login"]);
+
   /**
    * useEffect perfeorms side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
@@ -231,59 +242,61 @@ const LoginComponent = (props: ReduxProps) => {
   };
 
   return (
-    <Col xs={24} sm={24} md={18} lg={8} xl={8}>
-      <Card bordered={false}>
-        <h1>Login Page</h1>
-        <Form
-          name="normal_login"
-          initialValues={{ remember: true }}
-          onFinish={handleLoginFormSubmit}
-        >
-          <Form.Item
-            name="email"
-            rules={[
-              { required: true, message: "Please input your email!" },
-              { type: "email", message: "Please enter a valid email!" },
-            ]}
+    <Row justify={"center"}>
+      <Col xs={24} sm={24} md={18} lg={8} xl={8}>
+        <Card bordered={false}>
+          <h1>{t("LOGIN_PAGE")}</h1>
+          <Form
+            name="normal_login"
+            initialValues={{ remember: true }}
+            onFinish={handleLoginFormSubmit}
           >
-            <Input
-              prefix={<UserOutlined className="site-form-item-icon" />}
-              placeholder="Username"
-            />
-          </Form.Item>
-          <Form.Item
-            name="password"
-            rules={[
-              { required: true, message: "Please input your Password!" },
-              {
-                min: 8,
-                message: "Password should be at least 8 character long!",
-              },
-            ]}
-          >
-            <Input
-              prefix={<LockOutlined className="site-form-item-icon" />}
-              type="password"
-              placeholder="Password"
-            />
-          </Form.Item>
-          <Form.Item>
-            <Form.Item name="remember" valuePropName="checked" noStyle>
-              <Checkbox>Remember me</Checkbox>
+            <Form.Item
+              name="email"
+              rules={[
+                { required: true, message: t("REQUIRED_EMAIL") },
+                { type: "email", message: t("VALID_EMAIL") },
+              ]}
+            >
+              <Input
+                prefix={<UserOutlined className="site-form-item-icon" />}
+                placeholder={t("USER_NAME")}
+              />
+            </Form.Item>
+            <Form.Item
+              name="password"
+              rules={[
+                { required: true, message: t("REQUIRED_PASSWORD") },
+                {
+                  min: 8,
+                  message: t("MIN_LENGTH_PASSWORD"),
+                },
+              ]}
+            >
+              <Input
+                prefix={<LockOutlined className="site-form-item-icon" />}
+                type="password"
+                placeholder={t("PASSWORD")}
+              />
+            </Form.Item>
+            <Form.Item>
+              <Form.Item name="remember" valuePropName="checked" noStyle>
+                <Checkbox>{t("REMEMBER_ME")}</Checkbox>
+              </Form.Item>
+
+              <a href="#/">{t("FORGOT_PASSWORD")}</a>
             </Form.Item>
 
-            <a href="#/">Forgot password</a>
-          </Form.Item>
-
-          <Form.Item>
-            <Button type="primary" htmlType="submit" block>
-              Log in
-            </Button>
-            Or <a href="#/register">register now!</a>
-          </Form.Item>
-        </Form>
-      </Card>
-    </Col>
+            <Form.Item>
+              <Button type="primary" htmlType="submit" block>
+                {t("LOG_IN")}
+              </Button>
+              {t("OR")} <a href="#/register">{t("REGISTER_NOW")}</a>
+            </Form.Item>
+          </Form>
+        </Card>
+      </Col>
+    </Row>
   );
 };
 
@@ -314,8 +327,101 @@ const LoginComponentRedux = connector(LoginComponent);
 
 export { LoginComponentRedux as LoginComponent };
 
+```
+
+#### i18n
+
+This template supports adding internationalization (i18n) for multiple languages. [`i18n.ts`](src/config/i18n.ys) under the [`config`](src/config) folder contains configuration for i18n. The locales provided for this configuration are located under [`locales`](src/locales) folder. Namely, [`locales`](src/locales) include files such as [`en.ts`](src/locales/en.ts) for English and [`ar.ts`](src/locales/ar.ts) for Arabic. The structure of these files is as follows: 
+
+Example
+
+```ts
+// ar.ts
+import { loginNameSpace } from "&features/demo/login/login.i18n";
+import { homeNameSpace } from "&features/demo/home/home.i18n";
+import { landingNameSpace } from "&features/demo/landing/landing.i18n";
+
+/**
+ * Arabic translation resources.
+ * Each object correspond to a namespace related to a feature.
+ */
+let ar = {
+  /** login namespace */
+  login: loginNameSpace.ar,
+
+  /** login namespace */
+  home: homeNameSpace.ar,
+
+  /** login namespace */
+  landing: landingNameSpace.ar,
+};
+
+export default ar;
 
 ```
+These properties are called *NameSpaces* and based on the project structure, each feature should have its own namespace with translations if it should support localization.
+
+Example
+
+```ts
+// login.i18n.ts 
+
+/**
+ * i18n login namespace
+ * Consist of English and arabic translations
+ */
+export const loginNameSpace = {
+  en: {
+    LOGIN_PAGE: "Login Page",
+    USER_NAME: "username",
+    REQUIRED_EMAIL: "Please input your email!",
+    VALID_EMAIL: "Please enter a valid email!",
+    PASSWORD: "password",
+    REQUIRED_PASSWORD: "Please input your Password!",
+    MIN_LENGTH_PASSWORD: "Password should be at least 8 character long!",
+    FORGOT_PASSWORD: "Forgot password?",
+    REMEMBER_ME: "Remember Me",
+    LOG_IN: "Log In",
+    OR: "OR",
+    REGISTER_NOW: "register now!",
+  },
+  ar: {
+    LOGIN_PAGE: "صفحة تسجيل الدخول",
+    USER_NAME: "اسم المستخدم",
+    REQUIRED_EMAIL: "الرجاء ادخال البريد الالكتروني",
+    VALID_EMAIL: "الرجاء التحقق من صحة البريد الالكتروني",
+    PASSWORD: "كلمة المرور",
+    REQUIRED_PASSWORD: "الرجاء ادخال كلمة المرور",
+    MIN_LENGTH_PASSWORD: "ينبغي ان تتألف كلمة المرور من ثمانية احرف فأكثر",
+    FORGOT_PASSWORD: "نسيت كلمة المرور؟",
+    REMEMBER_ME: "تذكر بياناتي",
+    LOG_IN: "تسجيل الدخول",
+    OR: "او",
+    REGISTER_NOW: "قم بالتسجيل الان",
+  },
+};
+
+```
+Whenever a new translation namespace file is added for a new feature, it should be specified in locale files under [`locales`](src/locales). 
+
+To use translations inside components, the `useTranslation` hook should be imported and initialized with the component's feature namespace.
+
+Example
+
+```ts
+// login.s
+  
+// Importing
+import { useTranslation } from "react-i18next";
+
+// Initialization
+const { t } = useTranslation(["login"]);
+
+// Usage (LOGIN_PAGE is a key specified in login.i18n.ts file)
+ <h1>{t("LOGIN_PAGE")}</h1>
+
+```
+
 
 #### cli
 
@@ -328,11 +434,12 @@ Example
 Notice that the `path` option enables nested styled component or nested features. For example, form styled components may all be under the same folder in styled.
 
 
-## Features
+## Project Features
 
 - [Typescript](https://www.typescriptlang.org/) for scalability, code clarity, ease of debugging, etc ... 
 - [redux-toolkit](https://redux-toolkit.js.org/) toolset for efficient Redux development
 - [redux-persist](https://github.com/rt2zz/redux-persist) to persist and rehydrate Redux store
+- [react-i18next](https://react.i18next.com/) for internationalization and localization
 - [react-router-dom](https://reactrouter.com/web/guides/quick-start) for routing, with [redux-first-history](https://github.com/salvoravida/redux-first-history) middleware
 - [ant-design](https://ant.design/) for responsive high quality reusable components and forms
 - [electron-packager](https://github.com/electron/electron-packager) to compile as desktop apps
@@ -347,6 +454,8 @@ To remove demo files:
 1. Delete `demo` folder from [`features`](src/features) folder
 2. Remove related reducers in the `combineReducers` function in [`rootReducer.ts`](src/store/rootReducer.ts)
 3. Remove routes that use demo components in [`App.tsx`](src/App.tsx)
-4. Verify that [`App.tsx`](src/App.tsx) does not use demo reducers in connect.
+4. Verify that demo namespaces included in locale files under [`locales`](src/locales) folder are removed.
+5. Verify that [`App.tsx`](src/App.tsx) does not use demo reducers in connect.
+
 
 

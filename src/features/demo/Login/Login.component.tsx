@@ -17,9 +17,10 @@ type ReduxProps = ConnectedProps<typeof connector>;
 
 const LoginComponent = (props: ReduxProps) => {
   const { logIn, isLoggedIn, push } = props;
+
   /**
    * i18n translation function.
-   * Specify which namespace to use.
+   * Takes namespace/s as params and nothing for default.
    */
   const { t } = useTranslation(["login"]);
 

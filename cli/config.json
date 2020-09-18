@@ -8,6 +8,7 @@
   "sliceExt": ".slice.tsx",
   "slice": ".slice",
   "typeExt": ".type.ts",
+  "i18nExt": ".i18n.ts",
   "type": ".type",
   "args": {
     "name": {

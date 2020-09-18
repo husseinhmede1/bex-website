@@ -16,10 +16,6 @@ i18n
     fallbackLng: "en",
     debug: false,
 
-    // have a common namespace used around the full app
-    ns: ["login"],
-    defaultNS: "translations",
-
     keySeparator: false, // we use content as keys
 
     interpolation: {

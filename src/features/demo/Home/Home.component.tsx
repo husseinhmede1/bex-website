@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { Button } from "antd";
+import { useTranslation } from "react-i18next";
 
 import { RootState } from "&store/store";
 /**
@@ -15,6 +16,7 @@ type ReduxProps = ConnectedProps<typeof connector>;
 
 const HomeComponent = (props: ReduxProps) => {
   const { logout } = props;
+  const { t } = useTranslation(["home"]);
 
   /**
    * useEffect performs side-effects on component rendering.
@@ -28,10 +30,10 @@ const HomeComponent = (props: ReduxProps) => {
 
   return (
     <>
-      <h1>This is a protected Home Page</h1>
-      <a href="#/">Go to Landing</a>
+      <h1>{t("PROTECTED_HOME_PAGE")}</h1>
+      <a href="#/">{t("GO_LANDING")}</a>
       <Button danger type="text" onClick={logout}>
-        Logout
+        {t("LOGOUT")}
       </Button>
     </>
   );

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
+import { useTranslation } from "react-i18next";
 
 import { RootState } from "&store/store";
 /**
@@ -12,6 +13,8 @@ import { landingActions } from "./landing.slice";
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const LandingComponent = (props: ReduxProps) => {
+  const { t } = useTranslation(["landing"]);
+
   /**
    * useEffect performs side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
@@ -24,8 +27,8 @@ const LandingComponent = (props: ReduxProps) => {
 
   return (
     <>
-      <h1>This is an unprotected Landing Page</h1>
-      <a href="#/login">Login</a>
+      <h1>{t("UNPROTECTED_LANDING_PAGE")}</h1>
+      <a href="#/login">{t("LOG_IN")}</a>
     </>
   );
 };

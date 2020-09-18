@@ -3,6 +3,7 @@ const createFeatureTemplate = (name) => {
   return {
     componentTemplate: `import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
+import { useTranslation } from "react-i18next";
 
 import { RootState } from "&store/store";
 /**
@@ -15,6 +16,12 @@ import { ${name}Actions } from "./${name}.slice";
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const ${newName}Component = (props: ReduxProps) => {
+  /**
+   * i18n translation function.
+   * Takes namespace/s as params and nothing for default.
+   */
+  const { t } = useTranslation(["${name}"]); // Make sure namespace is added to locales
+
   /**
    * useEffect performs side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
@@ -155,6 +162,20 @@ export const ${name}Actions = { ...${name}Slice.actions, make${newName}ApiCall }
 export interface ${newName} {
   // Write your type declerations here
 }
+`,
+
+    i18nTemplate: `/**
+ * i18n ${name} namespace
+ * Consist of English and arabic translations
+ */
+export const loginNameSpace = {
+  en: {
+    // Write english key-mapping here
+  },
+  ar: {
+    // Write english key-mapping here
+  },
+};
 `,
   };
 };

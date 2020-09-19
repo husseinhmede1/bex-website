@@ -51,6 +51,7 @@ const App = (props: AppProps & ReduxProps) => {
           <Redirect to="/404" />
         </Switch>
       </Router>
+      {/* This block is for changing language */}
       <Row justify={"center"}>
         <Button onClick={() => i18n.changeLanguage("en")}>en</Button>
         <Button onClick={() => i18n.changeLanguage("ar")}>ar</Button>

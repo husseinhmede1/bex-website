@@ -64,6 +64,7 @@ The project root directory structure is as follows:
   '        |-- route',
   '        |-- store',
   '        |-- styled',
+  '        |-- utils',
   ''
 ```
 As mentioned before, following the "features" or "ducks" pattern organizes the folders in the following manner: 
@@ -78,6 +79,7 @@ As mentioned before, following the "features" or "ducks" pattern organizes the f
 * [`src/roure`](src/route)       for router middlewares (protectedRoutes ...)
 * [`src/store`](src/store)       for redux configurations (combineReducers, middlewares, persist etc ...)
 * [`src/styled`](src/styled)      for multiple use stateless styled components 
+* [`src/utils`](src/utils)      for utils used throughout the project 
 
 The content of [`feature`](src/features) and [`styled`](src/styled) folders is further explored here: 
 
@@ -410,7 +412,7 @@ Example
 
 ```ts
 // login.s
-  
+
 // Importing
 import { useTranslation } from "react-i18next";
 
@@ -422,6 +424,105 @@ const { t } = useTranslation(["login"]);
 
 ```
 
+#### route
+
+The template uses [react-router-dom](https://reactrouter.com/web/guides/quick-start) for routing between pages, with [redux-first-history](https://github.com/salvoravida/redux-first-history) as middleware to save routing history in redux. The template uses the function called `createHashHistory()` rather than `createBrowserHistory()` for a simple reason: `BrowserHistory` can only be used in browser environments, unlike `HashHistory` which supports browsers and file directories. Since the template can be packaged for multiple platforms (Web, Windows, macOS, linux ...), it needs to use `HashHistory` for routing. The router configuration with redux can be found in [`store.ts`](src/store/store.ts). Navigation to new routes can happen in two wayes:
+
+1. Clicking on an anchor link. (Note: since `HashRouter` is used, `href` should be of the form `#/<your specific path>`)
+
+2. Dispatching the `redux-first-history` actions `push`, `replace`, `go`, `goBack`, `goForward` using `useDispatch` hook, or using in `mapDispatchToProps`. (Note: the `pathname` passed to these methods is a regular pathname of the form `/<your specific path>`)
+
+Routes can be found in [`App.tsx`](src/App.tsx) wrapped with the `<Router />` component. In addition to regular routes, the template adds a protected route component [`<PrivateRoute />`](src/route/protectedRoute.tsx) that directs (or redirects) based on authentication. Exceptionally, an authentication boolean is passed as a `prop` to this component to decouple it from Redux and make it usable on its own.
+
+Example 
+
+```ts
+
+//App.tsx
+import React from "react";
+import { Router, Route, Switch, Redirect } from "react-router";
+import { connect, ConnectedProps } from "react-redux";
+import { RootState } from "&store/store";
+import { Button, Row } from "antd";
+import { useTranslation } from "react-i18next";
+import { History } from "history";
+
+import "./App.css";
+import "antd/dist/antd.css";
+import { PrivateRoute } from "&route/protectedRoute";
+
+// TODO remove demo routes
+import { HomeComponent } from "&features/demo/home/home.component";
+import { LandingComponent } from "&features/demo/landing/landing.component";
+import { LoginComponent } from "&features/demo/login/login.component";
+
+type ReduxProps = ConnectedProps<typeof connector>;
+type AppProps = {
+  /** Browser history for routing */
+  history: History<any>;
+};
+
+const App = (props: AppProps & ReduxProps) => {
+  const { history, isAuthenticated } = props;
+  const { i18n } = useTranslation();
+
+  return (
+    <>
+      <Router history={history}>
+        {/* App main routing switch */}
+        <Switch>
+          {/* TODO remove the coming demo routes and add your's */}
+          <Route exact path="/" component={LandingComponent} />
+          <Route exact path="/login" component={LoginComponent} />
+          <PrivateRoute
+            exact
+            path="/home"
+            component={HomeComponent}
+            isAuthenticated={isAuthenticated}
+          />
+
+          {/* TODO This block handles unmatched routes. Add your custom 404 component */}
+          <Route path="/404" render={() => <div>page not found</div>} />
+          <Redirect to="/404" />
+        </Switch>
+      </Router>
+      {/* This block is for changing language */}
+      <Row justify={"center"}>
+        <Button onClick={() => i18n.changeLanguage("en")}>en</Button>
+        <Button onClick={() => i18n.changeLanguage("ar")}>ar</Button>
+      </Row>
+    </>
+  );
+};
+
+/**
+ * Maps state variables from redux store to props of currect component
+ * @param state
+ */
+const mapStateToProps = (state: RootState) => ({
+  // TODO change this to your real auth validator
+  isAuthenticated: state.login.isLoggedIn,
+});
+
+/**
+ * Maps actions from slices to props
+ */
+const mapDispatchToProps = {};
+
+/**
+ * Connects component to redux store
+ */
+const connector = connect(mapStateToProps, mapDispatchToProps);
+const AppRedux = connector(App);
+
+export { AppRedux as App };
+
+```
+
+#### utils
+
+This folder includes general util files used throughout the project.
+
 
 #### cli
 
@@ -432,6 +533,18 @@ Example
 ![Drag Racing](./readme/cli.PNG)
 
 Notice that the `path` option enables nested styled component or nested features. For example, form styled components may all be under the same folder in styled.
+
+## path alias
+
+The template supports path aliases to shorten `import` statements. Ex : for accessing a deeply nested module from another, use `&<some module>/<some file>` instead of `../../<some module>/<some file>` and so on.
+
+For adding new path aliases, follow these two steps: 
+
+1. Add `"&<your alias>/*": ["path/to/your/alias/*"]` in [`tsconfig.paths.json`](tsconfig.paths.json)
+
+2. Add `"&<your alias>": path.resolve(__dirname, "path/to/your/alias")` in [`config-overrides.js`](config-overrides.js)
+
+Reload or restatrt your IDE or text editor for configurations to appear.
 
 
 ## Project Features

@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Router, Route, Switch, Redirect } from "react-router";
 import { connect, ConnectedProps } from "react-redux";
 import { RootState } from "&store/store";
-import { Button, Row } from "antd";
+import { Button, Row, ConfigProvider } from "antd";
 import { useTranslation } from "react-i18next";
 import { History } from "history";
 
@@ -25,19 +25,17 @@ const App = (props: AppProps & ReduxProps) => {
   const { history, isAuthenticated } = props;
   const { i18n } = useTranslation();
 
+  /** This useEffect rerenders dir */
+  useEffect(() => {}, [i18n.language]);
+
   return (
-    <>
+    /* This wrapper handles rtl and ltr directions for i18n */
+    <ConfigProvider direction={i18n.dir()}>
       <Router history={history}>
         {/* App main routing switch */}
         <Switch>
           {/* TODO remove the coming demo routes and add your's */}
           <Route exact path="/" component={LandingComponent} />
-
-          {/* The next line is important for electron in production. Do not remove. */}
-          {/* {window.location.pathname.includes("index.html") && (
-            <Redirect to="/" />
-          )} */}
-
           <Route exact path="/login" component={LoginComponent} />
           <PrivateRoute
             exact
@@ -56,7 +54,7 @@ const App = (props: AppProps & ReduxProps) => {
         <Button onClick={() => i18n.changeLanguage("en")}>en</Button>
         <Button onClick={() => i18n.changeLanguage("ar")}>ar</Button>
       </Row>
-    </>
+    </ConfigProvider>
   );
 };
 

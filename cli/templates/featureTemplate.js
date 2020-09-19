@@ -166,7 +166,7 @@ export interface ${newName} {
 
     i18nTemplate: `/**
  * i18n ${name} namespace
- * Consist of English and arabic translations
+ * Consists of English and arabic translations
  */
 export const loginNameSpace = {
   en: {

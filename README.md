@@ -36,13 +36,14 @@ This is a React.js template fully written in Typescript. The template is based o
 
 ## Production
 * Web:
-    * run `yarn build` to perform production build
+    * run `yarn build` to perform production build. Build files will be generated in a new directory `/build`.
     * run `yarn serve` to serve production build locally
 * Desktop:
-  Electron-packager supports packaging the React app on multiple desktop platforms (windows, linuk, MacOS). However, packaging for windows requires the extra step of downloading windows-build-tools. 
-    * Windows: run the global command `npm --add-python-to-path='true' --debug install --global windows-build-tools` (or yarn equivalent) to install windows build tools (run as adminstrator)
-    * run `yarn electron-pack` to package as desktop app (This may take time depending on app size and hardware)
-  Note: To build for desktop in dev-mode, just run `yarn electron-dev`.
+  Electron-packager supports packaging the React app for multiple desktop platforms (Windows, linux, MacOS). However, packaging for windows requires the extra step of downloading windows-build-tools. 
+    * (Windows only): run the global command `npm --add-python-to-path='true' --debug install --global windows-build-tools` (or yarn equivalent) to install windows build tools (run as adminstrator)
+    * run `yarn electron-pack` to package as desktop app (This may take time depending on app size and hardware). Build files will be generated in a new directory `/dist`
+  
+  Note: To test for desktop in dev-mode, just run `yarn electron-dev`.
 
 ## Structure
 
@@ -52,6 +53,7 @@ The project root directory structure is as follows:
   '|-- <root>',
   '    |-- cli',
   '    |-- public',
+  '    |-- readme',
   '    |-- src',
   '        |-- assets',
   '        |-- config',
@@ -71,6 +73,7 @@ As mentioned before, following the "features" or "ducks" pattern organizes the f
 
 * [`/cli`](cli)         for the interactive cli that generates project template files.
 * [`/public`](public)         for public files
+* [`/readme`](readme)         for assets used in [`README.md`](README.md)
 * [`/src`](src)            for all source files
 * [`src/assets`](src/assets)      for assets (.png, .svg, etc ...)
 * [`src/config`](src/config)      for configuration files (colors, headers, strings, etc ...)
@@ -80,8 +83,6 @@ As mentioned before, following the "features" or "ducks" pattern organizes the f
 * [`src/store`](src/store)       for redux configurations (combineReducers, middlewares, persist etc ...)
 * [`src/styled`](src/styled)      for multiple use stateless styled components 
 * [`src/utils`](src/utils)      for utils used throughout the project 
-
-The content of [`feature`](src/features) and [`styled`](src/styled) folders is further explored here: 
 
 #### features
 
@@ -331,7 +332,11 @@ export { LoginComponentRedux as LoginComponent };
 
 ```
 
-#### i18n
+
+
+#### styled
+
+#### locales & i18n
 
 This template supports adding internationalization (i18n) for multiple languages. [`i18n.ts`](src/config/i18n.ys) under the [`config`](src/config) folder contains configuration for i18n. The locales provided for this configuration are located under [`locales`](src/locales) folder. Namely, [`locales`](src/locales) include files such as [`en.ts`](src/locales/en.ts) for English and [`ar.ts`](src/locales/ar.ts) for Arabic. The structure of these files is as follows: 
 
@@ -351,10 +356,10 @@ let ar = {
   /** login namespace */
   login: loginNameSpace.ar,
 
-  /** login namespace */
+  /** home namespace */
   home: homeNameSpace.ar,
 
-  /** login namespace */
+  /** landing namespace */
   landing: landingNameSpace.ar,
 };
 
@@ -370,7 +375,7 @@ Example
 
 /**
  * i18n login namespace
- * Consist of English and arabic translations
+ * Consists of English and arabic translations
  */
 export const loginNameSpace = {
   en: {
@@ -426,11 +431,13 @@ const { t } = useTranslation(["login"]);
 
 #### route
 
-The template uses [react-router-dom](https://reactrouter.com/web/guides/quick-start) for routing between pages, with [redux-first-history](https://github.com/salvoravida/redux-first-history) as middleware to save routing history in redux. The template uses the function called `createHashHistory()` rather than `createBrowserHistory()` for a simple reason: `BrowserHistory` can only be used in browser environments, unlike `HashHistory` which supports browsers and file directories. Since the template can be packaged for multiple platforms (Web, Windows, macOS, linux ...), it needs to use `HashHistory` for routing. The router configuration with redux can be found in [`store.ts`](src/store/store.ts). Navigation to new routes can happen in two wayes:
+The template uses [react-router-dom](https://reactrouter.com/web/guides/quick-start) for routing between pages, with [redux-first-history](https://github.com/salvoravida/redux-first-history) as middleware to save routing history in redux. The template uses the function called `createHashHistory()` rather than `createBrowserHistory()` for a simple reason: `BrowserHistory` can only be used in browser environments, unlike `HashHistory` which supports browsers and file directories. Since the template can be packaged for multiple platforms (Web, Windows, macOS, linux ...), it needs to use `HashHistory` for routing. The router configuration with redux can be found in [`store.ts`](src/store/store.ts). Navigation to new routes can happen in two ways:
 
 1. Clicking on an anchor link. (Note: since `HashRouter` is used, `href` should be of the form `#/<your specific path>`)
 
 2. Dispatching the `redux-first-history` actions `push`, `replace`, `go`, `goBack`, `goForward` using `useDispatch` hook, or using in `mapDispatchToProps`. (Note: the `pathname` passed to these methods is a regular pathname of the form `/<your specific path>`)
+
+Redux-first-history will be the source of truth for routing location. It changes history based on dispatched actions or when `window.location.url` changes manually. This library has other useful features such as saving up to n previous paths in redux. 
 
 Routes can be found in [`App.tsx`](src/App.tsx) wrapped with the `<Router />` component. In addition to regular routes, the template adds a protected route component [`<PrivateRoute />`](src/route/protectedRoute.tsx) that directs (or redirects) based on authentication. Exceptionally, an authentication boolean is passed as a `prop` to this component to decouple it from Redux and make it usable on its own.
 
@@ -519,6 +526,8 @@ export { AppRedux as App };
 
 ```
 
+Other customized routing middlewares can be added based on usecases using the same method.
+
 #### utils
 
 This folder includes general util files used throughout the project.
@@ -526,15 +535,19 @@ This folder includes general util files used throughout the project.
 
 #### cli
 
-The command line tool is used for generating styled components and features.
+The command line tool is used for generating styled components and feature files.
 
 Example
 
 ![Drag Racing](./readme/cli.PNG)
 
-Notice that the `path` option enables nested styled component or nested features. For example, form styled components may all be under the same folder in styled.
+Notice that the `path` option enables nested styled component or nested features. For example, styled components reated to "forms" may all be under the same folder in styled.
 
-## path alias
+* For styled components, the cli tool generates `<filename>.styled.tsx` and `<filename>.styled.css` template files under `/styled/<customized path>/<filename>`
+
+* For features, the cli tool generates `<filename>.component.tsx`, `<filename>.slice.ts`, `<filename>.type.ts` and `<filename>.i18n.ts` template files under `/features/<customized path>/<filename>`
+
+### path alias
 
 The template supports path aliases to shorten `import` statements. Ex : for accessing a deeply nested module from another, use `&<some module>/<some file>` instead of `../../<some module>/<some file>` and so on.
 
@@ -544,7 +557,10 @@ For adding new path aliases, follow these two steps:
 
 2. Add `"&<your alias>": path.resolve(__dirname, "path/to/your/alias")` in [`config-overrides.js`](config-overrides.js)
 
-Reload or restatrt your IDE or text editor for configurations to appear.
+Note:
+* You can remove or replace "&" symbol with any other symbol, but make sure to be consistent.
+
+* Reload or restatrt your IDE or text editor for configurations to appear.
 
 
 ## Project Features
@@ -555,7 +571,7 @@ Reload or restatrt your IDE or text editor for configurations to appear.
 - [react-i18next](https://react.i18next.com/) for internationalization and localization
 - [react-router-dom](https://reactrouter.com/web/guides/quick-start) for routing, with [redux-first-history](https://github.com/salvoravida/redux-first-history) middleware
 - [ant-design](https://ant.design/) for responsive high quality reusable components and forms
-- [electron-packager](https://github.com/electron/electron-packager) to compile as desktop apps
+- [electron-packager](https://github.com/electron/electron-packager) to compile and package as desktop apps
 - fully functional components
 - cli tool to generate template files that follow project pattern.
 - path aliases to reduce import statements' length 

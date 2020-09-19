@@ -31,7 +31,7 @@ This is a React.js template fully written in Typescript. The template is based o
 * Run `yarn start` to start development server.
 * Run `yarn cli:install` to install cli dependencies.
 * Run `yarn cli:create` to generate feature files or styled components.
-* Edit generated files (read about generated files [here](##structure))
+* Edit generated files (read about generated files in the [here](####cli))
 * To generate production build files, run `yarn build`
 
 ## Production

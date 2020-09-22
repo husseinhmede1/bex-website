@@ -92,7 +92,7 @@ For example, a login feature contains a slice of the redux state to manage crede
 
 Example
 
-```tsx
+```ts
 // login.slice.tsx
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
@@ -198,7 +198,7 @@ export const loginActions = { ...loginSlice.actions, makeLoginApiCall };
 
 ```
 
-```tsx
+```ts
 
 // login.component.tsx
 import React, { useEffect } from "react";

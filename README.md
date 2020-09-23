@@ -36,10 +36,14 @@ This is a React.js template fully written in Typescript. The template is based o
 
 ## Production
 * Web:
+
     * run `yarn build` to perform production build. Build files will be generated in a new directory `/build`.
     * run `yarn serve` to serve production build locally
+
 * Desktop:
+
   Electron-packager supports packaging the React app for multiple desktop platforms (Windows, linux, MacOS). However, packaging for windows requires the extra step of downloading windows-build-tools. 
+  
     * (Windows only): run the global command `npm --add-python-to-path='true' --debug install --global windows-build-tools` (or yarn equivalent) to install windows build tools (run as adminstrator)
     * run `yarn electron-pack` to package as desktop app (This may take time depending on app size and hardware). Build files will be generated in a new directory `/dist`
   
@@ -558,9 +562,10 @@ For adding new path aliases, follow these two steps:
 2. Add `"&<your alias>": path.resolve(__dirname, "path/to/your/alias")` in [`config-overrides.js`](config-overrides.js)
 
 Note:
+
 * You can remove or replace "&" symbol with any other symbol, but make sure to be consistent.
 
-* Reload or restatrt your IDE or text editor for configurations to appear.
+* Reload or restart your IDE or text editor for configurations to appear.
 
 
 ## Project Features

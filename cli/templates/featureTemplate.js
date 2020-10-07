@@ -168,12 +168,12 @@ export interface ${newName} {
  * i18n ${name} namespace
  * Consists of English and arabic translations
  */
-export const loginNameSpace = {
+export const ${name}NameSpace = {
   en: {
     // Write english key-mapping here
   },
   ar: {
-    // Write english key-mapping here
+    // Write Arabic key-mapping here
   },
 };
 `,

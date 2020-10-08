@@ -23,6 +23,8 @@ function createStyledComponent({ name, path }) {
   if (path.length > 0 && path[path.length - 1] !== "/") {
     path += "/";
   }
+  name = name.replace(/^./, name[0].toLowerCase());
+
   var styledPath = config.styledPath + path + `${name}/`;
   const styledComponentName = styledPath + name + config.styledComponentExt;
   const styledCSSName = styledPath + name + config.styledCSSExt;
@@ -48,7 +50,7 @@ function createFeature({ name, path }) {
   if (path.length > 0 && path[path.length - 1] !== "/") {
     path += "/";
   }
-  name = name.toLowerCase();
+  name = name.replace(/^./, name[0].toLowerCase());
   var featurePath = config.featurePath + path + `${name}/`;
 
   const {

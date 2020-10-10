@@ -8,7 +8,7 @@ import { History } from "history";
 
 import "./App.css";
 import "antd/dist/antd.css";
-import { PrivateRoute } from "&route/protectedRoute";
+import { ProtectedRoute } from "&route/protectedRoute";
 
 // TODO remove demo routes
 import { HomeComponent } from "&features/demo/home/home.component";
@@ -37,11 +37,12 @@ const App = (props: AppProps & ReduxProps) => {
           {/* TODO remove the coming demo routes and add your's */}
           <Route exact path="/" component={LandingComponent} />
           <Route exact path="/login" component={LoginComponent} />
-          <PrivateRoute
+          <ProtectedRoute
             exact
             path="/home"
             component={HomeComponent}
-            isAuthenticated={isAuthenticated}
+            validator={isAuthenticated}
+            fallBack="/login"
           />
 
           {/* TODO This block handles unmatched routes. Add your custom 404 component */}

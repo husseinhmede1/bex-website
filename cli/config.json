@@ -5,7 +5,7 @@
   "styledCSSExt": ".styled.css",
   "componentExt": ".component.tsx",
   "component": ".component",
-  "sliceExt": ".slice.tsx",
+  "sliceExt": ".slice.ts",
   "slice": ".slice",
   "typeExt": ".type.ts",
   "i18nExt": ".i18n.ts",

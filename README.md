@@ -96,7 +96,7 @@ For example, a login feature contains a slice of the redux state to manage crede
 Example
 
 ```ts
-// login.slice.tsx
+// login.slice.ts
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 import { Login } from "./login.type";
@@ -419,7 +419,7 @@ To use translations inside components, the `useTranslation` hook should be impor
 Example
 
 ```ts
-// login.s
+// login.component.tsx
 
 // Importing
 import { useTranslation } from "react-i18next";
@@ -442,24 +442,24 @@ The template uses [react-router-dom](https://reactrouter.com/web/guides/quick-st
 
 Redux-first-history will be the source of truth for routing location. It changes history based on dispatched actions or when `window.location.url` changes manually. This library has other useful features such as saving up to n previous paths in redux. 
 
-Routes can be found in [`App.tsx`](src/App.tsx) wrapped with the `<Router />` component. In addition to regular routes, the template adds a protected route component [`<PrivateRoute />`](src/route/protectedRoute.tsx) that directs (or redirects) based on authentication. Exceptionally, an authentication boolean is passed as a `prop` to this component to decouple it from Redux and make it usable on its own.
+Routes can be found in [`App.tsx`](src/App.tsx) wrapped with the `<Router />` component. In addition to regular routes, the template adds a protected route component [`<ProtectedRoute />`](src/route/protectedRoute.tsx) that directs (or redirects) based on a validation boolean. Exceptionally, a validation boolean and a fallback route are passed as a `prop` to this component to decouple it from Redux and make it usable on its own. The validation boolean coul be the authentication state, while the fallback route is the route used for redirecting in case authentication fails.
 
 Example 
 
 ```ts
 
 //App.tsx
-import React from "react";
+import React, { useEffect } from "react";
 import { Router, Route, Switch, Redirect } from "react-router";
 import { connect, ConnectedProps } from "react-redux";
 import { RootState } from "&store/store";
-import { Button, Row } from "antd";
+import { Button, Row, ConfigProvider } from "antd";
 import { useTranslation } from "react-i18next";
 import { History } from "history";
 
 import "./App.css";
 import "antd/dist/antd.css";
-import { PrivateRoute } from "&route/protectedRoute";
+import { ProtectedRoute } from "&route/protectedRoute";
 
 // TODO remove demo routes
 import { HomeComponent } from "&features/demo/home/home.component";
@@ -476,19 +476,24 @@ const App = (props: AppProps & ReduxProps) => {
   const { history, isAuthenticated } = props;
   const { i18n } = useTranslation();
 
+  /** This useEffect rerenders dir */
+  useEffect(() => {}, [i18n.language]);
+
   return (
-    <>
+    /* This wrapper handles rtl and ltr directions for i18n */
+    <ConfigProvider direction={i18n.dir()}>
       <Router history={history}>
         {/* App main routing switch */}
         <Switch>
           {/* TODO remove the coming demo routes and add your's */}
           <Route exact path="/" component={LandingComponent} />
           <Route exact path="/login" component={LoginComponent} />
-          <PrivateRoute
+          <ProtectedRoute
             exact
             path="/home"
             component={HomeComponent}
-            isAuthenticated={isAuthenticated}
+            validator={isAuthenticated}
+            fallBack="/login"
           />
 
           {/* TODO This block handles unmatched routes. Add your custom 404 component */}
@@ -501,7 +506,7 @@ const App = (props: AppProps & ReduxProps) => {
         <Button onClick={() => i18n.changeLanguage("en")}>en</Button>
         <Button onClick={() => i18n.changeLanguage("ar")}>ar</Button>
       </Row>
-    </>
+    </ConfigProvider>
   );
 };
 

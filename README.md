@@ -551,9 +551,9 @@ Example
 
 Notice that the `path` option enables nested styled component or nested features. For example, styled components reated to "forms" may all be under the same folder in styled.
 
-* For styled components, the cli tool generates `<filename>.styled.tsx` and `<filename>.styled.css` template files under `/styled/<customized path>/<filename>`
+* For styled components, the cli tool generates `<filename>.component.tsx` and `<filename>.module.css` template files under `/styled/<customized path>/<filename>`
 
-* For features, the cli tool generates `<filename>.component.tsx`, `<filename>.slice.ts`, `<filename>.type.ts` and `<filename>.i18n.ts` template files under `/features/<customized path>/<filename>`
+* For features, the cli tool generates `<filename>.component.tsx`, `<filename>.slice.ts`, `<filename>.type.ts` ,`<filename>.module.css` and `<filename>.i18n.ts` template files under `/features/<customized path>/<filename>`
 
 ### path alias
 

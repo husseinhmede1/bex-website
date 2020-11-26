@@ -26,8 +26,8 @@ function createStyledComponent({ name, path }) {
   name = name.replace(/^./, name[0].toLowerCase());
 
   var styledPath = config.styledPath + path + `${name}/`;
-  const styledComponentName = styledPath + name + config.styledComponentExt;
-  const styledCSSName = styledPath + name + config.styledCSSExt;
+  const styledComponentName = styledPath + name + config.componentExt;
+  const styledCSSName = styledPath + name + config.moduleExt;
   const template = createStyledComponentFromTemplate(name);
   fs.mkdirSync(styledPath, {
     recursive: true,
@@ -64,6 +64,7 @@ function createFeature({ name, path }) {
   const componentName = featurePath + name + config.componentExt;
   const typeName = featurePath + name + config.typeExt;
   const i18nName = featurePath + name + config.i18nExt;
+  const moduleName = featurePath + name + config.moduleExt;
 
   fs.mkdirSync(featurePath, {
     recursive: true,
@@ -89,6 +90,10 @@ function createFeature({ name, path }) {
   const i18nWriteStream = fs.createWriteStream(i18nName);
   i18nWriteStream.write(i18nTemplate);
   i18nWriteStream.close();
+
+  const moduleWriteStream = fs.createWriteStream(moduleName);
+  moduleWriteStream.write("");
+  moduleWriteStream.close();
 }
 
 module.exports = handle;

@@ -5,13 +5,21 @@ const createFeatureTemplate = (name) => {
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 
+
 import { RootState } from "&store/store";
+
 /**
  * These are actions imported from the feature slices.
  * You can use 'useDispatch' hook or 'mapDispatchToProps'
  * to dispatch these actions
  */
 import { ${name}Actions } from "./${name}.slice";
+
+/**
+ * These are styles imported form feature module 
+ */
+import style from "./${name}.module.css";
+
 
 type ReduxProps = ConnectedProps<typeof connector>;
 

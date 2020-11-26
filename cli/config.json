@@ -1,8 +1,7 @@
 {
   "styledPath": "../src/styled/",
   "featurePath": "../src/features/",
-  "styledComponentExt": ".styled.tsx",
-  "styledCSSExt": ".styled.css",
+  "moduleExt": ".module.css",
   "componentExt": ".component.tsx",
   "component": ".component",
   "sliceExt": ".slice.ts",

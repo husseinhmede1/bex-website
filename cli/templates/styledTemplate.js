@@ -1,7 +1,7 @@
 const createStyledComponentFromTemplate = (name) => {
   const newName = name.replace(/^./, name[0].toUpperCase());
   return `import React from "react";
-import style from "./${name}.module.css";
+import styles from "./${name}.module.css";
 
 interface Props {
   /** A text to be displayed in the center of this component */

@@ -18,7 +18,7 @@ import { ${name}Actions } from "./${name}.slice";
 /**
  * These are styles imported form feature module 
  */
-import style from "./${name}.module.css";
+import styles from "./${name}.module.css";
 
 
 type ReduxProps = ConnectedProps<typeof connector>;

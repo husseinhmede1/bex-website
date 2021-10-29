@@ -1,0 +1,192 @@
+
+
+.Rectangle-24868 {
+  width: 100px;
+  height: 111px;
+  margin: 0 46px 65px 0;
+  padding: 36px 42.3px 42.6px 42px;
+  background-color: rgba(48,107,221);
+}
+
+img.down-arrow {
+  width: 15.7px;
+  height: 32.4px;
+  object-fit: contain;
+}
+.What-are-your-challenges {
+  width: 311px;
+  height: 94px;
+  margin: 65px 141px 15px 46px;
+  font-family: Gilroy;
+  font-size: 40px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.13;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(0 ,25 ,74);
+}
+.text{
+
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: flex-start;
+
+
+  margin-left: 3%;
+
+}
+.what{
+
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: flex-start;
+  
+
+}
+
+.Day-to-day-business-expenses-procedures-are-time-consuming-and-drowning-your-team-in-complex-daily-tasks {
+  width: 311px;
+  height: 114px;
+  margin: 49px 141px 25.3px 46px;
+  font-family: Lato;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00194a;
+}
+
+.Day{
+
+
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: stretch;
+	align-content: flex-start;
+  margin-top: 50px;
+
+  margin-left: 164px;
+}
+
+img.Icons {
+  width: 66.3px;
+  height: 41px;
+  margin: 65px 31.4px 36px 149.3px;
+  object-fit: contain;
+  margin-left: -20%;
+
+
+}
+
+.Lack-of-visibility-on-How-where-and-how-much-employees-are-spending {
+  width: 360px;
+  height: 55px;
+  margin: 65px 11.5px 22px 23.4px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  margin-left: -20%;
+
+ 
+}
+.icon1{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: stretch;
+	align-content: flex-start;
+}
+.No-tools-in-hand-to-control-How-where-how-much-employees-spend {
+  width: 360px;
+  height: 53px;
+  margin: 15px 11.5px 34px 23.4px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  margin-left: -20%;
+
+}
+img.Icons1{
+
+    width: 73.5px;
+    height: 53.2px;
+    margin: 15px 23.4px 33.8px 150.1px;
+    object-fit: contain;
+    margin-left: -20%;
+
+}
+img.Icons2{
+  width: 68.5px;
+  height: 46.6px;
+  margin: 39.8px 23.5px 0 155px;
+  object-fit: contain;
+  margin-left: -20%;
+
+}
+.Lengthy-manual-reconciliation {
+  width: 240px;
+  height: 22px;
+  margin: 57px 131.5px 7.3px 23.4px;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  margin-left: -20%;
+
+}
+
+.Line-5279 {
+  width: 477px;
+  height: 0;
+  margin: 22px 0 0 141.5px;
+  opacity: 0.3;
+  border: solid 1px #707070;
+}
+
+.Line-5280 {
+  width: 477px;
+  height: 0;
+  margin: 33.8px 0.5px 0 141px;
+  opacity: 0.3;
+  border: solid 1px #707070;
+}
+
+.Right{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: stretch;
+	align-content: center;
+ }

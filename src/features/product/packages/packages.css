@@ -1,0 +1,79 @@
+.Product-page-Control {
+  height: 7083px;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.OUR-Packages {
+  width: 296px;
+  height: 49px;
+  margin: 117px 9px 10px 11px;
+  font-family: Gilroy-ExtraBold;
+  font-size: 40px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #00194a;
+  margin-left: 37%;
+}
+
+.Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-grows {
+  width: 492px;
+  height: 44px;
+  margin: 10px 437px 75px;
+  opacity: 0.6;
+  font-family: Lato-Regular;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.div1 {
+  margin-top: -3%;
+}
+
+.Rectangle-57 {
+  width: 337px;
+  height: 490px;
+  margin: 85px 11px 150px 186px;
+  padding: 37px 77px 32px;
+  background-color: #fffdfd;
+}
+
+.Rectangle-24086 {
+  width: 337px;
+  height: 509px;
+  margin: 75px 516px 141px 513px;
+  padding: 43px 76px 41px 77px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fffefe;
+}
+
+.Path-161569 {
+  width: 338px;
+  height: 490px;
+  margin: 85px 188px 150px 9px;
+  padding: 41px 60.8px 42px 61px;
+  background-color: #fffefe;
+}
+.div2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+}

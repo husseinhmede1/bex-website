@@ -6,6 +6,7 @@ import { usePromiseTracker } from "react-promise-tracker";
 
 import { RootState } from "&store/store";
 import "./App.css";
+
 import "antd/dist/antd.css";
 import { AppRouter } from "./App.router";
 

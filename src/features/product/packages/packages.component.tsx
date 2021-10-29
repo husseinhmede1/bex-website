@@ -52,9 +52,18 @@ const PackagesComponent = (props: ReduxProps) => {
       </div>
 
       <div className="div2">
-        <div className="Rectangle-57"></div>
-        <div className="Rectangle-24086"></div>
-        <div className="Path-161569"></div>
+        <div className="Rectangle-57">
+          <span className="Essential">Essential</span>
+          <span className="Starting-at">Starting at</span>
+        </div>
+        <div className="Rectangle-24086">
+          <span className="pro">pro</span>
+          <span className="Starting-at">Starting at</span>
+        </div>
+        <div className="Path-161569">
+          <span className="entreprise">entreprise</span>
+          <span className="Starting-at">Starting at</span>
+        </div>
       </div>
     </div>
   );

@@ -58,12 +58,14 @@
   height: 509px;
   margin: 75px 516px 141px 513px;
   padding: 43px 76px 41px 77px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
   background-color: #fffefe;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 
 .Path-161569 {
-  width: 338px;
+  width: 337px;
   height: 490px;
   margin: 85px 188px 150px 9px;
   padding: 41px 60.8px 42px 61px;
@@ -76,4 +78,67 @@
   justify-content: space-around;
   align-items: stretch;
   align-content: center;
+}
+
+.Essential {
+  width: 94px;
+  height: 37px;
+  margin: 0 45px 2px;
+  opacity: 0.6;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.95;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.pro {
+  width: 34px;
+  height: 37px;
+  margin: 0 75px 6px;
+  opacity: 0.6;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+.entreprise {
+  width: 102px;
+  height: 27px;
+  margin: 0 57.2px 8px 57px;
+  opacity: 0.6;
+  font-family: Lato-Regular;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.95;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.Starting-at {
+  width: 64px;
+  height: 17px;
+  margin: 2px 60px 38px;
+  opacity: 0.3;
+  font-family: Lato-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
 }

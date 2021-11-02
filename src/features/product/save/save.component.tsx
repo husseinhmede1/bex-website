@@ -41,46 +41,46 @@ const SaveComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="Path-162309" style={{ height: height }}>
-      <div className="div1">
-        <div className="div2">
-          <div className="Rectangle-24989">
-            <span className="span1">3</span>
+    <div className="Path-162309s" style={{ height: height }}>
+      <div className="div1s">
+        <div className="div2s">
+          <div className="Rectangle-24989s">
+            <span className="span1s">3</span>
           </div>
 
-          <span className="Save">Save</span>
+          <span className="Saves">Save</span>
         </div>
 
-        <div className="div7">
-          <span className="Time-is-money-Save-both">
+        <div className="div7s">
+          <span className="Time-is-money-Save-boths">
             TIME IS MONEY. SAVE BOTH
           </span>
 
-          <div className="div3">
-            <div className="div4">
+          <div className="div3s">
+            <div className="div4s">
               <img
                 src={sign}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}
-                className="Sign"
+                className="Signs"
               ></img>
 
               <div>
-                <span className="Digitize-your-business-expense-process-to-reduce-your-admin-cost">
+                <span className="Digitize-your-business-expense-process-to-reduce-your-admin-costs">
                   Digitize your business expense process to reduce your admin
                   cost
                 </span>
               </div>
             </div>
 
-            <div className="div5">
+            <div className="div5s">
               <img
                 src={sign2}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}
-                className="Sign"
+                className="Signs"
               ></img>
 
               <div>
-                <span className="Identify-wasteful-spend-with-one-dashboard-for-all-your-expenses">
+                <span className="Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess">
                   Identify wasteful spend with one dashboard for all your
                   expenses
                 </span>
@@ -94,7 +94,7 @@ const SaveComponent = (props: ReduxProps) => {
         <img
           src={save}
           srcSet={`${save2} 2x, ${save3} 3x`}
-          className="Save-img"
+          className="Save-imgs"
         ></img>
       </div>
     </div>

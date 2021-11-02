@@ -5,9 +5,9 @@ import { RootState } from "&store/store";
 
 import "./packages.css";
 
-import down from "&assets/img/down-arrow.png";
-import down2 from "&assets/img/down-arrow@2x.png";
-import down3 from "&assets/img/down-arrow@3x.png";
+import sign from "&assets/img/Sign3.png";
+import sign2 from "&assets/img/Sign3@2x.png";
+import sign3 from "&assets/img/Sign3@3x.png";
 
 /**
  *
@@ -38,39 +38,203 @@ const PackagesComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="Product-page-Control" style={{ height: height }}>
-      <div className="div1">
-        <span className="OUR-Packages">OUR PACKAGES</span>
+    <div className="Product-page-Controlp" style={{ height: height }}>
+      <div className="div1p">
+        <span className="OUR-Packagesp">OUR PACKAGES</span>
 
-        <span className="Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-grows">
+        <span className="Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp">
           <div>
-            {" "}
             Choose the features and functionalities your teams need today.
           </div>
           <div>Easily upgrade as your company grows.</div>
         </span>
       </div>
 
-      <div className="div2">
-        <div className="Rectangle-57">
-          <span className="Essential">Essential</span>
-          <span className="Starting-at">Starting at</span>
+      <div className="div2p">
+        <div className="Rectangle-57p">
+          <div className="div3p">
+            <span className="Essentialp">Essential</span>
+            <span className="Starting-atp">Starting at</span>
+            <span className="AED300p">
+              <span className="text-style-1p">AED</span>3.00
+            </span>
+            <span className="User-Monthp">User /Month</span>
+          </div>
+
+          <div className="div4p">
+            <div>
+              <img
+                src={sign}
+                srcSet={`${sign2} 2x, ${sign3} 3x`}
+                className="Signp"
+              ></img>
+              <span className="Digital-onboardingp">Digital onboarding</span>
+            </div>
+            <div>
+              <img
+                src={sign}
+                srcSet={`${sign2} 2x, ${sign3} 3x`}
+                className="Signp"
+              ></img> 
+              <span className="Digital-cardp">Digital card</span>
+            </div>
+            <div>
+              <img
+                src={sign}
+                srcSet={`${sign2} 2x, ${sign3} 3x`}
+                className="Signp"
+              ></img>
+
+              <span className="Card-controlsp">Card controls</span>
+            </div>
+          </div>
+
+          <div className="div5p">
+            <span className="Stolen-card-feep">Stolen card fee</span>
+
+            <span className="AED-5p">AED 5</span>
+          </div>
+
+          <div className="Rectangle-24090p">
+            <span className="Contact-Usp">Contact Us</span>
+          </div>
+
+          <span className="aed-10-on-Additional-account-Up-to-5-usersp">
+            AED 10 on Additional account
+            <span className="text-style-1p">Up to 5 users</span>
+          </span>
         </div>
-        <div className="Rectangle-24086">
-          <span className="pro">pro</span>
-          <span className="Starting-at">Starting at</span>
+
+        <div className="Rectangle-24086p">
+          <div className="div3p">
+            <span className="prop">Pro</span>
+            <span className="Starting-atp">Starting at</span>
+            <span className="AED500p">
+              <span className="text-style-1p">AED</span>5.00
+            </span>
+            <span className="User-Monthp">User /Month</span>
+          </div>
+
+          <div className="div4p">
+            <div>
+              <img
+                src={sign}
+                srcSet={`${sign2} 2x, ${sign3} 3x`}
+                className="Signp"
+              ></img>
+
+              <span className="Physical-card-requestp">
+                Physical card request
+              </span>
+            </div>
+            <div>
+              <img
+                src={sign}
+                srcSet={`${sign2} 2x, ${sign3} 3x`}
+                className="Signp"
+              ></img>
+
+              <span className="Priority-in-call-centerp">
+                Priority in call center
+              </span>
+            </div>
+            <div>
+              <img
+                src={sign}
+                srcSet={`${sign2} 2x, ${sign3} 3x`}
+                className="Signp"
+              ></img>
+
+              <span className="Priority-in-call-centerp">
+                Priority in call center
+              </span>
+            </div>
+          </div>
+
+          <div className="div5p">
+            <span className="Stolen-card-fee1p">Stolen card fee</span>
+
+            <span className="Free-up-to-3-then-AED-5p">
+              Free up to 3, then AED 5
+            </span>
+          </div>
+
+          <div className="Rectangle-24088p">
+            <span className="Contact-Usp">Contact Us</span>
+          </div>
+          <span className="aed-15-on-Additional-account-Up-to-10-usersp">
+            AED 15 on Additional account
+            <span className="text-style-1p">Up to 10 users</span>
+          </span>
         </div>
-        <div className="Path-161569">
-          <span className="entreprise">entreprise</span>
-          <span className="Starting-at">Starting at</span>
+
+        <div className="Path-161569p">
+          <div className="div3p">
+            <span className="entreprisep">Entreprise</span>
+            <span className="Starting-at1p">Starting at</span>
+            <span className="AED1000p">
+              <span className="text-style-1p">AED</span>10.00
+            </span>
+            <span className="User-Monthp">User /Month</span>
+          </div>
+
+          <div className="div4p">
+            <div>
+              <img
+                src={sign}
+                srcSet={`${sign2} 2x, ${sign3} 3x`}
+                className="Signp"
+              ></img>
+              <span className="Dedicated-support-agentp">
+                Dedicated support agent
+              </span>
+            </div>
+            <div>
+              <img
+                src={sign}
+                srcSet={`${sign2} 2x, ${sign3} 3x`}
+                className="Signp"
+              ></img>
+              <span className="Multiple-admin-accessp">
+                Multiple admin access
+              </span>
+            </div>
+            <div>
+              <img
+                src={sign}
+                srcSet={`${sign2} 2x, ${sign3} 3x`}
+                className="Signp"
+              ></img>
+              <span className="Multiple-entity-consolidationp">
+                Multiple entity consolidation
+              </span>
+            </div>
+          </div>
+
+          <div className="div6p">
+            <div>
+              <span className="Stolen-card-fee2p">Stolen card fee</span>
+            </div>
+            <div>
+              <span className="Free-up-to-5-then-AED-5p">
+                Free up to 5, then AED 5
+              </span>
+            </div>
+          </div>
+
+          <div className="Rectangle-24089p">
+            <span className="Contact-Usp">Contact Us</span>
+          </div>
+ 
+          <span className="Unlimitedp">Unlimited</span>
         </div>
       </div>
     </div>
-  );
+  ); 
 };
 
 /**
- * Maps state variables from redux store to props of currect component
+ * Maps state variables  from redux store to props of currect component
  * @param state
  */
 const mapStateToProps = (state: RootState) => ({

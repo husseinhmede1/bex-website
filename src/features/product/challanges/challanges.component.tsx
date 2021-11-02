@@ -54,7 +54,7 @@ const ChallangesComponent = (props: ReduxProps) => {
 
 <div className="Rectangle-24868">
   <img src={down}
-     srcSet={`${down2} 2x, ${down3} 3x`}
+     srcSet={`${down2} 2x, ${down3} 3x`} 
      className="down-arrow"/>
      
      </div>

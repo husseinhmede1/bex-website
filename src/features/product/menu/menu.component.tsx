@@ -62,69 +62,69 @@ const MenuComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="menuBackground" style={{ height: height }}>
-      <div className="navbar">
-        <span className="bex">BEX</span>
+    <div className="menuBackgroundm" style={{ height: height }}>
+      <div className="navbarm">
+        <span className="bexm">BEX</span>
 
-        <div className="navbar-names">
-          <span className="navbar-names-font">How bex works</span>
-          <span className="navbar-names-font">Pricing</span>
-          <span className="navbar-names-font">About us</span>
-          <span className="navbar-names-font">Contact us</span>
+        <div className="navbar-namesm">
+          <span className="navbar-names-fontm">HOW BEX WORKS</span>
+          <span className="navbar-names-fontm">PIRCING</span>
+          <span className="navbar-names-fontm">ABOUT US</span>
+          <span className="navbar-names-fontm">CONTACT US</span>
         </div>
-
-        <div className="navbar-images">
+ 
+        <div className="navbar-imagesm">
           <img src={Apple} srcSet={`${Apple2} 2x, ${Apple3} 3x`} />
 
           <img src={Gplay} srcSet={`${Gplay2} 2x, ${Gplay3} 3x`} />
         </div>
       </div>
-      <div className="Busines-cntrl">
+      <div className="Busines-cntrlm">
         <div>
-          <span className="Business-expense-management-made-easy">
+          <span className="Business-expense-management-made-easym">
             <div> BUSINESS EXPENSE </div>
             <div>MANAGMENT made easy.</div>
           </span>
-        </div>
-        <div className="contrl">
-          <span className="Control-Spend-Save">CONTROL. SPEND. SAVE.</span>
+        </div> 
+        <div className="contrlm">
+          <span className="Control-Spend-Savem">CONTROL. SPEND. SAVE.</span>
         </div>
       </div>
-      <div className="tryDemo">
+      <div className="tryDemom">
         <img
           src={tryForFree}
           srcSet={`${tryForFree2} 2x, ${tryForFree3} 3x`}
-          className="Try-for-free"
+          className="Try-for-freem"
         ></img>
         <img
           src={getDemo}
           srcSet={`${getDemo2} 2x, ${getDemo3} 3x`}
-          className="Get-demo"
+          className="Get-demom"
         ></img>
       </div>
-      <div className="Ellipse-1">
+      <div className="Ellipse-1m">
         <img
           src={chatbot}
           srcSet={`${chatbot2} 2x, ${chatbot3} 3x`}
-          className="chatbot"
+          className="chatbotm"
         />
       </div>
-      <div className="areeba-master">
-        <div className="areeba">
-          <span className="Powered-by">Powered by</span>
+      <div className="areeba-masterm">
+        <div className="areebam">
+          <span className="Powered-bym">Powered by</span>
           <img
             src={areeba}
             srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-            className="Areeba-logo"
+            className="Areeba-logom"
           ></img>
         </div>
-        <span className="Path-162351"></span>
-        <div className="areeba">
-          <span className="In-partnership-with">In partnership with</span>
+        <span className="Path-162351m"></span>
+        <div className="areebam">
+          <span className="In-partnership-withm">In partnership with</span>
           <img
             src={mastercard}
             srcSet={`${mastercard2} 2x, ${mastercard3} 3x`}
-            className="Mastercard"
+            className="Mastercardm"
           ></img>
         </div>
       </div>

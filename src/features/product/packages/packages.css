@@ -1,4 +1,4 @@
-.Product-page-Control {
+.Product-page-Controlp {
   height: 7083px;
   background-color: #f0f0f0;
   display: flex;
@@ -9,7 +9,7 @@
   align-content: center;
 }
 
-.OUR-Packages {
+.OUR-Packagesp {
   width: 296px;
   height: 49px;
   margin: 117px 9px 10px 11px;
@@ -22,10 +22,10 @@
   letter-spacing: normal;
   text-align: center;
   color: #00194a;
-  margin-left: 37%;
+  margin-left: 30%;
 }
 
-.Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-grows {
+.Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp {
   width: 492px;
   height: 44px;
   margin: 10px 437px 75px;
@@ -41,19 +41,25 @@
   color: #000;
 }
 
-.div1 {
-  margin-top: -3%;
+.div1p {
+  margin-top: 5%;
 }
 
-.Rectangle-57 {
+.Rectangle-57p {
   width: 337px;
   height: 490px;
   margin: 85px 11px 150px 186px;
   padding: 37px 77px 32px;
   background-color: #fffdfd;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-end;
 }
 
-.Rectangle-24086 {
+.Rectangle-24086p {
   width: 337px;
   height: 509px;
   margin: 75px 516px 141px 513px;
@@ -62,16 +68,29 @@
   background-color: #fffefe;
   margin-left: -15px;
   margin-right: -15px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-end;
+  z-index: 1;
 }
 
-.Path-161569 {
+.Path-161569p {
   width: 337px;
   height: 490px;
   margin: 85px 188px 150px 9px;
   padding: 41px 60.8px 42px 61px;
   background-color: #fffefe;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: space-between;
 }
-.div2 {
+.div2p {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -80,12 +99,12 @@
   align-content: center;
 }
 
-.Essential {
+.Essentialp {
   width: 94px;
   height: 37px;
   margin: 0 45px 2px;
   opacity: 0.6;
-  font-family: Poppins;
+  font-family: Poppins-Regular;
   font-size: 22px;
   font-weight: normal;
   font-stretch: normal;
@@ -96,12 +115,12 @@
   color: #000;
 }
 
-.pro {
+.prop {
   width: 34px;
   height: 37px;
   margin: 0 75px 6px;
   opacity: 0.6;
-  font-family: Poppins;
+  font-family: Poppins-Regular;
   font-size: 22px;
   font-weight: normal;
   font-stretch: normal;
@@ -111,7 +130,7 @@
   text-align: center;
   color: #000;
 }
-.entreprise {
+.entreprisep {
   width: 102px;
   height: 27px;
   margin: 0 57.2px 8px 57px;
@@ -125,9 +144,11 @@
   letter-spacing: normal;
   text-align: center;
   color: #000;
+  margin-top: -7%;
+  margin-left: 30%;
 }
 
-.Starting-at {
+.Starting-atp {
   width: 64px;
   height: 17px;
   margin: 2px 60px 38px;
@@ -141,4 +162,500 @@
   letter-spacing: normal;
   text-align: center;
   color: #000;
+  margin-top: -10%;
+  white-space: nowrap;
+}
+.Starting-at1p {
+  width: 64px;
+  width: 64px;
+  height: 17px;
+  margin: 2px 60px 38px;
+  opacity: 0.3;
+  font-family: Lato-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-top: -5%;
+  white-space: nowrap;
+}
+.AED300p {
+  width: 122px;
+  height: 41px;
+  margin: 18px 31px 36px;
+  font-family: Gilroy-ExtraBold;
+  font-size: 33px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-top: -15%;
+}
+.AED300p .text-style-1p {
+  font-size: 28px;
+  font-family: Gilroy-ExtraBold;
+  color: #000;
+}
+
+.AED500p {
+  width: 122px;
+  height: 41px;
+  margin: 22px 31px 35.6px;
+  font-family: Gilroy-ExtraBold;
+  font-size: 33px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-top: -15%;
+}
+.AED500p .text-style-1p {
+  font-size: 28px;
+  font-family: Gilroy-ExtraBold;
+  color: #000;
+}
+
+.AED1000p {
+  width: 136px;
+  height: 41px;
+  margin: 24px 40.2px 36px 40px;
+  font-family: Gilroy-ExtraBold;
+  font-size: 33px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-top: -13%;
+}
+.AED1000p .text-style-1p {
+  font-size: 28px;
+  font-family: Gilroy-ExtraBold;
+  color: #000;
+}
+.User-Monthp {
+  width: 82px;
+  height: 17px;
+  margin: 38px 51px 21px;
+  font-family: Lato-Regular;
+  font-size: 14px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-top: -19%;
+}
+
+img.Signp {
+  width: 18.2px;
+  height: 13.7px;
+  margin: 3px 9.9px 1.3px 0;
+  object-fit: contain;
+}
+
+.Digital-onboardingp {
+  width: 122px;
+  height: 18px;
+  margin: 0 0 0 9.9px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.Physical-card-requestp {
+  width: 140px;
+  height: 18px;
+  margin: 0 6px 13.7px 8px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.Dedicated-support-agentp {
+  width: 162px;
+  height: 18px;
+  margin: 0 0 0 10px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.Digital-cardp {
+  width: 76px;
+  height: 18px;
+  margin: 0 0 0 10px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.Card-controlsp {
+  width: 90px;
+  height: 18px;
+  margin: 0 0 0 10px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.Priority-in-call-centerp {
+  width: 136px;
+  height: 18px;
+  margin: 13.7px 8px 13.7px 10px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.Multiple-admin-accessp {
+  width: 144px;
+  height: 18px;
+  margin: 0 0 0 10px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+}
+
+.Multiple-entity-consolidationp {
+  width: 188px;
+  height: 18px;
+  margin: 0 0 0 10px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.53;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+  margin-left: -1%;
+}
+
+.Stolen-card-feep {
+  width: 106px;
+  height: 23px;
+  margin: 0 0 15px;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+  margin-left: 17%;
+}
+.Stolen-card-fee1p {
+  width: 106px;
+  height: 23px;
+  margin: 0 0 15px;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+  margin-left: 20%;
+  margin-top: 5%;
+}
+
+.Stolen-card-fee2p {
+  width: 106px;
+  height: 23px;
+  margin: 0 0 15px;
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+  margin-left: 10%;
+  margin-top: 4%;
+}
+
+.AED-5p {
+  width: 40px;
+  height: 17px;
+  margin: 21px 32px 0 34px;
+  font-family: Lato-Regular;
+  font-size: 14px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+  margin-top: -10%;
+  margin-left: 30%;
+}
+
+.Free-up-to-3-then-AED-5p {
+  width: 152px;
+  height: 17px;
+  margin: 21px 0 0;
+  font-family: Lato-Regular;
+  font-size: 14px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+  margin-top: -10%;
+  margin-left: 10%;
+}
+
+.Free-up-to-5-then-AED-5p {
+  width: 152px;
+  height: 17px;
+  margin: 2px 32.2px 23px 32px;
+  font-family: Lato-Regular;
+  font-size: 14px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2e2e;
+  margin-top: 10%;
+  margin-left: 0%;
+}
+.Rectangle-24090p {
+  width: 166px;
+  height: 56px;
+  margin: 23px 9px 28px;
+  background-color: #306bdd;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+img.Contact-us-bluep {
+  width: 166px;
+  height: 56px;
+  margin: 23px 9px 28px;
+  object-fit: contain;
+}
+.Contact-Usp {
+  width: 94px;
+  height: 23px;
+  font-family: Lato-Bold;
+  font-size: 19px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: normal;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+.aed-10-on-Additional-account-Up-to-5-usersp {
+  width: 184px;
+  height: 38px;
+  margin: 28px 0 0;
+  opacity: 0.45;
+  font-family: Lato-Bold;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  
+}
+.aed-10-on-Additional-account-Up-to-5-usersp .text-style-1p {
+  font-weight: bold;
+  font-family: Lato-Bold;
+  color: #000;
+  width: 184px;
+  height: 38px;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  opacity: 1;
+
+}
+
+.Rectangle-24088p {
+  width: 166px;
+  height: 56px;
+  margin: 23px 9px 28px;
+  background-color: #30c675;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.Rectangle-24089p {
+  width: 9vw;
+
+  height: 6vh;
+  background-color: #00194a;
+  margin-left: 15%;
+  display: flex;
+  flex-direction: column; 
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  margin-top: 1%;
+}
+
+.aed-15-on-Additional-account-Up-to-10-usersp {
+  width: 184px;
+  height: 38px;
+  margin: 28px 0 0;
+  opacity: 0.46;
+  font-family: Lato-Bold;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+.aed-15-on-Additional-account-Up-to-10-usersp .text-style-1p {
+  font-weight: bold;
+  font-family: Lato-Bold;
+  color: #000;
+  width: 184px;
+  height: 38px;
+  font-size: 14px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  opacity: 1;
+}
+
+.Unlimitedp {
+  width: 62px;
+  height: 17px;
+  margin: 39px 77.2px 0 77px;
+  opacity: 0.46;
+  font-family: Lato-Bold;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+}
+
+.div3p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  margin-left: -10%;
+  margin-top: 0%;
+}
+
+.div4p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  margin-top: -15%;
+}
+
+.div5p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+.div6p {
+  margin-left: 18%;
+  margin-top: -5%;
+  white-space: nowrap;
+
 }

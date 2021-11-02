@@ -1,0 +1,125 @@
+img.Try-BEX-img {
+  width: 850px;
+  height: 750px;
+  margin: 191px 0 0 633px;
+  object-fit: contain;
+  margin-left: 35%;
+}
+
+.Try-BEX-For-Free {
+  width: 376px;
+  height: 223px;
+  margin: 0 0 17px;
+  font-family: Gilroy-ExtraBold;
+  font-size: 100px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+}
+
+.-month-3-users-Digital-card-only {
+  width: 344px;
+  height: 24px;
+  margin: 216px 32px 0 0;
+  font-family: Lato-Bold;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  margin-top: -9%;
+  margin-left: 5%;
+}
+img.Apple {
+  width: 60px;
+  height: 60px;
+  margin: 69px 23px 0 34px;
+  object-fit: contain;
+}
+
+img.Get-your-demo {
+  width: 147px;
+  height: 52px;
+  margin: 73px 34px 4px 0;
+  object-fit: contain;
+  margin-left: 20%;
+}
+.div1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-end;
+
+  background-image: -webkit-image-set(
+    url("../../../assets/img/Try-bex-Cover.png") 1x,
+    url("../../../assets/img/Try-bex-Cover@2x.png") 2x,
+    url("../../../assets/img/Try-bex-Cover@3x.png") 3x
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  contain: content;
+  height: 500%;
+
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+
+  object-fit: contain;
+}
+.div2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-end;
+}
+.div3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: flex-end;
+  margin-top: 10%;
+  margin-left: -20%;
+}
+
+.div4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-end;
+}
+
+img.Google-play {
+  width: 60px;
+  height: 60px;
+  margin: 69px 52px 0 23px;
+  object-fit: contain;
+}
+.div6 {
+  margin-top: 6%;
+width: 50vw;
+}
+
+.div7 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}

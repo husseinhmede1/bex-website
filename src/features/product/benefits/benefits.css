@@ -1,0 +1,271 @@
+.Rectangle-24927B {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.BenefitsB {
+  width: 169px;
+  height: 49px;
+  margin: 55px 339px 103.3px 72px;
+  font-family: Gilroy-ExtraBold;
+  font-size: 40px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #00194a;
+}
+img.Mask-GroupB {
+  width: 670px;
+  height: 617px;
+  margin: 0 72px 0 0;
+  object-fit: contain;
+  margin-top: 20%;
+}
+
+.Rectangle-24856B {
+  width: 217.5px;
+  height: 177px;
+  margin: 92.8px 0 139.9px;
+  padding: 18.4px 0 48.4px 28.1px;
+  background-color: #00194a;
+  margin-top: 35%;
+  margin-left: -41%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.stated-improved-supplier-relationsB {
+  width: 189px;
+  height: 38px;
+  margin: 5.3px 0 0 0.4px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.span1B {
+  width: 100px;
+  height: 67px;
+  margin: 0 89.4px 5.3px 0;
+  font-family: Gilroy-ExtraBold;
+  font-size: 54px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.72;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffff;
+}
+
+.Rectangle-24920B {
+  width: 212px;
+  height: 169.9px;
+  margin: 58px 0 42px;
+  padding: 26px 48.5px 29px 29.5px;
+  border: solid 1px #d2d4da;
+  background-color: #fff;
+  margin-top: -60%;
+  margin-left: -3%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.span2B {
+  width: 102px;
+  height: 67px;
+  margin: 0 32px 9.9px 0;
+  font-family: Gilroy-ExtraBold;
+  font-size: 54px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.26;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292929;
+}
+
+.stated-reduced-number-of-approvalsB {
+  width: 134px;
+  height: 38px;
+  margin: 9.9px 0 0;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2e2e2e;
+}
+
+.Rectangle-24918B {
+  width: 407.5px;
+  height: 139.9px;
+  margin: 42px 39.3px 0 85.3px;
+  padding: 34.4px 52px 38.4px 26.5px;
+  border: solid 1px #d2d4da;
+  background-color: #fff;
+  margin-top: 0%;
+
+  margin-left: -20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.span3B {
+  width: 100px;
+  height: 67px;
+  margin: 0 38px 0 0;
+  font-family: Gilroy-ExtraBold;
+  font-size: 54px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.26;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292929;
+}
+
+.stated-improved-visibility-and-data-reportingB {
+  width: 191px;
+  height: 58px;
+  margin: 6px 0 3px 38px;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2e2e2e;
+}
+
+.Rectangle-24919B {
+  width: 205px;
+  height: 169.9px;
+  margin: 0 116.5px 0px 0;
+  padding: 26px 67.5px 29px 27.5px;
+  border: solid 1px #d2d4da;
+  background-color: #fff;
+  margin-top: -70%;
+  margin-left: 34%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.span4B {
+  width: 99px;
+  height: 67px;
+  margin: 0 11px 9.9px 0;
+  font-family: Gilroy-ExtraBold;
+  font-size: 54px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.26;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292929;
+}
+
+.stated-improved-cash-flowB {
+  width: 110px;
+  height: 38px;
+  margin: 9.9px 0 0;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2e2e2e;
+}
+
+.Rectangle-24917B {
+  width: 219px;
+  height: 169.9px;
+  margin: 0px 0 69.9px 39.3px;
+  padding: 26px 89.5px 29px 27.5px;
+  border: solid 1px #d2d4da;
+  background-color: #fff;
+  margin-left: 60%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.span5B {
+  width: 102px;
+  height: 67px;
+  margin: 0 0 9.9px;
+  font-family: Gilroy-ExtraBold;
+  font-size: 54px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.26;
+  letter-spacing: normal;
+  text-align: left;
+  color: #292929;
+}
+
+.stated-reduced-admin-costB {
+  width: 102px;
+  height: 38px;
+  margin: 9.9px 0 0;
+  font-family: Lato-Regular;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2e2e2e;
+}
+.div1B {
+  margin-top: 10%;
+}

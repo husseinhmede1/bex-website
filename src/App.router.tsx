@@ -17,6 +17,10 @@ import { BenefitsComponent } from "&features/product/benefits/benefits.component
 import { InfoComponent } from "&features/product/info/info.component";
 import { ConnectComponent } from "&features/product/connect/connect.component";
 import { MainComponent } from "&features/product/main/main.component";
+import { CookieComponent } from "&styled/cookies/cookie.component";
+import { PolicyComponent } from "&features/privacy/policy/policy.component";
+
+
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
@@ -28,7 +32,7 @@ const AppRouter = (props: ReduxProps) => {
       {/* App main routing switch */}
       <Switch>
         {/* TODO remove the coming demo routes and add your's */}
-        <Route exact path="/" component={MainComponent} />
+        <Route exact path="/" component={PolicyComponent} />
         <Route exact path="/login" component={LoginComponent} />
         <Route exact path="/menu" component={MenuComponent} />
         <Route exact path="/handles" component={HandlesComponent} />
@@ -40,6 +44,10 @@ const AppRouter = (props: ReduxProps) => {
         <Route exact path="/info" component={InfoComponent} />
         <Route exact path="/connect" component={ConnectComponent} />
         <Route exact path="/main" component={MainComponent} />
+        <Route exact path="/cookie" component={CookieComponent} />
+        <Route exact path="/policy" component={PolicyComponent} />
+
+
 
         {/* TODO This block handles unmatched routes. Add your custom 404 component */}
         <Route path="/404" render={() => <div>page not found</div>} />

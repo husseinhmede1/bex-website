@@ -1,0 +1,72 @@
+.cookieBackground {
+  width: 100wv;
+  height: 100vh;
+
+  background-color: #00194a;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-end;
+}
+
+.Cookie-Policy {
+  width: 189px;
+  height: 26px;
+  margin: 25px 617px 21px 3px;
+  font-family: Gilroy-ExtraBold;
+  font-size: 25px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.48;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.This-site-uses-cookies-small-text-files-that-are-placed-on-your-machine-to-help-the-site-provide-a-better-user-experience-In-general-cookies-are-used-to-retain-user-preferences-store-information-for-things-like-shopping-carts-and-provide-anonymized-t {
+  width: 718px;
+  height: 133px;
+  margin: 21px 88px 0 3px;
+  font-family: Lato-Regular;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.75;
+  letter-spacing: no
+  rmal;
+  text-align: left;
+  color: #fff;
+}
+
+img.Do-not-accept {
+  width: 170px;
+  height: 52px;
+  margin: 33px 17px 69px 88px;
+  object-fit: contain;
+
+  margin-top: 100%;
+}
+
+
+img.Accept {
+  width: 170px;
+  height: 52px;
+  margin: 33px 0 69px 17px;
+  object-fit: contain;
+
+  margin-top: 100%;
+}
+
+.div1Cookie {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-end;
+}

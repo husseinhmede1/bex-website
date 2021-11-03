@@ -1,0 +1,191 @@
+import React, { useEffect } from "react";
+import { connect, ConnectedProps } from "react-redux";
+import { useTranslation } from "react-i18next";
+import { RootState } from "&store/store";
+
+import "./policy.css";
+
+
+import areeba from "&assets/img/Areeba-logo.png";
+import areeba2 from "&assets/img/Areeba-logo@2x.png";
+import areeba3 from "&assets/img/Areeba-logo@3x.png";
+
+import mastercard from "&assets/img/Mastercard.png";
+import mastercard2 from "&assets/img/Mastercard@2x.png";
+import mastercard3 from "&assets/img/Mastercard@3x.png";
+
+import chatbot from "&assets/img/chatbot.png";
+import chatbot2 from "&assets/img/chatbot@2x.png";
+import chatbot3 from "&assets/img/chatbot@3x.png";
+
+
+
+/*
+ * These are actions imported from the feature slices.
+ * You can use 'useDispatch' hook or 'mapDispatchToProps'
+ * to dispatch these actions
+ */
+//import { homeActions } from "./home.slice";
+import { loginActions } from "&features/demo/login/login.slice";
+
+const { innerWidth: width, innerHeight: height } = window;
+
+type ReduxProps = ConnectedProps<typeof connector>;
+
+const PolicyComponent = (props: ReduxProps) => {
+  const { logout } = props;
+  const { t } = useTranslation(["Policy"]);
+
+  /**
+   * useEffect performs side-effects on component rendering.
+   * It takes a function for side-effects and a dependency list.
+   * When dependency list is empty, useEffect runs each time the component rerenders
+   * Adding variables to the dependency list will cause useEffect to run each time a variable changes
+   */
+  useEffect(() => {
+    // Write your side-effects here
+  }, []);
+
+  return (
+    <div className="div1Policy">
+      <div className='div5P'>
+        <span className="BEXP">BEX</span>
+<div className='div4P'> 
+        <span className="How-bex-worksP">How bex works</span>
+
+        <span className="PricingP">Pricing</span>
+
+        <span className="About-usP">About us</span>
+
+        <span className="Contact-usP">Contact us</span>
+      </div>
+      </div>
+      <div>
+        <div className='div3P'>
+          <span className="Privacy-policyP">Privacy policy</span>
+        </div>
+        <div className='div2P'>
+          <div>
+            <span className="span1">1.</span>
+
+            <span className="Acceptance-of-termsP">Acceptance of terms</span>
+          </div>
+          <div>
+            <span className="span1">2.</span>
+
+            <span className="Privacy-complaintsP">Privacy complaints</span>
+          </div>
+          <div>
+            <span className="span1">3.</span>
+
+            <span className="Data-retention-and-data-probabilityP">
+              Data retention and data probability
+            </span>
+          </div>
+          <div>
+            <span className="span1">4.</span>
+
+            <span className="How-your-personal-information-is-usedP">
+              How your personal information is used
+            </span>
+          </div>
+          <div>
+            <span className="span1">5.</span>
+
+            <span className="Links-to-third-party-siteP">
+              Links to third party site
+            </span>
+          </div>
+          <div>
+            <span className="span1">6.</span>
+
+            <span className="Non-discriminationP">Non discrimination</span>
+          </div>
+          <div>
+            <span className="span1">7.</span>
+
+            <span className="Legal-bases-for-professionP">
+              Legal bases for profession
+            </span>
+          </div>
+          <div>
+            <span className="span1">8.</span>
+
+            <span className="Cookie-and-tracking-technologiesP">
+              Cookie and tracking technologies
+            </span>
+          </div>
+          <div>
+            <span className="span1">9.</span>
+
+            <span className="Information-sharing-with-service-providerP">
+              Information sharing with service provider
+            </span>
+          </div>
+          <div>
+            <span className="span1">10.</span>
+
+            <span className="Changes-in-privacy-policyP">
+              Changes in privacy policy
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div className="Ellipse-1P">
+        <img
+          src={chatbot}
+          srcSet={`${chatbot2} 2x, ${chatbot3} 3x`}
+          className="chatbotP"
+        />
+      </div>
+
+
+      <div className="areeba-masterP">
+        <div className="areebaP">
+          <span className="Powered-byP">Powered by</span>
+          <img
+            src={areeba}
+            srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+            className="Areeba-logoP"
+          ></img>
+        </div>
+        <span className="Path-162351P"></span>
+        <div className="areebaP">
+          <span className="In-partnership-withP">In partnership with</span>
+          <img
+            src={mastercard}
+            srcSet={`${mastercard2} 2x, ${mastercard3} 3x`}
+            className="MastercardP"
+          ></img>
+        </div>
+      </div>
+ 
+    </div>
+  );
+};
+
+/**
+ * Maps state variables from redux store to props of currect component
+ * @param state
+ */
+const mapStateToProps = (state: RootState) => ({
+  // Map your redux state to your props here
+});
+
+/**
+ * Maps actions from slices to props
+ */
+const mapDispatchToProps = {
+  // map your actions here ex:
+  // increment : counterActions.increment
+  logout: loginActions.reset,
+};
+
+/**
+ * Connects component to redux store
+ */
+const connector = connect(mapStateToProps, mapDispatchToProps);
+const PolicyComponentRedux = connector(PolicyComponent);
+
+export { PolicyComponentRedux as PolicyComponent };

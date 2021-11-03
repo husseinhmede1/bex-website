@@ -2,11 +2,16 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
-import styled from 'styled-components';
 
-import try1 from "&assets/img/Try-BEX-img.png";
-import try2 from "&assets/img/Try-BEX-img@2x.png";
-import try3 from "&assets/img/Try-BEX-img@3x.png";
+import "./cookie.css";
+
+import accept from "&assets/img/Accept.png";
+import accept2 from "&assets/img/Accept@2x.png";
+import accept3 from "&assets/img/Accept@3x.png";
+
+import dont from "&assets/img/Do-not-accept.png";
+import dont2 from "&assets/img/Do-not-accept@2x.png";
+import dont3 from "&assets/img/Do-not-accept@3x.png";
 
 /**
  *
@@ -35,23 +40,43 @@ const CookieComponent = (props: ReduxProps) => {
     // Write your side-effects here
   }, []);
 
+  return (
+    <>
+      <div className="cookieBackground">
+        <div className="div1Cookie">
+          <span className="Cookie-Policy">COOKIE</span>
 
-  const Box = styled.div`
-  margin: 40px;
-  border: 5px black;
-`;
+          <span className="This-site-uses-cookies-small-text-files-that-are-placed-on-your-machine-to-help-the-site-provide-a-better-user-experience-In-general-cookies-are-used-to-retain-user-preferences-store-information-for-things-like-shopping-carts-and-provide-anonymized-t">
+            This site uses cookies – small text files that are placed on your
+            machine to help the site provide a better user experience. In
+            general, cookies are used to retain user preferences, store
+            information for things like shopping carts, and provide anonymized
+            tracking data to third party applications like Google Analytics. As
+            a rule, cookies will make your browsing experience better. However,
+            you may prefer to disable cookies on this site and on others. The
+            most effective way to do this is to disable cookies in your browser.
+            We suggest consulting the Help section of your browser or taking a
+            look at the About Cookies website which offers guidance for all
+            modern browsers
+          </span>
+        </div>
 
-const Content = styled.p`
-  font-size: 16px;
-  text-align: center;
-`;
+        <div>
+          <img
+            src={dont}
+            srcSet={`${dont2} 2x, ${dont3} 3x`}
+            className="Do-not-accept"
+          ></img>
 
-
-  return (<>
-    <Box>
-    <Content> Styling React Components </Content>
-  </Box>
-  </>);
+          <img
+            src={accept}
+            srcSet={`${accept2} 2x, ${accept3} 3x`}
+            className="Accept"
+          ></img>
+        </div>
+      </div>
+    </>
+  );
 };
 
 /**

@@ -5,7 +5,6 @@ import { RootState } from "&store/store";
 
 import "./challanges.css";
 
-
 import down from "&assets/img/down-arrow.png";
 import down2 from "&assets/img/down-arrow@2x.png";
 import down3 from "&assets/img/down-arrow@3x.png";
@@ -51,86 +50,70 @@ const ChallangesComponent = (props: ReduxProps) => {
 
   return (
     <div style={{ height: height }}>
+      <div className="Rectangle-24868">
+        <img
+          src={down}
+          srcSet={`${down2} 2x, ${down3} 3x`}
+          className="down-arrow"
+        />
+      </div>
+      <div className="Right">
+        <div className="text">
+          <span className="What-are-your-challenges">
+            <div> What are your</div>
+            <div>challenges?</div>
+          </span>
 
-<div className="Rectangle-24868">
-  <img src={down}
-     srcSet={`${down2} 2x, ${down3} 3x`} 
-     className="down-arrow"/>
-     
-     </div>
-     <div className='Right'> 
-     <div className='text'> 
+          <span className="Day-to-day-business-expenses-procedures-are-time-consuming-and-drowning-your-team-in-complex-daily-tasks">
+            Day-to-day business expenses procedures are time consuming and
+            drowning your team in complex daily tasks
+          </span>
+        </div>
 
-     <span className="What-are-your-challenges">
- <div> What are your</div>
-<div>challenges?</div>
-</span>
+        <div>
+          <div className="icon1">
+            <img
+              src={icons2}
+              srcSet={`${icons22} 2x, ${icons23} 3x`}
+              className="Icons"
+            ></img>
 
+            <span className="Lack-of-visibility-on-How-where-and-how-much-employees-are-spending">
+              <div>Lack of visibility on: How, where and how </div>
+              <div>much employees are spending</div>
+            </span>
+          </div>
 
+          <div className="Line-5279"></div>
 
-<span className="Day-to-day-business-expenses-procedures-are-time-consuming-and-drowning-your-team-in-complex-daily-tasks">
-  Day-to-day business expenses procedures are time consuming and drowning your team in complex daily tasks
-</span>
+          <div className="icon1">
+            <img
+              src={icons3}
+              srcSet={`${icons32} 2x, ${icons33} 3x`}
+              className="Icons1"
+            ></img>
 
+            <span className="No-tools-in-hand-to-control-How-where-how-much-employees-spend">
+              <div> No tools in hand to control: How, where & </div>
+              <div>how much employees spend</div>
+            </span>
+          </div>
 
-</div>
+          <div className="Line-5280"></div>
 
-<div> 
+          <div className="icon1">
+            <img
+              src={icons1}
+              srcSet={`${icons12} 2x, ${icons13} 3x`}
+              className="Icons2"
+            ></img>
 
-<div className='icon1'> 
-
-<img src={icons2}
-     srcSet={`${icons22} 2x, ${icons23} 3x`}
-     className="Icons"></img>
-
-
-
-<span className="Lack-of-visibility-on-How-where-and-how-much-employees-are-spending">
- 
- <div>Lack of visibility on: How, where and how </div>
-  <div>much employees are spending</div>
- </span>
-
-
- </div>
-
- <div className="Line-5279"></div>
-
-
- <div className='icon1'> 
-
-<img src={icons3}
-     srcSet={`${icons32} 2x, ${icons33} 3x`}
-     className="Icons1"></img>
-
-
-
-<span className="No-tools-in-hand-to-control-How-where-how-much-employees-spend">
- <div> No tools in hand to control: How, where & </div>
-<div>how much employees spend</div>
-</span>
-
- </div>
-
- <div className="Line-5280"></div>
-
- <div className='icon1'> 
-
-<img src={icons1}
-     srcSet={`${icons12} 2x, ${icons13} 3x`}
-     className="Icons2"></img>
-
-
-
- <span className="Lengthy-manual-reconciliation">
-  Lengthy manual reconciliation.
-</span>
-
-</div>
-
- </div>
- </div>
-
+            <span className="Lengthy-manual-reconciliation">
+              Lengthy manual reconciliation.
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

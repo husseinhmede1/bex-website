@@ -113,7 +113,7 @@ const MenuComponent = (props: ReduxProps) => {
         <div className="areebam">
           <span className="Powered-bym">Powered by</span>
           <img
-            src={areeba}
+            src={areeba} 
             srcSet={`${areeba2} 2x, ${areeba3} 3x`}
             className="Areeba-logom"
           ></img>

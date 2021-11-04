@@ -1,6 +1,6 @@
 .cookieBackground {
   width: 100wv;
-  height: 100vh;
+  height: 45vh;
 
   background-color: #00194a;
 
@@ -14,7 +14,7 @@
 
 .Cookie-Policy {
   width: 189px;
-  height: 26px;
+  height: 26px; 
   margin: 25px 617px 21px 3px;
   font-family: Gilroy-ExtraBold;
   font-size: 25px;
@@ -46,12 +46,14 @@
 img.Do-not-accept {
   width: 170px;
   height: 52px;
-  margin: 33px 17px 69px 88px;
-  object-fit: contain;
+  margin: 33px 17px 69px 88px; 
+  object-fit: contain; 
 
-  margin-top: 100%;
+  margin-top: 100%; 
 }
-
+.cookieButtons{
+margin-top: -10%;
+}
 
 img.Accept {
   width: 170px;

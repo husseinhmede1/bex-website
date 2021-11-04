@@ -11,7 +11,7 @@ import mask3 from "&assets/img/Mask-Group3@3x.png";
 
 import areeba from "&assets/img/areeba-white.png";
 import areeba2 from "&assets/img/areeba-white@2x.png";
-import areeba3 from "&assets/img/areeba-white@3x.png";
+import areeba3 from "&assets/img/areeba-white@3x.png"; 
 
 import master from "&assets/img/Mastercard-Txt.png";
 import master2 from "&assets/img/Mastercard-Txt@2x.png";

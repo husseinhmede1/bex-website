@@ -61,12 +61,12 @@ const CookieComponent = (props: ReduxProps) => {
           </span>
         </div>
 
-        <div>
+        <div className='cookieButtons'>
           <img
             src={dont}
             srcSet={`${dont2} 2x, ${dont3} 3x`}
             className="Do-not-accept"
-          ></img>
+          ></img>  
 
           <img
             src={accept}

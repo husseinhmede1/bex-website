@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
+import { Router, Route, Link } from "react-router-dom";
 
 import "./menu.css";
 
@@ -64,19 +65,29 @@ const MenuComponent = (props: ReduxProps) => {
   return (
     <div className="menuBackgroundm" style={{ height: height }}>
       <div className="navbarm">
-        <span className="bexm">BEX</span>
+        <Link to="/mainprivacy" className="bexm">
+          BEX
+        </Link>
 
         <div className="navbar-namesm">
-          <span className="navbar-names-fontm">HOW BEX WORKS</span>
+          <span className="navbar-names-font1m">HOW BEX WORKS</span>
           <span className="navbar-names-fontm">PIRCING</span>
           <span className="navbar-names-fontm">ABOUT US</span>
           <span className="navbar-names-fontm">CONTACT US</span>
         </div>
- 
-        <div className="navbar-imagesm">
-          <img src={Apple} srcSet={`${Apple2} 2x, ${Apple3} 3x`} />
 
-          <img src={Gplay} srcSet={`${Gplay2} 2x, ${Gplay3} 3x`} />
+        <div className="navbar-imagesm">
+          <img
+            src={Apple}
+            srcSet={`${Apple2} 2x, ${Apple3} 3x`}
+            className="appleImg"
+          />
+
+          <img
+            src={Gplay}
+            srcSet={`${Gplay2} 2x, ${Gplay3} 3x`}
+            className="GplayImg"
+          />
         </div>
       </div>
       <div className="Busines-cntrlm">
@@ -85,7 +96,7 @@ const MenuComponent = (props: ReduxProps) => {
             <div> BUSINESS EXPENSE </div>
             <div>MANAGMENT made easy.</div>
           </span>
-        </div> 
+        </div>
         <div className="contrlm">
           <span className="Control-Spend-Savem">CONTROL. SPEND. SAVE.</span>
         </div>
@@ -113,7 +124,7 @@ const MenuComponent = (props: ReduxProps) => {
         <div className="areebam">
           <span className="Powered-bym">Powered by</span>
           <img
-            src={areeba} 
+            src={areeba}
             srcSet={`${areeba2} 2x, ${areeba3} 3x`}
             className="Areeba-logom"
           ></img>

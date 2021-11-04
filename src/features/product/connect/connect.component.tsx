@@ -159,7 +159,7 @@ const ConnectComponent = (props: ReduxProps) => {
             srcSet={`${master2} 2x, ${master3} 3x`}
             className="MastercardC"
           ></img>
-
+ 
           <span className="Privacy-PolicyC">Privacy Policy</span>
           <span className="Terms-of-ServiceC">Terms of Service</span>
           <span className="Cookie-PolicyC">Cookie Policy</span>

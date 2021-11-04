@@ -1,19 +1,24 @@
 .Product-page-Controlh {
-  width: 100vw;
+  width: 99.2vw;
   height: 100vh;
-  
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-  
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+
   background-color: #f0f0f0;
 }
 
+.cookieComp {
+  width: 99.2vw;
+  margin-top: -14.3%;
+  z-index: 1;
+}
 .BEX-handles-the-hard-stuffh {
-  width: 500px; 
+  width: 500px;
   height: 153px;
   margin: 0 363.1px 63px 50px;
   font-family: Gilroy-ExtraBold;
@@ -27,9 +32,8 @@
   color: #306bdd;
 }
 
-.BEX-loc{
-height: 20vh;
-
+.BEX-loc {
+  height: 20vh;
 }
 img.Spend-imgh {
   width: 699.1px;
@@ -152,7 +156,7 @@ span {
   line-height: 1.23;
   letter-spacing: normal;
   text-align: left;
-  margin-left: 8%;
+  margin-left: 2%;
   color: #00194a;
 }
 .right-2h {
@@ -204,7 +208,6 @@ span {
   align-items: center;
   align-content: stretch;
   margin-top: 5%;
-  
 }
 
 .div2h {
@@ -233,6 +236,7 @@ span {
   align-items: stretch;
   align-content: stretch;
   margin-top: -20%;
+  margin-left: -5%;
 }
 
 .div5h {

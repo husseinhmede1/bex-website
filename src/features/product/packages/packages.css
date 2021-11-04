@@ -1,6 +1,7 @@
 .Product-page-Controlp {
-  height: 7083px;
-  background-color: #f0f0f0;
+width: 99.2vw;
+height: 100vh;
+background-color: #f0f0f0;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -24,7 +25,7 @@
   color: #00194a;
   margin-left: 30%;
 }
-
+ 
 .Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp {
   width: 492px;
   height: 44px;
@@ -565,9 +566,9 @@ img.Contact-us-bluep {
 }
 
 .Rectangle-24089p {
-  width: 9vw;
+  width: 8vw;
 
-  height: 6vh;
+  height: 5.5vh;
   background-color: #00194a;
   margin-left: 15%;
   display: flex;

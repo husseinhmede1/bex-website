@@ -1,5 +1,5 @@
 .Rectangle-24968I {
-  width: 100vw;
+  width: 99.2vw;
   height: 100vh;
 
   background-image: -webkit-image-set(
@@ -8,7 +8,7 @@
     url("../../../assets/img/Mask-Group2@3x.png") 3x
   );
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed; 
 
   contain: content;
   background-position: center;
@@ -45,6 +45,8 @@
   margin-top: -20%;
   margin-left: -40%;
   z-index: 1;
+  white-space: nowrap;
+
 }
 
 .Designed-by-a-team-of-experts-from-areeba-and-Mastercard-with-extensive-knowledge-in-fintech-and-digital-payments-with-the-mission-of-helping-businesses-save-time-and-moneyI {
@@ -109,6 +111,15 @@ img.areeba-whiteI {
   .text-style-1I {
   font-weight: bold;
   font-family: Lato-Regular;
+  text-decoration: underline;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
 }
 
 img.Mastercard-TxtI {
@@ -137,6 +148,15 @@ img.Mastercard-TxtI {
   .text-style-1I {
   font-weight: bold;
   font-family: Lato-Regular;
+  text-decoration: underline;
+  font-size: 13px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
 }
 
 .div2I {

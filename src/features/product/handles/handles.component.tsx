@@ -5,6 +5,7 @@ import { RootState } from "&store/store";
 
 import "./handles.css";
 
+import { CookieComponent } from "&styled/cookies/cookie.component";
 import spend from "&assets/img/Spend-img.png";
 import spend2 from "&assets/img/Spend-img@2x.png";
 import spend3 from "&assets/img/Spend-img@3x.png";
@@ -42,12 +43,12 @@ const HandlesComponent = (props: ReduxProps) => {
 
   return (
     <div className="Product-page-Controlh">
-      <div className='BEX-loc'>
-      <span className="BEX-handles-the-hard-stuffh">
-        <div>BEX HANDLES</div>
-        <div>THE HARD STUFF</div>
-      </span>
-</div>
+      <div className="BEX-loc">
+        <span className="BEX-handles-the-hard-stuffh">
+          <div>BEX HANDLES</div>
+          <div>THE HARD STUFF</div>
+        </span>
+      </div>
       <div className="div1h">
         <div className="div2h">
           <div className="div3h">
@@ -108,6 +109,7 @@ const HandlesComponent = (props: ReduxProps) => {
           ></img>
         </div>
       </div>
+
     </div>
   );
 };

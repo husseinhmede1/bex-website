@@ -1,14 +1,14 @@
 img.Try-BEX-img {
-  width: 850px;
-  height: 750px;
+
+  width: 92%;
   margin: 191px 0 0 633px;
   object-fit: contain;
-  margin-left: 35%;
+  margin-left: 37.1%;
 }
 
 .Try-BEX-For-Free {
   width: 376px;
-  height: 223px;
+  height: 223px; 
   margin: 0 0 17px;
   font-family: Gilroy-ExtraBold;
   font-size: 100px;
@@ -65,15 +65,15 @@ img.Get-your-demo {
     url("../../../assets/img/Try-bex-Cover@3x.png") 3x
   );
   background-repeat: no-repeat;
-  background-attachment: fixed;
   contain: content;
-  height: 500%;
+  background-attachment: fixed;
+
 
   background-position: center;
   background-size: cover;
-  width: 100vw;
+  width: 99.2vw;
   height: 100vh;
-
+ 
   object-fit: contain;
 }
 .div2 {

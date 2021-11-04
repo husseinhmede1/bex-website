@@ -12,7 +12,7 @@ import try3 from "&assets/img/Try-BEX-img@3x.png";
 import apple from "&assets/img/Apple-Icon.png";
 import apple2 from "&assets/img/Apple-Icon@2x.png";
 import apple3 from "&assets/img/Apple-Icon@3x.png";
-
+ 
 import play from "&assets/img/Google-play.png";
 import play2 from "&assets/img/Google-play@2x.png";
 import play3 from "&assets/img/Google-play@3x.png";
@@ -56,7 +56,7 @@ const TryforFreeComponent = (props: ReduxProps) => {
           <span className="-month-3-users-Digital-card-only">
             1 Month | 3 Users | Digital Card Only
           </span>
-        </div>
+        </div> 
         <div className="div3">
           <img
             src={demo}

@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
+import { Router, Route, Link } from 'react-router-dom';
 
 import "./policy.css";
-
 
 import areeba from "&assets/img/Areeba-logo.png";
 import areeba2 from "&assets/img/Areeba-logo@2x.png";
@@ -17,7 +17,6 @@ import mastercard3 from "&assets/img/Mastercard@3x.png";
 import chatbot from "&assets/img/chatbot.png";
 import chatbot2 from "&assets/img/chatbot@2x.png";
 import chatbot3 from "&assets/img/chatbot@3x.png";
-
 
 
 /*
@@ -48,81 +47,81 @@ const PolicyComponent = (props: ReduxProps) => {
 
   return (
     <div className="div1Policy">
-      <div className='div5P'>
-        <span className="BEXP">BEX</span>
-<div className='div4P'> 
-        <span className="How-bex-worksP">How bex works</span>
+      <div className="div5P">
+       <Link to='/main' className="BEXP">BEX</Link>
+        <div className="div4P">
+          <span className="How-bex-worksP">How bex works</span>
 
-        <span className="PricingP">Pricing</span>
+          <span className="PricingP">Pricing</span>
 
-        <span className="About-usP">About us</span>
+          <span className="About-usP">About us</span>
 
-        <span className="Contact-usP">Contact us</span>
+          <span className="Contact-usP">Contact us</span>
+        </div>
       </div>
-      </div>
-      <div>
-        <div className='div3P'>
+      <div className='div6P'>
+        <div className="div3P">
           <span className="Privacy-policyP">Privacy policy</span>
         </div>
-        <div className='div2P'>
-          <div>
+        <div className="div2P">
+          <div className="spaceBetween">
             <span className="span1">1.</span>
 
             <span className="Acceptance-of-termsP">Acceptance of terms</span>
           </div>
-          <div>
+          <div className="spaceBetween">
             <span className="span1">2.</span>
 
             <span className="Privacy-complaintsP">Privacy complaints</span>
           </div>
-          <div>
+          <div className="spaceBetween">
             <span className="span1">3.</span>
 
             <span className="Data-retention-and-data-probabilityP">
               Data retention and data probability
             </span>
           </div>
-          <div>
+          <div className="spaceBetween">
             <span className="span1">4.</span>
 
             <span className="How-your-personal-information-is-usedP">
               How your personal information is used
             </span>
           </div>
-          <div>
+          <div className="spaceBetween">
             <span className="span1">5.</span>
 
             <span className="Links-to-third-party-siteP">
               Links to third party site
             </span>
           </div>
-          <div>
+          <div className="spaceBetween">
             <span className="span1">6.</span>
 
             <span className="Non-discriminationP">Non discrimination</span>
           </div>
-          <div>
+          <div className="spaceBetween">
             <span className="span1">7.</span>
 
             <span className="Legal-bases-for-professionP">
               Legal bases for profession
             </span>
           </div>
-          <div>
+          <div className="spaceBetween">
             <span className="span1">8.</span>
 
             <span className="Cookie-and-tracking-technologiesP">
               Cookie and tracking technologies
             </span>
           </div>
-          <div>
+          <div className="spaceBetween">
             <span className="span1">9.</span>
 
             <span className="Information-sharing-with-service-providerP">
               Information sharing with service provider
             </span>
           </div>
-          <div>
+          <div className="spaceBetween">
             <span className="span1">10.</span>
 
             <span className="Changes-in-privacy-policyP">
@@ -139,7 +138,6 @@ const PolicyComponent = (props: ReduxProps) => {
           className="chatbotP"
         />
       </div>
-
 
       <div className="areeba-masterP">
         <div className="areebaP">
@@ -160,7 +158,6 @@ const PolicyComponent = (props: ReduxProps) => {
           ></img>
         </div>
       </div>
- 
     </div>
   );
 };

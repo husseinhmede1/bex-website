@@ -5,7 +5,7 @@ import { connect, ConnectedProps } from "react-redux";
 import { history, RootState } from "&store/store";
 import { ProtectedRoute } from "&route/protectedRoute";
 // TODO remove demo routes
-import { HomeComponent } from "&features/demo/home/home.component";
+
 import { ChallangesComponent } from "&features/product/challanges/challanges.component";
 import { LoginComponent } from "&features/demo/login/login.component";
 import { MenuComponent } from "&features/product/menu/menu.component";
@@ -19,8 +19,8 @@ import { ConnectComponent } from "&features/product/connect/connect.component";
 import { MainComponent } from "&features/product/main/main.component";
 import { CookieComponent } from "&styled/cookies/cookie.component";
 import { PolicyComponent } from "&features/privacy/policy/policy.component";
-
-
+import { TermsComponent } from "&features/privacy/terms/terms.component";
+import { MainprivacyComponent } from "&features/privacy/mainprivacy/mainprivacy.component";
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
@@ -32,8 +32,11 @@ const AppRouter = (props: ReduxProps) => {
       {/* App main routing switch */}
       <Switch>
         {/* TODO remove the coming demo routes and add your's */}
-        <Route exact path="/" component={PolicyComponent} />
+        <Route exact path="/" component={MainComponent} />
+        <Route exact path="/mainPrivacy" component={MainprivacyComponent} />
+        <Route exact path="/main" component={MainComponent} />
         <Route exact path="/login" component={LoginComponent} />
+        <Route exact path="/cookie" component={CookieComponent} />
         <Route exact path="/menu" component={MenuComponent} />
         <Route exact path="/handles" component={HandlesComponent} />
         <Route exact path="/challanges" component={ChallangesComponent} />
@@ -43,11 +46,8 @@ const AppRouter = (props: ReduxProps) => {
         <Route exact path="/benefits" component={BenefitsComponent} />
         <Route exact path="/info" component={InfoComponent} />
         <Route exact path="/connect" component={ConnectComponent} />
-        <Route exact path="/main" component={MainComponent} />
-        <Route exact path="/cookie" component={CookieComponent} />
         <Route exact path="/policy" component={PolicyComponent} />
-
-
+        <Route exact path="/terms" component={TermsComponent} />
 
         {/* TODO This block handles unmatched routes. Add your custom 404 component */}
         <Route path="/404" render={() => <div>page not found</div>} />

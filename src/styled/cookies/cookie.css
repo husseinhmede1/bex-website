@@ -14,7 +14,7 @@
 
 .Cookie-Policy {
   width: 189px;
-  height: 26px; 
+  height: 26px;
   margin: 25px 617px 21px 3px;
   font-family: Gilroy-ExtraBold;
   font-size: 25px;
@@ -37,8 +37,7 @@
   font-stretch: normal;
   font-style: normal;
   line-height: 1.75;
-  letter-spacing: no
-  rmal;
+  letter-spacing: no rmal;
   text-align: left;
   color: #fff;
 }
@@ -46,13 +45,13 @@
 img.Do-not-accept {
   width: 170px;
   height: 52px;
-  margin: 33px 17px 69px 88px; 
-  object-fit: contain; 
+  margin: 33px 17px 69px 88px;
+  object-fit: contain;
 
-  margin-top: 100%; 
+  margin-top: 100%;
 }
-.cookieButtons{
-margin-top: -10%;
+.cookieButtons {
+  margin-top: -10%;
 }
 
 img.Accept {
@@ -64,11 +63,96 @@ img.Accept {
   margin-top: 100%;
 }
 
-.div1Cookie {
+.textCookie {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: stretch;
   align-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+  .cookieBackground {
+    width: 75.5ch;
+    height: 50vh;
+
+    background-color: #00194a;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: flex-end;
+
+  }
+
+  .Cookie-Policy {
+    width: 189px;
+    height: 26px;
+    margin: 25px 617px 21px 3px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 20px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.48;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    margin-left: 20%;
+    margin-top: -20%;
+  }
+
+  .This-site-uses-cookies-small-text-files-that-are-placed-on-your-machine-to-help-the-site-provide-a-better-user-experience-In-general-cookies-are-used-to-retain-user-preferences-store-information-for-things-like-shopping-carts-and-provide-anonymized-t {
+    width: 500px;
+    height: 133px;
+    margin: 21px 88px 0 3px;
+    font-family: Lato-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: no rmal;
+    line-height: 1.75;
+    text-align: left;
+    color: #fff;
+    margin-left: 20%;
+    margin-top: 0%;
+  }
+
+  img.Do-not-accept {
+    width: 120px;
+    height: 52px;
+    margin: 33px 17px 69px 88px;
+    object-fit: contain;
+z-index: 1;
+
+
+margin-top: 60%;
+margin-left: -220%;}
+  .cookieButtons {
+margin-left: -20%;
+    margin-top: 33%;
+  }
+
+  img.Accept {
+    width: 120px;
+    height: 52px;
+    margin: 33px 0 69px 17px;
+    object-fit: contain;
+z-index: 1;
+margin-top: 60%;
+margin-left: -0%;
+  }
+
+  .textCookie {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: flex-end;
+  }
 }

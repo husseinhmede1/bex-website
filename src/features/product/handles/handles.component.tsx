@@ -14,6 +14,9 @@ import sign from "&assets/img/Sign.png";
 import sign2 from "&assets/img/Sign@2x.png";
 import sign3 from "&assets/img/Sign@3x.png";
 
+import control from "&assets/img/Control-img.png";
+import control2 from "&assets/img/Control-img@2x.png";
+import control3 from "&assets/img/Control-img@3x.png";
 /**
  *
  *
@@ -49,10 +52,10 @@ const HandlesComponent = (props: ReduxProps) => {
           <div>THE HARD STUFF</div>
         </span>
       </div>
-      <div className="div1h">
-        <div className="div2h">
-          <div className="div3h">
-            <div className="div4h">
+      <div className="twoPartsHandles"> 
+        <div className="numbersTextTwoPartsHandles">
+          <div className="controlSpendHandles"> 
+            <div className="numbersHandles">
               <div className="Rectangle-24970h">
                 <span className="span1h">1</span>
               </div>
@@ -63,23 +66,23 @@ const HandlesComponent = (props: ReduxProps) => {
               </div>
             </div>
 
-            <div className="div5h">
+            <div className="controlSpendSpanHandles">
               <span className="Controlh">Control</span>
 
               <span className="spendh">Spend</span>
-            </div>
+            </div> 
           </div>
 
-          <div className="div6h">
+          <div className="signedTextHandles">
             <span className="Digitize-your-expense-policyh">
               DIGITIZE YOUR EXPENSE POLICY
             </span>
 
-            <div className="div7h">
+            <div className="signedTextoneHandles">
               <img
                 src={sign}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}
-                className="Signh"
+                className="SignHandles"
               ></img>
               <span className="Set-your-spending-policies-and-simplify-your-administration-processh">
                 Set your spending policies and simplify your administration
@@ -87,11 +90,11 @@ const HandlesComponent = (props: ReduxProps) => {
               </span>
             </div>
 
-            <div className="div7h">
+            <div className="signedTextoneHandles">
               <img
                 src={sign}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}
-                className="Signh"
+                className="SignHandles"
                 alt="s"
               ></img>
               <span className="Apply-spending-limits-and-restrictions-based-on-each-employee-profile-and-business-needsh">
@@ -102,11 +105,17 @@ const HandlesComponent = (props: ReduxProps) => {
           </div>
         </div>
         <div>
+        <img
+            src={control}
+            srcSet={`${control2} 2x, ${control3} 3x`}
+            className="Control-imgHandles"
+          ></img>
           <img
             src={spend}
             srcSet={`${spend2} 2x, ${spend3} 3x`}
-            className="Spend-imgh"
+            className="Spend-imgHandles"
           ></img>
+          
         </div>
       </div>
 

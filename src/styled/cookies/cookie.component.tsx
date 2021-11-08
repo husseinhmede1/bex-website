@@ -41,9 +41,9 @@ const CookieComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <>
+    
       <div className="cookieBackground">
-        <div className="div1Cookie">
+        <div className="textCookie">
           <span className="Cookie-Policy">COOKIE</span>
 
           <span className="This-site-uses-cookies-small-text-files-that-are-placed-on-your-machine-to-help-the-site-provide-a-better-user-experience-In-general-cookies-are-used-to-retain-user-preferences-store-information-for-things-like-shopping-carts-and-provide-anonymized-t">
@@ -61,12 +61,12 @@ const CookieComponent = (props: ReduxProps) => {
           </span>
         </div>
 
-        <div className='cookieButtons'>
+        <div className="cookieButtons">
           <img
             src={dont}
             srcSet={`${dont2} 2x, ${dont3} 3x`}
             className="Do-not-accept"
-          ></img>  
+          ></img>
 
           <img
             src={accept}
@@ -75,7 +75,7 @@ const CookieComponent = (props: ReduxProps) => {
           ></img>
         </div>
       </div>
-    </>
+    
   );
 };
 

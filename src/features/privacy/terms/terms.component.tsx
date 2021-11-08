@@ -47,13 +47,17 @@ const TermsComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <>
-      <div className="div1Te">
-        <div className="text2Te">
+    <div className='screenWidth'>
+
+      <div className="termsFlex">
+        <div className="textTerms">
           <span className="-Acceptance-of-termsTe">1. Acceptance of terms</span>
           <div className="textTitle">
+            
             <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
+             
               <span className="text-style-1Te">1.1</span>
+             
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.Lorem Ipsum is simply dummy text of the
@@ -88,7 +92,7 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
 
-        <div className="text2Te"> 
+        <div className="textTerms"> 
           <span className="-Privacy-complaintsTe">2. Privacy complaints</span>
 
           <div className="textTitle">
@@ -119,7 +123,7 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
 
-        <div className="text2Te">
+        <div className="textTerms">
           <span className="-Data-retention-and-data-probabilityTe">
             3. Data retention and data probability
           </span>
@@ -160,7 +164,7 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
 
-        <div className="text2Te">
+        <div className="textTerms">
           <span className="-How-your-personal-information-is-usedTe">
             4. How your personal information is used
           </span>
@@ -181,7 +185,7 @@ const TermsComponent = (props: ReduxProps) => {
             </span>
           </div>
         </div>
-        <div className="text2Te">
+        <div className="textTerms">
           <span className="-Links-to-third-party-siteTe">
             5. Links to third party site
           </span>
@@ -222,7 +226,7 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
 
-        <div className="text2Te">
+        <div className="textTerms">
           <span className="-Non-discriminationTe">6. Non discrimination</span>
           <div className="textTitle">
             <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
@@ -252,7 +256,7 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
 
-        <div className="text2Te">
+        <div className="textTerms">
           <span className="-Data-retention-and-data-probabilityTe">
             7. Data retention and data probability
           </span>
@@ -294,7 +298,7 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
 
-        <div className="text2Te">
+        <div className="textTerms">
           <span className="-How-your-personal-information-is-usedTe">
             8. How your personal information is used
           </span>
@@ -316,7 +320,7 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
       </div>
-      <div className="footerTe"></div>
+      <div className="footerColorTe"></div>
         <div className='storePlay'>
           <span className="Download-nowTe">Download Now!</span>
 
@@ -331,9 +335,9 @@ const TermsComponent = (props: ReduxProps) => {
             className="_play-store-icon-android-app-on-google-playTe"
           ></img>
         </div>
-        <div className="Path-162316Te"></div>
+        <div className="footerLineTerms"></div>
 
-        <div className="div40Te">
+        <div className="footerDivTerms">
           <img
             src={areeba}
             srcSet={`${areeba2} 2x, ${areeba3} 3x`}
@@ -344,7 +348,7 @@ const TermsComponent = (props: ReduxProps) => {
             srcSet={`${master2} 2x, ${master3} 3x`}
             className="MastercardTe"
           ></img>
-<div className='foterLinks' >
+<div className='foterLinks' > 
           <span className="Privacy-PolicyTe">Privacy Policy</span>
           <span className="Terms-of-ServiceTe">Terms of Service</span>
           <span className="Cookie-PolicyTe">Cookie Policy</span>
@@ -355,7 +359,7 @@ const TermsComponent = (props: ReduxProps) => {
           </span>
          </div>
       </div>
-    </>
+    </div>
   );
 };
 

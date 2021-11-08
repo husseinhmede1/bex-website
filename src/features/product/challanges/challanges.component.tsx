@@ -20,6 +20,18 @@ import icons13 from "&assets/img/Icons@3x.png";
 import icons3 from "&assets/img/Icons1.png";
 import icons32 from "&assets/img/Icons1@2x.png";
 import icons33 from "&assets/img/Icons1@3x.png";
+
+import icons4 from "&assets/img/Icon1challengesMobile.png";
+import icons42 from "&assets/img/Icon1challengesMobile@2x.png";
+import icons43 from "&assets/img/Icon1challengesMobile@3x.png";
+
+import icons5 from "&assets/img/Icons3MobileChallenges.png";
+import icons52 from "&assets/img/Icons3MobileChallenges@2x.png";
+import icons53 from "&assets/img/Icons3MobileChallenges@3x.png";
+
+import icons6 from "&assets/img/Icons2MobileChallenges.png";
+import icons62 from "&assets/img/Icons2MobileChallenges@2x.png";
+import icons63 from "&assets/img/Icons2MobileChallenges@3x.png";
 /**
  *
  *
@@ -50,18 +62,18 @@ const ChallangesComponent = (props: ReduxProps) => {
 
   return (
     <div style={{ height: height }}>
-      <div className="Rectangle-24868">
+      <div className="CornerChallanges">
         <img
           src={down}
           srcSet={`${down2} 2x, ${down3} 3x`}
           className="down-arrow"
         />
       </div>
-      <div className="Right">
-        <div className="text">
+      <div className="PageContainChallanges">
+        <div className="rightTextChallanges">
           <span className="What-are-your-challenges">
-            <div> What are your</div>
-            <div>challenges?</div>
+            <div> WHAT ARE YOUR </div>
+            <div>CHALLENGES?</div>
           </span>
 
           <span className="Day-to-day-business-expenses-procedures-are-time-consuming-and-drowning-your-team-in-complex-daily-tasks">
@@ -78,9 +90,14 @@ const ChallangesComponent = (props: ReduxProps) => {
               className="Icons"
             ></img>
 
+            <img
+              src={icons43}
+              srcSet={`${icons42} 2x, ${icons4} 3x`}
+              className="IconsMobile"
+            ></img>
             <span className="Lack-of-visibility-on-How-where-and-how-much-employees-are-spending">
-              <div>Lack of visibility on: How, where and how </div>
-              <div>much employees are spending</div>
+              Lack of visibility on: How, where and how 
+              much employees are spending
             </span>
           </div>
 
@@ -93,9 +110,15 @@ const ChallangesComponent = (props: ReduxProps) => {
               className="Icons1"
             ></img>
 
+
+<img
+              src={icons5}
+              srcSet={`${icons52} 2x, ${icons53} 3x`}
+              className="IconsMobile1"
+            ></img>
             <span className="No-tools-in-hand-to-control-How-where-how-much-employees-spend">
-              <div> No tools in hand to control: How, where & </div>
-              <div>how much employees spend</div>
+               No tools in hand to control :
+               How, where &  how much employees spend
             </span>
           </div>
 
@@ -108,6 +131,13 @@ const ChallangesComponent = (props: ReduxProps) => {
               className="Icons2"
             ></img>
 
+
+
+<img
+              src={icons6}
+              srcSet={`${icons62} 2x, ${icons63} 3x`}
+              className="IconsMobile2"
+            ></img>
             <span className="Lengthy-manual-reconciliation">
               Lengthy manual reconciliation.
             </span>

@@ -43,7 +43,7 @@ const MainComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="MainComponent">
+     <div className="MainComponent">
       <div> 
       <MenuComponent />
       </div>
@@ -52,15 +52,19 @@ const MainComponent = (props: ReduxProps) => {
         <ChallangesComponent />
       </div>
       </div>
-      <div className='divChallange'> 
+     <div className='divChallange'> 
       <HandlesComponent />
       </div>
       <SaveComponent />
-      <PackagesComponent /> 
-      <TryforFreeComponent />
-      <BenefitsComponent />
-      <InfoComponent />
-      <ConnectComponent />
+
+     {/*
+     <SaveComponent />
+     <PackagesComponent />     
+     <TryforFreeComponent />
+     <BenefitsComponent/>
+     <InfoComponent/>
+     <ConnectComponent/>
+     */}
     </div>
   );
 };

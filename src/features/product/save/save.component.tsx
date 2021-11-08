@@ -13,6 +13,10 @@ import sign from "&assets/img/Sign2.png";
 import sign2 from "&assets/img/Sign2@2x.png";
 import sign3 from "&assets/img/Sign2@3x.png";
 
+
+import saveMobile from "&assets/img/save-imgMobile.png";
+import saveMobile2 from "&assets/img/save-imgMobile@2x.png";
+import saveMobile3 from "&assets/img/save-imgMobile@3x.png";
 /**
  *
  *
@@ -41,9 +45,9 @@ const SaveComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="Path-162309s" style={{ height: height }}>
-      <div className="div1s">
-        <div className="div2s">
+    <div className="SaveBackground" style={{ height: height }}>
+      <div className="HeadPartSave">
+        <div className="numberWithSave">
           <div className="Rectangle-24989s">
             <span className="span1s">3</span>
           </div>
@@ -51,13 +55,13 @@ const SaveComponent = (props: ReduxProps) => {
           <span className="Saves">Save</span>
         </div>
 
-        <div className="div7s">
+        <div className="TextTitleSave">
           <span className="Time-is-money-Save-boths">
             TIME IS MONEY. SAVE BOTH
           </span>
 
-          <div className="div3s">
-            <div className="div4s">
+          <div className="TextSave">
+            <div className="signedTextone">
               <img
                 src={sign}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}
@@ -72,7 +76,7 @@ const SaveComponent = (props: ReduxProps) => {
               </div>
             </div>
 
-            <div className="div5s">
+            <div className="signedTexttwo">
               <img
                 src={sign2}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}
@@ -91,6 +95,12 @@ const SaveComponent = (props: ReduxProps) => {
       </div>
 
       <div>
+   
+      <img
+          src={saveMobile}
+          srcSet={`${saveMobile2} 2x, ${saveMobile3} 3x`}
+          className="Save-imgsMobile"
+        ></img>
         <img
           src={save}
           srcSet={`${save2} 2x, ${save3} 3x`}

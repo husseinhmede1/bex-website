@@ -34,6 +34,11 @@ import chatbot from "&assets/img/chatbot.png";
 import chatbot2 from "&assets/img/chatbot@2x.png";
 import chatbot3 from "&assets/img/chatbot@3x.png";
 
+
+
+import menu from "&assets/img/Menu.png";
+import menu2 from "&assets/img/Menu@2x.png";
+import menu3 from "&assets/img/Menu@3x.png";
 /**
  *
  *
@@ -63,24 +68,28 @@ const MenuComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="menuBackgroundm" style={{ height: height }}>
-      <div className="navbarm">
-        <Link to="/mainprivacy" className="bexm">
+    <div className="menuBackground" style={{ height: height }}>
+      <div className="navbarMenu">
+        <Link to="/mainprivacy" className="bexMenu">
           BEX
         </Link>
+ 
+        <div className="navbar-namesMenu" >
+          <span className="navbar-names-font1Menu">HOW BEX WORKS</span>
+          <span className="navbar-names-fontMenu">PIRCING</span>
+          <span className="navbar-names-fontMenu">ABOUT US</span>
+          <span className="navbar-names-fontMenu">CONTACT US</span>
 
-        <div className="navbar-namesm">
-          <span className="navbar-names-font1m">HOW BEX WORKS</span>
-          <span className="navbar-names-fontm">PIRCING</span>
-          <span className="navbar-names-fontm">ABOUT US</span>
-          <span className="navbar-names-fontm">CONTACT US</span>
+
+          
         </div>
 
-        <div className="navbar-imagesm">
+        <div className="navbar-imagesMenu">
           <img
             src={Apple}
             srcSet={`${Apple2} 2x, ${Apple3} 3x`}
             className="appleImg"
+            
           />
 
           <img
@@ -89,60 +98,69 @@ const MenuComponent = (props: ReduxProps) => {
             className="GplayImg"
           />
         </div>
+
+        
       </div>
-      <div className="Busines-cntrlm">
+      <div className='menuImgPosition'>
+        <img
+            src={menu}
+            srcSet={`${menu2} 2x, ${menu3} 3x`}
+            className="Menu"/>
+        </div>
+      <div className="Busines-cntrlMenu">
         <div>
-          <span className="Business-expense-management-made-easym">
+          <span className="Business-expense-management-made-easyMenu">
             <div> BUSINESS EXPENSE </div>
-            <div>MANAGMENT made easy.</div>
+            <div>MANAGMENT  </div>
+            <div>Made Easy.</div>
           </span>
         </div>
-        <div className="contrlm">
-          <span className="Control-Spend-Savem">CONTROL. SPEND. SAVE.</span>
+        <div className="contrlMenu">
+          <span className="Control-Spend-SaveMenu">CONTROL. SPEND. SAVE.</span>
         </div>
       </div>
-      <div className="tryDemom">
+      <div className="tryDemoMenu">
         <img
           src={tryForFree}
           srcSet={`${tryForFree2} 2x, ${tryForFree3} 3x`}
-          className="Try-for-freem"
+          className="Try-for-freeMenu"
         ></img>
         <img
           src={getDemo}
           srcSet={`${getDemo2} 2x, ${getDemo3} 3x`}
-          className="Get-demom"
+          className="Get-demoMenu"
         ></img>
       </div>
-      <div className="Ellipse-1m">
+      <div className="GreenCercleMenu">
         <img
           src={chatbot}
           srcSet={`${chatbot2} 2x, ${chatbot3} 3x`}
-          className="chatbotm"
+          className="chatbotMenu"
         />
       </div>
-      <div className="areeba-masterm">
-        <div className="areebam">
-          <span className="Powered-bym">Powered by</span>
+      <div className="areeba-masterMenu">
+        <div className="areebaMenu1">
+          <span className="Powered-byMenu">Powered by</span>
           <img
             src={areeba}
             srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-            className="Areeba-logom"
+            className="Areeba-logoMenu"
           ></img>
         </div>
-        <span className="Path-162351m"></span>
-        <div className="areebam">
-          <span className="In-partnership-withm">In partnership with</span>
+        <span className="lineMenu"></span>
+        <div className="mastercardMenu2">
+          <span className="In-partnership-withMenu">In partnership with</span>
           <img
             src={mastercard}
             srcSet={`${mastercard2} 2x, ${mastercard3} 3x`}
-            className="Mastercardm"
+            className="MastercardMenu"
           ></img>
         </div>
       </div>
     </div>
   );
 };
-
+ 
 /**
  * Maps state variables from redux store to props of currect component
  * @param state

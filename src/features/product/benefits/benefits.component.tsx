@@ -9,6 +9,11 @@ import mask from "&assets/img/Mask-Group.png";
 import mask2 from "&assets/img/Mask-Group@2x.png";
 import mask3 from "&assets/img/Mask-Group@3x.png";
 
+
+
+import mask1 from "&assets/img/SalonBENEFITS.png";
+import mask12 from "&assets/img/SalonBENEFITS@2x.png";
+import mask13 from "&assets/img/SalonBENEFITS@3x.png";
 /** 
  *
  *
@@ -38,42 +43,49 @@ const BenefitsComponent = (props: ReduxProps) => {
 
   return (
     <>
-      <div className="Rectangle-24927B">
+      <div className="BenefitsBackground">
         <div>
           <img
             src={mask}
             srcSet={`${mask2} 2x, ${mask3} 3x`}
             className="Mask-GroupB"
-          ></img>
+          ></img> 
+
+<img
+            src={mask1}
+            srcSet={`${mask12} 2x, ${mask13} 3x`}
+            className="Mask-GroupMobileB"
+          ></img> 
+
         </div>{" "}
-        <div className="div1B">
+        <div className="RectanglesGroupeBenefits">
           {" "}
-          <span className="BenefitsB">BENEFITS</span>
-          <div className="Rectangle-24856B">
+          <span className="BenefitsTitle">BENEFITS</span>
+          <div className="Rectangle53Benefits">
             <span className="span1B">53%</span>
             <span className="stated-improved-supplier-relationsB">
               stated ‘improved supplier relations’
             </span>
           </div>
-          <div className="Rectangle-24920B">
+          <div className="Rectangle42Benefits">
             <span className="span2B">42%</span>
             <span className="stated-reduced-number-of-approvalsB">
               stated ‘reduced number of approvals
             </span>
           </div>
-          <div className="Rectangle-24918B">
+          <div className="Rectangle63Benefits">
             <span className="span3B">63%</span>
             <span className="stated-improved-visibility-and-data-reportingB">
               stated ‘improved visibility and data reporting’
             </span>
           </div>
-          <div className="Rectangle-24919B">
+          <div className="Rectangle47Benefits">
             <span className="span4B">47%</span>
             <span className="stated-improved-cash-flowB">
               stated ‘improved cash flow’
             </span>
           </div>
-          <div className="Rectangle-24917B">
+          <div className="Rectangle68Benefits">
             <span className="span5B">68%</span>
             <span className="stated-reduced-admin-costB">
               stated ‘reduced admin cost’

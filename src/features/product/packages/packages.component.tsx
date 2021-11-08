@@ -33,26 +33,25 @@ const PackagesComponent = (props: ReduxProps) => {
    * When dependency list is empty, useEffect runs each time the component rerenders
    * Adding variables to the dependency list will cause useEffect to run each time a variable changes
    */
-  useEffect(() => { 
+  useEffect(() => {
     // Write your side-effects here
   }, []);
 
   return (
-    <div className="Product-page-Controlp" style={{ height: height }}>
-      <div className="div1p">
+    <div className="packagesBackground" style={{ height: height }}>
+      <div className="HeadOfPagePackages">
         <span className="OUR-Packagesp">OUR PACKAGES</span>
-
-        <span className="Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp">
-          <div>
+        
+          <span className="Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp">
             Choose the features and functionalities your teams need today.
-          </div>
-          <div>Easily upgrade as your company grows.</div>
-        </span>
+            Easily upgrade as your company grows.
+          </span>
+        
       </div>
 
-      <div className="div2p">
-        <div className="Rectangle-57p">
-          <div className="div3p">
+      <div className="PagePackagesContent">
+        <div className="firstRectanglePackages">
+          <div className="packagesTitleFirstRows">
             <span className="Essentialp">Essential</span>
             <span className="Starting-atp">Starting at</span>
             <span className="AED300p">
@@ -61,7 +60,7 @@ const PackagesComponent = (props: ReduxProps) => {
             <span className="User-Monthp">User /Month</span>
           </div>
 
-          <div className="div4p">
+          <div className="packagesRectangleSignedText">
             <div>
               <img
                 src={sign}
@@ -75,7 +74,7 @@ const PackagesComponent = (props: ReduxProps) => {
                 src={sign}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}
                 className="Signp"
-              ></img> 
+              ></img>
               <span className="Digital-cardp">Digital card</span>
             </div>
             <div>
@@ -89,13 +88,13 @@ const PackagesComponent = (props: ReduxProps) => {
             </div>
           </div>
 
-          <div className="div5p">
+          <div className="packagesStolenAED">
             <span className="Stolen-card-feep">Stolen card fee</span>
 
             <span className="AED-5p">AED 5</span>
           </div>
 
-          <div className="Rectangle-24090p">
+          <div className="firstContactButton">
             <span className="Contact-Usp">Contact Us</span>
           </div>
 
@@ -105,8 +104,8 @@ const PackagesComponent = (props: ReduxProps) => {
           </span>
         </div>
 
-        <div className="Rectangle-24086p">
-          <div className="div3p">
+        <div className="secondRectanglePackages">
+          <div className="packagesTitleFirstRows">
             <span className="prop">Pro</span>
             <span className="Starting-atp">Starting at</span>
             <span className="AED500p">
@@ -115,7 +114,7 @@ const PackagesComponent = (props: ReduxProps) => {
             <span className="User-Monthp">User /Month</span>
           </div>
 
-          <div className="div4p">
+          <div className="packagesRectangleSignedText">
             <div>
               <img
                 src={sign}
@@ -151,7 +150,7 @@ const PackagesComponent = (props: ReduxProps) => {
             </div>
           </div>
 
-          <div className="div5p">
+          <div className="packagesStolenAED">
             <span className="Stolen-card-fee1p">Stolen card fee</span>
 
             <span className="Free-up-to-3-then-AED-5p">
@@ -159,7 +158,7 @@ const PackagesComponent = (props: ReduxProps) => {
             </span>
           </div>
 
-          <div className="Rectangle-24088p">
+          <div className="secondContactButton">
             <span className="Contact-Usp">Contact Us</span>
           </div>
           <span className="aed-15-on-Additional-account-Up-to-10-usersp">
@@ -168,8 +167,8 @@ const PackagesComponent = (props: ReduxProps) => {
           </span>
         </div>
 
-        <div className="Path-161569p">
-          <div className="div3p">
+        <div className="thyrdRectanglePackages">
+          <div className="packagesTitleFirstRows">
             <span className="entreprisep">Entreprise</span>
             <span className="Starting-at1p">Starting at</span>
             <span className="AED1000p">
@@ -178,7 +177,7 @@ const PackagesComponent = (props: ReduxProps) => {
             <span className="User-Monthp">User /Month</span>
           </div>
 
-          <div className="div4p">
+          <div className="packagesRectangleSignedText">
             <div>
               <img
                 src={sign}
@@ -211,7 +210,7 @@ const PackagesComponent = (props: ReduxProps) => {
             </div>
           </div>
 
-          <div className="div6p">
+          <div className="packagesStolenAEDtwo">
             <div>
               <span className="Stolen-card-fee2p">Stolen card fee</span>
             </div>
@@ -222,15 +221,35 @@ const PackagesComponent = (props: ReduxProps) => {
             </div>
           </div>
 
-          <div className="Rectangle-24089p">
+          <div className="thyrdContactButton">
             <span className="Contact-Usp">Contact Us</span>
           </div>
- 
+
           <span className="Unlimitedp">Unlimited</span>
         </div>
+
+        <div className="MobileRectanglesecondPackages"></div>
+
+
       </div>
+      <div className='cercleMobileExistPackages'>
+
+        <div className='miniBlueCerclePackages'>
+
+
+        </div>
+
+        <div className='minisecondCerclePackages'>
+
+
+        </div>
+        <div className='minithyrdCerclePackages'>
+
+
+        </div>
+        </div>
     </div>
-  ); 
+  );
 };
 
 /**

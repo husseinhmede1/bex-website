@@ -121,7 +121,7 @@ const ConnectComponent = (props: ReduxProps) => {
             <div className="div20C">
               <div className="div13C">
                 <div className="div14C">
-                  <span className="Fist-nameC">Fist name</span>
+                  <span className="Fist-nameC">First name</span>
                   <div className="Rectangle-24148C"></div>
                 </div>
                 <div className="div19C">

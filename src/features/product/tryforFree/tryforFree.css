@@ -14,7 +14,7 @@ img.Try-BEX-img {
   font-size: 100px;
   font-weight: 800;
   font-stretch: normal;
-  font-style: normal;
+  font-style: normal; 
   line-height: 1;
   letter-spacing: normal;
   text-align: left;
@@ -51,7 +51,7 @@ img.Get-your-demo {
   object-fit: contain;
   margin-left: 20%;
 }
-.div1 {
+.tryforfreeBackground {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -76,7 +76,7 @@ img.Get-your-demo {
  
   object-fit: contain;
 }
-.div2 {
+.tryforfreerightSide {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -84,7 +84,7 @@ img.Get-your-demo {
   align-items: stretch;
   align-content: flex-end;
 }
-.div3 {
+.tryforfreeButtons {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -95,7 +95,7 @@ img.Get-your-demo {
   margin-left: -20%;
 }
 
-.div4 {
+.applePlayTryforFree {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -110,16 +110,170 @@ img.Google-play {
   margin: 69px 52px 0 23px;
   object-fit: contain;
 }
-.div6 {
+.tryforfreeImagLeftSide {
   margin-top: 6%;
 width: 50vw;
 }
 
-.div7 {
+.tryforfreeTitle {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
+}
+img.Try-BEX-Mobileimg{
+  width: 0px;
+  height: 0px;
+ visibility: hidden;   
+}
+
+@media only screen and (max-width: 600px) {
+
+  img.Try-BEX-img {
+    display: none;
+    width: 92%;
+    margin: 191px 0 0 633px;
+    object-fit: contain;
+    margin-left: 37.1%;
+  }
+  img.Try-BEX-Mobileimg{
+    width: 600px;
+    height: 1200px;
+    
+    object-fit: contain;
+visibility: visible;
+ 
+margin-top: 200%;
+margin-left: -125%;
+  }
+  
+  .Try-BEX-For-Free {
+    width: 263px;
+  height: 161px;
+    margin: 0 0 17px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 70px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal; 
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    margin-top: -75%;
+    margin-left: 35%;
+  }
+  
+  .-month-3-users-Digital-card-only {
+    width: 258px;
+    height: 18px;
+    margin: 216px 32px 0 0;
+    font-family: Lato-Bold;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    margin-top: 10%;
+    margin-left: 35%;
+  }
+  img.Apple {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+
+  }
+ 
+  img.Google-play {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: -5%;
+  }
+
+  img.Get-your-demo {
+    width: 150px;
+  height: 50px;
+    margin: 73px 34px 4px 0;
+    object-fit: contain;
+    margin-left: 70%;
+    margin-top: -5%;
+
+  }
+  .tryforfreeBackground {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+  
+    background-image: -webkit-image-set(
+      url("../../../assets/img/Try-BEX-Cover-Mobile.png") 1x,
+      url("../../../assets/img/Try-BEX-Cover-Mobile@2x.png") 2x,
+      url("../../../assets/img/Try-BEX-Cover-Mobile@3x.png") 3x
+    );
+    background-repeat: no-repeat;
+    contain: content;
+    background-attachment: fixed;
+  
+  
+    background-position: center;
+    background-size: cover;
+    width: 99.2vw;
+    height: 100vh;
+   
+    object-fit: contain;
+  }
+  .tryforfreerightSide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-end;
+    margin-top: -30%;
+  }
+  .tryforfreeButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    margin-top: 10%;
+    margin-left: -30%;
+  }
+  
+  .applePlayTryforFree {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: flex-end;
+    margin-top: -20%;
+    margin-left: -5%;
+  }
+  
+ 
+  .tryforfreeImagLeftSide {
+    margin-top: 6%;
+  width: 50vw;
+  }
+  
+  .tryforfreeTitle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
 }

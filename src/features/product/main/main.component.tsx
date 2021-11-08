@@ -56,10 +56,12 @@ const MainComponent = (props: ReduxProps) => {
       <HandlesComponent />
       </div>
       <SaveComponent />
-
-     {/*
-     <SaveComponent />
-     <PackagesComponent />     
+      <PackagesComponent />   
+      <TryforFreeComponent />
+     <BenefitsComponent/>
+     <InfoComponent/>
+     <ConnectComponent/>
+     {/*  
      <TryforFreeComponent />
      <BenefitsComponent/>
      <InfoComponent/>

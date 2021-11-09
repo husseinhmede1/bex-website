@@ -130,7 +130,7 @@ img.Try-BEX-Mobileimg {
 @media only screen and (max-width: 600px) {
   img.Try-BEX-img {
     display: none;
-    width: 92%;
+    width: 92.2vw;
     margin: 191px 0 0 633px;
     object-fit: contain;
     margin-left: 37.1%;
@@ -221,7 +221,6 @@ img.Try-BEX-Mobileimg {
     background-size: cover;
     width: 99.2vw;
     height: 100vh;
-
     object-fit: contain;
   }
   .tryforfreerightSide {

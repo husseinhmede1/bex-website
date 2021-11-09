@@ -163,9 +163,11 @@ const ConnectComponent = (props: ReduxProps) => {
             <span className="Privacy-PolicyC">Privacy Policy</span>
             <span className="Terms-of-ServiceC">Terms of Service</span>
             <span className="Cookie-PolicyC">Cookie Policy</span>
+            <div>
             <span className="-Bex-All-Rights-Reserved">
               2021 Bex. All Rights Reserved.
             </span>
+            </div>
           </div>
 
           <div className="FooterConnectPageMobile">

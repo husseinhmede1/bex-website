@@ -18,6 +18,10 @@ import chatbot from "&assets/img/chatbot.png";
 import chatbot2 from "&assets/img/chatbot@2x.png";
 import chatbot3 from "&assets/img/chatbot@3x.png";
 
+
+import menu from "&assets/img/Burger-menu.png";
+import menu2 from "&assets/img/Burger-menu@2x.png";
+import menu3 from "&assets/img/Burger-menu@3x.png";
 /*
  * These are actions imported from the feature slices.
  * You can use 'useDispatch' hook or 'mapDispatchToProps'
@@ -57,9 +61,20 @@ const PolicyComponent = (props: ReduxProps) => {
           <span className="PricingP">Pricing</span>
 
           <span className="About-usP">About us</span>
-
+ 
           <span className="Contact-usP">Contact us</span>
         </div>
+
+        <div className='policyMobileMenuNavbar'>
+        <Link to="/menumobile">
+          <img
+            src={menu}
+            srcSet={`${menu2} 2x, ${menu3} 3x`}
+            className="MenuPolicy"
+          />
+        </Link>
+
+          </div>
       </div>
       <div className="PrivacyPolicyToLeft">
         <div className="PrivacyPolicyTitlePosition">

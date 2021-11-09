@@ -67,7 +67,7 @@ const SaveComponent = (props: ReduxProps) => {
                 className="Signs"
               ></img>
 
-              <div>
+              <div> 
                 <span className="Digitize-your-business-expense-process-to-reduce-your-admin-costs">
                   Digitize your business expense process to reduce your admin
                   cost

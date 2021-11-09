@@ -7,7 +7,7 @@ import { Router, Route, Link } from "react-router-dom";
 import "./menu.css";
 
 import Apple from "&assets/img/Apple-Icon.png";
-import Apple2 from "&assets/img/Apple-Icon@2x.png";
+import Apple2 from "&assets/img/Apple-Icon@2x.png"; 
 import Apple3 from "&assets/img/Apple-Icon@3x.png";
 
 import Gplay from "&assets/img/Google-play.png";
@@ -94,7 +94,13 @@ const MenuComponent = (props: ReduxProps) => {
         </div>
       </div>
       <div className="menuImgPosition">
-        <img src={menu} srcSet={`${menu2} 2x, ${menu3} 3x`} className="Menu" />
+        <Link to="/menumobile">
+          <img
+            src={menu}
+            srcSet={`${menu2} 2x, ${menu3} 3x`}
+            className="Menu"
+          />
+        </Link>
       </div>
       <div className="Busines-cntrlMenu">
         <div>

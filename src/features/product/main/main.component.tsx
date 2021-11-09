@@ -62,12 +62,7 @@ const MainComponent = (props: ReduxProps) => {
       
      <InfoComponent/>
      <ConnectComponent/>
-     {/*  
-     <TryforFreeComponent />
-     <BenefitsComponent/>
-     <InfoComponent/>
-     <ConnectComponent/>
-     */}
+    
     </div>
   );
 };

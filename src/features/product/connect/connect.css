@@ -16,7 +16,7 @@
 }
 
 .connectPageContentTwoParts {
-  width: 100vw;
+  width: 99.2vw;
   height: 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -40,9 +40,10 @@
   justify-content: center;
   align-items: center;
   align-content: stretch;
+  margin-top: 10%;
 }
 .connectPageSocialSide {
-  margin-top: -60%;
+  margin-top: -15%;
 }
 .Lets-connectC {
   width: 372px;
@@ -383,13 +384,13 @@ img.Social-media-iconsC {
 }
 
 .FooterLineConnectPage {
-  width: 90vw;
+  width: 80vw;
   height: 0;
   margin: 123.9px 0 0;
   opacity: 0.3;
   border: solid 1px #ddd;
   margin-top: 0%;
-  margin-left: 1%;
+  margin-left: 10%;
   background-color: #306bdd;
 }
 
@@ -398,6 +399,8 @@ img.AreebaC {
   height: 17.1px;
   margin: 30.2px 21.6px 6.4px 0.5px;
   object-fit: contain;
+  margin-left: 10%;
+  margin-top: 1%;
 }
 
 img.MastercardC {
@@ -405,6 +408,8 @@ img.MastercardC {
   height: 29.2px;
   margin: 24.1px 75.3px 0.4px 21.6px;
   object-fit: contain;
+  margin-left: -15%;
+  margin-top: 1%;
 }
 
 .Privacy-PolicyC {
@@ -421,6 +426,8 @@ img.MastercardC {
   text-align: left;
   color: white;
   text-decoration: underline;
+  margin-left: -10%;
+
 }
 
 .Terms-of-ServiceC {
@@ -437,6 +444,8 @@ img.MastercardC {
   text-align: left;
   color: white;
   text-decoration: underline;
+  margin-left: -10%;
+
 }
 
 .Cookie-PolicyC {
@@ -453,6 +462,8 @@ img.MastercardC {
   text-align: left;
   color: white;
   text-decoration: underline;
+  margin-left: -10%;
+
 }
 
 .-Bex-All-Rights-Reserved {
@@ -469,6 +480,7 @@ img.MastercardC {
   letter-spacing: normal;
   text-align: right;
   color: white;
+  margin-left: -110%;
 }
 
 .FooterConnectPage {

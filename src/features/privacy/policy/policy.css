@@ -20,11 +20,11 @@
   letter-spacing: normal;
   text-align: left;
   color: #000;
-  margin-left: -15%;
+  margin-left: 8%;
 }
 
 .How-bex-worksP {
-  width: 128px;
+  width: 300px;
   height: 18px;
   margin: 16px 67px 98px 1px;
   font-family: Lato-Regular;
@@ -36,6 +36,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #000;
+  margin-left: -5%;
 }
 
 .PricingP {
@@ -109,7 +110,7 @@
   margin-top: 2%;
 }
 .navbarLinksPolicy {
-  margin-left: -50%;
+  margin-left: 0%;
 }
 
 .PrivacyPolicyTitlePosition {
@@ -415,10 +416,47 @@ img.chatbotP {
   height: 4vh;
 }
 
+.policyMobileMenuNavbar{
+width: 0px;
+
+height: 0px;
+  visibility:hidden;
+}
+
+img.MenuPolicy{
+  width: 0px;
+
+height: 0px;
+  visibility: hidden;
+  
+  
+  }
 @media only screen and (max-width: 600px) {
+
+.policyMobileMenuNavbar{
+visibility: visible;
+margin-left: 200%;
+margin-top: -6%;
+}
+img.MenuPolicy{
+visibility: visible;
+width: 70px;
+height: 50.5px;
+object-fit: contain;
+
+}
+.MainFlexPolicy {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-end;
+}
+
   .BEXP {
     font-family: Gilroy-ExtraBold;
-    font-size: 100px;
+    font-size: 70px;
     font-weight: 80;
     font-stretch: normal;
     font-style: normal;
@@ -426,91 +464,38 @@ img.chatbotP {
     letter-spacing: normal;
     text-align: left;
     color: #000;
+    margin-left: 40%;
+    margin-top: 2%;
   }
 
   .How-bex-worksP {
-    width: 128px;
-    height: 18px;
-    margin: 16px 67px 98px 1px;
-    font-family: Lato-Regular;
-    font-size: 45px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 5.33;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    white-space: nowrap;
-    margin-left: 70%;
+ display: none;
   }
 
   .About-usP {
-    width: 73px;
-    height: 18px;
-    margin: 16px 55px 98px 63px;
-    font-family: Lato-Regular;
-    font-size: 45px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 5.33;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    margin-left: 10%;
-    white-space: nowrap;
+   display: none;
   }
 
   .PricingP {
-    width: 61px;
-    height: 18px;
-    margin: 16px 63px 98px 7px;
-    font-family: Lato-Regular;
-    font-size: 45px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 5.33;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    margin-left: 20%;
-    white-space: nowrap;
+   display: none;
   }
 
   .Contact-usP {
-    font-family: Lato-Regular;
-    font-size: 45px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 5.33;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    white-space: nowrap;
-    margin-left: 10%;
+display: none;
   }
 
   .navbarLinksPolicy {
-    margin-top: 7%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+   display: none;
   }
 
   .navigationBarPolicy {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: stretch;
-    margin-left: 150%;
+  	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+    margin-left: 0%;
     margin-top: 2%;
   }
 
@@ -522,15 +507,15 @@ img.chatbotP {
 
   .PrivacyPolicyTitlePosition {
     margin-top: 2%;
-    margin-left: -10%;
+    margin-left: -20%;
   }
 
   .Privacy-policyP {
-    width: 397px;
-    height: 65px;
+    width: 142px;
+    height: 27px;
     margin: 72px 114px 60px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 150px;
+    font-size: 70px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -560,11 +545,11 @@ img.chatbotP {
   }
 
   .Acceptance-of-termsP {
-    width: 174px;
-    height: 24px;
+    width: 139px;
+    height: 19px;
     margin: 60px 183px 14px 5px;
     font-family: Lato-Light;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -576,11 +561,11 @@ img.chatbotP {
   }
 
   .Privacy-complaintsP {
-    width: 159px;
-    height: 24px;
+    width: 139px;
+    height: 19px;
     margin: 14px 3px 14px 5px;
     font-family: Lato-Light;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -592,11 +577,11 @@ img.chatbotP {
   }
 
   .Data-retention-and-data-probabilityP {
-    width: 298px;
-    height: 24px;
+    width: 139px;
+    height: 19px;
     margin: 14px 59px 14px 5px;
     font-family: Lato-Light;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -612,11 +597,11 @@ img.chatbotP {
   }
 
   .How-your-personal-information-is-usedP {
-    width: 327px;
-    height: 24px;
+    width: 139px;
+    height: 19px;
     margin: 13px 30px 14px 5px;
     font-family: Lato-Light;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -628,11 +613,11 @@ img.chatbotP {
   }
 
   .Links-to-third-party-siteP {
-    width: 195px;
-    height: 24px;
+    width: 139px;
+    height: 19px;
     margin: 14px 162px 14px 5px;
     font-family: Lato-Light;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -644,11 +629,11 @@ img.chatbotP {
   }
 
   .Non-discriminationP {
-    width: 161px;
-    height: 24px;
+    width: 139px;
+    height: 19px;
     margin: 14px 1px 14px 5px;
     font-family: Lato-Light;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -660,11 +645,11 @@ img.chatbotP {
   }
 
   .Legal-bases-for-professionP {
-    width: 219px;
-    height: 24px;
+    width: 139px;
+    height: 19px;
     margin: 14px 138px 14px 5px;
     font-family: Lato-Light;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -676,11 +661,11 @@ img.chatbotP {
   }
 
   .Cookie-and-tracking-technologiesP {
-    width: 281px;
-    height: 24px;
+    width: 139px;
+    height: 19px;
     margin: 14px 76px 14px 5px;
     font-family: Lato-Light;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -692,11 +677,11 @@ img.chatbotP {
   }
 
   .Information-sharing-with-service-providerP {
-    width: 350px;
-    height: 24px;
+    width: 139px;
+    height: 19px;
     margin: 14px 7px 6px 5px;
     font-family: Lato-Light;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -708,11 +693,11 @@ img.chatbotP {
   }
 
   .Changes-in-privacy-policyP {
-    width: 213px;
-    height: 24px;
+    width: 139px;
+    height: 19px;
     margin: 14px 144px 35px 5px;
     font-family: Lato-Light;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -731,7 +716,7 @@ img.chatbotP {
     background-color: rgb(48, 198, 117);
     border-radius: 50%;
     margin-top: 40%;
-    margin-left: 300%;
+    margin-left: 250%;
   }
 
   img.chatbotP {

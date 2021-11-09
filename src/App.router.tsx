@@ -21,6 +21,8 @@ import { CookieComponent } from "&styled/cookies/cookie.component";
 import { PolicyComponent } from "&features/privacy/policy/policy.component";
 import { TermsComponent } from "&features/privacy/terms/terms.component";
 import { MainprivacyComponent } from "&features/privacy/mainprivacy/mainprivacy.component";
+import { MenumobileComponent } from "&features/product/menumobile/menumobile.component";
+
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
@@ -48,6 +50,7 @@ const AppRouter = (props: ReduxProps) => {
         <Route exact path="/connect" component={ConnectComponent} />
         <Route exact path="/policy" component={PolicyComponent} />
         <Route exact path="/terms" component={TermsComponent} />
+        <Route exact path="/menumobile" component={MenumobileComponent} />
 
         {/* TODO This block handles unmatched routes. Add your custom 404 component */}
         <Route path="/404" render={() => <div>page not found</div>} />

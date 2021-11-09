@@ -280,6 +280,7 @@ img.Mask-GroupMobileB {
   .BenefitsBackground {
     width: 99.2vw;
     height: 100vh;
+
     background-color: #f0f0f0;
     display: flex;
     flex-direction: row;

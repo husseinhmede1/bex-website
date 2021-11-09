@@ -38,16 +38,17 @@
     font-family: Lato-Regular;
     font-weight: normal;
     font-stretch: normal;
-    font-style: normal;
+    font-style: normal; 
     line-height: 2;
     letter-spacing: normal;
     text-align: left;
     color: #feffff;
     white-space: nowrap;
-    margin-left: 10%;
+    margin-left: 15%;
   }
 
   .navbar-names-font1Menu {
+    width: 50px;
     font-family: Lato-Regular;
     font-weight: normal;
     font-stretch: normal;
@@ -210,8 +211,9 @@
     background-attachment: fixed;
     contain: content;
 
-    width: 100vw;
+    width: 99.2vw;
     height: 100vh;
+
     background-position: center;
     background-size: cover;
   }
@@ -314,7 +316,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: stretch;
+    align-items: stretch; 
     align-content: stretch;
 
     margin-top: 2%;
@@ -518,6 +520,7 @@
     contain: content;
     background-position: center;
     background-size: cover;
+    height: 100vh;
   }
 
   .Business-expense-management-made-easyMenu {

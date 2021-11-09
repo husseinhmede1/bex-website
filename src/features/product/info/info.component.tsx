@@ -9,9 +9,13 @@ import mask from "&assets/img/Mask-Group3.png";
 import mask2 from "&assets/img/Mask-Group3@2x.png";
 import mask3 from "&assets/img/Mask-Group3@3x.png";
 
+import maskmobile from "&assets/img/InfoimgMobile.png";
+import maskmobile2 from "&assets/img/InfoimgMobile@2x.png";
+import maskmobile3 from "&assets/img/InfoimgMobile@3x.png";
+
 import areeba from "&assets/img/areeba-white.png";
 import areeba2 from "&assets/img/areeba-white@2x.png";
-import areeba3 from "&assets/img/areeba-white@3x.png"; 
+import areeba3 from "&assets/img/areeba-white@3x.png";
 
 import master from "&assets/img/Mastercard-Txt.png";
 import master2 from "&assets/img/Mastercard-Txt@2x.png";
@@ -45,10 +49,10 @@ const InfoComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="Rectangle-24968I">
-      <div className="div6I"/>
-      <div className="upperLayer">
-        <div className="div1I">
+    <div className="infoPageBackground">
+      <div className="navyBlueColorInfo" />
+      <div className="twoPartsInfoPage">
+        <div className="firstPartInfoPage">
           <span className="We-are-BEXI">WE ARE BEX</span>
 
           <span className="Designed-by-a-team-of-experts-from-areeba-and-Mastercard-with-extensive-knowledge-in-fintech-and-digital-payments-with-the-mission-of-helping-businesses-save-time-and-moneyI">
@@ -61,10 +65,16 @@ const InfoComponent = (props: ReduxProps) => {
             srcSet={`${mask2} 2x, ${mask3} 3x`}
             className="Mask-Group-545I"
           ></img>
+
+          <img
+            src={maskmobile}
+            srcSet={`${maskmobile2} 2x, ${maskmobile3} 3x`}
+            className="Mobile-Img-Info"
+          ></img>
         </div>
 
-        <div className="div3I">
-          <div className="div2I">
+        <div className="secondPartInfoPage">
+          <div className="areebaMasterTextsInfoPage">
             <img
               src={areeba}
               srcSet={`${areeba2} 2x, ${areeba3} 3x`}
@@ -77,7 +87,7 @@ const InfoComponent = (props: ReduxProps) => {
               <span className="text-style-1I">areeba.com</span>
             </span>
           </div>
-          <div className="div2I">
+          <div className="areebaMasterTextsInfoPage">
             <img
               src={master}
               srcSet={`${master2} 2x, ${master3} 3x`}

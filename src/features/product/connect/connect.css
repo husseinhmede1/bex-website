@@ -1,4 +1,4 @@
-.div1c {
+.connectPageBackground {
   width: 99.2vw;
   height: 100vh;
 
@@ -7,15 +7,15 @@
     url("../../../assets/img/Footer-bg-img@2x.png") 2x,
     url("../../../assets/img/Footer-bg-img@3x.png") 3x
   );
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-attachment: fixed;
   contain: content;
-  opacity:1;
+  opacity: 1;
   background-position: center;
   background-size: cover;
 }
 
-.div2c {
+.connectPageContentTwoParts {
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
@@ -28,12 +28,12 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  align-items: stretch;
   align-content: stretch;
 }
 
-.div29C {
+.connectPageheadSide {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -41,8 +41,8 @@
   align-items: center;
   align-content: stretch;
 }
-.div28C {
-  margin-top: -20%;
+.connectPageSocialSide {
+  margin-top: -60%;
 }
 .Lets-connectC {
   width: 372px;
@@ -231,7 +231,7 @@ img.EmailC {
   background-color: #fff;
 }
 
-.Rectangle-24977C {
+.connectPageButton {
   width: 600px;
   height: 56px;
   margin: 10.4px 0px 123.9px 48px;
@@ -270,7 +270,7 @@ img.Social-media-iconsC {
   object-fit: contain;
 }
 
-.div7C {
+.ConnectFieldswithTitle {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -289,12 +289,11 @@ img.Social-media-iconsC {
   margin-top: 15%;
 }
 
-.div6C {
+.socialIconsConnectPage {
   margin-top: 7%;
-
 }
 
-.div5C {
+.emailConnectPage {
   margin-top: 8%;
   margin-left: -51%;
   display: flex;
@@ -305,7 +304,7 @@ img.Social-media-iconsC {
   align-content: stretch;
 }
 
-.div9C {
+.phoneConnectPage {
   margin-top: 5%;
   display: flex;
   flex-direction: row;
@@ -316,7 +315,7 @@ img.Social-media-iconsC {
   margin-left: -53%;
 }
 
-.div10C {
+.locationConnectPage {
   margin-top: 15%;
   display: flex;
   flex-direction: row;
@@ -327,11 +326,11 @@ img.Social-media-iconsC {
   margin-left: -45%;
 }
 
-.div11C {
+.connectTitlePage {
   margin-top: 20%;
 }
 
-.div12C {
+.connectTitlePagefirstSide {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -342,7 +341,7 @@ img.Social-media-iconsC {
   margin-left: -5%;
 }
 
-.div13C {
+.FirstLastConnectPage {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -352,7 +351,7 @@ img.Social-media-iconsC {
   margin-top: 2%;
 }
 
-.div14C {
+.FirstNameConnectPage {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -362,13 +361,13 @@ img.Social-media-iconsC {
   margin-left: -4%;
 }
 
-.div16C {
+.MessageConnectPage {
   margin-top: 3%;
 }
-.div15C {
+.EmailConnectPage {
   margin-top: 3%;
 }
-.div19C {
+.LastNameConnectPage {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -379,11 +378,11 @@ img.Social-media-iconsC {
   margin-top: 0%;
 }
 
-.div20C {
+.ConnectFields {
   margin-top: -2%;
 }
 
-.Path-162316C {
+.FooterLineConnectPage {
   width: 90vw;
   height: 0;
   margin: 123.9px 0 0;
@@ -422,8 +421,6 @@ img.MastercardC {
   text-align: left;
   color: white;
   text-decoration: underline;
-
-
 }
 
 .Terms-of-ServiceC {
@@ -440,7 +437,6 @@ img.MastercardC {
   text-align: left;
   color: white;
   text-decoration: underline;
-
 }
 
 .Cookie-PolicyC {
@@ -457,7 +453,6 @@ img.MastercardC {
   text-align: left;
   color: white;
   text-decoration: underline;
-
 }
 
 .-Bex-All-Rights-Reserved {
@@ -476,7 +471,7 @@ img.MastercardC {
   color: white;
 }
 
-.div40C {
+.FooterConnectPage {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -484,4 +479,643 @@ img.MastercardC {
   align-items: flex-end;
   align-content: stretch;
   white-space: nowrap;
+}
+
+img.AreebaCMobile {
+  width: 62.8px;
+  height: 17.1px;
+  margin: 30.2px 21.6px 6.4px 0.5px;
+  object-fit: contain;
+  margin-left: 10%;
+  visibility: hidden;
+}
+
+img.MastercardCMobile {
+  width: 47.3px;
+  height: 29.2px;
+  margin: 24.1px 75.3px 0.4px 21.6px;
+  object-fit: contain;
+  margin-left: 0%;
+  visibility: hidden;
+}
+
+.Privacy-PolicyCMobile {
+  width: 75px;
+  height: 18px;
+  margin: 35.1px 34px 0.7px 8.9px;
+  font-family: Lato-Bold;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  text-decoration: underline;
+  margin-top: 20%;
+  white-space: nowrap;
+  margin-left: 10%;
+  visibility: hidden;
+}
+
+.Terms-of-ServiceCMobile {
+  width: 88px;
+  height: 15px;
+  margin: 35.1px 41px 3.7px 34px;
+  font-family: Lato-Bold;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  text-decoration: underline;
+  margin-left: 2%;
+  margin-top: -10%;
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+.Cookie-PolicyCMobile {
+  width: 73px;
+  height: 15px;
+  margin: 35.1px 47.5px 3.7px 41px;
+  font-family: Lato-Bold;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.08;
+  letter-spacing: normal;
+  text-align: left;
+  color: white;
+  text-decoration: underline;
+  margin-left: 0%;
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+.-Bex-All-Rights-ReservedMobile {
+  width: 162px;
+  height: 15px;
+  margin: 38.8px 0px 0 486px;
+  opacity: 0.7;
+  font-family: Lato-Bold;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.33;
+  letter-spacing: normal;
+  text-align: right;
+  color: white;
+  margin-left: 47%;
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+.FooterConnectPageMobile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .connectPageBackground {
+    width: 99.2vw;
+    height: 170vh;
+
+    background-image: -webkit-image-set(
+      url("../../../assets/img/Footer-bg-img.png") 1x,
+      url("../../../assets/img/Footer-bg-img@2x.png") 2x,
+      url("../../../assets/img/Footer-bg-img@3x.png") 3x
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    contain: content;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .connectPageContentTwoParts {
+    width: 100vw;
+    height: 170vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    contain: content;
+    background-color: #306bdd;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  .connectPageheadSide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: 10%;
+    margin-top: -100%;
+  }
+  .connectPageSocialSide {
+    margin-top: 80%;
+  }
+  .Lets-connectC {
+    width: 263px;
+    height: 161px;
+    margin: 0 73px 46.5px 0.5px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 70px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  img.LocationC {
+    width: 15.8px;
+    height: 20.6px;
+    margin: 21.2px 22.3px 21.2px 0;
+    object-fit: contain;
+    margin-left: 26%;
+  }
+
+  .areeba-sal-M1-Group-M1-Building-Omar-Daouk-St-Beirut-2020-3315-Lebanon-Email-on-supportareebacomC {
+    width: 275.9px;
+    height: 63px;
+    margin: 0 0 0 22.3px;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  img.PhoneC {
+    width: 18.3px;
+    height: 18.3px;
+    margin: 0 19.8px 0 0;
+    object-fit: contain;
+  }
+
+  .-or-01-954-333C {
+    width: 104px;
+    height: 15px;
+    margin: 1px 0 2.3px 19.8px;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.58;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  img.EmailC {
+    width: 18.3px;
+    height: 14px;
+    margin: 0 20.1px 1px 0;
+    object-fit: contain;
+  }
+
+  .SupportareebacomC {
+    width: 113px;
+    height: 15px;
+    margin: 0 0 0 20.1px;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.42;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Tell-us-more-about-yourselfC {
+    width: 240px;
+    height: 24px;
+    margin: 0 312.5px 49px 0px;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.17;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    margin-top: 30%;
+    margin-left: -40%;
+  }
+
+  .Fist-nameC {
+    width: 59px;
+    height: 17px;
+    margin: 0 251px 12px 0.5px;
+    font-family: Lato-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Rectangle-24148C {
+    width: 150px;
+    height: 50px;
+    margin: 12px 20.5px 0 0;
+    background-color: #fff;
+  }
+
+  .Last-nameC {
+    width: 62px;
+    height: 17px;
+    margin: 0 228px 12px 20.5px;
+    font-family: Lato-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Rectangle-24153C {
+    width: 150px;
+    height: 50px;
+    margin: 12px 0 0 20.5px;
+    background-color: #fff;
+  }
+
+  .Email-addressC {
+    width: 84px;
+    height: 17px;
+    margin: 0 516px 12.2px 0.5px;
+    font-family: Lato-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Rectangle-24150C {
+    width: 325px;
+    height: 50px;
+    margin: 12.2px 0 0;
+    background-color: #fff;
+  }
+
+  .MessageC {
+    width: 54px;
+    height: 17px;
+    margin: 0 545.5px 11.6px 0.5px;
+    font-family: Lato-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Path-162308C {
+    width: 325px;
+    height: 101px;
+    margin: 11.6px 0 0;
+    background-color: #fff;
+  }
+
+  .connectPageButton {
+    width: 200px;
+    height: 56px;
+
+    background-color: #30c675;
+    margin-top: 10%;
+    margin-left: -5%;
+  }
+  .Get-in-TouchC {
+    width: 50px;
+    height: 21px;
+    font-family: Lato-Bold;
+    font-size: 17px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.16;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  img.Footer-bg-imgC {
+    width: 1366px;
+    height: 850px;
+    margin: 762px 0 0;
+    padding: 90.3px 100px 49.3px 99.5px;
+    object-fit: contain;
+  }
+
+  img.Social-media-iconsC {
+    width: 159.8px;
+    height: 16.8px;
+    margin: 31.9px 47.2px 141.7px 0.5px;
+    object-fit: contain;
+  }
+
+  .ConnectFieldswithTitle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 5%;
+    margin-left: 60%;
+  }
+
+  .Line-5301C {
+    width: 313.7px;
+    height: 0;
+    margin: 22.8px 97px 0 1.4px;
+    opacity: 0.5;
+    border: solid 0.5px #fff;
+    margin-top: 15%;
+  }
+
+  .socialIconsConnectPage {
+    margin-top: 7%;
+  }
+
+  .emailConnectPage {
+    margin-top: 8%;
+    margin-left: -51%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  .phoneConnectPage {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: -53%;
+  }
+
+  .locationConnectPage {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: -45%;
+  }
+
+  .connectTitlePage {
+    margin-top: 20%;
+  }
+
+  .connectTitlePagefirstSide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: -15%;
+    margin-left: 0%;
+  }
+
+  .FirstLastConnectPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 2%;
+  }
+
+  .FirstNameConnectPage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: -25%;
+  }
+
+  .MessageConnectPage {
+    margin-top: 3%;
+  }
+  .EmailConnectPage {
+    margin-top: 3%;
+    margin-left: 0%;
+  }
+  .LastNameConnectPage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: -25%;
+    margin-top: 0%;
+  }
+
+  .ConnectFields {
+    margin-top: -2%;
+  }
+
+  .FooterLineConnectPage {
+    width: 325px;
+    height: 0;
+    margin: 123.9px 0 0;
+    opacity: 0.3;
+    border: solid 1px #ddd;
+    margin-top: -30%;
+    margin-left: 10%;
+    background-color: #306bdd;
+  }
+
+  img.AreebaC {
+    display: none;
+  }
+
+  img.MastercardC {
+    display: none;
+  }
+
+  .Privacy-PolicyC {
+    display: none;
+  }
+
+  .Terms-of-ServiceC {
+    display: none;
+  }
+
+  .Cookie-PolicyC {
+    display: none;
+  }
+
+  .-Bex-All-Rights-Reserved {
+    display: none;
+  }
+  .FooterConnectPage {
+    display: none;
+  }
+
+  img.AreebaCMobile {
+    width: 62.8px;
+    height: 17.1px;
+    margin: 30.2px 21.6px 6.4px 0.5px;
+    object-fit: contain;
+    margin-left: 10%;
+    visibility: visible;
+  }
+
+  img.MastercardCMobile {
+    width: 47.3px;
+    height: 29.2px;
+    margin: 24.1px 75.3px 0.4px 21.6px;
+    object-fit: contain;
+    margin-left: 0%;
+    visibility: visible;
+  }
+
+  .Privacy-PolicyCMobile {
+    width: 75px;
+    height: 18px;
+    margin: 35.1px 34px 0.7px 8.9px;
+    font-family: Lato-Bold;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    text-decoration: underline;
+    margin-top: 20%;
+    white-space: nowrap;
+    margin-left: 10%;
+    visibility: visible;
+  }
+
+  .Terms-of-ServiceCMobile {
+    width: 88px;
+    height: 15px;
+    margin: 35.1px 41px 3.7px 34px;
+    font-family: Lato-Bold;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    text-decoration: underline;
+    margin-left: 2%;
+    margin-top: -10%;
+    white-space: nowrap;
+    visibility: visible;
+  }
+
+  .Cookie-PolicyCMobile {
+    width: 73px;
+    height: 15px;
+    margin: 35.1px 47.5px 3.7px 41px;
+    font-family: Lato-Bold;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    text-decoration: underline;
+    margin-left: 0%;
+    white-space: nowrap;
+    visibility: visible;
+  }
+
+  .-Bex-All-Rights-ReservedMobile {
+    width: 162px;
+    height: 15px;
+    margin: 38.8px 0px 0 486px;
+    opacity: 0.7;
+    font-family: Lato-Bold;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.33;
+    letter-spacing: normal;
+    text-align: right;
+    color: white;
+    margin-left: 47%;
+    white-space: nowrap;
+    visibility: visible;
+  }
+
+  .FooterConnectPageMobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    visibility: visible;
+  }
 }

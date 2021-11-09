@@ -60,19 +60,19 @@ const ConnectComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="div1c">
+    <div className="connectPageBackground">
       {" "}
-      <div className="div2c">
-        <div className="div29C">
-          <div className="div28C">
-            <div className="div11C">
+      <div className="connectPageContentTwoParts">
+        <div className="connectPageheadSide">
+          <div className="connectPageSocialSide">
+            <div className="connectTitlePage">
               <span className="Lets-connectC">
                 <div>Let’s</div>
                 <div>connect</div>
               </span>
             </div>
-            <div className="div12C">
-              <div className="div10C">
+            <div className="connectTitlePagefirstSide">
+              <div className="locationConnectPage">
                 <img
                   src={location}
                   srcSet={`${location2} 2x, ${location3} 3x`}
@@ -85,7 +85,7 @@ const ConnectComponent = (props: ReduxProps) => {
                   <div>Email on support@areeba.com</div>
                 </span>
               </div>
-              <div className="div9C">
+              <div className="phoneConnectPage">
                 <img
                   src={phone}
                   srcSet={`${phone2} 2x, ${phone3} 3x`}
@@ -94,7 +94,7 @@ const ConnectComponent = (props: ReduxProps) => {
 
                 <span className="-or-01-954-333C">1557 or 01 954 333</span>
               </div>
-              <div className="div5C">
+              <div className="emailConnectPage">
                 <img
                   src={email}
                   srcSet={`${email2} 2x, ${email3} 3x`}
@@ -105,7 +105,7 @@ const ConnectComponent = (props: ReduxProps) => {
               </div>
             </div>
             <div className="Line-5301C"></div>
-            <div className="div6C">
+            <div className="socialIconsConnectPage">
               <img
                 src={social}
                 srcSet={`${social2} 2x, ${social3} 3x`}
@@ -114,58 +114,82 @@ const ConnectComponent = (props: ReduxProps) => {
             </div>
           </div>
 
-          <div className="div7C">
+          <div className="ConnectFieldswithTitle">
             <span className="Tell-us-more-about-yourselfC">
               Tell us more about yourself
             </span>
-            <div className="div20C">
-              <div className="div13C">
-                <div className="div14C">
+            <div className="ConnectFields">
+              <div className="FirstLastConnectPage">
+                <div className="FirstNameConnectPage">
                   <span className="Fist-nameC">First name</span>
                   <div className="Rectangle-24148C"></div>
                 </div>
-                <div className="div19C">
+                <div className="LastNameConnectPage">
                   <span className="Last-nameC">Last name</span>
                   <div className="Rectangle-24153C"></div>
                 </div>
               </div>
 
-              <div className="div15C">
+              <div className="EmailConnectPage">
                 <span className="Email-addressC">Email address</span>
                 <div className="Rectangle-24150C"></div>
               </div>
 
-              <div className="div16C">
+              <div className="MessageConnectPage">
                 <span className="MessageC">Message</span>
                 <div className="Path-162308C"></div>
               </div>
 
-              <div className="Rectangle-24977C">
+              <div className="connectPageButton">
                 <span className="Get-in-TouchC">Get in Touch</span>
               </div>
             </div>
           </div>
         </div>
         <div>
-          <div className="Path-162316C"></div>
-          <div className='div40C'>
-          <img
-            src={areeba}
-            srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-            className="AreebaC"
-          ></img>
-          <img
-            src={master}
-            srcSet={`${master2} 2x, ${master3} 3x`}
-            className="MastercardC"
-          ></img>
- 
-          <span className="Privacy-PolicyC">Privacy Policy</span>
-          <span className="Terms-of-ServiceC">Terms of Service</span>
-          <span className="Cookie-PolicyC">Cookie Policy</span>
-          <span className="-Bex-All-Rights-Reserved">
-            2021 Bex. All Rights Reserved.
-          </span>
+          <div className="FooterLineConnectPage"></div>
+          <div className="FooterConnectPage">
+            <img
+              src={areeba}
+              srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+              className="AreebaC"
+            ></img>
+            <img
+              src={master}
+              srcSet={`${master2} 2x, ${master3} 3x`}
+              className="MastercardC"
+            ></img>
+
+            <span className="Privacy-PolicyC">Privacy Policy</span>
+            <span className="Terms-of-ServiceC">Terms of Service</span>
+            <span className="Cookie-PolicyC">Cookie Policy</span>
+            <span className="-Bex-All-Rights-Reserved">
+              2021 Bex. All Rights Reserved.
+            </span>
+          </div>
+
+          <div className="FooterConnectPageMobile">
+            <div>
+              <img
+                src={areeba}
+                srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+                className="AreebaCMobile"
+              ></img>
+              <img
+                src={master}
+                srcSet={`${master2} 2x, ${master3} 3x`}
+                className="MastercardCMobile"
+              ></img>
+
+              <span className="-Bex-All-Rights-ReservedMobile">
+                2021 Bex. All Rights Reserved.
+              </span>
+            </div>
+            <div>
+              <span className="Privacy-PolicyCMobile">Privacy Policy</span>
+              <span className="Terms-of-ServiceCMobile">Terms of Service</span>
+              <span className="Cookie-PolicyCMobile">Cookie Policy</span>
+            </div>
           </div>
         </div>
       </div>

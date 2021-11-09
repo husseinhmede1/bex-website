@@ -34,8 +34,6 @@ import chatbot from "&assets/img/chatbot.png";
 import chatbot2 from "&assets/img/chatbot@2x.png";
 import chatbot3 from "&assets/img/chatbot@3x.png";
 
-
-
 import menu from "&assets/img/Menu.png";
 import menu2 from "&assets/img/Menu@2x.png";
 import menu3 from "&assets/img/Menu@3x.png";
@@ -73,15 +71,12 @@ const MenuComponent = (props: ReduxProps) => {
         <Link to="/mainprivacy" className="bexMenu">
           BEX
         </Link>
- 
-        <div className="navbar-namesMenu" >
+
+        <div className="navbar-namesMenu">
           <span className="navbar-names-font1Menu">HOW BEX WORKS</span>
           <span className="navbar-names-fontMenu">PIRCING</span>
           <span className="navbar-names-fontMenu">ABOUT US</span>
           <span className="navbar-names-fontMenu">CONTACT US</span>
-
-
-          
         </div>
 
         <div className="navbar-imagesMenu">
@@ -89,7 +84,6 @@ const MenuComponent = (props: ReduxProps) => {
             src={Apple}
             srcSet={`${Apple2} 2x, ${Apple3} 3x`}
             className="appleImg"
-            
           />
 
           <img
@@ -98,20 +92,15 @@ const MenuComponent = (props: ReduxProps) => {
             className="GplayImg"
           />
         </div>
-
-        
       </div>
-      <div className='menuImgPosition'>
-        <img
-            src={menu}
-            srcSet={`${menu2} 2x, ${menu3} 3x`}
-            className="Menu"/>
-        </div>
+      <div className="menuImgPosition">
+        <img src={menu} srcSet={`${menu2} 2x, ${menu3} 3x`} className="Menu" />
+      </div>
       <div className="Busines-cntrlMenu">
         <div>
           <span className="Business-expense-management-made-easyMenu">
             <div> BUSINESS EXPENSE </div>
-            <div>MANAGMENT  </div>
+            <div>MANAGMENT </div>
             <div>Made Easy.</div>
           </span>
         </div>
@@ -160,7 +149,7 @@ const MenuComponent = (props: ReduxProps) => {
     </div>
   );
 };
- 
+
 /**
  * Maps state variables from redux store to props of currect component
  * @param state

@@ -41,12 +41,11 @@ const PackagesComponent = (props: ReduxProps) => {
     <div className="packagesBackground" style={{ height: height }}>
       <div className="HeadOfPagePackages">
         <span className="OUR-Packagesp">OUR PACKAGES</span>
-        
-          <span className="Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp">
-            Choose the features and functionalities your teams need today.
-            Easily upgrade as your company grows.
-          </span>
-        
+
+        <span className="Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp">
+          Choose the features and functionalities your teams need today. Easily
+          upgrade as your company grows.
+        </span>
       </div>
 
       <div className="PagePackagesContent">
@@ -229,25 +228,13 @@ const PackagesComponent = (props: ReduxProps) => {
         </div>
 
         <div className="MobileRectanglesecondPackages"></div>
-
-
       </div>
-      <div className='cercleMobileExistPackages'>
+      <div className="cercleMobileExistPackages">
+        <div className="miniBlueCerclePackages"></div>
 
-        <div className='miniBlueCerclePackages'>
-
-
-        </div>
-
-        <div className='minisecondCerclePackages'>
-
-
-        </div>
-        <div className='minithyrdCerclePackages'>
-
-
-        </div>
-        </div>
+        <div className="minisecondCerclePackages"></div>
+        <div className="minithyrdCerclePackages"></div>
+      </div>
     </div>
   );
 };

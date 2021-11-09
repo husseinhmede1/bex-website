@@ -12,7 +12,7 @@
   background-color: #f0f0f0;
 }
 
-.cookieComp { 
+.cookieComp {
   width: 99.2vw;
   margin-top: -14.3%;
   z-index: 1;
@@ -42,16 +42,12 @@ img.Spend-imgHandles {
   object-fit: contain;
 }
 
-
-img.Control-imgHandles{
-  
+img.Control-imgHandles {
   width: 355.9px;
   height: 298.6px;
   margin: 91.6px 0 69.9px 19.1px;
   object-fit: contain;
-visibility:hidden;
-
-
+  visibility: hidden;
 }
 .Rectangle-24940h {
   width: 46px;
@@ -278,7 +274,7 @@ span {
   align-items: stretch;
   align-content: space-around;
 }
-img.SignHandles{
+img.SignHandles {
   width: 16.4px;
   height: 12.3px;
   margin: 5.8px 10.6px 45.9px 0;
@@ -286,24 +282,23 @@ img.SignHandles{
   background-color: var(--azul);
 }
 
-
-@media only screen and (max-width: 600px) { 
+@media only screen and (max-width: 600px) {
   .Product-page-Controlh {
     width: 99.2vw;
     height: 130vh;
-  
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     align-content: stretch;
-  
+ 
     background-color: #f0f0f0;
     margin-top: -30%;
   }
-  
-  .cookieComp { 
+
+  .cookieComp {
     width: 99.2vw;
     margin-top: -14.3%;
     z-index: 1;
@@ -322,7 +317,7 @@ img.SignHandles{
     text-align: center;
     color: #306bdd;
   }
-  
+
   .BEX-loc {
     height: 10vh;
     margin-top: 225%;
@@ -337,18 +332,15 @@ img.SignHandles{
     margin-left: 5%;
     margin-top: 20%;
   }
-  img.Control-imgHandles{
-  
-      width: 355.9px;
-      height: 298.6px;
-      margin: 91.6px 0 69.9px 19.1px;
-      object-fit: contain;
-    visibility:visible;
+  img.Control-imgHandles {
+    width: 355.9px;
+    height: 298.6px;
+    margin: 91.6px 0 69.9px 19.1px;
+    object-fit: contain;
+    visibility: visible;
     margin-left: 30%;
     margin-top: 7%;
-
   }
-
 
   .Rectangle-24940h {
     width: 34px;
@@ -359,12 +351,12 @@ img.SignHandles{
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
     background-color: #ffff;
     margin-top: 0%;
-    margin-left: -10%;
+    margin-left: -11%;
     display: flex;
     justify-content: center;
     align-content: center;
   }
-  
+
   .span1h {
     width: 11px;
     height: 24px;
@@ -378,7 +370,7 @@ img.SignHandles{
     text-align: left;
     color: #30c6c6;
   }
-  
+
   .span2h {
     width: 7px;
     height: 23px;
@@ -392,7 +384,7 @@ img.SignHandles{
     text-align: left;
     color: #838383;
   }
-  
+
   .Rectangle-24970h {
     width: 41px;
     height: 40px;
@@ -407,7 +399,7 @@ img.SignHandles{
     align-content: center;
     margin-left: 5%;
   }
-  
+
   span {
     width: 11px;
     height: 23px;
@@ -421,7 +413,7 @@ img.SignHandles{
     text-align: left;
     color: #838383;
   }
-  
+
   .spendh {
     width: 91px;
     height: 34px;
@@ -457,7 +449,7 @@ img.SignHandles{
     height: 0;
     margin: 17px 26px 0 3px;
     border: solid 1px #707070;
-    margin-left: -13%;
+    margin-left: -12%;
     margin-top: 0%;
   }
   .Digitize-your-expense-policyh {
@@ -501,7 +493,7 @@ img.SignHandles{
     margin: 4.8px 10.6px 50.9px 0;
     background-color: #306bdd;
   }
-  
+
   .Apply-spending-limits-and-restrictions-based-on-each-employee-profile-and-business-needsh {
     width: 175px;
     height: 68px;
@@ -523,10 +515,10 @@ img.SignHandles{
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
-    margin-top:45%;
+    margin-top: 45%;
     height: 200vh;
   }
-  
+
   .numbersTextTwoPartsHandles {
     display: flex;
     flex-direction: column;
@@ -536,7 +528,7 @@ img.SignHandles{
     align-content: flex-end;
     margin-top: 5%;
   }
-  
+
   .controlSpendHandles {
     display: flex;
     flex-direction: column;
@@ -557,7 +549,7 @@ img.SignHandles{
     margin-top: -20%;
     margin-left: -5%;
   }
-  
+
   .controlSpendSpanHandles {
     display: flex;
     flex-direction: row;
@@ -566,10 +558,9 @@ img.SignHandles{
     align-items: center;
     align-content: stretch;
     margin-top: 2%;
-    margin-left: -2%
-   
+    margin-left: -2%;
   }
-  
+
   .signedTextHandles {
     display: flex;
     flex-direction: column;
@@ -580,7 +571,7 @@ img.SignHandles{
     margin-left: 25%;
     margin-top: -7%;
   }
-  
+
   .signedTextoneHandles {
     display: flex;
     flex-direction: row;
@@ -590,13 +581,11 @@ img.SignHandles{
     align-content: space-around;
     margin-left: -45%;
   }
-  img.SignHandles{
+  img.SignHandles {
     width: 16.4px;
     height: 12.3px;
     margin: 5.8px 10.6px 45.9px 0;
     object-fit: contain;
     background-color: var(--azul);
   }
-  
-  
 }

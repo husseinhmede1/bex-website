@@ -14,7 +14,7 @@
   width: 169px;
   height: 49px;
   margin: 55px 339px 103.3px 72px;
-  font-family: Gilroy-ExtraBold; 
+  font-family: Gilroy-ExtraBold;
   font-size: 40px;
   font-weight: 800;
   font-stretch: normal;
@@ -32,9 +32,8 @@ img.Mask-GroupB {
   margin-top: 20%;
 }
 
-
 img.Mask-GroupMobileB {
-  width:0px;
+  width: 0px;
   height: 0px;
 
   visibility: hidden;
@@ -277,9 +276,7 @@ img.Mask-GroupMobileB {
   margin-top: 10%;
 }
 
-
 @media only screen and (max-width: 600px) {
-
   .BenefitsBackground {
     width: 99.2vw;
     height: 100vh;
@@ -291,12 +288,12 @@ img.Mask-GroupMobileB {
     align-items: stretch;
     align-content: stretch;
   }
-  
+
   .BenefitsTitle {
     width: 127px;
-  height: 37px;
-  margin: 52.1px 4.5px 36px 31px;
-    font-family: Gilroy-ExtraBold; 
+    height: 37px;
+    margin: 52.1px 4.5px 36px 31px;
+    font-family: Gilroy-ExtraBold;
     font-size: 30px;
     font-weight: 800;
     font-stretch: normal;
@@ -308,9 +305,8 @@ img.Mask-GroupMobileB {
     margin-left: -20%;
   }
   img.Mask-GroupB {
- display:none;
+    display: none;
   }
-  
 
   img.Mask-GroupMobileB {
     width: 314px;
@@ -320,10 +316,10 @@ img.Mask-GroupMobileB {
     margin-left: 45%;
     visibility: visible;
   }
-  
+
   .Rectangle53Benefits {
     width: 131.5px;
-  height: 119.5px;
+    height: 119.5px;
     margin: 92.8px 0 139.9px;
     padding: 18.4px 0 48.4px 28.1px;
     background-color: #00194a;
@@ -336,10 +332,10 @@ img.Mask-GroupMobileB {
     align-items: center;
     align-content: stretch;
   }
-  
+
   .stated-improved-supplier-relationsB {
     width: 94px;
-  height: 29px;
+    height: 29px;
     margin: 5.3px 0 0 0.4px;
     font-family: Lato-Regular;
     font-size: 12px;
@@ -352,7 +348,7 @@ img.Mask-GroupMobileB {
     color: #fff;
     margin-left: -30%;
   }
-  
+
   .span1B {
     width: 59px;
     height: 40px;
@@ -367,9 +363,8 @@ img.Mask-GroupMobileB {
     text-align: left;
     color: #ffff;
     margin-left: 20%;
-
   }
-  
+
   .Rectangle42Benefits {
     width: 137.7px;
     height: 114.7px;
@@ -386,7 +381,7 @@ img.Mask-GroupMobileB {
     align-items: center;
     align-content: stretch;
   }
-  
+
   .span2B {
     width: 59px;
     height: 38px;
@@ -401,9 +396,8 @@ img.Mask-GroupMobileB {
     text-align: left;
     color: #292929;
     margin-left: 15%;
-
   }
-  
+
   .stated-reduced-number-of-approvalsB {
     width: 108px;
     height: 29px;
@@ -420,7 +414,7 @@ img.Mask-GroupMobileB {
     margin-left: 30%;
     margin-top: -5%;
   }
-  
+
   .Rectangle63Benefits {
     width: 242.8px;
     height: 94.5px;
@@ -429,7 +423,7 @@ img.Mask-GroupMobileB {
     border: solid 1px #d2d4da;
     background-color: #fff;
     margin-top: 58%;
-  
+
     margin-left: -60%;
     display: flex;
     flex-direction: column;
@@ -438,13 +432,13 @@ img.Mask-GroupMobileB {
     align-items: center;
     align-content: stretch;
   }
-  
+
   .span3B {
     width: 58px;
     height: 38px;
     margin: 0 38px 0 0;
     font-family: Gilroy-ExtraBold;
-    font-size:31px;
+    font-size: 31px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -453,7 +447,7 @@ img.Mask-GroupMobileB {
     text-align: left;
     color: #292929;
   }
-  
+
   .stated-improved-visibility-and-data-reportingB {
     width: 137px;
     height: 29px;
@@ -468,7 +462,7 @@ img.Mask-GroupMobileB {
     text-align: left;
     color: #2e2e2e;
   }
-  
+
   .Rectangle47Benefits {
     width: 125.8px;
     height: 114.7px;
@@ -485,7 +479,7 @@ img.Mask-GroupMobileB {
     align-items: center;
     align-content: stretch;
   }
-  
+
   .span4B {
     width: 57px;
     height: 38px;
@@ -500,7 +494,7 @@ img.Mask-GroupMobileB {
     text-align: left;
     color: #292929;
   }
-  
+
   .stated-improved-cash-flowB {
     width: 88px;
     height: 29px;
@@ -516,7 +510,7 @@ img.Mask-GroupMobileB {
     color: #2e2e2e;
     margin-left: 60%;
   }
-  
+
   .Rectangle68Benefits {
     width: 132.5px;
     height: 114.7px;
@@ -533,7 +527,7 @@ img.Mask-GroupMobileB {
     align-items: center;
     align-content: stretch;
   }
-  
+
   .span5B {
     width: 59px;
     height: 38px;
@@ -548,7 +542,7 @@ img.Mask-GroupMobileB {
     text-align: left;
     color: #292929;
   }
-  
+
   .stated-reduced-admin-costB {
     width: 100px;
     height: 29px;
@@ -567,5 +561,4 @@ img.Mask-GroupMobileB {
   .RectanglesGroupeBenefits {
     margin-top: 10%;
   }
-  
 }

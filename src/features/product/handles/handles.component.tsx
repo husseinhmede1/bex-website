@@ -52,9 +52,9 @@ const HandlesComponent = (props: ReduxProps) => {
           <div>THE HARD STUFF</div>
         </span>
       </div>
-      <div className="twoPartsHandles"> 
+      <div className="twoPartsHandles">
         <div className="numbersTextTwoPartsHandles">
-          <div className="controlSpendHandles"> 
+          <div className="controlSpendHandles">
             <div className="numbersHandles">
               <div className="Rectangle-24970h">
                 <span className="span1h">1</span>
@@ -70,7 +70,7 @@ const HandlesComponent = (props: ReduxProps) => {
               <span className="Controlh">Control</span>
 
               <span className="spendh">Spend</span>
-            </div> 
+            </div>
           </div>
 
           <div className="signedTextHandles">
@@ -103,9 +103,9 @@ const HandlesComponent = (props: ReduxProps) => {
               </span>
             </div>
           </div>
-        </div>
+        </div> 
         <div>
-        <img
+          <img
             src={control}
             srcSet={`${control2} 2x, ${control3} 3x`}
             className="Control-imgHandles"
@@ -115,10 +115,8 @@ const HandlesComponent = (props: ReduxProps) => {
             srcSet={`${spend2} 2x, ${spend3} 3x`}
             className="Spend-imgHandles"
           ></img>
-          
         </div>
       </div>
-
     </div>
   );
 };

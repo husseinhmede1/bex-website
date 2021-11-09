@@ -72,7 +72,7 @@ img.down-arrow {
 }
 
 img.Icons {
-  width: 66.3px; 
+  width: 66.3px;
   height: 41px;
   margin: 65px 31.4px 36px 149.3px;
   object-fit: contain;
@@ -223,7 +223,7 @@ img.Icons2 {
     justify-content: space-around;
     align-items: stretch;
     align-content: flex-start;
-    
+
     margin-left: 10%;
     margin-top: -10%;
   }

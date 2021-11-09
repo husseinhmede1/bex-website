@@ -9,12 +9,10 @@ import mask from "&assets/img/Mask-Group.png";
 import mask2 from "&assets/img/Mask-Group@2x.png";
 import mask3 from "&assets/img/Mask-Group@3x.png";
 
-
-
 import mask1 from "&assets/img/SalonBENEFITS.png";
 import mask12 from "&assets/img/SalonBENEFITS@2x.png";
 import mask13 from "&assets/img/SalonBENEFITS@3x.png";
-/** 
+/**
  *
  *
  * These are actions imported from the feature slices.
@@ -49,14 +47,13 @@ const BenefitsComponent = (props: ReduxProps) => {
             src={mask}
             srcSet={`${mask2} 2x, ${mask3} 3x`}
             className="Mask-GroupB"
-          ></img> 
+          ></img>
 
-<img
+          <img
             src={mask1}
             srcSet={`${mask12} 2x, ${mask13} 3x`}
             className="Mask-GroupMobileB"
-          ></img> 
-
+          ></img>
         </div>{" "}
         <div className="RectanglesGroupeBenefits">
           {" "}

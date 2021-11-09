@@ -13,7 +13,6 @@ import sign from "&assets/img/Sign2.png";
 import sign2 from "&assets/img/Sign2@2x.png";
 import sign3 from "&assets/img/Sign2@3x.png";
 
-
 import saveMobile from "&assets/img/save-imgMobile.png";
 import saveMobile2 from "&assets/img/save-imgMobile@2x.png";
 import saveMobile3 from "&assets/img/save-imgMobile@3x.png";
@@ -95,8 +94,7 @@ const SaveComponent = (props: ReduxProps) => {
       </div>
 
       <div>
-   
-      <img
+        <img
           src={saveMobile}
           srcSet={`${saveMobile2} 2x, ${saveMobile3} 3x`}
           className="Save-imgsMobile"

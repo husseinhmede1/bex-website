@@ -59,6 +59,7 @@ const MainComponent = (props: ReduxProps) => {
       <PackagesComponent />   
       <TryforFreeComponent />
      <BenefitsComponent/>
+      
      <InfoComponent/>
      <ConnectComponent/>
      {/*  

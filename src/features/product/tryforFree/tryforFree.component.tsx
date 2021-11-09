@@ -9,7 +9,6 @@ import try1 from "&assets/img/Try-BEX-img.png";
 import try2 from "&assets/img/Try-BEX-img@2x.png";
 import try3 from "&assets/img/Try-BEX-img@3x.png";
 
-
 import try11 from "&assets/img/Try-BEX-Mobile.png";
 import try12 from "&assets/img/Try-BEX-Mobile@2x.png";
 import try13 from "&assets/img/Try-BEX-Mobile@3x.png";
@@ -17,7 +16,7 @@ import try13 from "&assets/img/Try-BEX-Mobile@3x.png";
 import apple from "&assets/img/Apple-Icon.png";
 import apple2 from "&assets/img/Apple-Icon@2x.png";
 import apple3 from "&assets/img/Apple-Icon@3x.png";
- 
+
 import play from "&assets/img/Google-play.png";
 import play2 from "&assets/img/Google-play@2x.png";
 import play3 from "&assets/img/Google-play@3x.png";
@@ -61,7 +60,7 @@ const TryforFreeComponent = (props: ReduxProps) => {
           <span className="-month-3-users-Digital-card-only">
             1 Month | 3 Users | Digital Card Only
           </span>
-        </div> 
+        </div>
         <div className="tryforfreeButtons">
           <img
             src={demo}
@@ -91,7 +90,7 @@ const TryforFreeComponent = (props: ReduxProps) => {
           className="Try-BEX-img"
         ></img>
 
-<img
+        <img
           src={try11}
           srcSet={`${try12} 2x, ${try13} 3x`}
           className="Try-BEX-Mobileimg"
@@ -100,7 +99,7 @@ const TryforFreeComponent = (props: ReduxProps) => {
     </div>
   );
 };
- 
+
 /**
  * Maps state variables from redux store to props of currect component
  * @param state

@@ -96,8 +96,8 @@ const ChallangesComponent = (props: ReduxProps) => {
               className="IconsMobile"
             ></img>
             <span className="Lack-of-visibility-on-How-where-and-how-much-employees-are-spending">
-              Lack of visibility on: How, where and how 
-              much employees are spending
+              Lack of visibility on: How, where and how much employees are
+              spending
             </span>
           </div>
 
@@ -110,15 +110,14 @@ const ChallangesComponent = (props: ReduxProps) => {
               className="Icons1"
             ></img>
 
-
-<img
+            <img
               src={icons5}
               srcSet={`${icons52} 2x, ${icons53} 3x`}
               className="IconsMobile1"
             ></img>
             <span className="No-tools-in-hand-to-control-How-where-how-much-employees-spend">
-               No tools in hand to control :
-               How, where &  how much employees spend
+              No tools in hand to control : How, where & how much employees
+              spend
             </span>
           </div>
 
@@ -131,9 +130,7 @@ const ChallangesComponent = (props: ReduxProps) => {
               className="Icons2"
             ></img>
 
-
-
-<img
+            <img
               src={icons6}
               srcSet={`${icons62} 2x, ${icons63} 3x`}
               className="IconsMobile2"

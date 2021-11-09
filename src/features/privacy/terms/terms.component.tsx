@@ -46,18 +46,14 @@ const TermsComponent = (props: ReduxProps) => {
     // Write your side-effects here
   }, []);
 
-  return (
-    <div className='screenWidth'>
-
+  return ( 
+    <div className="screenWidth">
       <div className="termsFlex">
         <div className="textTerms">
           <span className="-Acceptance-of-termsTe">1. Acceptance of terms</span>
           <div className="textTitle">
-            
             <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
-             
               <span className="text-style-1Te">1.1</span>
-             
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum is simply dummy text of the printing and
               typesetting industry.Lorem Ipsum is simply dummy text of the
@@ -92,7 +88,7 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
 
-        <div className="textTerms"> 
+        <div className="textTerms" id="SectionTwo">
           <span className="-Privacy-complaintsTe">2. Privacy complaints</span>
 
           <div className="textTitle">
@@ -320,10 +316,11 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
       </div>
+    <div className='colotoot'>
       <div className="footerColorTe"></div>
-        <div className='storePlay'>
-          <span className="Download-nowTe">Download Now!</span>
-
+      <div className="storePlay">
+        <span className="Download-nowTe">Download Now!</span>
+        <div>
           <img
             src={store}
             srcSet={`${store2} 2x, ${store3} 3x`}
@@ -335,30 +332,58 @@ const TermsComponent = (props: ReduxProps) => {
             className="_play-store-icon-android-app-on-google-playTe"
           ></img>
         </div>
-        <div className="footerLineTerms"></div>
+      </div>
+      <div className="footerLineTerms"></div>
 
-        <div className="footerDivTerms">
+      <div className="footerDivTerms">
+        <img
+          src={areeba}
+          srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+          className="AreebaTe"
+        ></img>
+        <img
+          src={master}
+          srcSet={`${master2} 2x, ${master3} 3x`}
+          className="MastercardTe"
+        ></img>
+        <div className="foterLinks">
+          <span className="Privacy-PolicyTe">Privacy Policy</span>
+          <span className="Terms-of-ServiceTe">Terms of Service</span>
+          <span className="Cookie-PolicyTe">Cookie Policy</span>
+        </div>
+        <div className="bex-Rights">
+          <span className="-Bex-All-Rights-ReservedTe">
+            2021 Bex. All Rights Reserved.
+          </span>
+        </div>
+      </div>
+      <div className="footerDivTermsMobile">
+        <div className="areebaMastercardRightsTermsMobile">
           <img
             src={areeba}
             srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-            className="AreebaTe"
+            className="AreebaTeMobile"
           ></img>
           <img
             src={master}
             srcSet={`${master2} 2x, ${master3} 3x`}
-            className="MastercardTe"
+            className="MastercardTeMobile"
           ></img>
-<div className='foterLinks' > 
-          <span className="Privacy-PolicyTe">Privacy Policy</span>
-          <span className="Terms-of-ServiceTe">Terms of Service</span>
-          <span className="Cookie-PolicyTe">Cookie Policy</span>
-     </div>
-     <div className='bex-Rights'>
-          <span className="-Bex-All-Rights-ReservedTe">
-            2021 Bex. All Rights Reserved.
-          </span>
-         </div>
+
+          <div className="bex-RightsMobile">
+            <span className="-Bex-All-Rights-ReservedTeMobile">
+              2021 Bex. All Rights Reserved. 
+            </span>
+          </div>
+        </div>
+
+        <div className="foterLinksMobile">
+          <span className="Privacy-PolicyTeMobile">Privacy Policy</span>
+          <span className="Terms-of-ServiceTeMobile">Terms of Service</span>
+          <span className="Cookie-PolicyTeMobile">Cookie Policy</span>
+        </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -290,7 +290,7 @@ img.SignHandles {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     align-content: stretch;
  
@@ -386,13 +386,13 @@ img.SignHandles {
   }
 
   .Rectangle-24970h {
-    width: 41px;
-    height: 40px;
+    width: 5px;
+    height: 42px;
     margin: 0 26px 0.3px 0;
     padding: 11px 19px;
-    border-radius: 47px;
+    border-radius: 50px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-    border: solid #30c6c6;
+    border:solid #30c6c6;
     background-color: #ffff;
     display: flex;
     justify-content: center;

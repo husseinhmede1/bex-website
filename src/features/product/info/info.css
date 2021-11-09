@@ -189,10 +189,10 @@ img.Mastercard-TxtI {
   z-index: 1;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { 
   .infoPageBackground {
     width: 99.2vw;
-    height: 120vh;
+    height: 140vh;
     background-image: -webkit-image-set(
       url("../../../assets/img/Mask-Group2.png") 1x,
       url("../../../assets/img/Mask-Group2@2x.png") 2x,

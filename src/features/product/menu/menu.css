@@ -516,7 +516,6 @@
       url("../../../assets/img/Main-BG@3x.png") 3x
     );
     background-repeat: no-repeat;
-    background-attachment: fixed;
     contain: content;
     background-position: center;
     background-size: cover;

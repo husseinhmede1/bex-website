@@ -67,7 +67,7 @@ const InfoComponent = (props: ReduxProps) => {
           ></img>
 
           <img
-            src={maskmobile}
+            src={maskmobile} 
             srcSet={`${maskmobile2} 2x, ${maskmobile3} 3x`}
             className="Mobile-Img-Info"
           ></img>

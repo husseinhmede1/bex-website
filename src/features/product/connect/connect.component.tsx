@@ -139,10 +139,9 @@ const ConnectComponent = (props: ReduxProps) => {
                 <span className="MessageC">Message</span>
                 <div className="Path-162308C"></div>
               </div>
-
               <div className="connectPageButton">
                 <span className="Get-in-TouchC">Get in Touch</span>
-              </div>
+               </div>
             </div>
           </div>
         </div>
@@ -158,7 +157,7 @@ const ConnectComponent = (props: ReduxProps) => {
               src={master}
               srcSet={`${master2} 2x, ${master3} 3x`}
               className="MastercardC"
-            ></img>
+            ></img> 
 
             <span className="Privacy-PolicyC">Privacy Policy</span>
             <span className="Terms-of-ServiceC">Terms of Service</span>

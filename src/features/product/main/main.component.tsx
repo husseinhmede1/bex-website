@@ -57,7 +57,7 @@ const MainComponent = (props: ReduxProps) => {
       </div>
       <SaveComponent />
       <PackagesComponent />   
-      <TryforFreeComponent />
+      <TryforFreeComponent /> 
      <BenefitsComponent/>
       
      <InfoComponent/>

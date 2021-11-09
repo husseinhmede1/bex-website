@@ -90,7 +90,6 @@ img.Signs {
   margin: 4.4px 14.2px 82px 0;
   object-fit: contain;
   margin-top: 5%;
-
 }
 
 .Digitize-your-business-expense-process-to-reduce-your-admin-costs {
@@ -190,8 +189,8 @@ img.Signs {
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
-width: 99.2vw;
-
+    width: 99.2vw;
+    height: 100vh;
     background-color: #306bdd;
   }
 
@@ -222,7 +221,7 @@ width: 99.2vw;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
     border: solid 1px #30c6c6;
     background-color: #fff;
-    margin-left: -60%;
+    margin-left: -75%;
     margin-top: 50%;
     display: flex;
     flex-direction: column;
@@ -294,7 +293,7 @@ width: 99.2vw;
     height: 70px;
     margin: 0 0 48.8px 14.2px;
     font-family: Lato-Regular;
-    font-size: 12px; 
+    font-size: 12px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -337,8 +336,8 @@ width: 99.2vw;
     justify-content: center;
     align-items: center;
     align-content: stretch;
-    margin-top: -65%;
-    margin-left: -5%;
+    margin-top: -45%;
+    margin-left: 5%;
   }
 
   .TextTitleSave {

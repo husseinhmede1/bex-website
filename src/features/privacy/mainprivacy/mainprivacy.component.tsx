@@ -37,12 +37,12 @@ const MainprivacyComponent = (props: ReduxProps) => {
 
   return (
     <div>
-      <PolicyComponent />
+      <PolicyComponent /> 
       <TermsComponent />
     </div>
   );
 };
-
+ 
 /**
  * Maps state variables from redux store to props of currect component
  * @param state

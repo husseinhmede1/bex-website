@@ -70,7 +70,7 @@ const MenuComponent = (props: ReduxProps) => {
       <div className="navbarMenu">
         <Link to="/mainprivacy" className="bexMenu">
           BEX
-        </Link>
+        </Link> 
 
         <div className="navbar-namesMenu">
           <span className="navbar-names-font1Menu">HOW BEX WORKS</span>
@@ -91,7 +91,7 @@ const MenuComponent = (props: ReduxProps) => {
             srcSet={`${Gplay2} 2x, ${Gplay3} 3x`}
             className="GplayImg"
           />
-        </div>
+        </div>  
       </div>
       <div className="menuImgPosition">
         <Link to="/menumobile">

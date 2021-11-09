@@ -52,7 +52,7 @@ const PolicyComponent = (props: ReduxProps) => {
     <div className="MainFlexPolicy">
       <div className="navigationBarPolicy">
         <Link to="/main" className="BEXP">
-          BEX
+          BEX 
         </Link>
 
         <div className="navbarLinksPolicy">
@@ -65,7 +65,7 @@ const PolicyComponent = (props: ReduxProps) => {
           <span className="Contact-usP">Contact us</span>
         </div>
 
-        <div className='policyMobileMenuNavbar'>
+        <div className='policyMobileMenuNavbar'> 
         <Link to="/menumobile">
           <img
             src={menu}
@@ -78,18 +78,18 @@ const PolicyComponent = (props: ReduxProps) => {
       </div>
       <div className="PrivacyPolicyToLeft">
         <div className="PrivacyPolicyTitlePosition">
-          <span className="Privacy-policyP">Privacy policy</span>
+         <span className="Privacy-policyP">Privacy policy</span> 
         </div> 
         <div className="PrivacyPolicyRules">
           <div className="spaceBetween">
             <span className="span1P">1.</span>
-
+ 
             <span className="Acceptance-of-termsP">Acceptance of terms</span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">2.</span>
 
-            <span className="Privacy-complaintsP">Privacy complaints</span>
+           <span className="Privacy-complaintsP">Privacy complaints</span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">3.</span>

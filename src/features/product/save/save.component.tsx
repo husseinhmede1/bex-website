@@ -74,7 +74,7 @@ const SaveComponent = (props: ReduxProps) => {
                 </span>
               </div>
             </div>
-
+ 
             <div className="signedTexttwo">
               <img
                 src={sign2}

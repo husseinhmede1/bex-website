@@ -196,9 +196,9 @@
 
 .footerColorTe {
   background-color: #306bdd;
-  height: 22vh;
+  height: 25vh;
   width: 99.2vw;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .footerLineTerms {
@@ -211,6 +211,11 @@
   margin-left: 4.5%;
 }
 
+.footerDivTermsMobile {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
 .footerDivTerms {
   display: flex;
   flex-direction: row;
@@ -328,6 +333,7 @@ img.Group-17Te {
   height: 50px;
   margin: 0 20px 26.2px 43px;
   object-fit: contain;
+margin-left: 5%;
 }
 
 img._play-store-icon-android-app-on-google-playTe {
@@ -336,27 +342,98 @@ img._play-store-icon-android-app-on-google-playTe {
   margin: 0 740.5px 26.2px 20px;
   object-fit: contain;
   border-radius: 6px;
+  margin-left: 0%;
 }
 
 .storePlay {
-  margin-top: -9%;
+  margin-top: -11%;
   z-index: 1;
 }
 
+.areebaMastercardRightsTermsMobile {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+img.AreebaTeMobile {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+img.MastercardTeMobile {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.bex-RightsMobile {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+.Cookie-PolicyTeMobile {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.-Bex-All-Rights-ReservedTeMobile {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.Privacy-PolicyTeMobile {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.Terms-of-ServiceTeMobile {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+.foterLinksMobile {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+.termsFlex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+.screenWidth{
+
+  display: flex; 
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: stretch;
+  
+}
+
+
 @media only screen and (max-width: 600px) {
-
-  .screenWidth{
-
-   width: 65.8vw;
-
+  .screenWidth {
+    width: 65.8vw;
   }
+
 
   .-Acceptance-of-termsTe {
     width: 407px;
     height: 40px;
     margin: 97px 104px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 60px;
+    font-size: 46px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -429,7 +506,7 @@ img._play-store-icon-android-app-on-google-playTe {
     height: 40px;
     margin: 100px 9px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 60px;
+    font-size: 46px;
     white-space: nowrap;
     font-weight: 800;
     font-stretch: normal;
@@ -443,7 +520,7 @@ img._play-store-icon-android-app-on-google-playTe {
 
   .-Data-retention-and-data-probabilityTe {
     font-family: Gilroy-ExtraBold;
-    font-size: 60px;
+    font-size: 46px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -458,7 +535,7 @@ img._play-store-icon-android-app-on-google-playTe {
     height: 40px;
     margin: 100px 298px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 60px;
+    font-size: 46px;
     white-space: nowrap;
     font-weight: 800;
     font-stretch: normal;
@@ -475,7 +552,7 @@ img._play-store-icon-android-app-on-google-playTe {
     height: 40px;
     margin: 100px 66px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 60px;
+    font-size: 46px;
     white-space: nowrap;
     font-weight: 800;
     font-stretch: normal;
@@ -492,7 +569,7 @@ img._play-store-icon-android-app-on-google-playTe {
     height: 40px;
     margin: 100px 14px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 60px;
+    font-size: 46px;
     white-space: nowrap;
     font-stretch: normal;
     font-style: normal;
@@ -508,7 +585,7 @@ img._play-store-icon-android-app-on-google-playTe {
     height: 40px;
     margin: 100px 367px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 60px;
+    font-size: 46px;
     white-space: nowrap;
 
     font-stretch: normal;
@@ -521,11 +598,11 @@ img._play-store-icon-android-app-on-google-playTe {
   }
 
   .-How-your-personal-information-is-usedTe {
-    width: 725px;
+    width: 300px;
     height: 40px;
     margin: 100px 298px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 60px;
+    font-size: 46px;
     white-space: nowrap;
     font-weight: 800;
     font-stretch: normal;
@@ -548,64 +625,116 @@ img._play-store-icon-android-app-on-google-playTe {
 
   .textTitle {
     margin-top: 40%;
-    width: 300vw;
+    width: 250vw;
+    font-size: 10px;
     margin-left: 5%;
   }
 
   .footerColorTe {
     background-color: #306bdd;
-    height: 50vh;
-    width: 400vw;
+    height: 100vh;
+    width: 300vw;
     margin-top: 90%;
   }
 
   .footerLineTerms {
-    width: 300vw;
+    width: 250vw;
     height: 0;
     margin: 123.9px 0 0;
     opacity: 0.3;
     border: solid 1px #ddd;
     margin-top: 1%;
-    margin-left: 40%;
+    margin-left: 30%;
   }
 
   .footerDivTerms {
+    display: none;
+  }
+
+  img.AreebaTe {
+    display: none;
+  }
+
+  img.MastercardTe {
+    display: none;
+  }
+
+  .foterLinks {
+    display: none;
+  }
+
+  .Cookie-PolicyTe {
+    display: none;
+  }
+
+  .-Bex-All-Rights-ReservedTe {
+    display: none;
+  }
+
+  .Privacy-PolicyTe {
+    display: none;
+  }
+
+  .Terms-of-ServiceTe {
+    display: none;
+  }
+
+  .footerDivTermsMobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+
+    visibility: visible;
+    margin-top: 20vh;
+  }
+
+  .areebaMastercardRightsTermsMobile {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     align-content: stretch;
-    white-space: nowrap;
-    margin-top: 5%;
+
+    visibility: visible;
+    margin-left: 500%;
   }
 
-  img.AreebaTe {
-    width: 62.8px;
-    height: 17.1px;
-    margin: 30.2px 21.6px 6.4px 0.5px;
+  img.AreebaTeMobile {
+    width: 100px;
+    height: 100px;
+    margin: 6px 14.6px 6px 0;
     object-fit: contain;
-    margin-left: 10%;
+    visibility: visible;
+    margin-left: 25vw;
   }
 
-  img.MastercardTe {
-    width: 47.3px;
-    height: 29.2px;
-    margin: 24.1px 75.3px 0.4px 21.6px;
+  img.MastercardTeMobile {
+    width: 100px;
+    height: 100px;
+    margin: 0 0 0 14.6px;
     object-fit: contain;
-    margin-left: 20%;
+    visibility: visible;
+    margin-left: 20vw;
   }
-
-  .foterLinks {
-    margin-left: 0%;
+  .bex-RightsMobile {
+    visibility: visible;
+    margin-left: -45vw;
+    margin-top: -5vh;
+    
   }
-
-  .Cookie-PolicyTe {
-    width: 73px;
+  .bex-Rights {
+    display: none;
+  }
+  .Cookie-PolicyTeMobile {
+    width: 730px;
     height: 15px;
     margin: 35.1px 47.5px 3.7px 41px;
     font-family: Lato-Bold;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -613,15 +742,15 @@ img._play-store-icon-android-app-on-google-playTe {
     letter-spacing: normal;
     text-align: left;
     color: white;
-    margin-left: 4%;
     text-decoration: underline;
+    white-space: nowrap;
+    visibility: visible;
   }
 
-  .-Bex-All-Rights-ReservedTe {
+  .-Bex-All-Rights-ReservedTeMobile {
     width: 162px;
     height: 15px;
-    margin: 38.8px 0px 0 486px;
-    opacity: 0.7;
+    opacity: 0.9;
     font-family: Lato-Bold;
     font-size: 25px;
     font-weight: bold;
@@ -629,18 +758,19 @@ img._play-store-icon-android-app-on-google-playTe {
     font-style: normal;
     line-height: 2.33;
     letter-spacing: normal;
-    text-align: right;
-    color: white;
-    margin-left: 20%;
-  margin-top: -50%;
+    margin-left:110vw;
+    margin-top: 20vh;
+    color: aqua;
+    white-space: nowrap;
+    visibility: visible;
   }
 
-  .Privacy-PolicyTe {
-    width: 75px;
+  .Privacy-PolicyTeMobile {
+    width: 750px;
     height: 18px;
     margin: 35.1px 34px 0.7px 8.9px;
     font-family: Lato-Bold;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -649,14 +779,16 @@ img._play-store-icon-android-app-on-google-playTe {
     text-align: left;
     color: white;
     text-decoration: underline;
+    white-space: nowrap;
+    visibility: visible;
   }
 
-  .Terms-of-ServiceTe {
-    width: 88px;
+  .Terms-of-ServiceTeMobile {
+    width: 880px;
     height: 15px;
     margin: 35.1px 41px 3.7px 34px;
     font-family: Lato-Bold;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -665,8 +797,20 @@ img._play-store-icon-android-app-on-google-playTe {
     text-align: left;
     color: white;
     text-decoration: underline;
+    white-space: nowrap;
+    visibility: visible;
   }
-
+  .foterLinksMobile {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
+    margin-top: 20vh;
+    margin-left: 30vw;
+    visibility: visible;
+  }
   .Download-nowTe {
     width: 175px;
     height: 25px;
@@ -681,36 +825,41 @@ img._play-store-icon-android-app-on-google-playTe {
     text-align: left;
     color: #fff;
     white-space: nowrap;
-    margin-top: 30%;
+    margin-top: -40%;
+    margin-left: 27%;
   }
 
   img.Group-17Te {
-    width: 142px;
-    height: 50px;
+    width: 250px;
+    height: 100px;
     margin: 0 20px 26.2px 43px;
     object-fit: contain;
-    margin-left: 400%;
-    margin-top: -50%;
+    margin-left: 30%;
+    margin-top: 20%;
   }
 
   img._play-store-icon-android-app-on-google-playTe {
-    width: 143px;
-    height: 50px;
+    width: 250px;
+    height: 100px;
     margin: 0 740.5px 26.2px 20px;
     object-fit: contain;
     border-radius: 6px;
-    margin-left: 500%;
-    margin-top: -70%;
+    margin-left: 160%;
+    margin-top: -60%;
   }
 
   .storePlay {
-    margin-top: -120%;
+    margin-top: -220%;
     z-index: 1;
-    margin-left: 20%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
   }
-  .bex-Rights{
-
-    margin-top: 5%;
-    margin-left: 40%;
+  .bex-Rights {
+    display: none;
   }
 }

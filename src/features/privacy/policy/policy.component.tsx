@@ -79,7 +79,7 @@ const PolicyComponent = (props: ReduxProps) => {
       <div className="PrivacyPolicyToLeft">
         <div className="PrivacyPolicyTitlePosition">
           <span className="Privacy-policyP">Privacy policy</span>
-        </div>
+        </div> 
         <div className="PrivacyPolicyRules">
           <div className="spaceBetween">
             <span className="span1P">1.</span>

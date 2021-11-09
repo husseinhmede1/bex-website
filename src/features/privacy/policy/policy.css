@@ -435,8 +435,8 @@ height: 0px;
 
 .policyMobileMenuNavbar{
 visibility: visible;
-margin-left: 200%;
-margin-top: -6%;
+margin-left: 700%;
+margin-top: -20%;
 }
 img.MenuPolicy{
 visibility: visible;
@@ -464,7 +464,7 @@ object-fit: contain;
     letter-spacing: normal;
     text-align: left;
     color: #000;
-    margin-left: 40%;
+    margin-left: 100%;
     margin-top: 2%;
   }
 
@@ -489,6 +489,8 @@ display: none;
   }
 
   .navigationBarPolicy {
+    
+    position:fixed;
   	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -715,7 +717,7 @@ display: none;
     padding: 22px 17.5px 21.4px 17px;
     background-color: rgb(48, 198, 117);
     border-radius: 50%;
-    margin-top: 40%;
+    margin-top: 40%; 
     margin-left: 250%;
   }
 

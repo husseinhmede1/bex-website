@@ -431,7 +431,7 @@ height: 0px;
   
   
   }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 414px) and (max-width: 767px){
 
 .policyMobileMenuNavbar{
 visibility: visible;
@@ -440,7 +440,7 @@ margin-top: -20%;
 }
 img.MenuPolicy{
 visibility: visible;
-width: 70px;
+width: 70px; 
 height: 50.5px;
 object-fit: contain;
 
@@ -547,11 +547,11 @@ display: none;
   }
 
   .Acceptance-of-termsP {
-    width: 139px;
+    width: 100px;
     height: 19px;
     margin: 60px 183px 14px 5px;
     font-family: Lato-Light;
-    font-size: 55px;
+    font-size: 300%;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -567,7 +567,7 @@ display: none;
     height: 19px;
     margin: 14px 3px 14px 5px;
     font-family: Lato-Light;
-    font-size: 55px;
+    font-size: 300%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -583,7 +583,7 @@ display: none;
     height: 19px;
     margin: 14px 59px 14px 5px;
     font-family: Lato-Light;
-    font-size: 55px;
+    font-size: 300%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -603,7 +603,7 @@ display: none;
     height: 19px;
     margin: 13px 30px 14px 5px;
     font-family: Lato-Light;
-    font-size: 55px;
+    font-size: 300%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -619,7 +619,7 @@ display: none;
     height: 19px;
     margin: 14px 162px 14px 5px;
     font-family: Lato-Light;
-    font-size: 55px;
+    font-size: 300%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -635,7 +635,7 @@ display: none;
     height: 19px;
     margin: 14px 1px 14px 5px;
     font-family: Lato-Light;
-    font-size: 55px;
+    font-size: 300%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -651,7 +651,7 @@ display: none;
     height: 19px;
     margin: 14px 138px 14px 5px;
     font-family: Lato-Light;
-    font-size: 55px;
+    font-size: 300%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -667,7 +667,7 @@ display: none;
     height: 19px;
     margin: 14px 76px 14px 5px;
     font-family: Lato-Light;
-    font-size: 55px;
+    font-size: 300%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -683,7 +683,7 @@ display: none;
     height: 19px;
     margin: 14px 7px 6px 5px;
     font-family: Lato-Light;
-    font-size: 55px;
+    font-size: 300%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -699,7 +699,7 @@ display: none;
     height: 19px;
     margin: 14px 144px 35px 5px;
     font-family: Lato-Light;
-    font-size: 55px;
+    font-size: 300%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -717,8 +717,8 @@ display: none;
     padding: 22px 17.5px 21.4px 17px;
     background-color: rgb(48, 198, 117);
     border-radius: 50%;
-    margin-top: 40%; 
-    margin-left: 230%;
+    margin-top: 60%; 
+    margin-left: 175%;
   }
 
   img.chatbotP {
@@ -736,7 +736,7 @@ display: none;
     align-items: stretch;
     align-content: stretch;
     margin-left: 50%;
-    margin-top: -60%;
+    margin-top: -80%;
   }
 
   .areebaP {

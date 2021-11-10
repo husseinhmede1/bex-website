@@ -56,7 +56,7 @@ const PolicyComponent = (props: ReduxProps) => {
         </Link>
 
         <div className="navbarLinksPolicy">
-          <span className="How-bex-worksP">How bex works</span>
+          <span className="How-bex-worksP">How bex works</span> 
 
           <span className="PricingP">Pricing</span>
 

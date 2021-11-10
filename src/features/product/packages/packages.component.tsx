@@ -38,7 +38,7 @@ const PackagesComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="packagesBackground" style={{ height: height }}>
+    <div className="packagesBackground">
       <div className="HeadOfPagePackages">
         <span className="OUR-Packagesp">OUR PACKAGES</span>
 

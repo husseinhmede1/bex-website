@@ -148,7 +148,7 @@ const ConnectComponent = (props: ReduxProps) => {
         <div>
           <div className="FooterLineConnectPage"></div>
           <div className="FooterConnectPage">
-            <img
+            <img 
               src={areeba}
               srcSet={`${areeba2} 2x, ${areeba3} 3x`}
               className="AreebaC"

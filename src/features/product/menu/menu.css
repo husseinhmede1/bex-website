@@ -10,7 +10,7 @@
 .App-linkm {
   color: rgb(112, 76, 182);
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .navbarMenu {
     display: flex;
     flex-direction: row;
@@ -38,7 +38,7 @@
     font-family: Lato-Regular;
     font-weight: normal;
     font-stretch: normal;
-    font-style: normal; 
+    font-style: normal;
     line-height: 2;
     letter-spacing: normal;
     text-align: left;
@@ -310,13 +310,13 @@
     margin-top: -5%;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 414px) and (max-width: 767px) {
   .navbarMenu {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: stretch; 
+    align-items: stretch;
     align-content: stretch;
 
     margin-top: 2%;
@@ -519,7 +519,7 @@
     contain: content;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 120vh;
   }
 
   .Business-expense-management-made-easyMenu {

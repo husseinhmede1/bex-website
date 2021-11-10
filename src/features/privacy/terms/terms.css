@@ -194,7 +194,7 @@
   margin-top: 2%;
 }
 
-.footerColorTe {
+.footerColorTe { 
   background-color: #306bdd;
   height: 25vh;
   width: 99.2vw;
@@ -422,7 +422,7 @@ img.MastercardTeMobile {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 414px) and (max-width: 767px) {
   .screenWidth {
     width: 65.8vw;
   }
@@ -446,7 +446,7 @@ img.MastercardTeMobile {
   }
   .-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe {
     font-family: Lato-Regular;
-    font-size: 400%;
+    font-size:350%;
     font-stretch: semi-condensed;
     font-style: normal;
     line-height: 1.4;
@@ -625,7 +625,7 @@ img.MastercardTeMobile {
 
   .textTitle {
     margin-top: 40%;
-    width: 250vw;
+    width: 200vw;
     font-size: 10px;
     margin-left: 5%;
   }
@@ -633,17 +633,17 @@ img.MastercardTeMobile {
   .footerColorTe {
     background-color: #306bdd;
     height: 100vh;
-    width: 300vw;
+    width: 360%;
     margin-top: 90%;
   }
 
   .footerLineTerms {
-    width: 250vw;
+    width: 200vw;
     height: 0;
     margin: 123.9px 0 0;
     opacity: 0.3;
     border: solid 1px #ddd;
-    margin-top: 1%;
+    margin-top: 10%;
     margin-left: 30%;
   }
 
@@ -688,7 +688,8 @@ img.MastercardTeMobile {
     align-content: stretch;
 
     visibility: visible;
-    margin-top: 20vh;
+    margin-top: 30vh;
+    margin-left: 15vw;
   }
 
   .areebaMastercardRightsTermsMobile {
@@ -722,7 +723,7 @@ img.MastercardTeMobile {
   }
   .bex-RightsMobile {
     visibility: visible;
-    margin-left: -45vw;
+    margin-left: -70vw;
     margin-top: -5vh;
     
   }
@@ -760,7 +761,7 @@ img.MastercardTeMobile {
     letter-spacing: normal;
     margin-left:110vw;
     margin-top: 20vh;
-    color: aqua;
+    color: #fff;
     white-space: nowrap;
     visibility: visible;
   }
@@ -844,12 +845,12 @@ img.MastercardTeMobile {
     margin: 0 740.5px 26.2px 20px;
     object-fit: contain;
     border-radius: 6px;
-    margin-left: 160%;
-    margin-top: -60%;
+    margin-left: 110%;
+    margin-top: -40%;
   }
 
   .storePlay {
-    margin-top: -220%;
+    margin-top: -140%;
     z-index: 1;
     margin-left: 10%;
     display: flex;

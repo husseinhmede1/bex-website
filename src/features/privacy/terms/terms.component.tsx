@@ -29,7 +29,7 @@ import store3 from "&assets/img/Group-17@3x.png";
 import { loginActions } from "&features/demo/login/login.slice";
 
 const { innerWidth: width, innerHeight: height } = window;
-
+ 
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const TermsComponent = (props: ReduxProps) => {
@@ -47,6 +47,7 @@ const TermsComponent = (props: ReduxProps) => {
   }, []);
 
   return ( 
+    <>
     <div className="screenWidth">
       <div className="termsFlex">
         <div className="textTerms">
@@ -316,10 +317,12 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
       </div>
-    <div className='colotoot'>
+
+      </div>
+
       <div className="footerColorTe"></div>
       <div className="storePlay">
-        <span className="Download-nowTe">Download Now!</span>
+        <span className="Download-nowTe">Download Now!</span> 
         <div>
           <img
             src={store}
@@ -383,8 +386,7 @@ const TermsComponent = (props: ReduxProps) => {
           <span className="Cookie-PolicyTeMobile">Cookie Policy</span>
         </div>
       </div>
-    </div>
-    </div>
+      </>
   );
 };
 

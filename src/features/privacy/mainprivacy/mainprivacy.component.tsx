@@ -36,7 +36,7 @@ const MainprivacyComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div>
+    <div className='MainPolicyBackground'>
       <PolicyComponent /> 
       <TermsComponent />
     </div>

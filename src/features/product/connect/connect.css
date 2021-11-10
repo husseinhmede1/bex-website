@@ -599,11 +599,11 @@ img.MastercardCMobile {
   visibility: hidden;
 }
  
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 414px) and (max-width: 767px) {
   .connectPageBackground {
     width: 99.2vw;
     height: 170vh;
-
+ 
     background-image: -webkit-image-set(
       url("../../../assets/img/Footer-bg-img.png") 1x,
       url("../../../assets/img/Footer-bg-img@2x.png") 2x,
@@ -836,19 +836,20 @@ img.MastercardCMobile {
   }
 
   .connectPageButton {
-    width:0px;
-    height: 56px;
+    width:5%;
+    height: 8%;
     
     background-color: #30c675;
    
     margin-left: -20%;
+    margin-top: 5%;
 
   } 
   .Get-in-TouchC {
-    width: 50px;
-    height: 21px;
+    width: 5%;
+    height: 5%;
     font-family: Lato-Bold;
-    font-size: 17px;
+    font-size: 100%;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -857,6 +858,7 @@ img.MastercardCMobile {
     text-align: center;
     color: #fff;
     white-space: nowrap;
+    
   }
 
   img.Footer-bg-imgC {
@@ -995,7 +997,7 @@ img.MastercardCMobile {
     margin: 123.9px 0 0;
     opacity: 0.3;
     border: solid 1px #ddd;
-    margin-top: -30%;
+    margin-top: -20%;
     margin-left: 10%;
     background-color: #306bdd;
   }
@@ -1107,7 +1109,6 @@ img.MastercardCMobile {
   .-Bex-All-Rights-ReservedMobile {
     width: 162px;
     height: 15px;
-    margin: 38.8px 0px 0 486px;
     opacity: 0.7;
     font-family: Lato-Bold;
     font-size: 12px;

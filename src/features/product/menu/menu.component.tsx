@@ -64,13 +64,13 @@ const MenuComponent = (props: ReduxProps) => {
   useEffect(() => {
     // Write your side-effects here
   }, []);
-
+ 
   return (
-    <div className="menuBackground" style={{ height: height }}>
+    <div className="menuBackground"> 
       <div className="navbarMenu">
-        <Link to="/mainprivacy" className="bexMenu">
+        <Link to="/mainprivacy" className="bexMenu"> 
           BEX
-        </Link> 
+        </Link>  
 
         <div className="navbar-namesMenu">
           <span className="navbar-names-font1Menu">HOW BEX WORKS</span>

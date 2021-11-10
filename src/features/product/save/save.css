@@ -7,12 +7,13 @@
   align-content: stretch;
 
   background-color: #306bdd;
+  height: 100vh;
 }
 
 img.Save-imgs {
   width: 130%;
   height: 150%;
-  margin: 0 0 0 147.1px;
+  margin: 0 0 0 147.1px; 
   object-fit: contain;
   margin-left: -30%;
 }
@@ -181,16 +182,16 @@ img.Signs {
   height: 5%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 414px) and (max-width: 767px) {
   .SaveBackground {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; 
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
     width: 99.2vw;
-    height: 100vh;
+    height: 130vh;
     background-color: #306bdd;
   }
 
@@ -261,7 +262,7 @@ img.Signs {
     text-align: left;
     color: #30c6c6;
     margin-top: -10%;
-    margin-left: 20%;
+    margin-left: 15%;
   }
 
   .Time-is-money-Save-boths {

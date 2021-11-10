@@ -39,19 +39,19 @@ const SaveComponent = (props: ReduxProps) => {
    * When dependency list is empty, useEffect runs each time the component rerenders
    * Adding variables to the dependency list will cause useEffect to run each time a variable changes
    */
-  useEffect(() => {
+  useEffect(() => { 
     // Write your side-effects here
-  }, []);
+  }, []); 
 
   return (
-    <div className="SaveBackground" style={{ height: height }}>
+    <div className="SaveBackground">
       <div className="HeadPartSave">
         <div className="numberWithSave">
           <div className="Rectangle-24989s">
             <span className="span1s">3</span>
           </div>
 
-          <span className="Saves">Save</span>
+          <span className="Saves">Save</span> 
         </div>
 
         <div className="TextTitleSave">

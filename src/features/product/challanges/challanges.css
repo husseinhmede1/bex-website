@@ -181,7 +181,7 @@ img.Icons2 {
   align-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 414px) and (max-width: 767px){
   .CornerChallanges {
     width: 20px;
     height: 20px;
@@ -250,7 +250,7 @@ img.Icons2 {
     text-align: left;
     color: #00194a;
     margin-top: 1%;
-    margin-left: 5%;
+    margin-left: 5%; 
   }
 
   .Day {

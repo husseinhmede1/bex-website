@@ -276,10 +276,10 @@ img.Mask-GroupMobileB {
   margin-top: 10%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 414px) and (max-width: 767px) {
   .BenefitsBackground {
     width: 99.2vw;
-    height: 100vh;
+    height: 110vh;
 
     background-color: #f0f0f0;
     display: flex;

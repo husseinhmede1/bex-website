@@ -702,7 +702,7 @@ img.Contact-us-bluep {
   white-space: nowrap;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 414px) and (max-width: 767px) {
   .packagesBackground {
     width: 99.2vw;
     height: 100vh;

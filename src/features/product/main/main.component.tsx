@@ -47,7 +47,7 @@ const MainComponent = (props: ReduxProps) => {
       <div> 
       <MenuComponent />
       </div>
-      <div className='backGround'> 
+      <div className='backGround'>  
       <div className="challangesSize">
         <ChallangesComponent />
       </div>

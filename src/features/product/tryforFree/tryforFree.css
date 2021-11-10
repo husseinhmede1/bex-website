@@ -220,7 +220,149 @@ img.Try-BEX-Mobileimg {
     background-position: center;
     background-size: cover;
     width: 99.2vw;
-    height: 100vh;
+    height: 105vh;
+    object-fit: contain;
+  }
+  .tryforfreerightSide {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-end;
+    margin-top: -30%;
+  }
+  .tryforfreeButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-end;
+    margin-top: 10%;
+    margin-left: -30%;
+  }
+
+  .applePlayTryforFree {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: flex-end;
+    margin-top: -20%;
+    margin-left: -5%;
+  }
+
+  .tryforfreeImagLeftSide {
+    margin-top: 6%;
+    width: 50vw;
+  }
+
+  .tryforfreeTitle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 413px) {
+  img.Try-BEX-img {
+    display: none;
+    width: 92.2vw;
+    margin: 191px 0 0 633px;
+    object-fit: contain;
+    margin-left: 37.1%;
+  }
+  img.Try-BEX-Mobileimg {
+    width: 600px;
+    height: 1200px;
+ 
+    object-fit: contain;
+    visibility: visible;
+
+    margin-top: 200%;
+    margin-left: -125%;
+  }
+
+  .Try-BEX-For-Free {
+    width: 263px;
+    height: 161px;
+    margin: 0 0 17px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 70px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    margin-top: -75%;
+    margin-left: 35%;
+  }
+
+  .-month-3-users-Digital-card-only {
+    width: 258px;
+    height: 18px;
+    margin: 216px 32px 0 0;
+    font-family: Lato-Bold;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    margin-top: 10%;
+    margin-left: 35%;
+  }
+  img.Apple {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+
+  img.Google-play {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: -5%;
+  }
+
+  img.Get-your-demo {
+    width: 150px;
+    height: 50px;
+    margin: 73px 34px 4px 0;
+    object-fit: contain;
+    margin-left: 70%;
+    margin-top: -5%;
+  }
+  .tryforfreeBackground {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+
+    background-image: -webkit-image-set(
+      url("../../../assets/img/Try-BEX-Cover-Mobile.png") 1x,
+      url("../../../assets/img/Try-BEX-Cover-Mobile@2x.png") 2x,
+      url("../../../assets/img/Try-BEX-Cover-Mobile@3x.png") 3x
+    );
+    background-repeat: no-repeat;
+    contain: content;
+    background-attachment: fixed;
+
+    background-position: center;
+    background-size: cover;
+    width: 99.2vw;
+    height: 115vh;
     object-fit: contain;
   }
   .tryforfreerightSide {

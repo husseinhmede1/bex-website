@@ -56,7 +56,7 @@ const ChallangesComponent = (props: ReduxProps) => {
    * When dependency list is empty, useEffect runs each time the component rerenders
    * Adding variables to the dependency list will cause useEffect to run each time a variable changes
    */
-  useEffect(() => {
+  useEffect(() => { 
     // Write your side-effects here
   }, []);
 

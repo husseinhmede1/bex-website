@@ -67,7 +67,7 @@ const TryforFreeComponent = (props: ReduxProps) => {
             srcSet={`${demo2} 2x, ${demo3} 3x`}
             className="Get-your-demo"
           ></img>
-
+ 
           <div className="applePlayTryforFree">
             <img
               src={apple}

@@ -7,7 +7,7 @@ import { Router, Route, Link } from "react-router-dom";
 import "./menu.css";
 
 import Apple from "&assets/img/Apple-Icon.png";
-import Apple2 from "&assets/img/Apple-Icon@2x.png"; 
+import Apple2 from "&assets/img/Apple-Icon@2x.png";
 import Apple3 from "&assets/img/Apple-Icon@3x.png";
 
 import Gplay from "&assets/img/Google-play.png";
@@ -64,13 +64,13 @@ const MenuComponent = (props: ReduxProps) => {
   useEffect(() => {
     // Write your side-effects here
   }, []);
- 
+
   return (
-    <div className="menuBackground"> 
+    <div className="menuBackground">
       <div className="navbarMenu">
-        <Link to="/mainprivacy" className="bexMenu"> 
+        <Link to="/mainprivacy" className="bexMenu">
           BEX
-        </Link>  
+        </Link>
 
         <div className="navbar-namesMenu">
           <span className="navbar-names-font1Menu">HOW BEX WORKS</span>
@@ -91,7 +91,7 @@ const MenuComponent = (props: ReduxProps) => {
             srcSet={`${Gplay2} 2x, ${Gplay3} 3x`}
             className="GplayImg"
           />
-        </div>  
+        </div>
       </div>
       <div className="menuImgPosition">
         <Link to="/menumobile">

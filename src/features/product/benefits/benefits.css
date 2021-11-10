@@ -563,3 +563,293 @@ img.Mask-GroupMobileB {
     margin-top: 10%;
   }
 }
+
+
+
+@media only screen and (min-width: 360px) and (max-width: 413px) {
+  .BenefitsBackground {
+    width: 99.2vw;
+    height: 130vh;
+
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  .BenefitsTitle {
+    width: 127px;
+    height: 37px;
+    margin: 52.1px 4.5px 36px 31px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 30px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #00194a;
+    margin-left: -60%;
+  }
+  img.Mask-GroupB {
+    display: none;
+  }
+
+  img.Mask-GroupMobileB {
+    width: 314px;
+    height: 289px;
+    object-fit: contain;
+    margin-top: 40%;
+    margin-left: 45%;
+    visibility: visible;
+  }
+
+  .Rectangle53Benefits {
+    width: 131.5px;
+    height: 119.5px;
+    margin: 92.8px 0 139.9px;
+    padding: 18.4px 0 48.4px 28.1px;
+    background-color: #00194a;
+    margin-top: 91%;
+    margin-left: -61.4%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .stated-improved-supplier-relationsB {
+    width: 94px;
+    height: 29px;
+    margin: 5.3px 0 0 0.4px;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    margin-left: -30%;
+  }
+
+  .span1B {
+    width: 59px;
+    height: 40px;
+    margin: 0 89.4px 5.3px 0;
+    font-family: Gilroy-ExtraBold;
+    font-size: 32px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.72;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffff;
+    margin-left: 20%;
+  }
+
+  .Rectangle42Benefits {
+    width: 137.7px;
+    height: 114.7px;
+    margin: 58px 0 42px;
+    padding: 26px 48.5px 29px 29.5px;
+    border: solid 1px #d2d4da;
+    background-color: #fff;
+    margin-top: -75%;
+    margin-left: -15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span2B {
+    width: 59px;
+    height: 38px;
+    margin: 0 32px 9.9px 0;
+    font-family: Gilroy-ExtraBold;
+    font-size: 31px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292929;
+    margin-left: 15%;
+  }
+
+  .stated-reduced-number-of-approvalsB {
+    width: 108px;
+    height: 29px;
+    margin: 9.9px 0 0;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-left: 30%;
+    margin-top: -5%;
+  }
+
+  .Rectangle63Benefits {
+    width: 242.8px;
+    height: 94.5px;
+    margin: 42px 39.3px 0 85.3px;
+    padding: 34.4px 52px 38.4px 26.5px;
+    border: solid 1px #d2d4da;
+    background-color: #fff;
+    margin-top: 58%;
+
+    margin-left: -60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span3B {
+    width: 58px;
+    height: 38px;
+    margin: 0 38px 0 0;
+    font-family: Gilroy-ExtraBold;
+    font-size: 31px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292929;
+  }
+
+  .stated-improved-visibility-and-data-reportingB {
+    width: 137px;
+    height: 29px;
+    margin: 6px 0 3px 38px;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+  }
+
+  .Rectangle47Benefits {
+    width: 125.8px;
+    height: 114.7px;
+    margin: 0 116.5px 0px 0;
+    padding: 26px 67.5px 29px 27.5px;
+    border: solid 1px #d2d4da;
+    background-color: #fff;
+    margin-top: -96%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span4B {
+    width: 57px;
+    height: 38px;
+    margin: 0 11px 9.9px 0;
+    font-family: Gilroy-ExtraBold;
+    font-size: 31px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292929;
+  }
+
+  .stated-improved-cash-flowB {
+    width: 88px;
+    height: 29px;
+    margin: 9.9px 0 0;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-left: 60%;
+  }
+
+  .Rectangle68Benefits {
+    width: 132.5px;
+    height: 114.7px;
+    margin: 0px 0 69.9px 39.3px;
+    padding: 26px 89.5px 29px 27.5px;
+    border: solid 1px #d2d4da;
+    background-color: #fff;
+    margin-left: -32%;
+    margin-top: -18%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span5B {
+    width: 59px;
+    height: 38px;
+    margin: 0 0 9.9px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 31px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292929;
+  }
+
+  .stated-reduced-admin-costB {
+    width: 100px;
+    height: 29px;
+    margin: 9.9px 0 0;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-left: 300%;
+  }
+  .RectanglesGroupeBenefits {
+    margin-top: 10%;
+  }
+}

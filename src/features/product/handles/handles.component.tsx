@@ -49,7 +49,7 @@ const HandlesComponent = (props: ReduxProps) => {
       <div className="BEX-loc">
         <span className="BEX-handles-the-hard-stuffh">
           <div>BEX HANDLES</div>
-          <div>THE HARD STUFF</div>
+          <div>THE HARD STUFF</div> 
         </span> 
       </div>
       <div className="twoPartsHandles">

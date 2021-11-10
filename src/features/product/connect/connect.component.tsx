@@ -184,7 +184,7 @@ const ConnectComponent = (props: ReduxProps) => {
 
               <span className="-Bex-All-Rights-ReservedMobile">
                 2021 Bex. All Rights Reserved.
-              </span>
+              </span> 
             </div>
             <div>
               <span className="Privacy-PolicyCMobile">Privacy Policy</span>

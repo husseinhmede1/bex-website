@@ -40,7 +40,7 @@ const MainprivacyComponent = (props: ReduxProps) => {
       <PolicyComponent /> 
       <TermsComponent />
     </div>
-  );
+  ); 
 };
  
 /**
@@ -50,7 +50,7 @@ const MainprivacyComponent = (props: ReduxProps) => {
 const mapStateToProps = (state: RootState) => ({
   // Map your redux state to your props here
 });
-
+ 
 /**
  * Maps actions from slices to props
  */

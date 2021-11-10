@@ -152,9 +152,9 @@ const PolicyComponent = (props: ReduxProps) => {
         <img
           src={chatbot}
           srcSet={`${chatbot2} 2x, ${chatbot3} 3x`}
-          className="chatbotP"
+          className="chatbotP" 
         />
-      </div>
+      </div> 
 
       <div className="areeba-masterP">
         <div className="areebaP">

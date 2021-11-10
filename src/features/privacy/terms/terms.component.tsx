@@ -322,14 +322,14 @@ const TermsComponent = (props: ReduxProps) => {
 
       <div className="footerColorTe"></div>
       <div className="storePlay">
-        <span className="Download-nowTe">Download Now!</span> 
+        <span className="Download-nowTe">Download Now!</span>  
         <div>
           <img
             src={store}
             srcSet={`${store2} 2x, ${store3} 3x`}
             className="Group-17Te"
           ></img>
-          <img
+          <img 
             src={play}
             srcSet={`${play2} 2x, ${play3} 3x`}
             className="_play-store-icon-android-app-on-google-playTe"

@@ -67,7 +67,7 @@ const ChallangesComponent = (props: ReduxProps) => {
           src={down}
           srcSet={`${down2} 2x, ${down3} 3x`}
           className="down-arrow"
-        />
+        /> 
       </div>
       <div className="PageContainChallanges">
         <div className="rightTextChallanges">

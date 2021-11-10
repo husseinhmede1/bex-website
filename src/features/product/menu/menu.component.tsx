@@ -85,7 +85,7 @@ const MenuComponent = (props: ReduxProps) => {
             srcSet={`${Apple2} 2x, ${Apple3} 3x`}
             className="appleImg"
           />
-
+ 
           <img
             src={Gplay}
             srcSet={`${Gplay2} 2x, ${Gplay3} 3x`}

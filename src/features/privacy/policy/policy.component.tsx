@@ -18,7 +18,6 @@ import chatbot from "&assets/img/chatbot.png";
 import chatbot2 from "&assets/img/chatbot@2x.png";
 import chatbot3 from "&assets/img/chatbot@3x.png";
 
-
 import menu from "&assets/img/Burger-menu.png";
 import menu2 from "&assets/img/Burger-menu@2x.png";
 import menu3 from "&assets/img/Burger-menu@3x.png";
@@ -52,44 +51,43 @@ const PolicyComponent = (props: ReduxProps) => {
     <div className="MainFlexPolicy">
       <div className="navigationBarPolicy">
         <Link to="/main" className="BEXP">
-          BEX 
+          BEX
         </Link>
 
         <div className="navbarLinksPolicy">
-          <span className="How-bex-worksP">How bex works</span> 
+          <span className="How-bex-worksP">How bex works</span>
 
           <span className="PricingP">Pricing</span>
 
           <span className="About-usP">About us</span>
- 
+
           <span className="Contact-usP">Contact us</span>
         </div>
 
-        <div className='policyMobileMenuNavbar'> 
-        <Link to="/menumobile">
-          <img
-            src={menu}
-            srcSet={`${menu2} 2x, ${menu3} 3x`}
-            className="MenuPolicy"
-          />
-        </Link>
-
-          </div>
+        <div className="policyMobileMenuNavbar">
+          <Link to="/menumobile">
+            <img
+              src={menu}
+              srcSet={`${menu2} 2x, ${menu3} 3x`}
+              className="MenuPolicy"
+            />
+          </Link>
+        </div>
       </div>
       <div className="PrivacyPolicyToLeft">
         <div className="PrivacyPolicyTitlePosition">
-         <span className="Privacy-policyP">Privacy policy</span> 
-        </div> 
+          <span className="Privacy-policyP">Privacy policy</span>
+        </div>
         <div className="PrivacyPolicyRules">
           <div className="spaceBetween">
             <span className="span1P">1.</span>
- 
+
             <span className="Acceptance-of-termsP">Acceptance of terms</span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">2.</span>
 
-           <span className="Privacy-complaintsP">Privacy complaints</span>
+            <span className="Privacy-complaintsP">Privacy complaints</span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">3.</span>
@@ -152,9 +150,9 @@ const PolicyComponent = (props: ReduxProps) => {
         <img
           src={chatbot}
           srcSet={`${chatbot2} 2x, ${chatbot3} 3x`}
-          className="chatbotP" 
+          className="chatbotP"
         />
-      </div> 
+      </div>
 
       <div className="areeba-masterP">
         <div className="areebaP">

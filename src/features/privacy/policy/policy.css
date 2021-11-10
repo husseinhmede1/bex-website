@@ -416,43 +416,43 @@ img.chatbotP {
   height: 4vh;
 }
 
-.policyMobileMenuNavbar{
-width: 0px;
-
-height: 0px;
-  visibility:hidden;
-}
-
-img.MenuPolicy{
+.policyMobileMenuNavbar {
   width: 0px;
 
-height: 0px;
+  height: 0px;
   visibility: hidden;
-  
-  
+}
+
+img.MenuPolicy {
+  width: 0px;
+
+  height: 0px;
+  visibility: hidden;
+}
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  .policyMobileMenuNavbar {
+    visibility: visible;
+    margin-left: -100vw;
+    margin-top: 0%;
+    z-index: 1;
   }
-@media only screen and (min-width: 414px) and (max-width: 767px){
-
-.policyMobileMenuNavbar{
-visibility: visible;
-margin-left: 600%;
-margin-top: -20%; 
-}
-img.MenuPolicy{
-visibility: visible;
-width: 70px; 
-height: 50.5px;
-object-fit: contain;
-
-}
-.MainFlexPolicy {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-end;
-}
+  img.MenuPolicy {
+    visibility: visible;
+    width: 70px;
+    height: 50.5px;
+    object-fit: contain;
+    z-index: 2;
+    margin-left: -30vw;
+    margin-top: -2vh;
+  }
+  .MainFlexPolicy {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-end;
+  }
 
   .BEXP {
     font-family: Gilroy-ExtraBold;
@@ -464,41 +464,44 @@ object-fit: contain;
     letter-spacing: normal;
     text-align: left;
     color: #000;
-    margin-left: 100%;
+    margin-left: 10%;
     margin-top: 2%;
+    z-index: 1;
   }
 
   .How-bex-worksP {
- display: none;
+    display: none;
   }
 
   .About-usP {
-   display: none;
+    display: none;
   }
 
   .PricingP {
-   display: none;
+    display: none;
   }
 
   .Contact-usP {
-display: none;
+    display: none;
   }
 
   .navbarLinksPolicy {
-   display: none;
+    display: none;
   }
 
   .navigationBarPolicy {
-    
-    position:fixed;
-  	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	align-content: stretch;
+    background-color: aqua;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: stretch;
     margin-left: 0%;
     margin-top: 2%;
+    background-color: #ffff;
+    width: 70%;
   }
 
   .PrivacyPolicyToLeft {
@@ -717,7 +720,7 @@ display: none;
     padding: 22px 17.5px 21.4px 17px;
     background-color: rgb(48, 198, 117);
     border-radius: 50%;
-    margin-top: 60%; 
+    margin-top: 60%;
     margin-left: 175%;
   }
 
@@ -804,21 +807,21 @@ display: none;
   }
 }
 
-
-
-@media only screen and (min-width: 360px) and (max-width: 413px){
-
-  .policyMobileMenuNavbar{
-  visibility: visible;
-  margin-left: 600%;
-  margin-top: -55%; 
+@media only screen and (min-width: 360px) and (max-width: 413px) {
+  .policyMobileMenuNavbar {
+    visibility: visible;
+    margin-left: 40vw;
+    margin-top: 0vh;
+    z-index: 2;
   }
-  img.MenuPolicy{
-  visibility: visible;
-  width: 50px; 
-  height: 30.5px;
-  object-fit: contain;
-  
+  img.MenuPolicy {
+    visibility: visible;
+    width: 50px;
+    height: 30.5px;
+    object-fit: contain;
+    z-index: 2;
+    margin-left: -30vw;
+    margin-top: -5vh;
   }
   .MainFlexPolicy {
     display: flex;
@@ -828,354 +831,792 @@ display: none;
     align-items: stretch;
     align-content: flex-end;
   }
-  
-    .BEXP {
-      font-family: Gilroy-ExtraBold;
-      font-size: 50px;
-      font-weight: 80;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 2;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      margin-left: 100%;
-      margin-top: 2%;
-    }
-  
-    .How-bex-worksP {
-   display: none;
-    }
-  
-    .About-usP {
-     display: none;
-    }
-  
-    .PricingP {
-     display: none;
-    }
-  
-    .Contact-usP {
-  display: none;
-    }
-  
-    .navbarLinksPolicy {
-     display: none;
-    }
-  
-    .navigationBarPolicy {
-      
-      position:fixed;
-      display: flex;
+
+  .BEXP {
+    font-family: Gilroy-ExtraBold;
+    font-size: 50px;
+    font-weight: 80;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    margin-left: 10%;
+    margin-top: 2%;
+    z-index: 1;
+  }
+
+  .How-bex-worksP {
+    display: none;
+  }
+
+  .About-usP {
+    display: none;
+  }
+
+  .PricingP {
+    display: none;
+  }
+
+  .Contact-usP {
+    display: none;
+  }
+
+  .navbarLinksPolicy {
+    display: none;
+  }
+
+  .navigationBarPolicy {
+    position: fixed;
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     align-content: stretch;
-      margin-left: -5%;
-      margin-top: 2%;
-    }
-  
-    .PrivacyPolicyToLeft {
-      margin-left: 5%;
-  
-      margin-top: 60%;
-    }
-  
-    .PrivacyPolicyTitlePosition {
-      margin-top: 2%;
-      margin-left: -20%;
-    }
-  
-    .Privacy-policyP {
-      width: 142px;
-      height: 27px;
-      margin: 72px 114px 60px 100px;
-      font-family: Gilroy-ExtraBold;
-      font-size: 50px;
-      font-weight: 800;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.08;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .PrivacyPolicyRules {
-      margin-top: 20%;
-      margin-left: -20%;
-    }
-  
-    .span1P {
-      opacity: 0.5;
-      font-family: Lato-Regular;
-      font-size: 30px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.44;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-    }
-  
-    .Acceptance-of-termsP {
-      width: 100px;
-      height: 19px;
-      margin: 60px 183px 14px 5px;
-      font-family: Lato-Light;
-      font-size: 225%;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.3;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .Privacy-complaintsP {
-      width: 139px;
-      height: 19px;
-      margin: 14px 3px 14px 5px;
-      font-family: Lato-Light;
-      font-size: 225%;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.3;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .Data-retention-and-data-probabilityP {
-      width: 139px;
-      height: 19px;
-      margin: 14px 59px 14px 5px;
-      font-family: Lato-Light;
-      font-size: 225%;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.3;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .spaceBetween {
-      height: 10vh;
-    }
-  
-    .How-your-personal-information-is-usedP {
-      width: 139px;
-      height: 19px;
-      margin: 13px 30px 14px 5px;
-      font-family: Lato-Light;
-      font-size: 225%;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.3;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .Links-to-third-party-siteP {
-      width: 139px;
-      height: 19px;
-      margin: 14px 162px 14px 5px;
-      font-family: Lato-Light;
-      font-size: 225%;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.3;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .Non-discriminationP {
-      width: 139px;
-      height: 19px;
-      margin: 14px 1px 14px 5px;
-      font-family: Lato-Light;
-      font-size: 225%;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.3;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .Legal-bases-for-professionP {
-      width: 139px;
-      height: 19px;
-      margin: 14px 138px 14px 5px;
-      font-family: Lato-Light;
-      font-size: 225%;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.3;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .Cookie-and-tracking-technologiesP {
-      width: 139px;
-      height: 19px;
-      margin: 14px 76px 14px 5px;
-      font-family: Lato-Light;
-      font-size: 225%;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.3;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .Information-sharing-with-service-providerP {
-      width: 139px;
-      height: 19px;
-      margin: 14px 7px 6px 5px;
-      font-family: Lato-Light;
-      font-size: 225%;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.3;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .Changes-in-privacy-policyP {
-      width: 139px;
-      height: 19px;
-      margin: 14px 144px 35px 5px;
-      font-family: Lato-Light;
-      font-size: 225%;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.3;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000;
-      white-space: nowrap;
-    }
-  
-    .greencercle {
-      width: 100px;
-      height: 100px;
-      margin: 24px 21px 2.7px 1500px;
-      padding: 22px 17.5px 21.4px 17px;
-      background-color: rgb(48, 198, 117);
-      border-radius: 50%;
-      margin-top: 50%; 
-      margin-left: 130%;
-    }
-  
-    img.chatbotP {
-      width: 50px;
-      height: 50px;
-      object-fit: contain;
-      margin-left: 10%;
-    }
-  
-    .areeba-masterP {
-      display: flex; 
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: stretch;
-      align-content: stretch;
-      margin-left: 50%;
-      margin-top: -90%;
-    }
-  
-    .areebaP {
-      display: flex;
-      flex-direction: column;
-      margin-top: -20%;
-      margin-left: 10%;
-    }
-  
-    .Powered-byP {
-      width: 84px;
-      height: 23px;
-      margin: 91px 23.5px 8px 0;
-      font-family: Poppins-Regular;
-      font-size: 25px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.86;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000000;
-      white-space: nowrap;
-      margin-left: 30%;
-    }
-  
-    .In-partnership-withP {
-      width: 169px;
-      height: 23px;
-      margin: 91px 88px 8px 22.5px;
-      font-family: Poppins-Regular;
-      font-size: 25px;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.86;
-      letter-spacing: normal;
-      text-align: left;
-      color: #000000;
-      white-space: nowrap;
-    }
-  
-    .areebaMasterLinePolicy {
-      width: 0;
-      height: 80px;
-      margin: 2.7px 0 12px;
-      border: solid 0.8px #000000;
-      margin-top: 35%;
-      margin-left: 50%;
-    }
-  
-    img.Areeba-logoP {
-      width: 100px;
-      height: 100px;
-      margin: 9px 40.8px 1px 0;
-      object-fit: contain;
-      margin-left: 50%;
-    }
-  
-    img.MastercardP {
-      width: 100px;
-      height: 100px;
-      margin: 8px 29.8px 0 22.3px;
-      object-fit: contain;
-    }
+    margin-left: -5%;
+    margin-top: 2%;
+    background-color: #fff;
+    width: 70%;
+    z-index: 0;
+  }
+
+  .PrivacyPolicyToLeft {
+    margin-left: 5%;
+
+    margin-top: 60%;
+  }
+
+  .PrivacyPolicyTitlePosition {
+    margin-top: 2%;
+    margin-left: -20%;
+  }
+
+  .Privacy-policyP {
+    width: 142px;
+    height: 27px;
+    margin: 72px 114px 60px 100px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 50px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .PrivacyPolicyRules {
+    margin-top: 20%;
+    margin-left: -20%;
+  }
+
+  .span1P {
+    opacity: 0.5;
+    font-family: Lato-Regular;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+
+  .Acceptance-of-termsP {
+    width: 100px;
+    height: 19px;
+    margin: 60px 183px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 225%;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .Privacy-complaintsP {
+    width: 139px;
+    height: 19px;
+    margin: 14px 3px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 225%;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .Data-retention-and-data-probabilityP {
+    width: 139px;
+    height: 19px;
+    margin: 14px 59px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 225%;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .spaceBetween {
+    height: 10vh;
+  }
+
+  .How-your-personal-information-is-usedP {
+    width: 139px;
+    height: 19px;
+    margin: 13px 30px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 225%;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .Links-to-third-party-siteP {
+    width: 139px;
+    height: 19px;
+    margin: 14px 162px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 225%;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .Non-discriminationP {
+    width: 139px;
+    height: 19px;
+    margin: 14px 1px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 225%;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .Legal-bases-for-professionP {
+    width: 139px;
+    height: 19px;
+    margin: 14px 138px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 225%;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .Cookie-and-tracking-technologiesP {
+    width: 139px;
+    height: 19px;
+    margin: 14px 76px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 225%;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .Information-sharing-with-service-providerP {
+    width: 139px;
+    height: 19px;
+    margin: 14px 7px 6px 5px;
+    font-family: Lato-Light;
+    font-size: 225%;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .Changes-in-privacy-policyP {
+    width: 139px;
+    height: 19px;
+    margin: 14px 144px 35px 5px;
+    font-family: Lato-Light;
+    font-size: 225%;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  .greencercle {
+    width: 100px;
+    height: 100px;
+    margin: 24px 21px 2.7px 1500px;
+    padding: 22px 17.5px 21.4px 17px;
+    background-color: rgb(48, 198, 117);
+    border-radius: 50%;
+    margin-top: 50%;
+    margin-left: 130%;
+  }
+
+  img.chatbotP {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: 10%;
+  }
+
+  .areeba-masterP {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: 50%;
+    margin-top: -90%;
+  }
+
+  .areebaP {
+    display: flex;
+    flex-direction: column;
+    margin-top: -20%;
+    margin-left: 10%;
+  }
+
+  .Powered-byP {
+    width: 84px;
+    height: 23px;
+    margin: 91px 23.5px 8px 0;
+    font-family: Poppins-Regular;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    white-space: nowrap;
+    margin-left: 30%;
+  }
+
+  .In-partnership-withP {
+    width: 169px;
+    height: 23px;
+    margin: 91px 88px 8px 22.5px;
+    font-family: Poppins-Regular;
+    font-size: 25px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    white-space: nowrap;
+  }
+
+  .areebaMasterLinePolicy {
+    width: 0;
+    height: 80px;
+    margin: 2.7px 0 12px;
+    border: solid 0.8px #000000;
+    margin-top: 35%;
+    margin-left: 50%;
+  }
+
+  img.Areeba-logoP {
+    width: 100px;
+    height: 100px;
+    margin: 9px 40.8px 1px 0;
+    object-fit: contain;
+    margin-left: 50%;
+  }
+
+  img.MastercardP {
+    width: 100px;
+    height: 100px;
+    margin: 8px 29.8px 0 22.3px;
+    object-fit: contain;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 2048px) {
+
+  .MainFlexPolicy {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-end;
   }
   
+  .BEXP {
+    width: 80px;
+    height: 40px;
+    margin: 0 27.5px 92px 100px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 40px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    margin-left: 8%;
+  }
+  
+  .How-bex-worksP {
+    width: 300px;
+    height: 18px;
+    margin: 16px 67px 98px 1px;
+    font-family: Lato-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 5.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    margin-left: -5%;
+  }
+  
+  .PricingP {
+    width: 61px;
+    height: 18px;
+    margin: 16px 63px 98px 7px;
+    font-family: Lato-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 5.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .About-usP {
+    width: 73px;
+    height: 18px;
+    margin: 16px 55px 98px 63px;
+    font-family: Lato-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 5.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Contact-usP {
+    width: 92px;
+    height: 18px;
+    margin: 16px 292px 98px 55px;
+    font-family: Lato-Regular;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 5.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Privacy-policyP {
+    width: 397px;
+    height: 65px;
+    margin: 72px 114px 60px 100px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 65px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.08;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .navigationBarPolicy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: flex-end;
+    margin-left: -2%;
+    margin-top: 2%;
+  }
+  .navbarLinksPolicy {
+    margin-left: 0%;
+  }
+  
+  .PrivacyPolicyTitlePosition {
+    margin-top: 2%;
+    margin-left: 5%;
+  }
+  
+  .PrivacyPolicyToLeft {
+    margin-left: 3%;
+  }
+  .span1P {
+    width: 14px;
+    height: 22px;
+    margin: 62px 16px 14px 100px;
+    opacity: 0.5;
+    font-family: Lato-Regular;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.44;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Acceptance-of-termsP {
+    width: 174px;
+    height: 24px;
+    margin: 60px 183px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+    white-space: nowrap;
+  }
+  
+  .Privacy-complaintsP {
+    width: 159px;
+    height: 24px;
+    margin: 14px 3px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Data-retention-and-data-probabilityP {
+    width: 298px;
+    height: 24px;
+    margin: 14px 59px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .How-your-personal-information-is-usedP {
+    width: 327px;
+    height: 24px;
+    margin: 13px 30px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Links-to-third-party-siteP {
+    width: 195px;
+    height: 24px;
+    margin: 14px 162px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Non-discriminationP {
+    width: 161px;
+    height: 24px;
+    margin: 14px 1px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Legal-bases-for-professionP {
+    width: 219px;
+    height: 24px;
+    margin: 14px 138px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Cookie-and-tracking-technologiesP {
+    width: 281px;
+    height: 24px;
+    margin: 14px 76px 14px 5px;
+    font-family: Lato-Light;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Information-sharing-with-service-providerP {
+    width: 350px;
+    height: 24px;
+    margin: 14px 7px 6px 5px;
+    font-family: Lato-Light;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .Changes-in-privacy-policyP {
+    width: 213px;
+    height: 24px;
+    margin: 14px 144px 35px 5px;
+    font-family: Lato-Light;
+    font-size: 20px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000;
+  }
+  
+  .tryDemoP {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-start;
+    margin-left: 3%;
+    margin-top: -5%;
+  }
+  .Control-Spend-SaveP {
+    width: 279px;
+    height: 29px;
+    margin: 24px 108px 96px 0;
+    font-family: Lato-Bold;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-left: 3%;
+    margin-top: 0%;
+  }
+  
+  .areeba-masterP {
+    display: flex;
+    flex-direction: row;
+  
+    justify-content: flex-start;
+    align-content: stretch;
+  
+    flex-wrap: wrap-reverse;
+    align-items: stretch;
+    margin-left: 13%;
+    margin-top: -1%;
+  }
+  
+  .areebaP {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+  }
+  
+  .areebaMasterLinePolicy {
+    width: 0;
+    height: 33.3px;
+    margin: 2.7px 0 12px;
+    border: solid 0.8px #d7d9de;
+  }
+  
+  img.Areeba-logoP {
+    width: 66.7px;
+    height: 18px;
+    margin: 9px 40.8px 1px 0;
+    object-fit: contain;
+  }
+  
+  img.MastercardP {
+    width: 32.5px;
+    height: 20px;
+    margin: 8px 29.8px 0 22.3px;
+    object-fit: contain;
+  }
+  
+  img.chatbotP {
+    width: 35.5px;
+    height: 26.6px;
+    object-fit: contain;
+  }
+  
+  .In-partnership-withP {
+    width: 169px;
+    height: 23px;
+    margin: 91px 88px 8px 22.5px;
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+  
+  .Powered-byP {
+    width: 84px;
+    height: 23px;
+    margin: 91px 23.5px 8px 0;
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+  }
+  
+  img.chatbotP {
+    width: 35.5px;
+    height: 26.6px;
+    object-fit: contain;
+  }
+  
+  .greencercle {
+    width: 70px;
+    height: 70px;
+    margin: 24px 21px 2.7px 1500px;
+    padding: 22px 17.5px 21.4px 17px;
+    background-color: rgb(48, 198, 117);
+    border-radius: 50%;
+    margin-top: -1%;
+  }
+  
+  .PrivacyPolicyRules {
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  
+  .spaceBetween {
+    height: 4vh;
+  }
+  
+  .policyMobileMenuNavbar {
+    width: 0px;
+  
+    height: 0px;
+    visibility: hidden;
+  }
+  
+  img.MenuPolicy {
+    width: 0px;
+  
+    height: 0px;
+    visibility: hidden;
+  }
+}

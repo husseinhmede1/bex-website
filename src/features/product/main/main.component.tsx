@@ -53,8 +53,8 @@ const MainComponent = (props: ReduxProps) => {
       </div>
       </div>
      <div className='divChallange'> 
-      <HandlesComponent />
-      </div>
+      <HandlesComponent /> 
+      </div> 
       <SaveComponent />
       <PackagesComponent />   
       <TryforFreeComponent /> 

@@ -34,7 +34,7 @@ const PackagesComponent = (props: ReduxProps) => {
    * Adding variables to the dependency list will cause useEffect to run each time a variable changes
    */
   useEffect(() => {
-    // Write your side-effects here
+    // Write your side-effects here 
   }, []);
 
   return (
@@ -46,7 +46,7 @@ const PackagesComponent = (props: ReduxProps) => {
           Choose the features and functionalities your teams need today. Easily
           upgrade as your company grows.
         </span>
-      </div>
+      </div> 
 
       <div className="PagePackagesContent">
         <div className="firstRectanglePackages">

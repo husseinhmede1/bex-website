@@ -10,306 +10,9 @@
 .App-linkm {
   color: rgb(112, 76, 182);
 }
-@media (min-width: 1300px) {
-  .navbarMenu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: stretch;
 
-    margin-top: 2%;
-  }
 
-  .navbar-namesMenu {
-    width: 40%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: stretch;
-    margin-top: 1%;
-    margin-left: -20%;
-  }
 
-  .navbar-names-fontMenu {
-    font-family: Lato-Regular;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #feffff;
-    white-space: nowrap;
-    margin-left: 15%;
-  }
-
-  .navbar-names-font1Menu {
-    width: 50px;
-    font-family: Lato-Regular;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #feffff;
-    white-space: nowrap;
-    margin-left: -5%;
-  }
-
-  .navbar-imagesMenu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-    margin-left: -10%;
-    width: 10%;
-  }
-
-  img.Menu {
-    visibility: hidden;
-  }
-
-  .menuImgPosition {
-    visibility: hidden;
-  }
-
-  .GplayImg {
-    margin-left: 10%;
-  }
-  .bexMenu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: stretch;
-
-    font-family: Gilroy-ExtraBold;
-    font-size: 350%;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #feffff;
-    margin-left: -2%;
-    margin-top: -1%;
-  }
-
-  .BEXm {
-    width: 10px;
-    height: 49px;
-    margin: 0 37.5px 140px 40px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 40px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 2;
-    letter-spacing: normal;
-    text-align: left;
-    color: #ffffff;
-  }
-
-  img.Apple-IconMenu {
-    width: 60px;
-    height: 60px;
-    margin: 7px 23px 122px 292px;
-    object-fit: contain;
-  }
-  img.Google-playMenu {
-    width: 60px;
-    height: 60px;
-    margin: 7px 0 122px 23px;
-    object-fit: contain;
-  }
-  img.Try-for-freeMenu {
-    width: 147px;
-    height: 52px;
-    margin: 96px 14px 24px 0;
-    object-fit: contain;
-  }
-  img.Get-demoMenu {
-    width: 147px;
-    height: 52px;
-    margin: 96px 79px 24px 14px;
-    object-fit: contain;
-  }
-
-  .Powered-byMenu {
-    width: 84px;
-    height: 23px;
-    margin: 91px 23.5px 8px 0;
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.86;
-    letter-spacing: normal;
-    text-align: left;
-    color: #d7d9de;
-  }
-
-  .In-partnership-withMenu {
-    width: 169px;
-    height: 23px;
-    margin: 91px 88px 8px 22.5px;
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.86;
-    letter-spacing: normal;
-    text-align: left;
-    color: #d7d9de;
-  }
-  img.Areeba-logoMenu {
-    width: 66.7px;
-    height: 18px;
-    margin: 9px 40.8px 1px 0;
-    object-fit: contain;
-    margin-left: 5%;
-  }
-  img.MastercardMenu {
-    width: 32.5px;
-    height: 20px;
-    margin: 8px 29.8px 0 22.3px;
-    object-fit: contain;
-  }
-
-  img.chatbotMenu {
-    width: 35.5px;
-    height: 26.6px;
-    object-fit: contain;
-  }
-  .GreenCercleMenu {
-    width: 70px;
-    height: 70px;
-    margin: 24px 21px 2.7px 1500px;
-    padding: 22px 17.5px 21.4px 17px;
-    background-color: rgb(48, 198, 117);
-    border-radius: 50%;
-  }
-
-  .menuBackground {
-    background-image: -webkit-image-set(
-      url("../../../assets/img/BG-Cover.png") 1x,
-      url("../../../assets/img/BG-Cover@2x.png") 2x,
-      url("../../../assets/img/BG-Cover@3x.png") 3x
-    );
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    contain: content;
-
-    width: 99.2vw;
-    height: 100vh;
-
-    background-position: center;
-    background-size: cover;
-  }
-
-  .Business-expense-management-made-easyMenu {
-    width: 598px;
-    height: 184px;
-    display: inline-block;
-    margin-top: 5%;
-    margin-bottom: 100px;
-    margin-right: 500px;
-    margin-left: 3%;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
-    font-family: Gilroy-ExtraBold;
-    font-size: 55px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.13;
-    letter-spacing: normal;
-    text-align: left;
-    color: rgb(255, 255, 255);
-  }
-  .contrlMenu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-    align-content: flex-start;
-    margin-top: -5%;
-  }
-  .tryDemoMenu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-end;
-    align-content: flex-start;
-    margin-left: 10%;
-    margin-top: -5%;
-  }
-  .Control-Spend-SaveMenu {
-    width: 279px;
-    height: 29px;
-    margin: 24px 108px 96px 0;
-    font-family: Lato-Bold;
-    font-size: 24px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.46;
-    letter-spacing: normal;
-    text-align: left;
-    color: rgb(255, 255, 255);
-    margin-left: 3%;
-    margin-top: 0%;
-  }
-  .Busines-cntrlMenu {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: space-around;
-    margin-left: 8%;
-  }
-  .lineMenu {
-    width: 0;
-    height: 33.3px;
-    margin: 2.7px 0 12px;
-    border: solid 0.8px #d7d9de;
-  }
-  .areeba-masterMenu {
-    margin-left: 10%;
-    margin-top: -2%;
-    display: flex;
-    flex-direction: row;
-
-    justify-content: flex-start;
-    align-content: stretch;
-
-    flex-wrap: wrap-reverse;
-    align-items: stretch;
-  }
-  .areebaMenu1 {
-    display: flex;
-    flex-direction: column;
-    margin-top: -5%;
-  }
-  .mastercardMenu2 {
-    display: flex;
-    flex-direction: column;
-    margin-top: -5%;
-  }
-}
 @media only screen and (min-width: 414px) and (max-width: 767px) {
   .navbarMenu {
     display: flex;
@@ -322,7 +25,7 @@
     margin-top: 2%;
   }
 
-  .navbar-namesMenu {
+  .navbar-namesMenu { 
     display: none;
   }
 
@@ -943,7 +646,7 @@
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 2048px) {
+@media only screen and (min-width: 801px) and (max-width:3000px ) {
   .navbarMenu {
     display: flex;
     flex-direction: row;
@@ -1241,5 +944,322 @@
     display: flex;
     flex-direction: column;
     margin-top: -5%;
+  }
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 800px){
+  .navbarMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+
+    margin-top: 2%;
+  }
+
+  .navbar-namesMenu {
+    display: none;
+  }
+
+  .navbar-names-fontMenu {
+    font-family: Lato-Regular;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #feffff;
+    white-space: nowrap;
+    margin-left: 10%;
+  }
+
+  .navbar-names-font1Menu {
+    font-family: Lato-Regular;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #feffff;
+    white-space: nowrap;
+    margin-left: -5%;
+  }
+
+  .navbar-imagesMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: -10%;
+    width: 10%;
+    display: none;
+  }
+
+  .GplayImg {
+    margin-left: 10%;
+    display: none;
+  }
+  .appleImg {
+    display: none;
+  }
+
+  img.Menu {
+    width: 35px;
+    height: 35px;
+    margin: 31px 24px 275.5px 13px;
+    object-fit: contain;
+    margin-top: -2%;
+    visibility: visible;
+  }
+  .menuImgPosition {
+    height: 5vh;
+    margin-top: -7%;
+    margin-left: 80%;
+    visibility: visible;
+  }
+
+  .bexMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+
+    font-family: Gilroy-ExtraBold;
+    font-size: 250%;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #feffff;
+    margin-left: -60%;
+    margin-top: 0%;
+  }
+
+  .BEXm {
+    width: 10px;
+    height: 49px;
+    margin: 0 37.5px 140px 40px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 40px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  img.Apple-IconMenu {
+    width: 60px;
+    height: 60px;
+    margin: 7px 23px 122px 292px;
+    object-fit: contain;
+  }
+  img.Google-playMenu {
+    width: 60px;
+    height: 60px;
+    margin: 7px 0 122px 23px;
+    object-fit: contain;
+  }
+  img.Try-for-freeMenu {
+    width: 170px;
+    height: 70px;
+    margin: 96px 14px 24px 0;
+    object-fit: contain;
+    margin-left: -1%;
+  }
+  img.Get-demoMenu {
+    width: 170px;
+    height: 70px;
+    margin: 96px 79px 24px 14px;
+    object-fit: contain;
+    margin-left: 0%;
+    margin-top: -50%;
+  }
+
+  .Powered-byMenu {
+    width: 84px;
+    height: 23px;
+    margin: 91px 23.5px 8px 0;
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d7d9de;
+  }
+
+  .In-partnership-withMenu {
+    width: 169px;
+    height: 23px;
+    margin: 91px 88px 8px 22.5px;
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d7d9de;
+  }
+  img.Areeba-logoMenu {
+    width: 66.7px;
+    height: 18px;
+    margin: 9px 40.8px 1px 0;
+    object-fit: contain;
+  }
+  img.MastercardMenu {
+    width: 32.5px;
+    height: 20px;
+    margin: 8px 29.8px 0 22.3px;
+    object-fit: contain;
+  }
+
+  img.chatbotMenu {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-left: 10%;
+    margin-top: -10%;
+  }
+  .GreenCercleMenu {
+    width: 100px;
+    height: 100px;
+    margin: 24px 21px 2.7px 1500px;
+    padding: 22px 17.5px 21.4px 17px;
+    background-color: rgb(48, 198, 117);
+    border-radius: 50%;
+  }
+
+  .menuBackground {
+    background-image: -webkit-image-set(
+      url("../../../assets/img/Main-BG.png") 1x,
+      url("../../../assets/img/Main-BG@2x.png") 2x,
+      url("../../../assets/img/Main-BG@3x.png") 3x
+    );
+    background-repeat: no-repeat;
+    contain: content;
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+  }
+
+  .Business-expense-management-made-easyMenu {
+    width: 650px;
+    height: 250px;
+    display: inline-block;
+    margin-top: 40%;
+    margin-bottom: 100px;
+    margin-right: 500px;
+    margin-left: 3%;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+    font-family: Gilroy-ExtraBold;
+    font-size: 60px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+  .contrlMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-start;
+  }
+  .tryDemoMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-start;
+    margin-left: 12%;
+    margin-top: -10%;
+  }
+  .Control-Spend-SaveMenu {
+    width: 300px;
+    height: 29px;
+    margin: 24px 108px 96px 0;
+    font-family: Lato-Bold;
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-left: 3%;
+    margin-top: -60%;
+    white-space: nowrap;
+  }
+  .Busines-cntrlMenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around;
+    margin-left: 8%;
+    margin-top: 10%;
+  }
+  .lineMenu {
+    width: 0px;
+    height: 40px;
+    margin: 2.7px 0 12px;
+    border: solid 0.8px #d7d9de;
+    margin-top: 10%;
+  }
+  .areeba-masterMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: -30%;
+    margin-left: -25%;
+  }
+
+  .GreenCercleMenu {
+    width: 90px;
+    height: 90px;
+    margin: 24px 21px 2.7px 1500px;
+    padding: 22px 17.5px 21.4px 17px;
+    background-color: rgb(48, 198, 117);
+    border-radius: 50%;
+    margin-left: 80%;
+    margin-top: 20%;
+  }
+
+  .areebaMenu1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .mastercardMenu2 {
+    display: flex;
+    flex-direction: column;
   }
 }

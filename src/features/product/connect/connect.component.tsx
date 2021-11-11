@@ -137,7 +137,7 @@ const ConnectComponent = (props: ReduxProps) => {
 
               <div className="MessageConnectPage">
                 <span className="MessageC">Message</span>
-                <div className="Path-162308C"></div>
+                <div className="Path-162308C"></div> 
               </div>
               <div className="connectPageButton1">
                  <span className="Get-in-TouchC">Get in Touch</span>

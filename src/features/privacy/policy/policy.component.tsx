@@ -65,7 +65,7 @@ const PolicyComponent = (props: ReduxProps) => {
         </div>
 
         <div className="policyMobileMenuNavbar">
-          <Link to="/menumobile">
+          <Link to="/menumobile"> 
             <img
               src={menu}
               srcSet={`${menu2} 2x, ${menu3} 3x`}
@@ -157,7 +157,7 @@ const PolicyComponent = (props: ReduxProps) => {
       <div className="areeba-masterP">
         <div className="areebaP">
           <span className="Powered-byP">Powered by</span>
-          <img
+          <img 
             src={areeba}
             srcSet={`${areeba2} 2x, ${areeba3} 3x`}
             className="Areeba-logoP"

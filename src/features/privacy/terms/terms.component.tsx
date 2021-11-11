@@ -48,7 +48,7 @@ const TermsComponent = (props: ReduxProps) => {
 
   return ( 
     <>
-    <div className="screenWidth">
+    <div className="screenWidth"> 
       <div className="termsFlex">
         <div className="textTerms">
           <span className="-Acceptance-of-termsTe">1. Acceptance of terms</span>
@@ -65,7 +65,7 @@ const TermsComponent = (props: ReduxProps) => {
               industry.Lorem Ipsum is simply dummy text of the printing and
               typesetting industry. Lorem Ipsum is simply dummy text of the
               printing and typesetting industry.Lorem Ipsum is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum is simply
+              of the printing and typesetting industry. Lorem Ipsum is simply 
               dummy text of the printing and typesetting industry.
               <br />
               <br />

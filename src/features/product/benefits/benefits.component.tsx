@@ -58,7 +58,7 @@ const BenefitsComponent = (props: ReduxProps) => {
         <div className="RectanglesGroupeBenefits">
           {" "}
           <span className="BenefitsTitle">BENEFITS</span>
-          <div className="Rectangle53Benefits">
+          <div className="Rectangle53Benefits"> 
             <span className="span1B">53%</span>
             <span className="stated-improved-supplier-relationsB">
               stated ‘improved supplier relations’

@@ -64,7 +64,7 @@ const SaveComponent = (props: ReduxProps) => {
               <img
                 src={sign}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}
-                className="Signs"
+                className="Signs" 
               ></img>
 
               <div> 

@@ -853,7 +853,7 @@ img.Mask-GroupMobileB {
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 2048px) {
+@media only screen and (min-width: 801px) and (max-width: 3000px) {
 
   .BenefitsBackground {
     width: 99.2vw;
@@ -1118,7 +1118,7 @@ img.Mask-GroupMobileB {
   .stated-reduced-admin-costB {
     width: 102px;
     height: 38px;
-    margin: 9.9px 0 0;
+    margin: 9.9px 0 0; 
     font-family: Lato-Regular;
     font-size: 15px;
     font-weight: normal;
@@ -1134,4 +1134,294 @@ img.Mask-GroupMobileB {
   }
 
 
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+  .BenefitsBackground {
+    width: 99.2vw;
+    height: 110vh;
+
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  .BenefitsTitle {
+    width: 127px;
+    height: 37px;
+    margin: 52.1px 4.5px 36px 31px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 40px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: left;
+    color: #00194a;
+    margin-left: -60%;
+  }
+  img.Mask-GroupB {
+    display: none;
+  }
+
+  img.Mask-GroupMobileB {
+    width: 500px;
+    height: 450px;
+    object-fit: contain;
+    margin-top: 40%;
+    margin-left: 30%;
+    visibility: visible;
+  }
+
+  .Rectangle53Benefits {
+    width: 150.5px;
+    height: 150.5px;
+    margin: 92.8px 0 139.9px;
+    padding: 18.4px 0 48.4px 28.1px;
+    background-color: #00194a;
+    margin-top: 100%;
+    margin-left: -108%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .stated-improved-supplier-relationsB {
+    width: 150px;
+    height: 29px;
+    margin: 5.3px 0 0 0.4px;
+    font-family: Lato-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    margin-left: -30%;
+  }
+
+  .span1B {
+    width: 59px;
+    height: 40px;
+    margin: 0 89.4px 5.3px 0;
+    font-family: Gilroy-ExtraBold;
+    font-size: 40px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.72;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffff;
+    margin-left: 20%;
+  }
+
+  .Rectangle42Benefits {
+    width: 150.7px;
+    height: 140.7px;
+    margin: 58px 0 42px;
+    padding: 26px 48.5px 29px 29.5px;
+    border: solid 1px #d2d4da;
+    background-color: #fff;
+    margin-top: -65%;
+    margin-left: -61%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span2B {
+    width: 59px;
+    height: 38px;
+    margin: 0 32px 9.9px 0;
+    font-family: Gilroy-ExtraBold;
+    font-size: 40px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292929;
+    margin-left: 15%;
+  }
+
+  .stated-reduced-number-of-approvalsB {
+    width: 150px;
+    height: 29px;
+    margin: 9.9px 0 0;
+    font-family: Lato-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-left: 30%;
+    margin-top: -5%;
+  }
+
+  .Rectangle63Benefits {
+    width: 280.8px;
+    height: 140px;
+    margin: 42px 39.3px 0 85.3px;
+    padding: 34.4px 52px 38.4px 26.5px;
+    border: solid 1px #d2d4da;
+    background-color: #fff;
+    margin-top: 70%;
+
+    margin-left: -110%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span3B {
+    width: 58px;
+    height: 38px;
+    margin: 0 38px 0 0;
+    font-family: Gilroy-ExtraBold;
+    font-size: 40px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292929;
+  }
+
+  .stated-improved-visibility-and-data-reportingB {
+    width: 150px;
+    height: 29px;
+    margin: 6px 0 3px 38px;
+    font-family: Lato-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+  }
+
+  .Rectangle47Benefits {
+    width: 150.8px;
+    height: 140.7px;
+    margin: 0 116.5px 0px 0;
+    padding: 26px 67.5px 29px 27.5px;
+    border: solid 1px #d2d4da;
+    background-color: #fff;
+    margin-top: -125%;
+    margin-left: -15%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span4B {
+    width: 57px;
+    height: 38px;
+    margin: 0 11px 9.9px 0;
+    font-family: Gilroy-ExtraBold;
+    font-size: 40px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292929;
+  }
+
+  .stated-improved-cash-flowB {
+    width: 150px;
+    height: 29px;
+    margin: 9.9px 0 0;
+    font-family: Lato-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-left: 60%;
+  }
+
+  .Rectangle68Benefits {
+    width: 160.5px;
+    height: 150.7px;
+    margin: 0px 0 69.9px 39.3px;
+    padding: 26px 89.5px 29px 27.5px;
+    border: solid 1px #d2d4da;
+    background-color: #fff;
+    margin-left: -65%;
+    margin-top: -10%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span5B {
+    width: 59px;
+    height: 38px;
+    margin: 0 0 9.9px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 40px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: left;
+    color: #292929;
+  }
+
+  .stated-reduced-admin-costB {
+    width: 150px;
+    height: 29px;
+    margin: 9.9px 0 0;
+    font-family: Lato-Regular;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #2e2e2e;
+    margin-left: 300%;
+  }
+  .RectanglesGroupeBenefits {
+    margin-top: 10%;
+  }
 }

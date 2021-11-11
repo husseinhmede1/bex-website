@@ -600,7 +600,7 @@ img.Mastercard-TxtI {
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 2048px) {
+@media only screen and (min-width: 801px) and (max-width: 3000px) {
 
   .infoPageBackground {
     width: 99.2vw;
@@ -779,7 +779,7 @@ img.Mastercard-TxtI {
     margin-top: 60%;
   }
   
-  .twoPartsInfoPage {
+  .twoPartsInfoPage { 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -791,5 +791,213 @@ img.Mastercard-TxtI {
   
   .secondPartInfoPage {
     z-index: 1;
+  }
+}
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+  .infoPageBackground {
+    width: 99.2vw;
+    height: 140vh;
+    background-image: -webkit-image-set(
+      url("../../../assets/img/Mask-Group2.png") 1x,
+      url("../../../assets/img/Mask-Group2@2x.png") 2x,
+      url("../../../assets/img/Mask-Group2@3x.png") 3x
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    contain: content;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .navyBlueColorInfo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    contain: content;
+    background-color: #00194a;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.97;
+  }
+  .We-are-BEXI {
+    width: 247px;
+    height: 54px;
+    margin: 0 67px 36px 1px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 60px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    margin-top: 40%;
+    margin-left: -45%;
+    z-index: 1;
+    white-space: nowrap;
+  }
+
+  .Designed-by-a-team-of-experts-from-areeba-and-Mastercard-with-extensive-knowledge-in-fintech-and-digital-payments-with-the-mission-of-helping-businesses-save-time-and-moneyI {
+    width: 350px;
+    height: 116px;
+
+    margin: 21px 28px 0 0;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    margin-top: 0%;
+    margin-left: -30%;
+    z-index: 1;
+  }
+
+  img.Mask-Group-545I {
+    width: 487.7px;
+    height: 305.4px;
+    margin: 77.2px 245.3px 0 0;
+    object-fit: contain;
+    z-index: 1;
+    display: none;
+  }
+  img.Mobile-Img-Info {
+    width: 450px;
+    height: 280.6px;
+    margin: 18.7px 0 62.7px 1px;
+    object-fit: contain;
+    z-index: 1;
+    visibility: visible;
+    margin-left: -40%;
+    margin-top: 10%;
+  }
+  .firstPartInfoPage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+    margin-left: 30%;
+  }
+
+  img.areeba-whiteI {
+    width: 100px;
+    height: 30px;
+    margin: 0 232.5px 15.1px 0;
+    object-fit: contain;
+    z-index: 1;
+  }
+
+  .areeba-is-a-leading-financial-technology-company-driven-forward-by-the-innovative-approach-of-changing-the-way-payments-are-made-For-more-info-visit-our-website-areebacomI {
+    width:400px;
+    height: 76px;
+    margin: 15.1px 0 0 1px;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .areeba-is-a-leading-financial-technology-company-driven-forward-by-the-innovative-approach-of-changing-the-way-payments-are-made-For-more-info-visit-our-website-areebacomI
+    .text-style-1I {
+    width: 400px;
+    height: 76px;
+    font-weight: bold;
+    font-family: Lato-Regular;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  img.Mastercard-TxtI {
+    width: 150.9px;
+    height: 39px;
+    margin: 0 264px 8.9px 0;
+    object-fit: contain;
+  }
+
+  .Mastercard-is-a-global-technology-company-in-the-payments-industry-Our-mission-is-to-connect-and-power-an-inclusive-digital-economy-that-benefits-everyone-everywhere-by-making-transactions-safe-simple-smart-and-accessible-For-more-info-visit-our-websI {
+    width: 400px;
+    height: 116px;
+    margin: 8.9px 0 0 11px;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Mastercard-is-a-global-technology-company-in-the-payments-industry-Our-mission-is-to-connect-and-power-an-inclusive-digital-economy-that-benefits-everyone-everywhere-by-making-transactions-safe-simple-smart-and-accessible-For-more-info-visit-our-websI
+    .text-style-1I {
+    width: 400px;
+    height: 116px;
+    font-weight: bold;
+    font-family: Lato-Regular;
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .areebaMasterTextsInfoPage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 15%;
+    margin-left: 5%;
+  }
+
+  .twoPartsInfoPage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    z-index: 1;
+    margin-top: -5%;
+  }
+
+  .secondPartInfoPage {
+    z-index: 1;
+    margin-top: -10%;
+    margin-left: 25%;
   }
 }

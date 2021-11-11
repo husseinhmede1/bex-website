@@ -58,7 +58,7 @@ const HandlesComponent = (props: ReduxProps) => {
             <div className="numbersHandles">
               <div className="Rectangle-24970h">
                 <span className="span1h">1</span>
-              </div>
+              </div> 
               <div className="Line-5297h"></div>
 
               <div className="Rectangle-24940h">

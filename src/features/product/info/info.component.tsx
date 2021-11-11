@@ -63,7 +63,7 @@ const InfoComponent = (props: ReduxProps) => {
           <img
             src={mask}
             srcSet={`${mask2} 2x, ${mask3} 3x`}
-            className="Mask-Group-545I"
+            className="Mask-Group-545I" 
           ></img>
 
           <img

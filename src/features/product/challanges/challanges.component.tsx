@@ -59,7 +59,7 @@ const ChallangesComponent = (props: ReduxProps) => {
   useEffect(() => { 
     // Write your side-effects here
   }, []);
-
+ 
   return (
     <div style={{ height: height }}>
       <div className="CornerChallanges">
@@ -128,9 +128,9 @@ const ChallangesComponent = (props: ReduxProps) => {
               src={icons1}
               srcSet={`${icons12} 2x, ${icons13} 3x`}
               className="Icons2"
-            ></img>
+            ></img> 
 
-            <img
+            <img 
               src={icons6}
               srcSet={`${icons62} 2x, ${icons63} 3x`}
               className="IconsMobile2"

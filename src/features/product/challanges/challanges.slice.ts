@@ -15,7 +15,7 @@ const initialState: Challanges = {};
  */
 const makeChallangesApiCall = createAsyncThunk(
   // TODO change this method based on usecase
-  // You can add as many thunks as required
+  // You can add as many thunks as required 
   // Delete this method if not needed
   "menu/makeChallangesApiCallStatus",
   async (request: any) => {
@@ -55,7 +55,7 @@ const challangesSlice = createSlice({
    *      state.value -= 1;
    *    }
    */
-  reducers: {
+  reducers: { 
     setChallanges: (state, action) => {
       return { ...state, ...action.payload };
     },

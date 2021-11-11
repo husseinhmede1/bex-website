@@ -72,7 +72,7 @@ const PolicyComponent = (props: ReduxProps) => {
               className="MenuPolicy"
             />
           </Link>
-        </div>
+        </div> 
       </div>
       <div className="PrivacyPolicyToLeft">
         <div className="PrivacyPolicyTitlePosition">

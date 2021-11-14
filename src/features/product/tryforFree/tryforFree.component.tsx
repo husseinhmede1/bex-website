@@ -53,7 +53,7 @@ const TryforFreeComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="tryforfreeBackground">
+    <div className="tryforfreeBackground" id={'tryforFreeId'}>
       <div className="tryforfreerightSide">
         <div className="tryforfreeTitle">
           <span className="Try-BEX-For-Free">Try BEX For Free</span>

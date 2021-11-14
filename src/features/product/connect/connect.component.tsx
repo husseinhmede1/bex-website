@@ -60,7 +60,7 @@ const ConnectComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="connectPageBackground">
+    <div className="connectPageBackground" id={'connectId'}>
       {" "}
       <div className="connectPageContentTwoParts">
         <div className="connectPageheadSide">

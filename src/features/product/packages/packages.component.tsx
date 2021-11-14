@@ -38,7 +38,7 @@ const PackagesComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="packagesBackground">
+    <div className="packagesBackground" id={'packagesId'}>
       <div className="HeadOfPagePackages">
         <span className="OUR-Packagesp">OUR PACKAGES</span>
 

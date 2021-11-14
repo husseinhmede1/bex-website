@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
-
+import { Router, Route, Link } from "react-router-dom";
+import { useRef, useLayoutEffect } from "react";
 import "./terms.css";
 
 import areeba from "&assets/img/areeba-white.png";
@@ -29,7 +30,7 @@ import store3 from "&assets/img/Group-17@3x.png";
 import { loginActions } from "&features/demo/login/login.slice";
 
 const { innerWidth: width, innerHeight: height } = window;
- 
+
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const TermsComponent = (props: ReduxProps) => {
@@ -46,290 +47,291 @@ const TermsComponent = (props: ReduxProps) => {
     // Write your side-effects here
   }, []);
 
-  return ( 
+  return (
     <>
-    <div className="screenWidth"> 
-      <div className="termsFlex">
-        <div className="textTerms">
-          <span className="-Acceptance-of-termsTe">1. Acceptance of terms</span>
-          <div className="textTitle">
-            <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
-              <span className="text-style-1Te">1.1</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.Lorem Ipsum is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum is simply 
-              dummy text of the printing and typesetting industry.
-              <br />
-              <br />
-              <br />
-              <span className="text-style-2Te">1.2</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.
-              <br />
-              <br />
-              <br />
-              <span className="text-style-3Te">1.3</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.
+      <div className="screenWidth">
+        <div className="termsFlex">
+          <div className="textTerms" id={"section1"}>
+            <span className="-Acceptance-of-termsTe">
+              1. Acceptance of terms
             </span>
+            <div className="textTitle">
+              <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
+                <span className="text-style-1Te">1.1</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                <br />
+                <br />
+                <br />
+                <span className="text-style-2Te">1.2</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+                <br />
+                <br />
+                <br />
+                <span className="text-style-3Te">1.3</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+              </span>
+            </div>
+          </div>
+
+          <div className="textTerms" id={"section2"}>
+            <span className="-Privacy-complaintsTe">2. Privacy complaints</span>
+
+            <div className="textTitle">
+              <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
+                <span className="text-style-1Te">2.1</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                <br />
+                <br />
+                <br />
+                <span className="text-style-2Te">2.2</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+              </span>
+            </div>
+          </div>
+
+          <div className="textTerms" id={"section3"}>
+            <span className="-Data-retention-and-data-probabilityTe">
+              3. Data retention and data probability
+            </span>
+            <div className="textTitle">
+              <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
+                <span className="text-style-1Te">3.1</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                <br />
+                <br />
+                <br />
+                <span className="text-style-2Te">3.2</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+                <br />
+                <br />
+                <br />
+                <span className="text-style-3Te">3.3</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+              </span>
+            </div>
+          </div>
+
+          <div className="textTerms" id={"section4"}>
+            <span className="-How-your-personal-information-is-usedTe">
+              4. How your personal information is used
+            </span>
+            <div className="textTitle">
+              <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+              </span>
+            </div>
+          </div>
+          <div className="textTerms" id={"section5"}>
+            <span className="-Links-to-third-party-siteTe">
+              5. Links to third party site
+            </span>
+            <div className="textTitle">
+              <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
+                <span className="text-style-1Te">1.1</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                <br />
+                <br />
+                <br />
+                <span className="text-style-2Te">1.2</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+                <br />
+                <br />
+                <br />
+                <span className="text-style-3Te">1.3</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+              </span>
+            </div>
+          </div>
+
+          <div className="textTerms" id={"section6"}>
+            <span className="-Non-discriminationTe">6. Non discrimination</span>
+            <div className="textTitle">
+              <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
+                <span className="text-style-1Te">2.1</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                <br />
+                <br />
+                <br />
+                <span className="text-style-2Te">2.2</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+              </span>
+            </div>
+          </div>
+
+          <div className="textTerms" id={"section7"}>
+            <span className="-Data-retention-and-data-probabilityTe">
+              7. Data retention and data probability
+            </span>
+
+            <div className="textTitle">
+              <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
+                <span className="text-style-1Te">3.1</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                <br />
+                <br />
+                <br />
+                <span className="text-style-2Te">3.2</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+                <br />
+                <br />
+                <br />
+                <span className="text-style-3Te">3.3</span>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.
+              </span>
+            </div>
+          </div>
+
+          <div className="textTerms" id={"section8"}>
+            <span className="-How-your-personal-information-is-usedTe">
+              8. How your personal information is used
+            </span>
+            <div className="textTitle">
+              <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry.Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry. Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry.Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.Lorem Ipsum is simply dummy text of the printing and
+                typesetting industry. Lorem Ipsum is simply dummy text of the
+                printing and typesetting industry.Lorem Ipsum is simply dummy
+                text of the printing and typesetting industry. Lorem Ipsum is
+                simply dummy text of the printing and typesetting industry.
+              </span>
+            </div>
           </div>
         </div>
-
-        <div className="textTerms" id="SectionTwo">
-          <span className="-Privacy-complaintsTe">2. Privacy complaints</span>
-
-          <div className="textTitle">
-            <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
-              <span className="text-style-1Te">2.1</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.Lorem Ipsum is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry.
-              <br />
-              <br />
-              <br />
-              <span className="text-style-2Te">2.2</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.
-            </span>
-          </div>
-        </div>
-
-        <div className="textTerms">
-          <span className="-Data-retention-and-data-probabilityTe">
-            3. Data retention and data probability
-          </span>
-          <div className="textTitle">
-            <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
-              <span className="text-style-1Te">3.1</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.Lorem Ipsum is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry.
-              <br />
-              <br />
-              <br />
-              <span className="text-style-2Te">3.2</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.
-              <br />
-              <br />
-              <br />
-              <span className="text-style-3Te">3.3</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.
-            </span>
-          </div>
-        </div>
-
-        <div className="textTerms">
-          <span className="-How-your-personal-information-is-usedTe">
-            4. How your personal information is used
-          </span>
-          <div className="textTitle">
-            <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.Lorem Ipsum is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry.
-            </span>
-          </div>
-        </div>
-        <div className="textTerms">
-          <span className="-Links-to-third-party-siteTe">
-            5. Links to third party site
-          </span>
-          <div className="textTitle">
-            <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
-              <span className="text-style-1Te">1.1</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.Lorem Ipsum is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry.
-              <br />
-              <br />
-              <br />
-              <span className="text-style-2Te">1.2</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.
-              <br />
-              <br />
-              <br />
-              <span className="text-style-3Te">1.3</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.
-            </span>
-          </div>
-        </div>
-
-        <div className="textTerms">
-          <span className="-Non-discriminationTe">6. Non discrimination</span>
-          <div className="textTitle">
-            <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
-              <span className="text-style-1Te">2.1</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.Lorem Ipsum is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry.
-              <br />
-              <br />
-              <br />
-              <span className="text-style-2Te">2.2</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.
-            </span>
-          </div>
-        </div>
-
-        <div className="textTerms">
-          <span className="-Data-retention-and-data-probabilityTe">
-            7. Data retention and data probability
-          </span>
-
-          <div className="textTitle">
-            <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
-              <span className="text-style-1Te">3.1</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.Lorem Ipsum is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry.
-              <br />
-              <br />
-              <br />
-              <span className="text-style-2Te">3.2</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.
-              <br />
-              <br />
-              <br />
-              <span className="text-style-3Te">3.3</span>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.
-            </span>
-          </div>
-        </div>
-
-        <div className="textTerms">
-          <span className="-How-your-personal-information-is-usedTe">
-            8. How your personal information is used
-          </span>
-          <div className="textTitle">
-            <span className="-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry. Lorem Ipsum is simply dummy
-              text of the printing and typesetting industry.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum is simply dummy text of the printing and typesetting
-              industry.Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry. Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry.Lorem Ipsum is simply dummy text
-              of the printing and typesetting industry. Lorem Ipsum is simply
-              dummy text of the printing and typesetting industry.
-            </span>
-          </div>
-        </div>
-      </div>
-
       </div>
 
       <div className="footerColorTe"></div>
       <div className="storePlay">
-        <span className="Download-nowTe">Download Now!</span>  
+        <span className="Download-nowTe">Download Now!</span>
         <div>
           <img
             src={store}
             srcSet={`${store2} 2x, ${store3} 3x`}
             className="Group-17Te"
           ></img>
-          <img 
+          <img
             src={play}
             srcSet={`${play2} 2x, ${play3} 3x`}
             className="_play-store-icon-android-app-on-google-playTe"
@@ -375,7 +377,7 @@ const TermsComponent = (props: ReduxProps) => {
 
           <div className="bex-RightsMobile">
             <span className="-Bex-All-Rights-ReservedTeMobile">
-              2021 Bex. All Rights Reserved. 
+              2021 Bex. All Rights Reserved.
             </span>
           </div>
         </div>
@@ -386,7 +388,7 @@ const TermsComponent = (props: ReduxProps) => {
           <span className="Cookie-PolicyTeMobile">Cookie Policy</span>
         </div>
       </div>
-      </>
+    </>
   );
 };
 

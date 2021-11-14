@@ -147,7 +147,7 @@
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 413px) {
+@media only screen and (min-width: 100px) and (max-width: 413px) {
   .menuMobileBackground {
     width: 99.2vw;
     height: 100vh;

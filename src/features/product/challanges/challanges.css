@@ -181,7 +181,7 @@ img.Icons2 {
   align-content: center;
 }
 
-@media only screen and (min-width: 414px) and (max-width: 767px) {
+@media only screen and (min-width: 414px) and (max-width: 766px) {
   .CornerChallanges {
     width: 20px;
     height: 20px;
@@ -417,7 +417,7 @@ img.Icons2 {
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 413px) {
+@media only screen and (min-width: 100px) and (max-width: 413px) {
   .CornerChallanges {
     width: 20px;
     height: 20px;
@@ -844,7 +844,7 @@ img.Icons2 {
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 800px) {
+@media only screen and (min-width: 767px) and (max-width: 800px) {
   .CornerChallanges {
     width: 20px;
     height: 20px;

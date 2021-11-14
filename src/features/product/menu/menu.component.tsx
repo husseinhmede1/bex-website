@@ -73,10 +73,42 @@ const MenuComponent = (props: ReduxProps) => {
         </Link>
 
         <div className="navbar-namesMenu">
-          <span className="navbar-names-font1Menu">HOW BEX WORKS</span>
-          <span className="navbar-names-fontMenu">PIRCING</span>
-          <span className="navbar-names-fontMenu">ABOUT US</span>
-          <span className="navbar-names-fontMenu">CONTACT US</span>
+          <span className="navbar-names-font1Menu">
+          <Link
+              onClick={() => window.location.replace("/#handlesId")}
+              to="/main"
+              className="LinksColor" >
+               HOW BEX WORKS
+            </Link>
+             </span>
+          <span className="navbar-names-fontMenu">
+            {" "}
+            <Link
+              onClick={() => window.location.replace("/#packagesId")}
+              to="/main"
+              className="LinksColor"
+            >
+              PRICING
+            </Link>
+          </span>
+          <span className="navbar-names-fontMenu">
+          <Link
+              onClick={() => window.location.replace("/#infoId")}
+              to="/main"
+              className="LinksColor"
+            >
+               ABOUT US
+            </Link>
+            </span>
+          <span className="navbar-names-fontMenu">
+          <Link
+              onClick={() => window.location.replace("/#connectId")}
+              to="/main"
+              className="LinksColor"
+            >
+               CONTACT US
+            </Link>
+            </span>
         </div>
 
         <div className="navbar-imagesMenu">
@@ -85,7 +117,7 @@ const MenuComponent = (props: ReduxProps) => {
             srcSet={`${Apple2} 2x, ${Apple3} 3x`}
             className="appleImg"
           />
- 
+
           <img
             src={Gplay}
             srcSet={`${Gplay2} 2x, ${Gplay3} 3x`}
@@ -115,11 +147,16 @@ const MenuComponent = (props: ReduxProps) => {
         </div>
       </div>
       <div className="tryDemoMenu">
-        <img
-          src={tryForFree}
-          srcSet={`${tryForFree2} 2x, ${tryForFree3} 3x`}
-          className="Try-for-freeMenu"
-        ></img>
+        <Link
+          onClick={() => window.location.replace("/#tryforFreeId ")}
+          to="/main"
+        >
+          <img
+            src={tryForFree}
+            srcSet={`${tryForFree2} 2x, ${tryForFree3} 3x`}
+            className="Try-for-freeMenu"
+          ></img>
+        </Link>
         <img
           src={getDemo}
           srcSet={`${getDemo2} 2x, ${getDemo3} 3x`}
@@ -137,7 +174,7 @@ const MenuComponent = (props: ReduxProps) => {
         <div className="areebaMenu1">
           <span className="Powered-byMenu">Powered by</span>
           <img
-            src={areeba} 
+            src={areeba}
             srcSet={`${areeba2} 2x, ${areeba3} 3x`}
             className="Areeba-logoMenu"
           ></img>

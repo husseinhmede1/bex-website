@@ -1,3 +1,37 @@
 .MainPolicyBackground{
     width:99.2vw;
+
 } 
+
+@media only screen and (min-width: 768px) and (max-width: 800px) {
+    .MainPolicyBackground{
+        width:100vw;
+    
+    } 
+}
+
+
+
+@media only screen and (min-width: 801px) and (max-width: 3000px) {
+    .MainPolicyBackground{
+        width:100vw;
+    
+    } 
+}
+
+
+@media only screen and (min-width: 414px) and (max-width: 800px) {
+    .MainPolicyBackground{
+        width:100vw;
+    
+    } 
+}
+
+
+@media only screen and (min-width: 360px) and (max-width: 413px) {
+    .MainPolicyBackground{
+        width:100vw;
+    
+    } 
+}
+

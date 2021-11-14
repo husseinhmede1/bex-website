@@ -282,7 +282,7 @@ img.SignHandles {
   background-color: var(--azul);
 }
 
-@media only screen and (min-width: 414px) and (max-width: 767px) {
+@media only screen and (min-width: 414px) and (max-width: 766px) {
   .Product-page-Controlh {
     width: 99.2vw;
     height: 140vh;
@@ -592,7 +592,7 @@ img.SignHandles {
 
 
 
-@media only screen and (min-width: 360px) and (max-width: 413px) {
+@media only screen and (min-width: 100px) and (max-width: 413px) {
   .Product-page-Controlh {
     width: 101.7vw;
     height: 140vh;
@@ -1190,7 +1190,7 @@ img.SignHandles {
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 800px) {
+@media only screen and (min-width: 767px) and (max-width: 800px) {
   .Product-page-Controlh {
     width: 99.2vw;
     height: 140vh;

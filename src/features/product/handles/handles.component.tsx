@@ -45,13 +45,13 @@ const HandlesComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="Product-page-Controlh">
+    <div className="Product-page-Controlh" id={'handlesId'}>
       <div className="BEX-loc">
         <span className="BEX-handles-the-hard-stuffh">
           <div>BEX HANDLES</div>
           <div>THE HARD STUFF</div> 
         </span> 
-      </div>
+      </div> 
       <div className="twoPartsHandles">
         <div className="numbersTextTwoPartsHandles">
           <div className="controlSpendHandles">

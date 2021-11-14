@@ -65,14 +65,14 @@ const PolicyComponent = (props: ReduxProps) => {
         </div>
 
         <div className="policyMobileMenuNavbar">
-          <Link to="/menumobile"> 
+          <Link to="/menumobile">
             <img
               src={menu}
               srcSet={`${menu2} 2x, ${menu3} 3x`}
               className="MenuPolicy"
             />
           </Link>
-        </div> 
+        </div>
       </div>
       <div className="PrivacyPolicyToLeft">
         <div className="PrivacyPolicyTitlePosition">
@@ -82,51 +82,97 @@ const PolicyComponent = (props: ReduxProps) => {
           <div className="spaceBetween">
             <span className="span1P">1.</span>
 
-            <span className="Acceptance-of-termsP">Acceptance of terms</span>
+            <span className="Acceptance-of-termsP">
+              <Link
+                onClick={() => window.location.replace("/#section1")}
+                to="/mainprivacy"
+              >
+                Acceptance of terms
+              </Link>
+            </span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">2.</span>
 
-            <span className="Privacy-complaintsP">Privacy complaints</span>
+            <span className="Privacy-complaintsP">
+              <Link
+                onClick={() => window.location.replace("/#section2")}
+                to="/mainprivacy"
+              >
+                Privacy complaints
+              </Link>{" "}
+            </span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">3.</span>
 
             <span className="Data-retention-and-data-probabilityP">
-              Data retention and data probability
+              <Link
+                onClick={() => window.location.replace("/#section3")}
+                to="/mainprivacy"
+              >
+                Data retention and data probability
+              </Link>
             </span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">4.</span>
 
             <span className="How-your-personal-information-is-usedP">
-              How your personal information is used
+              <Link
+                onClick={() => window.location.replace("/#section4")}
+                to="/mainprivacy"
+              >
+                How your personal information is used
+              </Link>
             </span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">5.</span>
 
             <span className="Links-to-third-party-siteP">
-              Links to third party site
+              <Link
+                onClick={() => window.location.replace("/#section5")}
+                to="/mainprivacy"
+              >
+                Links to third party site
+              </Link>
             </span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">6.</span>
 
-            <span className="Non-discriminationP">Non discrimination</span>
+            <span className="Non-discriminationP">
+              <Link
+                onClick={() => window.location.replace("/#section6")}
+                to="/mainprivacy"
+              >
+                Non discrimination
+              </Link>
+            </span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">7.</span>
 
             <span className="Legal-bases-for-professionP">
-              Legal bases for profession
+              <Link
+                onClick={() => window.location.replace("/#section7")}
+                to="/mainprivacy"
+              >
+                Legal bases for profession
+              </Link>
             </span>
           </div>
           <div className="spaceBetween">
             <span className="span1P">8.</span>
 
             <span className="Cookie-and-tracking-technologiesP">
-              Cookie and tracking technologies
+              <Link
+                onClick={() => window.location.replace("/#section8 ")}
+                to="/mainprivacy"
+              >
+                Cookie and tracking technologies
+              </Link>
             </span>
           </div>
           <div className="spaceBetween">
@@ -157,7 +203,7 @@ const PolicyComponent = (props: ReduxProps) => {
       <div className="areeba-masterP">
         <div className="areebaP">
           <span className="Powered-byP">Powered by</span>
-          <img 
+          <img
             src={areeba}
             srcSet={`${areeba2} 2x, ${areeba3} 3x`}
             className="Areeba-logoP"

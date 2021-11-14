@@ -276,7 +276,7 @@ img.Mask-GroupMobileB {
   margin-top: 10%;
 }
 
-@media only screen and (min-width: 414px) and (max-width: 767px) {
+@media only screen and (min-width: 414px) and (max-width: 766px) {
   .BenefitsBackground {
     width: 99.2vw;
     height: 110vh;
@@ -564,7 +564,7 @@ img.Mask-GroupMobileB {
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 413px) {
+@media only screen and (min-width: 100px) and (max-width: 413px) {
   .BenefitsBackground {
     width: 101.7vw;
     height: 130vh;
@@ -1138,7 +1138,7 @@ img.Mask-GroupMobileB {
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 800px) {
+@media only screen and (min-width: 767px) and (max-width: 800px) {
   .BenefitsBackground {
     width: 99.2vw;
     height: 110vh;

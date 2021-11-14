@@ -127,7 +127,7 @@ img.Try-BEX-Mobileimg {
   visibility: hidden;
 }
 
-@media only screen and (min-width: 414px) and (max-width: 767px) {
+@media only screen and (min-width: 414px) and (max-width: 766px) {
   img.Try-BEX-img {
     display: none;
     width: 92.2vw;
@@ -269,7 +269,7 @@ img.Try-BEX-Mobileimg {
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 413px) {
+@media only screen and (min-width: 100px) and (max-width: 413px) {
   img.Try-BEX-img {
     display: none;
     width: 92.2vw;
@@ -547,7 +547,7 @@ img.Try-BEX-Mobileimg {
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 800px) {
+@media only screen and (min-width: 767px) and (max-width: 800px) {
 
   img.Try-BEX-img {
     display: none;

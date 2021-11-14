@@ -189,7 +189,7 @@ img.Mastercard-TxtI {
   z-index: 1;
 }
 
-@media only screen and (min-width: 414px) and (max-width: 767px) {
+@media only screen and (min-width: 414px) and (max-width: 766px) {
   .infoPageBackground {
     width: 99.2vw;
     height: 140vh;
@@ -394,7 +394,7 @@ img.Mastercard-TxtI {
   }
 }
 
-@media only screen and (min-width: 360px) and (max-width: 413px) {
+@media only screen and (min-width: 100px) and (max-width: 413px) {
   .infoPageBackground {
     width: 101.7vw;
     height: 160vh;
@@ -797,7 +797,7 @@ img.Mastercard-TxtI {
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 800px) {
+@media only screen and (min-width: 767px) and (max-width: 800px) {
   .infoPageBackground {
     width: 99.2vw;
     height: 140vh;

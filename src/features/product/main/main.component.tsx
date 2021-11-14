@@ -40,6 +40,7 @@ const MainComponent = (props: ReduxProps) => {
    */
   useEffect(() => {
     // Write your side-effects here
+
   }, []);
 
   return (
@@ -52,10 +53,12 @@ const MainComponent = (props: ReduxProps) => {
         <ChallangesComponent />
       </div>
       </div>
-     <div className='divChallange'> 
-      <HandlesComponent /> 
+     <div id={'section1'} className='divChallange'> 
+      <HandlesComponent />  
       </div> 
+      <div>
       <SaveComponent /> 
+      </div>
       <PackagesComponent />   
       <TryforFreeComponent /> 
      <BenefitsComponent/>

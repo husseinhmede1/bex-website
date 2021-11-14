@@ -702,7 +702,7 @@ img.Contact-us-bluep {
   white-space: nowrap;
 }
 
-@media only screen and (min-width: 414px) and (max-width: 767px) {
+@media only screen and (min-width: 414px) and (max-width: 766px) {
   .packagesBackground {
     width: 99.2vw;
     height: 100vh;
@@ -1399,7 +1399,7 @@ img.Contact-us-bluep {
 
 
 
-@media only screen and (min-width: 360px) and (max-width: 413px) {
+@media only screen and (min-width: 100px) and (max-width: 413px) {
   .packagesBackground {
     width: 101.7vw;
     height: 120vh;
@@ -2805,7 +2805,7 @@ img.Contact-us-bluep {
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 800px) {
+@media only screen and (min-width: 767px) and (max-width: 800px) {
   .packagesBackground {
     width: 99.2vw;
     height: 100vh;

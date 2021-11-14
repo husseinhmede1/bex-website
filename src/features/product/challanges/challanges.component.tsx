@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
+import { Router, Route, Link } from "react-router-dom";
 
 import "./challanges.css";
 
@@ -56,18 +57,23 @@ const ChallangesComponent = (props: ReduxProps) => {
    * When dependency list is empty, useEffect runs each time the component rerenders
    * Adding variables to the dependency list will cause useEffect to run each time a variable changes
    */
-  useEffect(() => { 
+  useEffect(() => {
     // Write your side-effects here
   }, []);
- 
+
   return (
-    <div style={{ height: height }}>
+    <div style={{ height: height }} id={"downArrowId"}>
       <div className="CornerChallanges">
-        <img
-          src={down}
-          srcSet={`${down2} 2x, ${down3} 3x`}
-          className="down-arrow"
-        /> 
+        <Link
+          onClick={() => window.location.replace("/#downArrowId")}
+          to="/main"
+        >
+          <img
+            src={down}
+            srcSet={`${down2} 2x, ${down3} 3x`}
+            className="down-arrow"
+          />{" "}
+        </Link>
       </div>
       <div className="PageContainChallanges">
         <div className="rightTextChallanges">
@@ -128,9 +134,9 @@ const ChallangesComponent = (props: ReduxProps) => {
               src={icons1}
               srcSet={`${icons12} 2x, ${icons13} 3x`}
               className="Icons2"
-            ></img> 
+            ></img>
 
-            <img 
+            <img
               src={icons6}
               srcSet={`${icons62} 2x, ${icons63} 3x`}
               className="IconsMobile2"

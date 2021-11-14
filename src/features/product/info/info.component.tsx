@@ -49,7 +49,7 @@ const InfoComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="infoPageBackground">
+    <div className="infoPageBackground" id={'infoId'}>
       <div className="navyBlueColorInfo" />
       <div className="twoPartsInfoPage">
         <div className="firstPartInfoPage">

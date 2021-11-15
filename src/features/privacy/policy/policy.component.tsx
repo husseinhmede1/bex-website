@@ -103,7 +103,7 @@ const PolicyComponent = (props: ReduxProps) => {
               </Link>{" "}
             </span>
           </div>
-          <div className="spaceBetween">
+          <div className="spaceBetween"> 
             <span className="span1P">3.</span>
 
             <span className="Data-retention-and-data-probabilityP">
@@ -209,7 +209,9 @@ const PolicyComponent = (props: ReduxProps) => {
             className="Areeba-logoP"
           ></img>
         </div>
+      
         <span className="areebaMasterLinePolicy"></span>
+        
         <div className="areebaP">
           <span className="In-partnership-withP">In partnership with</span>
           <img

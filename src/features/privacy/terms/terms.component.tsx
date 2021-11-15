@@ -10,7 +10,7 @@ import areeba from "&assets/img/areeba-white.png";
 import areeba2 from "&assets/img/areeba-white@2x.png";
 import areeba3 from "&assets/img/areeba-white@3x.png";
 
-import master from "&assets/img/Mastercard.png"; 
+import master from "&assets/img/Mastercard.png";
 import master2 from "&assets/img/Mastercard@2x.png";
 import master3 from "&assets/img/Mastercard@3x.png";
 
@@ -49,7 +49,7 @@ const TermsComponent = (props: ReduxProps) => {
 
   return (
     <>
-      <div className="screenWidth" >
+      <div className="screenWidth">
         <div className="termsFlex">
           <div className="textTerms" id={"section1"}>
             <span className="-Acceptance-of-termsTe">
@@ -321,72 +321,72 @@ const TermsComponent = (props: ReduxProps) => {
           </div>
         </div>
 
-      <div className="footerColorTe"></div>
-      <div className="storePlay">
-        <span className="Download-nowTe">Download Now!</span>
-        <div>
-          <img
-            src={store}
-            srcSet={`${store2} 2x, ${store3} 3x`}
-            className="Group-17Te"
-          ></img>
-          <img
-            src={play}
-            srcSet={`${play2} 2x, ${play3} 3x`}
-            className="_play-store-icon-android-app-on-google-playTe"
-          ></img>
+        <div className="footerColorTe"></div>
+        <div className="storePlay">
+          <span className="Download-nowTe">Download Now!</span>
+          
+          <div className='StorePlayReplaceTerms'>
+            <img
+              src={store}
+              srcSet={`${store2} 2x, ${store3} 3x`}
+              className="Group-17Te"
+            ></img>
+            <img
+              src={play}
+              srcSet={`${play2} 2x, ${play3} 3x`}
+              className="_play-store-icon-android-app-on-google-playTe"
+            ></img>
+          </div>
         </div>
-      </div>
-      <div className="footerLineTerms"></div>
+        <div className="footerLineTerms"></div>
 
-      <div className="footerDivTerms">
-        <img
-          src={areeba}
-          srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-          className="AreebaTe"
-        ></img>
-        <img
-          src={master}
-          srcSet={`${master2} 2x, ${master3} 3x`}
-          className="MastercardTe"
-        ></img>
-        <div className="foterLinks">
-          <span className="Privacy-PolicyTe">Privacy Policy</span>
-          <span className="Terms-of-ServiceTe">Terms of Service</span>
-          <span className="Cookie-PolicyTe">Cookie Policy</span>
-        </div>
-        <div className="bex-Rights">
-          <span className="-Bex-All-Rights-ReservedTe">
-            2021 Bex. All Rights Reserved.
-          </span>
-        </div>
-      </div>
-      <div className="footerDivTermsMobile">
-        <div className="areebaMastercardRightsTermsMobile">
+        <div className="footerDivTerms">
           <img
             src={areeba}
             srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-            className="AreebaTeMobile"
+            className="AreebaTe"
           ></img>
           <img
             src={master}
             srcSet={`${master2} 2x, ${master3} 3x`}
-            className="MastercardTeMobile"
+            className="MastercardTe"
           ></img>
-
-          <div className="bex-RightsMobile">
-            <span className="-Bex-All-Rights-ReservedTeMobile">
+          <div className="foterLinks">
+            <span className="Privacy-PolicyTe">Privacy Policy</span>
+            <span className="Terms-of-ServiceTe">Terms of Service</span>
+            <span className="Cookie-PolicyTe">Cookie Policy</span>
+          </div>
+          <div className="bex-Rights">
+            <span className="-Bex-All-Rights-ReservedTe">
               2021 Bex. All Rights Reserved.
             </span>
           </div>
         </div>
+        <div className="footerDivTermsMobile">
+          <div className="areebaMastercardRightsTermsMobile">
+              <img
+                src={areeba}
+                srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+                className="AreebaTeMobile"
+              ></img>
+              <img
+                src={master}
+                srcSet={`${master2} 2x, ${master3} 3x`}
+                className="MastercardTeMobile"
+              ></img>
+            <div className="bex-RightsMobile">
+              <span className="-Bex-All-Rights-ReservedTeMobile">
+                2021 Bex. All Rights Reserved.
+              </span>
+            </div>
+          </div>
 
-        <div className="foterLinksMobile">
-          <span className="Privacy-PolicyTeMobile">Privacy Policy</span>
-          <span className="Terms-of-ServiceTeMobile">Terms of Service</span>
-          <span className="Cookie-PolicyTeMobile">Cookie Policy</span>
+          <div className="foterLinksMobile">
+            <span className="Privacy-PolicyTeMobile">Privacy Policy</span>
+            <span className="Terms-of-ServiceTeMobile">Terms of Service</span>
+            <span className="Cookie-PolicyTeMobile">Cookie Policy</span>
+          </div>
         </div>
-      </div>
       </div>
     </>
   );

@@ -104,7 +104,6 @@ const HandlesComponent = (props: ReduxProps) => {
             </div>
           </div>
         </div> 
-        <div>
           <img
             src={control}
             srcSet={`${control2} 2x, ${control3} 3x`}
@@ -115,7 +114,6 @@ const HandlesComponent = (props: ReduxProps) => {
             srcSet={`${spend2} 2x, ${spend3} 3x`}
             className="Spend-imgHandles"
           ></img>
-        </div>
       </div>
     </div>
   );

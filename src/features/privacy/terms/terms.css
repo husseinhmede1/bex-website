@@ -13,11 +13,14 @@
   color: #000;
   margin-left: 0%;
 }
+html,body{
+  overflow-x: hidden;
+}
 .-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe {
   font-family: Lato-Regular;
   font-size: 200%;
 
-  font-stretch: semi-condensed;
+  font-stretch: semi-condensed; 
   font-style: normal;
   line-height: 1.4;
   letter-spacing: normal;
@@ -1756,11 +1759,11 @@ img.MastercardTeMobile {
 
 
   .-Acceptance-of-termsTe {
-    width: 407px;
+    width: 207px;
     height: 40px;
     margin: 97px 104px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 70px;
+    font-size: 15px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -1773,7 +1776,7 @@ img.MastercardTeMobile {
   }
   .-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe {
     font-family: Lato-Regular;
-    font-size:350%;
+    font-size:90%;
     font-stretch: semi-condensed;
     font-style: normal;
     line-height: 1.4;
@@ -1823,17 +1826,17 @@ img.MastercardTeMobile {
   }
 
   .textTerms {
-    margin-top: 150%; 
-    margin-left: 200%;
-    width: 200vw;
+    margin-top: 30%; 
+    margin-left:-30%;
+    width: 50%;
   }
 
   .-Privacy-complaintsTe {
-    width: 378px;
-    height: 40px;
+    width: 207px;
+    height: 10px;
     margin: 100px 9px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 65px;
+    font-size: 15px;
     white-space: nowrap;
     font-weight: 800;
     font-stretch: normal;
@@ -1847,7 +1850,7 @@ img.MastercardTeMobile {
 
   .-Data-retention-and-data-probabilityTe {
     font-family: Gilroy-ExtraBold;
-    font-size: 65px;
+    font-size: 15px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -1862,7 +1865,7 @@ img.MastercardTeMobile {
     height: 40px;
     margin: 100px 298px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 65px;
+    font-size: 15px;
     white-space: nowrap;
     font-weight: 800;
     font-stretch: normal;
@@ -1879,7 +1882,7 @@ img.MastercardTeMobile {
     height: 40px;
     margin: 100px 66px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 65px;
+    font-size: 15px;
     white-space: nowrap;
     font-weight: 800;
     font-stretch: normal;
@@ -1896,7 +1899,7 @@ img.MastercardTeMobile {
     height: 40px;
     margin: 100px 14px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 65px;
+    font-size: 15px;
     white-space: nowrap;
     font-stretch: normal;
     font-style: normal;
@@ -1912,7 +1915,7 @@ img.MastercardTeMobile {
     height: 40px;
     margin: 100px 367px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 65px;
+    font-size: 15px;
     white-space: nowrap;
 
     font-stretch: normal;
@@ -1929,7 +1932,7 @@ img.MastercardTeMobile {
     height: 40px;
     margin: 100px 298px 30px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 65px;
+    font-size: 15px;
     white-space: nowrap;
     font-weight: 800;
     font-stretch: normal;
@@ -1951,27 +1954,26 @@ img.MastercardTeMobile {
   }
 
   .textTitle {
-    margin-top: 40%;
-    width: 300vw;
-    font-size: 20px;
+    margin-top: 10%;
+    width: 80vw;
+    font-size: 15px;
     margin-left: 0%;
   }
 
   .footerColorTe {
     background-color: #306bdd;
-    height: 100vh;
+    height: 50vh;
     width: 400vw;
-    margin-top: 90%; 
   }
 
   .footerLineTerms {
-    width: 350vw;
+    width: 80%;
     height: 0;
     margin: 123.9px 0 0;
     opacity: 0.3;
     border: solid 1px #ddd;
-    margin-top: 10%;
-    margin-left: 30%;
+    margin-top: -10%;
+    margin-left: 12%;
   }
 
   .footerDivTerms {
@@ -2015,8 +2017,8 @@ img.MastercardTeMobile {
     align-content: stretch;
 
     visibility: visible;
-    margin-top: 30vh;
-    margin-left: 15vw;
+    margin-top: 10%;
+    margin-left: 0%;
   }
 
   .areebaMastercardRightsTermsMobile {
@@ -2028,41 +2030,36 @@ img.MastercardTeMobile {
     align-content: stretch;
 
     visibility: visible;
-    margin-left: 500%;
+    margin-left: 50%;
   }
 
   img.AreebaTeMobile {
-    width: 150px;
-    height: 150px;
-    margin: 6px 14.6px 6px 0;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     visibility: visible;
-    margin-left: 25vw;
+    margin-left: 10vw;
   }
 
   img.MastercardTeMobile {
-    width: 100px;
-    height: 100px;
-    margin: 0 0 0 14.6px;
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     visibility: visible;
-    margin-left: 20vw;
+    margin-left: 5vw;
   }
   .bex-RightsMobile {
     visibility: visible;
-    margin-left: 40vw;
-    margin-top: -5vh;
     
   }
   .bex-Rights {
     display: none;
   }
   .Cookie-PolicyTeMobile {
-    width: 730px;
+    width: 100px;
     height: 15px;
-    margin: 35.1px 47.5px 3.7px 41px;
     font-family: Lato-Bold;
-    font-size: 40px;
+    font-size: 10px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -2073,32 +2070,34 @@ img.MastercardTeMobile {
     text-decoration: underline;
     white-space: nowrap;
     visibility: visible;
+    margin-top: 20vh;
+    margin-left:10vw;
+
   }
 
   .-Bex-All-Rights-ReservedTeMobile {
-    width: 162px;
+    width: 80px;
     height: 15px;
-    opacity: 0.9;
+    opacity: 0.5;
     font-family: Lato-Bold;
-    font-size: 30px;
+    font-size: 10px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 2.33;
     letter-spacing: normal;
-    margin-left:110vw;
-    margin-top: 20vh;
+    margin-left:15vw;
+    margin-top: 0vh;
     color: #fff;
     white-space: nowrap;
     visibility: visible;
   }
 
   .Privacy-PolicyTeMobile {
-    width: 750px;
+    width: 100px;
     height: 18px;
-    margin: 35.1px 34px 0.7px 8.9px;
     font-family: Lato-Bold;
-    font-size: 40px;
+    font-size: 10px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -2109,14 +2108,15 @@ img.MastercardTeMobile {
     text-decoration: underline;
     white-space: nowrap;
     visibility: visible;
+    margin-top: 20vh;
+    margin-left: 10vw;
   }
 
   .Terms-of-ServiceTeMobile {
-    width: 880px;
+    width: 100px;
     height: 15px;
-    margin: 35.1px 41px 3.7px 34px;
     font-family: Lato-Bold;
-    font-size: 40px;
+    font-size: 10px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -2127,6 +2127,9 @@ img.MastercardTeMobile {
     text-decoration: underline;
     white-space: nowrap;
     visibility: visible;
+    margin-top: 20vh;
+    margin-left: 10vw;
+
   }
   .foterLinksMobile {
     display: flex;
@@ -2135,8 +2138,8 @@ img.MastercardTeMobile {
     justify-content: space-between;
     align-items: center;
     align-content: stretch;
-    margin-top: 10vh;
-    margin-left: 60vw;
+    margin-top: 10%;
+    margin-left: 0%;
     visibility: visible;
   }
   .Download-nowTe {
@@ -2144,7 +2147,7 @@ img.MastercardTeMobile {
     height: 25px;
     margin: 14.5px 43px 36.7px 102.5px;
     font-family: Gilroy-ExtraBold;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -2153,31 +2156,31 @@ img.MastercardTeMobile {
     text-align: left;
     color: #fff;
     white-space: nowrap;
-    margin-top: -40%;
-    margin-left: 27%;
+    margin-top: 10%;
+    margin-left: 0%;
   }
 
   img.Group-17Te {
-    width: 250px;
+    width: 100px;
     height: 100px;
     margin: 0 20px 26.2px 43px;
     object-fit: contain;
-    margin-left: 30%;
-    margin-top: 20%;
+    margin-left: 0%;
+    margin-top: 0%;
   }
 
   img._play-store-icon-android-app-on-google-playTe {
-    width: 250px;
+    width: 100px;
     height: 100px;
     margin: 0 740.5px 26.2px 20px;
     object-fit: contain;
     border-radius: 6px;
-    margin-left: 110%;
-    margin-top: -40%;
+    margin-left: 35%;
+    margin-top: -46%;
   }
 
   .storePlay {
-    margin-top: -140%;
+    margin-top: -100%;
     z-index: 1;
     margin-left: 10%;
     display: flex;
@@ -2196,6 +2199,9 @@ img.MastercardTeMobile {
 
 @media only screen and (min-width:801px) and (max-width: 3000px) {
 
+  html,body{
+    overflow-x: hidden;
+}
   .-Acceptance-of-termsTe {
     width: 407px;
     height: 40px;

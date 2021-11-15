@@ -1192,18 +1192,18 @@ img.MenuPolicy {
 @media only screen and (min-width: 100px) and (max-width: 413px) { 
   .policyMobileMenuNavbar {
     visibility: visible;
-    margin-left: 40vw;
+    margin-left: 40vw; 
     margin-top: 0vh; 
     z-index: 2;
   }
   img.MenuPolicy {
     visibility: visible;
-    width: 90px;
-    height: 60.5px;
+    width: 20px;
+    height: 40px;
     object-fit: contain;
     z-index: 2; 
-    margin-left: -25vw;
-    margin-top: 0vh;
+    margin-left: -20vw;
+    margin-top: -1vh;
   }
   .MainFlexPolicy {
     display: flex;
@@ -1216,7 +1216,7 @@ img.MenuPolicy {
 
   .BEXP {
     font-family: Gilroy-ExtraBold;
-    font-size: 90px;
+    font-size: 40px;
     font-weight: 80;
     font-stretch: normal;
     font-style: normal;
@@ -1225,7 +1225,7 @@ img.MenuPolicy {
     text-align: left;
     color: #000;
     margin-left: 15%;
-    margin-top: 2%;
+    margin-top: 20%;
     z-index: 1;
   }
 
@@ -1261,9 +1261,10 @@ img.MenuPolicy {
     margin-left: -5%;
     margin-top: 2%;
     background-color: #fff;
-    width: 100%;
-    z-index: 0;
-    margin-top: 0%;
+    width: 110%;
+    height: 10%;
+    z-index: 1;
+
   }
 
   .PrivacyPolicyToLeft {
@@ -1282,7 +1283,7 @@ img.MenuPolicy {
     height: 27px;
     margin: 72px 114px 60px 100px;
     font-family: Gilroy-ExtraBold;
-    font-size: 100px;
+    font-size: 40px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -1301,7 +1302,7 @@ img.MenuPolicy {
   .span1P {
     opacity: 0.5;
     font-family: Lato-Regular;
-    font-size: 50px;
+    font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1313,10 +1314,10 @@ img.MenuPolicy {
 
   .Acceptance-of-termsP {
     width: 100px;
-    height: 19px;
+    height: 1px;
     margin: 60px 183px 14px 5px;
     font-family: Lato-Light;
-    font-size: 400%;
+    font-size: 100%;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1329,10 +1330,10 @@ img.MenuPolicy {
 
   .Privacy-complaintsP {
     width: 139px;
-    height: 19px;
+    height: 1px;
     margin: 14px 3px 14px 5px;
     font-family: Lato-Light;
-    font-size: 400%;
+    font-size: 100%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -1348,7 +1349,7 @@ img.MenuPolicy {
     height: 19px;
     margin: 14px 59px 14px 5px;
     font-family: Lato-Light;
-    font-size: 400%;
+    font-size: 100%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -1360,7 +1361,7 @@ img.MenuPolicy {
   }
 
   .spaceBetween {
-    height: 20vh;
+    height: 5vh;
   }
 
   .How-your-personal-information-is-usedP {
@@ -1368,7 +1369,7 @@ img.MenuPolicy {
     height: 19px;
     margin: 13px 30px 14px 5px;
     font-family: Lato-Light;
-    font-size: 400%;
+    font-size: 100%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -1384,7 +1385,7 @@ img.MenuPolicy {
     height: 19px;
     margin: 14px 162px 14px 5px;
     font-family: Lato-Light;
-    font-size: 400%;
+    font-size: 100%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -1400,7 +1401,7 @@ img.MenuPolicy {
     height: 19px;
     margin: 14px 1px 14px 5px;
     font-family: Lato-Light;
-    font-size: 400%;
+    font-size: 100%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -1416,7 +1417,7 @@ img.MenuPolicy {
     height: 19px;
     margin: 14px 138px 14px 5px;
     font-family: Lato-Light;
-    font-size: 400%;
+    font-size: 100%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -1432,7 +1433,7 @@ img.MenuPolicy {
     height: 19px;
     margin: 14px 76px 14px 5px;
     font-family: Lato-Light;
-    font-size: 400%;
+    font-size: 100%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -1448,7 +1449,7 @@ img.MenuPolicy {
     height: 70px;
     margin: 14px 7px 6px 5px;
     font-family: Lato-Light;
-    font-size: 400%;
+    font-size: 100%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -1464,7 +1465,7 @@ img.MenuPolicy {
     height: 30px;
     margin: 14px 144px 35px 5px;
     font-family: Lato-Light;
-    font-size: 400%;
+    font-size: 100%;
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -1476,22 +1477,22 @@ img.MenuPolicy {
   }
 
   .greencercle {
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
     margin: 24px 21px 2.7px 1500px;
     padding: 22px 17.5px 21.4px 17px;
     background-color: rgb(48, 198, 117);
     border-radius: 50%;
     margin-top: 50%;
-    margin-left: 300%;
+    margin-left: 80%;
   }
 
   img.chatbotP {
-    width: 100px;
-    height: 100px; 
+    width: 30px;
+    height: 30px; 
     object-fit: contain;
-    margin-left: 15%;
-    margin-top: 15%;
+    margin-left: -50%;
+    margin-top: -100%;
   }
 
   .areeba-masterP {
@@ -1501,15 +1502,15 @@ img.MenuPolicy {
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
-    margin-left: 50%;
-    margin-top: -90%;
+    margin-left: 0%;
+    margin-top: -50%;
   }
 
   .areebaP {
     display: flex;
     flex-direction: column;
     margin-top: -20%;
-    margin-left: 10%;
+    margin-left: 1%;
   }
 
   .Powered-byP {
@@ -1517,7 +1518,7 @@ img.MenuPolicy {
     height: 23px;
     margin: 91px 23.5px 8px 0;
     font-family: Poppins-Regular;
-    font-size: 25px;
+    font-size: 10px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1526,7 +1527,7 @@ img.MenuPolicy {
     text-align: left;
     color: #000000;
     white-space: nowrap;
-    margin-left: 30%;
+    margin-left: 110%;
   }
 
   .In-partnership-withP {
@@ -1534,7 +1535,7 @@ img.MenuPolicy {
     height: 23px;
     margin: 91px 88px 8px 22.5px;
     font-family: Poppins-Regular;
-    font-size: 25px;
+    font-size: 10px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1546,27 +1547,31 @@ img.MenuPolicy {
   }
 
   .areebaMasterLinePolicy {
-    width: 0;
-    height: 80px;
+    width: 0px;
+    height: 40px;
+    
     margin: 2.7px 0 12px;
-    border: solid 0.8px #000000;
-    margin-top: 35%;
-    margin-left: 50%;
+    border: solid 0.2px #000000;
+    margin-top: 7%;
+    margin-left:25%;
   }
 
   img.Areeba-logoP {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     margin: 9px 40.8px 1px 0;
     object-fit: contain;
-    margin-left: 50%;
+    margin-left:110%;
+    margin-top: -10%;
+    
   }
 
   img.MastercardP {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     margin: 8px 29.8px 0 22.3px;
     object-fit: contain;
+    margin-top: -5%;
   }
 }
 

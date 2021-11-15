@@ -10,7 +10,7 @@ import areeba from "&assets/img/areeba-white.png";
 import areeba2 from "&assets/img/areeba-white@2x.png";
 import areeba3 from "&assets/img/areeba-white@3x.png";
 
-import master from "&assets/img/Mastercard.png";
+import master from "&assets/img/Mastercard.png"; 
 import master2 from "&assets/img/Mastercard@2x.png";
 import master3 from "&assets/img/Mastercard@3x.png";
 
@@ -49,7 +49,7 @@ const TermsComponent = (props: ReduxProps) => {
 
   return (
     <>
-      <div className="screenWidth">
+      <div className="screenWidth" >
         <div className="termsFlex">
           <div className="textTerms" id={"section1"}>
             <span className="-Acceptance-of-termsTe">
@@ -320,7 +320,6 @@ const TermsComponent = (props: ReduxProps) => {
             </div>
           </div>
         </div>
-      </div>
 
       <div className="footerColorTe"></div>
       <div className="storePlay">
@@ -387,6 +386,7 @@ const TermsComponent = (props: ReduxProps) => {
           <span className="Terms-of-ServiceTeMobile">Terms of Service</span>
           <span className="Cookie-PolicyTeMobile">Cookie Policy</span>
         </div>
+      </div>
       </div>
     </>
   );

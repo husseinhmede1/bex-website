@@ -16,6 +16,9 @@
     .MainPolicyBackground{
         width:100vw;
     
+    }
+    html,body{
+        overflow-x: hidden;
     } 
 }
 
@@ -28,9 +31,12 @@
 }
 
 
-@media only screen and (min-width: 360px) and (max-width: 413px) {
+@media only screen and (min-width: 100px) and (max-width: 413px) {
+    html,body{
+        overflow-x: hidden;
+    }
     .MainPolicyBackground{
-        width:100vw;
+        width:100%;
     
     } 
 }

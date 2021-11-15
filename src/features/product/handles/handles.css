@@ -283,9 +283,14 @@ img.SignHandles {
 }
 
 @media only screen and (min-width: 414px) and (max-width: 766px) {
+  
+  html,body{
+    overflow-x: hidden;
+}
+
   .Product-page-Controlh {
-    width: 99.2vw;
-    height: 140vh;
+    width:99.2%;
+    height: 170vh;
 
     display: flex;
     flex-direction: column;
@@ -295,7 +300,7 @@ img.SignHandles {
     align-content: stretch;
 
     background-color: #f0f0f0;
-    margin-top: -30%;
+    margin-top: -10%;
   }
 
   .cookieComp {
@@ -319,8 +324,8 @@ img.SignHandles {
   }
 
   .BEX-loc {
-    height: 10vh;
-    margin-top: 225%;
+    height: 30vh;
+    margin-top:100%;
   }
 
   img.Spend-imgHandles {
@@ -333,13 +338,13 @@ img.SignHandles {
     margin-top: 20%;
   }
   img.Control-imgHandles {
-    width: 355.9px;
-    height: 298.6px;
+    width: 150%;
+    height: 300.6%;
     margin: 91.6px 0 69.9px 19.1px;
     object-fit: contain;
     visibility: visible;
-    margin-left: 30%;
-    margin-top: 7%;
+    margin-left: 0%;
+    margin-top: 0%;
   }
 
   .Rectangle-24940h {
@@ -464,7 +469,7 @@ img.SignHandles {
     line-height: 1.23;
     letter-spacing: normal;
     text-align: left;
-    margin-left: 7%;
+    margin-left: 0%;
     color: #00194a;
   }
   .right-2h {
@@ -474,8 +479,8 @@ img.SignHandles {
     background-color: #306bdd;
   }
   .Set-your-spending-policies-and-simplify-your-administration-processh {
-    width: 175px;
-    height: 41px;
+    width: 300px;
+    height: 81px;
     margin: 0 0 0 10.6px;
     font-family: Lato-Regular;
     font-size: 13px;
@@ -495,10 +500,10 @@ img.SignHandles {
   }
 
   .Apply-spending-limits-and-restrictions-based-on-each-employee-profile-and-business-needsh {
-    width: 175px;
-    height: 68px;
+    width: 300px;
+    height: 81px;
     margin: 0 0 0 10.6px;
-    font-family: Lato;
+    font-family: Lato-Regular;
     font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
@@ -507,6 +512,7 @@ img.SignHandles {
     letter-spacing: normal;
     text-align: left;
     color: #00194a;
+    
   }
   .twoPartsHandles {
     display: flex;
@@ -515,8 +521,8 @@ img.SignHandles {
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
-    margin-top: 45%;
-    height: 200vh;
+    width: 50%;
+    
   }
 
   .numbersTextTwoPartsHandles {
@@ -527,6 +533,7 @@ img.SignHandles {
     align-items: stretch;
     align-content: flex-end;
     margin-top: 5%;
+    width: 50%;
   }
 
   .controlSpendHandles {
@@ -568,8 +575,9 @@ img.SignHandles {
     justify-content: center;
     align-items: stretch;
     align-content: space-around;
-    margin-left: 25%;
+    margin-left: -25%;
     margin-top: -7%;
+    width: 200%;
   }
 
   .signedTextoneHandles {
@@ -579,7 +587,8 @@ img.SignHandles {
     justify-content: center;
     align-items: stretch;
     align-content: space-around;
-    margin-left: -45%;
+    width: 100%;
+
   }
   img.SignHandles {
     width: 16.4px;
@@ -593,6 +602,9 @@ img.SignHandles {
 
 
 @media only screen and (min-width: 100px) and (max-width: 413px) {
+  html,body{
+    overflow-x: hidden;
+}
   .Product-page-Controlh {
     width: 101.7vw;
     height: 140vh;
@@ -1191,6 +1203,9 @@ img.SignHandles {
 
 
 @media only screen and (min-width: 767px) and (max-width: 800px) {
+  html,body{
+    overflow-x: hidden;
+}
   .Product-page-Controlh {
     width: 99.2vw;
     height: 140vh;

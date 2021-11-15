@@ -19,7 +19,7 @@ import chatbot2 from "&assets/img/chatbot@2x.png";
 import chatbot3 from "&assets/img/chatbot@3x.png";
 
 import menu from "&assets/img/Burger-menu.png";
-import menu2 from "&assets/img/Burger-menu@2x.png";
+import menu2 from "&assets/img/Burger-menu@2x.png"; 
 import menu3 from "&assets/img/Burger-menu@3x.png";
 /*
  * These are actions imported from the feature slices.
@@ -75,7 +75,7 @@ const PolicyComponent = (props: ReduxProps) => {
         </div>
       </div>
       <div className="PrivacyPolicyToLeft">
-        <div className="PrivacyPolicyTitlePosition">
+        <div className="PrivacyPolicyTitlePosition"> 
           <span className="Privacy-policyP">Privacy policy</span>
         </div>
         <div className="PrivacyPolicyRules">

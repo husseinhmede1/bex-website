@@ -21,35 +21,9 @@ margin-top: -4%;
 
 }
 
-@media only screen and (min-width: 414px) and (max-width: 766px) {
-  .MainComponent {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(221, 218, 218);
-    
-
-  }
-  .challangesSize {
-    width: 80%; 
-    height: 90%;
-    margin-left: 10%;
-    background-color: white;
-  }
-  
-  .backGround {
-    margin-top: -10%;
-  z-index: 1;
-  }
-  .divChallange{
-  margin-top: 0%;
-  
-  }
-
-}
 
 
-
-@media only screen and (min-width: 100px) and (max-width: 413px) {
+@media only screen and (min-width: 100px) and (max-width: 800px) {
   .MainComponent {  
     display: flex;
     flex-direction: column;
@@ -57,60 +31,7 @@ margin-top: -4%;
 }
   .challangesSize {
     width: 80%;
-    height: 100vh;
-    margin-left: 10%;
-    background-color: white;
-  }
-  
-  .backGround {
-    margin-top: -10%;
-  z-index: 1;
-  }
-  .divChallange{
-  margin-top: 0%;
-  
-  }
-
-}
-
-
-@media only screen and (min-width: 801px) and (max-width: 3000px) {
-
-  .MainComponent {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(221, 218, 218);
-    width: screen;
-  }
-  
-  .challangesSize {
-    width: 80vw;
-    height: 80vh;
-    margin-left: 10%;
-    background-color: white;
-  }
-  
-  .backGround {
-    margin-top: -7%;
-  z-index: 1;
-  }
-  .divChallange{
-  margin-top: -4%;
-  
-  }
-  
-}
-
-
-@media only screen and (min-width: 767px) and (max-width: 800px) {
-  .MainComponent {  
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(221, 218, 218);
-}
-  .challangesSize {
-    width: 80%;
-    height: 80vh;
+    height: 120vh;
     margin-left: 10%;
     background-color: white;
   }

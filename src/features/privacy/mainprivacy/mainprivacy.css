@@ -3,7 +3,7 @@
 
 } 
 
-@media only screen and (min-width: 768px) and (max-width: 800px) {
+@media only screen and (min-width: 100px) and (max-width: 800px) {
     .MainPolicyBackground{
         width:100vw;
     
@@ -17,18 +17,11 @@
         width:100vw;
     
     }
-    html,body{
-        overflow-x: hidden;
-    } 
+
 }
 
 
-@media only screen and (min-width: 100px) and (max-width: 800px) {
-    .MainPolicyBackground{
-        width:100vw;
-    
-    } 
-}
+
 
 
 

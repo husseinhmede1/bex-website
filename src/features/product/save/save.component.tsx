@@ -7,7 +7,7 @@ import "./save.css";
 
 import save from "&assets/img/Save-img.png";
 import save2 from "&assets/img/Save-img@2x.png";
-import save3 from "&assets/img/Save-img@3x.png";
+import save3 from "&assets/img/Save-img@3x.png"; 
 
 import sign from "&assets/img/Sign2.png";
 import sign2 from "&assets/img/Sign2@2x.png";

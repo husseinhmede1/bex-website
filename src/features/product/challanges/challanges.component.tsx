@@ -62,12 +62,12 @@ const ChallangesComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div style={{ height: height }} id={"downArrowId"}>
+    <div  id={"downArrowId"}>
       <div className="CornerChallanges">
         <Link
           onClick={() => window.location.replace("/#downArrowId")}
           to="/main"
-        >
+        > 
           <img
             src={down}
             srcSet={`${down2} 2x, ${down3} 3x`}
@@ -129,7 +129,7 @@ const ChallangesComponent = (props: ReduxProps) => {
 
           <div className="Line-5280"></div>
 
-          <div className="icon1">
+          <div className="icon2Challenges">
             <img
               src={icons1}
               srcSet={`${icons12} 2x, ${icons13} 3x`}

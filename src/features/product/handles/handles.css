@@ -282,14 +282,14 @@ img.SignHandles {
   background-color: var(--azul);
 }
 
-@media only screen and (min-width: 414px) and (max-width: 766px) {
+@media only screen and (min-width: 100px) and (max-width: 800px) {
   
   html,body{
     overflow-x: hidden;
 }
 
   .Product-page-Controlh {
-    width:99.2%;
+    width:100%;
     height: 170vh;
 
     display: flex;
@@ -313,7 +313,7 @@ img.SignHandles {
     height: 153px;
     margin: 0 363.1px 63px 50px;
     font-family: Gilroy-ExtraBold;
-    font-size: 40px;
+    font-size: 9vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -338,13 +338,13 @@ img.SignHandles {
     margin-top: 20%;
   }
   img.Control-imgHandles {
-    width: 150%;
-    height: 300.6%;
+    width: 200%;
+    height: 350.6%;
     margin: 91.6px 0 69.9px 19.1px;
     object-fit: contain;
     visibility: visible;
-    margin-left: 0%;
-    margin-top: 0%;
+    margin-left: -45%;
+    margin-top: 20%;
   }
 
   .Rectangle-24940h {
@@ -360,6 +360,8 @@ img.SignHandles {
     display: flex;
     justify-content: center;
     align-content: center;
+    z-index: 1;
+    
   }
 
   .span1h {
@@ -386,8 +388,8 @@ img.SignHandles {
     font-style: normal;
     line-height: 0.75;
     letter-spacing: normal;
-    text-align: left;
     color: #838383;
+    margin-left: -20%;
   }
 
   .Rectangle-24970h {
@@ -403,21 +405,9 @@ img.SignHandles {
     justify-content: center;
     align-content: center;
     margin-left: 5%;
+    z-index: 1;
   }
 
-  span {
-    width: 11px;
-    height: 23px;
-    font-family: Gilroy;
-    font-size: 20px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.75;
-    letter-spacing: normal;
-    text-align: left;
-    color: #838383;
-  }
 
   .spendh {
     width: 91px;
@@ -458,11 +448,11 @@ img.SignHandles {
     margin-top: 0%;
   }
   .Digitize-your-expense-policyh {
-    width: 200px;
+    width: 50vw;
     height: 54px;
     margin: 65px 72px 50px 0;
     font-family: Gilroy-ExtraBold;
-    font-size: 16px;
+    font-size: 4vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -479,11 +469,11 @@ img.SignHandles {
     background-color: #306bdd;
   }
   .Set-your-spending-policies-and-simplify-your-administration-processh {
-    width: 300px;
-    height: 81px;
+    width: 350px;
+    height: 150px;
     margin: 0 0 0 10.6px;
     font-family: Lato-Regular;
-    font-size: 13px;
+    font-size: 3.5vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -500,11 +490,11 @@ img.SignHandles {
   }
 
   .Apply-spending-limits-and-restrictions-based-on-each-employee-profile-and-business-needsh {
-    width: 300px;
+    width: 350px;
     height: 81px;
     margin: 0 0 0 10.6px;
     font-family: Lato-Regular;
-    font-size: 13px;
+    font-size: 3.5vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -544,7 +534,7 @@ img.SignHandles {
     align-items: center;
     align-content: stretch;
     margin-top: 5%;
-    margin-left: -10%;
+    margin-left: 15%;
   }
   .numbersHandles {
     display: flex;
@@ -578,6 +568,7 @@ img.SignHandles {
     margin-left: -25%;
     margin-top: -7%;
     width: 200%;
+    height: 50vh;
   }
 
   .signedTextoneHandles {
@@ -601,323 +592,11 @@ img.SignHandles {
 
 
 
-@media only screen and (min-width: 100px) and (max-width: 413px) {
-  html,body{
-    overflow-x: hidden;
-}
-  .Product-page-Controlh {
-    width: 101.7vw;
-    height: 140vh;
- 
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-
-    background-color: #f0f0f0;
-    margin-top: -30%;
-  }
-
-  .cookieComp {
-    width: 99.2vw;
-    margin-top: -14.3%;
-    z-index: 1;
-  }
-  .BEX-handles-the-hard-stuffh {
-    width: 500px;
-    height: 153px;
-    margin: 0 363.1px 63px 50px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 40px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.08;
-    letter-spacing: normal;
-    text-align: center;
-    color: #306bdd;
-  }
-
-  .BEX-loc {
-    height: 10vh;
-    margin-top: 225%;
-  }
-
-  img.Spend-imgHandles {
-    width: 699.1px;
-    height: 503.8px;
-    margin: 63px 0 0 214px;
-    object-fit: contain;
-    visibility: hidden;
-    margin-left: 5%;
-    margin-top: 20%;
-  }
-  img.Control-imgHandles {
-    width: 355.9px;
-    height: 298.6px;
-    margin: 91.6px 0 69.9px 19.1px;
-    object-fit: contain;
-    visibility: visible;
-    margin-left: 30%;
-    margin-top: 7%;
-  }
-
-  .Rectangle-24940h {
-    width: 34px;
-    height: 35px;
-    margin: 39px 26px 0 0;
-    padding: 12px 17px 11px 18px;
-    border-radius: 47px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-    background-color: #ffff;
-    margin-top: 0%;
-    margin-left: -11%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .span1h {
-    width: 11px;
-    height: 24px;
-    font-family: Gilroy;
-    font-size: 20px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.75;
-    letter-spacing: normal;
-    text-align: left;
-    color: #30c6c6;
-  }
-
-  .span2h {
-    width: 7px;
-    height: 23px;
-    font-family: Gilroy;
-    font-size: 20px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.75;
-    letter-spacing: normal;
-    text-align: left;
-    color: #838383;
-  }
-
-  .Rectangle-24970h {
-    width: 5px;
-    height: 42px;
-    margin: 0 26px 0.3px 0;
-    padding: 11px 19px;
-    border-radius: 50px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-    border: solid #30c6c6;
-    background-color: #ffff;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-left: 5%;
-  }
-
-  span {
-    width: 11px;
-    height: 23px;
-    font-family: Gilroy;
-    font-size: 20px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.75;
-    letter-spacing: normal;
-    text-align: left;
-    color: #838383;
-  }
-
-  .spendh {
-    width: 91px;
-    height: 34px;
-    margin: 45px 20.5px 6px 26.5px;
-    font-family: Gilroy-Light;
-    font-size: 15px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.53;
-    letter-spacing: normal;
-    text-align: left;
-    color: #838383;
-    margin-top: 0%;
-    margin-left: -1%;
-  }
-  .Controlh {
-    width: 90px;
-    height: 37px;
-    margin: 4.3px 12.5px 5px 26px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 15px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.53;
-    letter-spacing: normal;
-    text-align: left;
-    color: #30c6c6;
-  }
-  .Line-5297h {
-    width: 70px;
-    height: 0;
-    margin: 17px 26px 0 3px;
-    border: solid 1px #707070;
-    margin-left: -12%;
-    margin-top: 0%;
-  }
-  .Digitize-your-expense-policyh {
-    width: 200px;
-    height: 54px;
-    margin: 65px 72px 50px 0;
-    font-family: Gilroy-ExtraBold;
-    font-size: 16px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.23;
-    letter-spacing: normal;
-    text-align: left;
-    margin-left: 7%;
-    color: #00194a;
-  }
-  .right-2h {
-    width: 16.4px;
-    height: 12.3px;
-    margin: 4.8px 10.6px 23.9px 0;
-    background-color: #306bdd;
-  }
-  .Set-your-spending-policies-and-simplify-your-administration-processh {
-    width: 175px;
-    height: 41px;
-    margin: 0 0 0 10.6px;
-    font-family: Lato-Regular;
-    font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: left;
-    color: #00194a;
-  }
-  .right-2h {
-    width: 16.4px;
-    height: 12.3px;
-    margin: 4.8px 10.6px 50.9px 0;
-    background-color: #306bdd;
-  }
-
-  .Apply-spending-limits-and-restrictions-based-on-each-employee-profile-and-business-needsh {
-    width: 175px;
-    height: 68px;
-    margin: 0 0 0 10.6px;
-    font-family: Lato;
-    font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: left;
-    color: #00194a;
-  }
-  .twoPartsHandles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-    margin-top: 45%;
-    height: 200vh;
-  }
-
-  .numbersTextTwoPartsHandles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: flex-end;
-    margin-top: 5%;
-  }
-
-  .controlSpendHandles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: 5%;
-    margin-left: -10%;
-  }
-  .numbersHandles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: -10%;
-    margin-left: -5%;
-  }
-
-  .controlSpendSpanHandles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: 2%;
-    margin-left: -2%;
-  }
-
-  .signedTextHandles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: space-around;
-    margin-left: 25%;
-    margin-top: -7%;
-  }
-
-  .signedTextoneHandles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: space-around;
-    margin-left: -45%;
-  }
-  img.SignHandles {
-    width: 16.4px;
-    height: 12.3px;
-    margin: 5.8px 10.6px 45.9px 0;
-    object-fit: contain;
-    background-color: var(--azul);
-  }
-}
-
-
 @media only screen and (min-width: 800px) and (max-width: 3000px) {
   .Product-page-Controlh {
     width: 99.2vw;
     height: 100vh;
-  
+   
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -1192,7 +871,7 @@ img.SignHandles {
   }
   img.SignHandles {
     width: 16.4px;
-    height: 12.3px;
+    height: 12.3px; 
     margin: 5.8px 10.6px 45.9px 0;
     object-fit: contain;
     background-color: var(--azul);
@@ -1200,317 +879,3 @@ img.SignHandles {
   
 }
 
-
-
-@media only screen and (min-width: 767px) and (max-width: 800px) {
-  html,body{
-    overflow-x: hidden;
-}
-  .Product-page-Controlh {
-    width: 99.2vw;
-    height: 140vh;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-
-    background-color: #f0f0f0;
-    margin-top: -30%;
-  }
-
-  .cookieComp {
-    width: 99.2vw;
-    margin-top: -14.3%;
-    z-index: 1;
-  }
-  .BEX-handles-the-hard-stuffh {
-    width: 500px;
-    height: 153px;
-    margin: 0 363.1px 63px 50px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 60px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.08;
-    letter-spacing: normal;
-    text-align: center;
-    color: #306bdd;
-    
-  }
-
-  .BEX-loc {
-    height: 10vh;
-    margin-top: 120%;
-    margin-left: -10%;
-  }
-
-  img.Spend-imgHandles {
-    width: 699.1px;
-    height: 503.8px;
-    margin: 63px 0 0 214px;
-    object-fit: contain;
-    visibility: hidden;
-    margin-left: 5%;
-    margin-top: 20%;
-  }
-  img.Control-imgHandles {
-    width: 355.9px;
-    height: 298.6px;
-    margin: 91.6px 0 69.9px 19.1px;
-    object-fit: contain;
-    visibility: visible;
-    margin-left: 30%;
-    margin-top: 7%;
-  }
-
-  .Rectangle-24940h {
-    width: 34px;
-    height: 35px;
-    margin: 39px 26px 0 0;
-    padding: 12px 17px 11px 18px;
-    border-radius: 47px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-    background-color: #ffff;
-    margin-top: 0%;
-    margin-left: -11%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-  }
-
-  .span1h {
-    width: 11px;
-    height: 24px;
-    font-family: Gilroy;
-    font-size: 20px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.75;
-    letter-spacing: normal;
-    text-align: left;
-    color: #30c6c6;
-  }
-
-  .span2h {
-    width: 7px;
-    height: 23px;
-    font-family: Gilroy;
-    font-size: 20px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.75;
-    letter-spacing: normal;
-    text-align: left;
-    color: #838383;
-  }
-
-  .Rectangle-24970h {
-    width: 5px;
-    height: 42px;
-    margin: 0 26px 0.3px 0;
-    padding: 11px 19px;
-    border-radius: 50px;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-    border: solid #30c6c6;
-    background-color: #ffff;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin-left: 5%;
-  }
-
-  span {
-    width: 11px;
-    height: 23px;
-    font-family: Gilroy;
-    font-size: 20px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.75;
-    letter-spacing: normal;
-    text-align: left;
-    color: #838383;
-  }
-
-  .spendh {
-    width: 91px;
-    height: 34px;
-    margin: 45px 20.5px 6px 26.5px;
-    font-family: Gilroy-Light;
-    font-size: 15px;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.53;
-    letter-spacing: normal;
-    text-align: left;
-    color: #838383;
-    margin-top: 0%;
-    margin-left: -1%;
-  }
-  .Controlh {
-    width: 90px;
-    height: 37px;
-    margin: 4.3px 12.5px 5px 26px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 15px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.53;
-    letter-spacing: normal;
-    text-align: left;
-    color: #30c6c6;
-  }
-  .Line-5297h {
-    width: 70px;
-    height: 0;
-    margin: 17px 26px 0 3px;
-    border: solid 1px #707070;
-    margin-left: -12%;
-    margin-top: 0%;
-  }
-  .Digitize-your-expense-policyh {
-    width: 200px;
-    height: 54px;
-    margin: 65px 72px 50px 0;
-    font-family: Gilroy-ExtraBold;
-    font-size: 16px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.23;
-    letter-spacing: normal;
-    text-align: left;
-    margin-left: 7%;
-    color: #00194a;
-  }
-  .right-2h {
-    width: 16.4px;
-    height: 12.3px;
-    margin: 4.8px 10.6px 23.9px 0;
-    background-color: #306bdd;
-  }
-  .Set-your-spending-policies-and-simplify-your-administration-processh {
-    width: 175px;
-    height: 41px;
-    margin: 0 0 0 10.6px;
-    font-family: Lato-Regular;
-    font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: left;
-    color: #00194a;
-  }
-  .right-2h {
-    width: 16.4px;
-    height: 12.3px;
-    margin: 4.8px 10.6px 50.9px 0;
-    background-color: #306bdd;
-  }
-
-  .Apply-spending-limits-and-restrictions-based-on-each-employee-profile-and-business-needsh {
-    width: 175px;
-    height: 68px;
-    margin: 0 0 0 10.6px;
-    font-family: Lato;
-    font-size: 13px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: left;
-    color: #00194a;
-  }
-  .twoPartsHandles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-    margin-top: 45%;
-    height: 200vh;
-  }
-
-  .numbersTextTwoPartsHandles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: flex-end;
-    margin-top: -5%;
-  }
-
-  .controlSpendHandles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: 5%;
-    margin-left: -10%;
-  }
-  .numbersHandles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: -20%;
-    margin-left: -5%;
-  }
-
-  .controlSpendSpanHandles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: 2%;
-    margin-left: -2%;
-  }
-
-  .signedTextHandles {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: space-around;
-    margin-left: 25%;
-    margin-top: -7%;
-  }
-
-  .signedTextoneHandles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: space-around;
-    margin-left: -45%;
-  }
-  img.SignHandles {
-    width: 16.4px;
-    height: 12.3px;
-    margin: 5.8px 10.6px 45.9px 0;
-    object-fit: contain;
-    background-color: var(--azul);
-  }
-}

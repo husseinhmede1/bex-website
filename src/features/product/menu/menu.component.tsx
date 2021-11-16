@@ -9,7 +9,7 @@ import "./menu.css";
 import Apple from "&assets/img/Apple-Icon.png";
 import Apple2 from "&assets/img/Apple-Icon@2x.png";
 import Apple3 from "&assets/img/Apple-Icon@3x.png";
-
+ 
 import Gplay from "&assets/img/Google-play.png";
 import Gplay2 from "&assets/img/Google-play@2x.png";
 import Gplay3 from "&assets/img/Google-play@3x.png";
@@ -124,6 +124,7 @@ const MenuComponent = (props: ReduxProps) => {
             className="GplayImg"
           />
         </div>
+     
       </div>
       <div className="menuImgPosition">
         <Link to="/menumobile">
@@ -148,19 +149,20 @@ const MenuComponent = (props: ReduxProps) => {
       </div>
       <div className="tryDemoMenu">
         <Link
-          onClick={() => window.location.replace("/#tryforFreeId ")}
+          onClick={() => window.location.replace("/#tryforFreeId")}
           to="/main"
-        >
+         >
           <img
             src={tryForFree}
             srcSet={`${tryForFree2} 2x, ${tryForFree3} 3x`}
             className="Try-for-freeMenu"
+
           ></img>
         </Link>
         <img
           src={getDemo}
           srcSet={`${getDemo2} 2x, ${getDemo3} 3x`}
-          className="Get-demoMenu"
+          className="Try-for-freeMenu"
         ></img>
       </div>
       <div className="GreenCercleMenu">
@@ -181,11 +183,11 @@ const MenuComponent = (props: ReduxProps) => {
         </div>
         <span className="lineMenu"></span>
         <div className="mastercardMenu2">
-          <span className="In-partnership-withMenu">In partnership with</span>
+          <span className="Powered-byMenu">In partnership with</span>
           <img
             src={mastercard}
             srcSet={`${mastercard2} 2x, ${mastercard3} 3x`}
-            className="MastercardMenu"
+            className="Areeba-logoMenu"
           ></img>
         </div>
       </div>

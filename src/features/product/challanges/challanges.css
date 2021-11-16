@@ -7,7 +7,7 @@
 }
 
 img.down-arrow {
-  width: 15.7px;
+  width: 15.7px; 
   height: 32.4px;
   object-fit: contain;
 }
@@ -181,12 +181,15 @@ img.Icons2 {
   align-content: center;
 }
 
-@media only screen and (min-width: 414px) and (max-width: 766px) {
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+ 
+
+ 
   .CornerChallanges {
     width: 20px;
     height: 20px;
 
-    background-color: rgba(48, 107, 221);
+    background-color: rgba(48, 107, 221); 
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -204,7 +207,7 @@ img.Icons2 {
     width: 20px;
     height: 72px;
     font-family: Gilroy-ExtraBold;
-    font-size: 30px;
+    font-size: 6vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -237,11 +240,10 @@ img.Icons2 {
   }
 
   .Day-to-day-business-expenses-procedures-are-time-consuming-and-drowning-your-team-in-complex-daily-tasks {
-    width: 250px;
+    width: 60vw;
     height: 30px;
-    margin: 49px 141px 25.3px 46px;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 4vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -249,7 +251,7 @@ img.Icons2 {
     letter-spacing: normal;
     text-align: left;
     color: #00194a;
-    margin-top: 1%;
+    margin-top: 2vh;
     margin-left: 5%;
   }
 
@@ -268,7 +270,6 @@ img.Icons2 {
   img.Icons {
     width: 53.2px;
     height: 39.1px;
-
     margin: 65px 31.4px 36px 149.3px;
     object-fit: contain;
     margin-left: -20%;
@@ -288,16 +289,14 @@ img.Icons2 {
     width: 55px;
     height: 55px;
 
-    margin: 65px 31.4px 36px 149.3px;
     object-fit: contain;
     margin-left: -20%;
-
+margin-top: 9vh;
     visibility: visible;
   }
   img.IconsMobile1 {
     width: 55px;
     height: 55px;
-    margin: 65px 31.4px 36px 149.3px;
     object-fit: contain;
     margin-left: -20%;
     margin-top: 10%;
@@ -306,19 +305,26 @@ img.Icons2 {
   img.IconsMobile2 {
     width: 55px;
     height: 55px;
-    margin: 65px 31.4px 36px 149.3px;
     object-fit: contain;
-    margin-left: 5%;
-
-    margin-top: 10%;
+ margin-top: 10%;
+ margin-left: -5vw;
     visibility: visible;
   }
+
+  .icon2Challenges{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+margin-left: 18%;
+margin-top: 5%;
+  }
   .Lack-of-visibility-on-How-where-and-how-much-employees-are-spending {
-    width: 300px;
+    width: 300vw;
     height: 20px;
     margin: 65px 11.5px 22px 23.4px;
     font-family: Lato-Regular;
-    font-size: 13px;
+    font-size: 3vw;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -335,15 +341,15 @@ img.Icons2 {
     justify-content: space-evenly;
     align-items: stretch;
     align-content: flex-start;
-    margin-left: 30%;
-    margin-top: 1%;
+    margin-left: 21vw;
+    margin-top: 6vh;
   }
   .No-tools-in-hand-to-control-How-where-how-much-employees-spend {
-    width: 300px;
+    width: 300vw;
     height: 100px;
     margin: 15px 11.5px 34px 23.4px;
     font-family: Lato-Regular;
-    font-size: 13px;
+    font-size: 3vw;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -371,215 +377,10 @@ img.Icons2 {
     display: none;
   }
   .Lengthy-manual-reconciliation {
-    width: 250px;
-    height: 22px;
-    margin: 57px 131.5px 7.3px 23.4px;
-    font-family: Lato-Regular;
-    font-size: 13px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    margin-left: 10%;
-    margin-top: 10%;
-  }
-
-  .Line-5279 {
-    width: 200px;
-    height: 0;
-    margin: 22px 0 0 141.5px;
-    opacity: 0.3;
-    border: solid 1px #707070;
-    margin-left: 20%;
-    margin-top: -5%;
-  }
-
-  .Line-5280 {
-    width: 200px;
-    margin: 33.8px 0.5px 0 141px;
-    height: 0;
-    opacity: 0.3;
-    border: solid 1px #707070;
-    margin-left: 20%;
-    margin-top: -15%;
-  }
-
-  .PageContainChallanges {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-  }
-}
-
-@media only screen and (min-width: 100px) and (max-width: 413px) {
-  .CornerChallanges {
-    width: 20px;
-    height: 20px;
-
-    background-color: rgba(48, 107, 221);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-  }
-
-  img.down-arrow {
-    width: 66px;
-    height: 50px;
-    object-fit: contain;
-  }
-  .What-are-your-challenges {
-    width: 20px;
-    height: 72px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 30px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.13;
-    letter-spacing: normal;
-    text-align: left;
-    color: rgba(0, 25, 74);
-    white-space: nowrap;
-    margin-top: 4%;
-    margin-left: 4%;
-  }
-  .rightTextChallanges {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: flex-start;
-
-    margin-left: 10%;
-    margin-top: -10%;
-  }
-  .what {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: flex-start;
-  }
-
-  .Day-to-day-business-expenses-procedures-are-time-consuming-and-drowning-your-team-in-complex-daily-tasks {
-    width: 250px;
-    height: 30px;
-    margin: 49px 141px 25.3px 46px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.32;
-    letter-spacing: normal;
-    text-align: left;
-    color: #00194a;
-    margin-top: 1%;
-    margin-left: 5%;
-  }
-
-  .Day {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: flex-start;
-    margin-top: 50px;
-
-    margin-left: 164px;
-  }
-
-  img.Icons {
-    width: 53.2px;
-    height: 39.1px;
-
-    margin: 65px 31.4px 36px 149.3px;
-    object-fit: contain;
-    margin-left: -20%;
-    display: none;
-  }
-  img.Icons {
-    width: 53.2px;
-    height: 39.1px;
-
-    margin: 65px 31.4px 36px 149.3px;
-    object-fit: contain;
-    margin-left: -20%;
-    display: none;
-  }
-
-  img.IconsMobile {
-    width: 55px;
-    height: 55px;
-
-    margin: 65px 31.4px 36px 149.3px;
-    object-fit: contain;
-    margin-left: -20%;
-
-    visibility: visible;
-  }
-  img.IconsMobile1 {
-    width: 55px;
-    height: 55px;
-    margin: 65px 31.4px 36px 149.3px;
-    object-fit: contain;
-    margin-left: -20%;
-    margin-top: 10%;
-    visibility: visible;
-  }
-  img.IconsMobile2 {
-    width: 55px;
-    height: 55px;
-    margin: 65px 31.4px 36px 149.3px;
-    object-fit: contain;
-    margin-left: 5%;
-
-    margin-top: 10%;
-    visibility: visible;
-  }
-  .Lack-of-visibility-on-How-where-and-how-much-employees-are-spending {
-    width: 300px;
-    height: 20px;
-    margin: 65px 11.5px 22px 23.4px;
-    font-family: Lato-Regular;
-    font-size: 13px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    margin-left: 5%;
-  }
-  .icon1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    align-content: flex-start;
-    margin-left: 30%;
-    margin-top: 1%;
-  }
-  .No-tools-in-hand-to-control-How-where-how-much-employees-spend {
-    width: 300px;
+    width:250vw;
     height: 100px;
-    margin: 15px 11.5px 34px 23.4px;
     font-family: Lato-Regular;
-    font-size: 13px;
+    font-size: 3vw;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -587,60 +388,28 @@ img.Icons2 {
     letter-spacing: normal;
     text-align: left;
     color: #000;
-    margin-left: 5%;
-    margin-top: 10%;
-  }
-  img.Icons1 {
-    width: 53.2px;
-    height: 39.1px;
-    margin: 15px 23.4px 33.8px 150.1px;
-    object-fit: contain;
-    margin-left: -20%;
-    display: none;
-  }
-  img.Icons2 {
-    width: 53.2px;
-    height: 39.1px;
-    margin: 39.8px 23.5px 0 155px;
-    object-fit: contain;
-    margin-left: -20%;
-    display: none;
-  }
-  .Lengthy-manual-reconciliation {
-    width: 250px;
-    height: 22px;
-    margin: 57px 131.5px 7.3px 23.4px;
-    font-family: Lato-Regular;
-    font-size: 13px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    margin-left: 10%;
-    margin-top: 10%;
+    margin-left: -1%;
+    margin-top: 1%;
   }
 
   .Line-5279 {
-    width: 200px;
+    width: 50vw;
     height: 0;
     margin: 22px 0 0 141.5px;
     opacity: 0.3;
     border: solid 1px #707070;
     margin-left: 20%;
-    margin-top: -5%;
+    margin-top: 3vh;
   }
 
   .Line-5280 {
-    width: 200px;
+    width: 50vw;
     margin: 33.8px 0.5px 0 141px;
     height: 0;
     opacity: 0.3;
     border: solid 1px #707070;
     margin-left: 20%;
-    margin-top: -15%;
+    margin-top: -1vh;
   }
 
   .PageContainChallanges {
@@ -753,6 +522,15 @@ img.Icons {
   color: #000;
   margin-left: -20%;
 }
+
+.icon2Challenges{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  align-content: flex-start;
+    }
 .icon1 {
   display: flex;
   flex-direction: row;
@@ -842,240 +620,3 @@ img.Icons2 {
 
 }
 
-
-
-@media only screen and (min-width: 767px) and (max-width: 800px) {
-  .CornerChallanges {
-    width: 20px;
-    height: 20px;
-
-    background-color: rgba(48, 107, 221);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-  }
-
-  img.down-arrow {
-    width: 66px;
-    height: 50px;
-    object-fit: contain;
-  }
-  .What-are-your-challenges {
-    width: 20px;
-    height: 72px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 40px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.13;
-    letter-spacing: normal;
-    text-align: left;
-    color: rgba(0, 25, 74);
-    white-space: nowrap;
-    margin-top: 4%;
-    margin-left: 4%;
-  }
-  .rightTextChallanges {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: flex-start;
-
-    margin-left: 10%;
-    margin-top: -10%;
-  }
-  .what {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: flex-start;
-  }
-
-  .Day-to-day-business-expenses-procedures-are-time-consuming-and-drowning-your-team-in-complex-daily-tasks {
-    width: 300px;
-    height: 30px;
-    margin: 49px 141px 25.3px 46px;
-    font-family: Lato-Regular;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.32;
-    letter-spacing: normal;
-    text-align: left;
-    color: #00194a;
-    margin-top: 1%;
-    margin-left: 5%;
-  }
-
-  .Day {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: flex-start;
-    margin-top: 50px;
-
-    margin-left: 164px;
-  }
-
-  img.Icons {
-    width: 53.2px;
-    height: 39.1px;
-
-    margin: 65px 31.4px 36px 149.3px;
-    object-fit: contain;
-    margin-left: -20%;
-    display: none;
-  }
-  img.Icons {
-    width: 53.2px;
-    height: 39.1px;
-
-    margin: 65px 31.4px 36px 149.3px;
-    object-fit: contain;
-    margin-left: -20%;
-    display: none;
-  }
-
-  img.IconsMobile {
-    width: 70px;
-    height: 70px;
-
-    margin: 65px 31.4px 36px 149.3px;
-    object-fit: contain;
-    margin-left: -20%;
-
-    visibility: visible;
-  }
-  img.IconsMobile1 {
-    width: 70px;
-    height: 70px;
-    margin: 65px 31.4px 36px 149.3px;
-    object-fit: contain;
-    margin-left: -20%;
-    margin-top: 5%;
-    visibility: visible;
-  }
-  img.IconsMobile2 {
-    width: 70px;
-    height: 70px;
-    margin: 65px 31.4px 36px 149.3px;
-    object-fit: contain;
-    margin-left: -10%;
-
-    margin-top: 10%;
-    visibility: visible;
-  }
-  .Lack-of-visibility-on-How-where-and-how-much-employees-are-spending {
-    width: 300px;
-    height: 20px;
-    margin: 65px 11.5px 22px 23.4px;
-    font-family: Lato-Regular;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    margin-left: 5%;
-  }
-  .icon1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    align-content: flex-start;
-    margin-left: 25%;
-    margin-top: 5%;
-  }
-  .No-tools-in-hand-to-control-How-where-how-much-employees-spend {
-    width: 300px;
-    height: 100px;
-    margin: 15px 11.5px 34px 23.4px;
-    font-family: Lato-Regular;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    margin-left: 5%;
-    margin-top: 10%;
-  }
-  img.Icons1 {
-    width: 53.2px;
-    height: 39.1px;
-    margin: 15px 23.4px 33.8px 150.1px;
-    object-fit: contain;
-    margin-left: -20%;
-    display: none;
-  }
-  img.Icons2 {
-    width: 53.2px;
-    height: 39.1px;
-    margin: 39.8px 23.5px 0 155px;
-    object-fit: contain;
-    margin-left: -20%;
-    display: none;
-  }
-  .Lengthy-manual-reconciliation {
-    width: 250px;
-    height: 22px;
-    margin: 57px 131.5px 7.3px 23.4px;
-    font-family: Lato-Regular;
-    font-size: 16px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-    text-align: left;
-    color: #000;
-    margin-left: 13%;
-    margin-top: 15%;
-  }
-
-  .Line-5279 {
-    width: 300px;
-    height: 0;
-    margin: 22px 0 0 141.5px;
-    opacity: 0.3;
-    border: solid 1px #707070;
-    margin-left: 20%;
-    margin-top: 0%;
-  }
-
-  .Line-5280 {
-    width: 300px;
-    margin: 33.8px 0.5px 0 141px;
-    height: 0;
-    opacity: 0.3;
-    border: solid 1px #707070;
-    margin-left: 20%;
-    margin-top: -10%;
-  }
-
-  .PageContainChallanges {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-  }
-}

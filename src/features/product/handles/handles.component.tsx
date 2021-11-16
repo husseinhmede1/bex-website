@@ -104,7 +104,7 @@ const HandlesComponent = (props: ReduxProps) => {
             </div>
           </div>
         </div> 
-          <img
+          <img 
             src={control}
             srcSet={`${control2} 2x, ${control3} 3x`}
             className="Control-imgHandles"

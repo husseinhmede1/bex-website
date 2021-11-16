@@ -17,7 +17,7 @@
   font-family: Gilroy-ExtraBold;
   font-size: 40px;
   font-weight: 800;
-  font-stretch: normal;
+  font-stretch: normal; 
   font-style: normal;
   line-height: 1.25;
   letter-spacing: normal;
@@ -704,7 +704,7 @@ img.Contact-us-bluep {
 
 @media only screen and (min-width: 414px) and (max-width: 766px) {
   .packagesBackground {
-    width: 99.2vw;
+    width: 100vw;
     height: 100vh;
 
     background-color: #f0f0f0;
@@ -735,7 +735,7 @@ img.Contact-us-bluep {
 
   .Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp {
     width: 314px;
-    height: 50px;
+    height: 20vh;
     margin: 10px 437px 75px;
     opacity: 0.6;
     font-family: Lato-Regular;
@@ -1414,11 +1414,11 @@ img.Contact-us-bluep {
   }
 
   .OUR-Packagesp {
-    width: 221px;
+    width: 70vw;
     height: 37px;
 
     font-family: Gilroy-ExtraBold;
-    font-size: 30px;
+    font-size: 8vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -1431,12 +1431,12 @@ img.Contact-us-bluep {
   }
 
   .Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp {
-    width: 314px;
+    width: 90vw;
     height: 50px;
     margin: 10px 437px 75px;
     opacity: 0.6;
     font-family: Lato-Regular;
-    font-size: 13px;
+    font-size: 4vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1458,8 +1458,8 @@ img.Contact-us-bluep {
   }
 
   .firstRectanglePackages {
-    width: 314px;
-    height: 456px;
+    width: 80vw;
+    height: 70vh;
     margin: 85px 11px 150px 186px;
     padding: 37px 77px 32px;
     background-color: #fffdfd;
@@ -1482,13 +1482,13 @@ img.Contact-us-bluep {
   }
 
   .MobileRectanglesecondPackages {
-    width: 60px;
+    width: 16vw;
     height: 439.6px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     background-color: #fff;
     visibility: visible;
-    margin-top: 24%;
-    margin-left: -3%;
+    margin-top: 14vh;
+    margin-left: -10%;
   }
 
   .miniBlueCerclePackages {
@@ -1541,7 +1541,7 @@ img.Contact-us-bluep {
     margin: 0 45px 2px;
     opacity: 0.6;
     font-family: Poppins-Regular;
-    font-size: 22px;
+    font-size: 6vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1590,7 +1590,7 @@ img.Contact-us-bluep {
     margin: 2px 60px 38px;
     opacity: 0.3;
     font-family: Lato-Regular;
-    font-size: 14px;
+    font-size: 4vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1624,7 +1624,7 @@ img.Contact-us-bluep {
     height: 41px;
     margin: 18px 31px 36px;
     font-family: Gilroy-ExtraBold;
-    font-size: 33px;
+    font-size: 8vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -1635,7 +1635,7 @@ img.Contact-us-bluep {
     margin-top: -15%;
   }
   .AED300p .text-style-1p {
-    font-size: 28px;
+    font-size: 8vw;
     font-family: Gilroy-ExtraBold;
     color: #000;
   }
@@ -1683,10 +1683,10 @@ img.Contact-us-bluep {
   }
   .User-Monthp {
     width: 82px;
-    height: 17px;
+    height: 1vh;
     margin: 38px 51px 21px;
     font-family: Lato-Regular;
-    font-size: 14px;
+    font-size: 4vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -1695,21 +1695,20 @@ img.Contact-us-bluep {
     text-align: center;
     color: #000;
     margin-top: -19%;
+    white-space:nowrap ;
   }
 
   img.Signp {
-    width: 18.2px;
-    height: 13.7px;
-    margin: 3px 9.9px 1.3px 0;
+    width: 15.2px;
+    height: 1.5vh;
     object-fit: contain;
   }
 
   .Digital-onboardingp {
     width: 122px;
-    height: 18px;
-    margin: 0 0 0 9.9px;
+    height: 1vh;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 4vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1717,6 +1716,8 @@ img.Contact-us-bluep {
     letter-spacing: normal;
     text-align: center;
     color: #2e2e2e;
+    white-space: nowrap;
+    margin-left: 25%;
   }
 
   .Physical-card-requestp {
@@ -1751,10 +1752,10 @@ img.Contact-us-bluep {
 
   .Digital-cardp {
     width: 76px;
-    height: 18px;
+    height: 1vh;
     margin: 0 0 0 10px;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 4vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1762,14 +1763,15 @@ img.Contact-us-bluep {
     letter-spacing: normal;
     text-align: center;
     color: #2e2e2e;
+    white-space: nowrap;
   }
 
   .Card-controlsp {
     width: 90px;
-    height: 18px;
+    height: 1vh;
     margin: 0 0 0 10px;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 4vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1777,6 +1779,8 @@ img.Contact-us-bluep {
     letter-spacing: normal;
     text-align: center;
     color: #2e2e2e;
+    white-space: nowrap;
+
   }
 
   .Priority-in-call-centerp {
@@ -1830,15 +1834,18 @@ img.Contact-us-bluep {
     height: 23px;
     margin: 0 0 15px;
     font-family: Poppins-Regular;
-    font-size: 14px;
+    font-size: 4vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
+    opacity: 0.5;
     letter-spacing: normal;
     text-align: center;
     color: #2e2e2e;
     margin-left: 17%;
+        white-space: nowrap;
+
   }
   .Stolen-card-fee1p {
     width: 106px;
@@ -1925,9 +1932,8 @@ img.Contact-us-bluep {
     margin-left: 0%;
   }
   .firstContactButton {
-    width: 166px;
-    height: 56px;
-    margin: 23px 9px 28px;
+    width: 40vw;
+    height:7vh;
     background-color: #306bdd;
     display: flex;
     flex-direction: column;
@@ -1939,8 +1945,8 @@ img.Contact-us-bluep {
   img.Contact-us-bluep {
     width: 166px;
     height: 56px;
-    margin: 23px 9px 28px;
     object-fit: contain;
+    align-items: center;
   }
   .Contact-Usp {
     width: 94px;
@@ -1958,11 +1964,11 @@ img.Contact-us-bluep {
 
   .aed-10-on-Additional-account-Up-to-5-usersp {
     width: 184px;
-    height: 38px;
+    height: 15px;
     margin: 28px 0 0;
     opacity: 0.45;
     font-family: Lato-Bold;
-    font-size: 14px;
+    font-size: 3vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1970,19 +1976,24 @@ img.Contact-us-bluep {
     letter-spacing: normal;
     text-align: center;
     color: #000;
+    margin-top: 1vh;
+    margin-left: -7%;
   }
   .aed-10-on-Additional-account-Up-to-5-usersp .text-style-1p {
     font-weight: bold;
     font-family: Lato-Bold;
     color: #000;
+    opacity:1;
     width: 184px;
     height: 38px;
-    font-size: 14px;
+    font-size: 3vw;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: normal;
     opacity: 1;
+    margin-top: 1vh;
+
   }
 
   .secondContactButton {
@@ -2807,8 +2818,8 @@ img.Contact-us-bluep {
 
 @media only screen and (min-width: 767px) and (max-width: 800px) {
   .packagesBackground {
-    width: 99.2vw;
-    height: 100vh;
+    width: 100vw;
+    height: 120vh;
 
     background-color: #f0f0f0;
     display: flex;

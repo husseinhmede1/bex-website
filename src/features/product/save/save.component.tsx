@@ -55,10 +55,11 @@ const SaveComponent = (props: ReduxProps) => {
         </div>
 
         <div className="TextTitleSave">
+          <div className="TextSave">
           <span className="Time-is-money-Save-boths">
             TIME IS MONEY. SAVE BOTH
           </span>
-
+</div>
           <div className="TextSave">
             <div className="signedTextone">
               <img

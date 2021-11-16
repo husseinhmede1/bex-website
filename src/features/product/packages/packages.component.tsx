@@ -15,7 +15,7 @@ import sign3 from "&assets/img/Sign3@3x.png";
  * These are actions imported from the feature slices.
  * You can use 'useDispatch' hook or 'mapDispatchToProps'
  * to dispatch these actions
- */
+ */ 
 //import { homeActions } from "./home.slice";
 import { loginActions } from "&features/demo/login/login.slice";
 

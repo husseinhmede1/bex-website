@@ -21,7 +21,7 @@ import master from "&assets/img/Mastercard-Txt.png";
 import master2 from "&assets/img/Mastercard-Txt@2x.png";
 import master3 from "&assets/img/Mastercard-Txt@3x.png";
 /**
- *
+ * 
  *
  * These are actions imported from the feature slices.
  * You can use 'useDispatch' hook or 'mapDispatchToProps'

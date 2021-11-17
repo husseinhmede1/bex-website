@@ -15,7 +15,7 @@
   height: 49px;
   margin: 55px 339px 103.3px 72px;
   font-family: Gilroy-ExtraBold;
-  font-size: 40px;
+  font-size: 40px;  
   font-weight: 800;
   font-stretch: normal;
   font-style: normal;
@@ -583,7 +583,7 @@ img.Mask-GroupMobileB {
     height: 37px;
     margin: 52.1px 4.5px 36px 31px;
     font-family: Gilroy-ExtraBold;
-    font-size: 30px;
+    font-size: 10vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -598,7 +598,7 @@ img.Mask-GroupMobileB {
   }
 
   img.Mask-GroupMobileB {
-    width: 314px;
+    width: 90vw;
     height: 289px;
     object-fit: contain;
     margin-top: 40%;
@@ -1141,7 +1141,7 @@ img.Mask-GroupMobileB {
 @media only screen and (min-width: 767px) and (max-width: 800px) {
   .BenefitsBackground {
     width: 99.2vw;
-    height: 110vh;
+    height: 170vh;
 
     background-color: #f0f0f0;
     display: flex;

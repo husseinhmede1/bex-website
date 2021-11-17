@@ -7,7 +7,7 @@ import "./connect.css";
 
 import footer from "&assets/img/Footer-bg-img.png";
 import footer2 from "&assets/img/Footer-bg-img@2x.png";
-import footer3 from "&assets/img/Footer-bg-img@3x.png";
+import footer3 from "&assets/img/Footer-bg-img@3x.png"; 
 
 import location from "&assets/img/Location.png";
 import location2 from "&assets/img/Location@2x.png";
@@ -109,7 +109,7 @@ const ConnectComponent = (props: ReduxProps) => {
               <img
                 src={social}
                 srcSet={`${social2} 2x, ${social3} 3x`}
-                className="Social-media-icons"
+                className="Social-media-iconsC"
               />
             </div>
           </div>
@@ -124,9 +124,9 @@ const ConnectComponent = (props: ReduxProps) => {
                   <span className="Fist-nameC">First name</span>
                   <div className="Rectangle-24148C"></div>
                 </div>
-                <div className="LastNameConnectPage">
+                <div className="FirstNameConnectPage">
                   <span className="Last-nameC">Last name</span>
-                  <div className="Rectangle-24153C"></div>
+                  <div className="Rectangle-24148C"></div>
                 </div>
               </div>
 

@@ -282,7 +282,7 @@ img.SignHandles {
   background-color: var(--azul);
 }
 
-@media only screen and (min-width: 100px) and (max-width: 800px) {
+@media only screen and (min-width: 100px) and (max-width: 1000px) {
   
   html,body{
     overflow-x: hidden;
@@ -592,9 +592,9 @@ img.SignHandles {
 
 
 
-@media only screen and (min-width: 800px) and (max-width: 3000px) {
+@media only screen and (min-width: 1001px) and (max-width: 3000px) {
   .Product-page-Controlh {
-    width: 99.2vw;
+    width: 100vw;
     height: 100vh;
    
     display: flex;

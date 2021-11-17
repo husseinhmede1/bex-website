@@ -11,7 +11,7 @@ img.Try-BEX-img {
   margin: 0 0 17px;
   font-family: Gilroy-ExtraBold;
   font-size: 100px;
-  font-weight: 800;
+  font-weight: 800; 
   font-stretch: normal;
   font-style: normal;
   line-height: 1;
@@ -136,14 +136,14 @@ img.Try-BEX-Mobileimg {
     margin-left: 37.1%;
   }
   img.Try-BEX-Mobileimg {
-    width: 600px;
+    width: 90vw;
     height: 1200px;
 
     object-fit: contain;
     visibility: visible;
 
-    margin-top: 200%;
-    margin-left: -125%;
+    margin-top: 40vh;
+    margin-left: -50vw;
   }
 
   .Try-BEX-For-Free {
@@ -278,22 +278,22 @@ img.Try-BEX-Mobileimg {
     margin-left: 37.1%;
   }
   img.Try-BEX-Mobileimg {
-    width: 600px;
-    height: 1200px;
+    width: 100vw;
+    height: 100vh;
  
     object-fit: contain;
     visibility: visible;
 
     margin-top: 200%;
-    margin-left: -125%;
+    margin-left: -140%;
   }
 
   .Try-BEX-For-Free {
-    width: 263px;
-    height: 161px;
+    width: 100vw;
+    height: 10vh;
     margin: 0 0 17px;
     font-family: Gilroy-ExtraBold;
-    font-size: 70px;
+    font-size: 20vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -301,7 +301,7 @@ img.Try-BEX-Mobileimg {
     letter-spacing: normal;
     text-align: left;
     color: white;
-    margin-top: -75%;
+    margin-top: -30vh;
     margin-left: 35%;
   }
 
@@ -310,7 +310,7 @@ img.Try-BEX-Mobileimg {
     height: 18px;
     margin: 216px 32px 0 0;
     font-family: Lato-Bold;
-    font-size: 15px;
+    font-size: 4vw;
     font-weight: 500;
     font-stretch: normal;
     font-style: normal;
@@ -318,25 +318,26 @@ img.Try-BEX-Mobileimg {
     letter-spacing: normal;
     text-align: left;
     color: white;
-    margin-top: 10%;
+    margin-top: 20vh;
     margin-left: 35%;
+    white-space: nowrap;
   }
   img.Apple {
-    width: 50px;
+    width: 15vw;
     height: 50px;
     object-fit: contain;
   }
 
   img.Google-play {
-    width: 50px;
+    width: 15vw;
     height: 50px;
     object-fit: contain;
     margin-left: -5%;
   }
 
   img.Get-your-demo {
-    width: 150px;
-    height: 50px;
+    width:35vw;
+    height: 10vh;
     margin: 73px 34px 4px 0;
     object-fit: contain;
     margin-left: 70%;
@@ -361,7 +362,7 @@ img.Try-BEX-Mobileimg {
 
     background-position: center;
     background-size: cover;
-    width: 99.2vw;
+    width: 100vw;
     height: 115vh;
     object-fit: contain;
   }
@@ -563,7 +564,7 @@ img.Try-BEX-Mobileimg {
     object-fit: contain;
     visibility: visible;
 
-    margin-top: 150%;
+    margin-top: 100%;
     margin-left: -90%;
   }
 

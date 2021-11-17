@@ -1402,7 +1402,7 @@ img.Contact-us-bluep {
 @media only screen and (min-width: 100px) and (max-width: 413px) {
   .packagesBackground {
     width: 101.7vw;
-    height: 120vh;
+    height: 130vh;
 
     background-color: #f0f0f0;
     display: flex;
@@ -1483,11 +1483,11 @@ img.Contact-us-bluep {
 
   .MobileRectanglesecondPackages {
     width: 16vw;
-    height: 439.6px;
+    height: 65vh;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     background-color: #fff;
     visibility: visible;
-    margin-top: 14vh;
+    margin-top: 28%;
     margin-left: -10%;
   }
 
@@ -1621,7 +1621,7 @@ img.Contact-us-bluep {
   }
   .AED300p {
     width: 122px;
-    height: 41px;
+    height: 15px;
     margin: 18px 31px 36px;
     font-family: Gilroy-ExtraBold;
     font-size: 8vw;
@@ -1698,6 +1698,16 @@ img.Contact-us-bluep {
     white-space:nowrap ;
   }
 
+.signAndTextSameLine{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+  height: 3vh;
+}
+
   img.Signp {
     width: 15.2px;
     height: 1.5vh;
@@ -1717,7 +1727,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #2e2e2e;
     white-space: nowrap;
-    margin-left: 25%;
+    margin-left: 5%;
   }
 
   .Physical-card-requestp {
@@ -1952,7 +1962,7 @@ img.Contact-us-bluep {
     width: 94px;
     height: 23px;
     font-family: Lato-Bold;
-    font-size: 19px;
+    font-size: 5vw;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -2819,7 +2829,7 @@ img.Contact-us-bluep {
 @media only screen and (min-width: 767px) and (max-width: 800px) {
   .packagesBackground {
     width: 100vw;
-    height: 120vh;
+    height: 150vh;
 
     background-color: #f0f0f0;
     display: flex;

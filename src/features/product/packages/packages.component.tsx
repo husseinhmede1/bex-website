@@ -60,7 +60,7 @@ const PackagesComponent = (props: ReduxProps) => {
           </div>
 
           <div className="packagesRectangleSignedText">
-            <div>
+            <div className='signAndTextSameLine'>
               <img
                 src={sign}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}
@@ -68,7 +68,7 @@ const PackagesComponent = (props: ReduxProps) => {
               ></img>
               <span className="Digital-onboardingp">Digital onboarding</span>
             </div>
-            <div>
+            <div className='signAndTextSameLine'>
               <img
                 src={sign}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}
@@ -76,7 +76,7 @@ const PackagesComponent = (props: ReduxProps) => {
               ></img>
               <span className="Digital-cardp">Digital card</span>
             </div>
-            <div>
+            <div className='signAndTextSameLine'>
               <img
                 src={sign}
                 srcSet={`${sign2} 2x, ${sign3} 3x`}

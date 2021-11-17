@@ -21,9 +21,17 @@ margin-top: -4%;
 
 }
 
+@media only screen and (min-width: 901px) and (max-width: 1500px) {
+  .challangesSize {
+    width: 80vw;
+    height: 110vh;
+    margin-left: 10%;
+    background-color: white;
+  }
+  
+}
 
-
-@media only screen and (min-width: 100px) and (max-width: 800px) {
+@media only screen and (min-width: 100px) and (max-width: 900px) {
   .MainComponent {  
     display: flex;
     flex-direction: column;

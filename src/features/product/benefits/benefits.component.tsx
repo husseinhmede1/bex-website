@@ -12,7 +12,7 @@ import mask3 from "&assets/img/Mask-Group@3x.png";
 import mask1 from "&assets/img/SalonBENEFITS.png";
 import mask12 from "&assets/img/SalonBENEFITS@2x.png";
 import mask13 from "&assets/img/SalonBENEFITS@3x.png";
-/**
+/** 
  *
  *
  * These are actions imported from the feature slices.

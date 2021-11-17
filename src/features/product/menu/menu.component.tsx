@@ -9,7 +9,7 @@ import "./menu.css";
 import Apple from "&assets/img/Apple-Icon.png";
 import Apple2 from "&assets/img/Apple-Icon@2x.png";
 import Apple3 from "&assets/img/Apple-Icon@3x.png";
- 
+
 import Gplay from "&assets/img/Google-play.png";
 import Gplay2 from "&assets/img/Google-play@2x.png";
 import Gplay3 from "&assets/img/Google-play@3x.png";
@@ -74,13 +74,14 @@ const MenuComponent = (props: ReduxProps) => {
 
         <div className="navbar-namesMenu">
           <span className="navbar-names-font1Menu">
-          <Link
+            <Link
               onClick={() => window.location.replace("/#handlesId")}
               to="/main"
-              className="LinksColor" >
-               HOW BEX WORKS
+              className="LinksColor"
+            >
+              HOW BEX WORKS
             </Link>
-             </span>
+          </span>
           <span className="navbar-names-fontMenu">
             {" "}
             <Link
@@ -92,23 +93,23 @@ const MenuComponent = (props: ReduxProps) => {
             </Link>
           </span>
           <span className="navbar-names-fontMenu">
-          <Link
+            <Link
               onClick={() => window.location.replace("/#infoId")}
               to="/main"
               className="LinksColor"
             >
-               ABOUT US
+              ABOUT US
             </Link>
-            </span>
+          </span>
           <span className="navbar-names-fontMenu">
-          <Link
+            <Link
               onClick={() => window.location.replace("/#connectId")}
               to="/main"
               className="LinksColor"
             >
-               CONTACT US
+              CONTACT US
             </Link>
-            </span>
+          </span>
         </div>
 
         <div className="navbar-imagesMenu">
@@ -124,7 +125,6 @@ const MenuComponent = (props: ReduxProps) => {
             className="GplayImg"
           />
         </div>
-     
       </div>
       <div className="menuImgPosition">
         <Link to="/menumobile">
@@ -151,12 +151,11 @@ const MenuComponent = (props: ReduxProps) => {
         <Link
           onClick={() => window.location.replace("/#tryforFreeId")}
           to="/main"
-         >
+        >
           <img
             src={tryForFree}
             srcSet={`${tryForFree2} 2x, ${tryForFree3} 3x`}
             className="Try-for-freeMenu"
-
           ></img>
         </Link>
         <img

@@ -2,12 +2,12 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
+import { InputText } from "&styled/input/input.component";
+import { Input } from "antd";
+
+import {  Row, Col} from "antd";
 
 import "./connect.css";
-
-import footer from "&assets/img/Footer-bg-img.png";
-import footer2 from "&assets/img/Footer-bg-img@2x.png";
-import footer3 from "&assets/img/Footer-bg-img@3x.png"; 
 
 import location from "&assets/img/Location.png";
 import location2 from "&assets/img/Location@2x.png";
@@ -41,7 +41,6 @@ import master3 from "&assets/img/Mastercard@3x.png";
 //import { homeActions } from "./home.slice";
 import { loginActions } from "&features/demo/login/login.slice";
 
-const { innerWidth: width, innerHeight: height } = window;
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
@@ -60,142 +59,281 @@ const ConnectComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="connectPageBackground" id={'connectId'}>
-      {" "}
-      <div className="connectPageContentTwoParts">
-        <div className="connectPageheadSide">
-          <div className="connectPageSocialSide">
-            <div className="connectTitlePage">
-              <span className="Lets-connectC">
-                <div>Let’s</div>
-                <div>connect</div>
-              </span>
-            </div>
-            <div className="connectTitlePagefirstSide">
-              <div className="locationConnectPage">
+    <>
+      <div className="connectPageBackground" id={"connectId"}>
+        <div className="connectPageContentTwoParts">
+          <div className="ConnectContentForBigScreen">
+            <Row gutter={[16, 16]} justify="center">
+              <Col span={12} push={6}>
+                <Row>
+                  <span className="Lets-connectC">
+                    <div>Let’s</div>
+                    <div>connect</div>
+                  </span>
+                </Row>
+                <Row>
+                  <Col>
+                    <img
+                      src={location}
+                      srcSet={`${location2} 2x, ${location3} 3x`}
+                      className="LocationC"
+                    />
+                  </Col>
+                  <Col>
+                    <span className="areeba-sal-M1-Group-M1-Building-Omar-Daouk-St-Beirut-2020-3315-Lebanon-Email-on-supportareebacomC">
+                      <div>areeba s.a.l. – M1 Group</div>
+                      <div> M1 Building – Omar Daouk St.</div>
+                      <div> Beirut 2020 3315 – Lebanon </div>
+                      <div>Email on support@areeba.com</div>
+                    </span>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <img
+                      src={phone}
+                      srcSet={`${phone2} 2x, ${phone3} 3x`}
+                      className="PhoneC"
+                    />
+                  </Col>
+                  <Col>
+                    <span className="-or-01-954-333C">1557 or 01 954 333</span>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <img
+                      src={email}
+                      srcSet={`${email2} 2x, ${email3} 3x`}
+                      className="EmailC"
+                    />
+                  </Col>
+                  <Col>
+                    <span className="SupportareebacomC">
+                      Support@areeba.com
+                    </span>
+                  </Col>
+                </Row>
+                <Row>
+                  <div className="Line-5301C"></div>
+                </Row>
+                <Row>
+                  <img
+                    src={social}
+                    srcSet={`${social2} 2x, ${social3} 3x`}
+                    className="Social-media-iconsC"
+                  />
+                </Row>
+              </Col>
+              <Col span={12}>
+                <div style={{ height: 150 }}></div>
+                <Row>
+                  <Col push={6}>
+                    <span className="Tell-us-more-about-yourselfC">
+                      Tell us more about yourself
+                    </span>
+                  </Col>
+                </Row>
+                <div className="ConnectFields">
+                  <Row gutter={[24, 16]}>
+                    <Col span={10} push={5}>
+                      <span className="Fist-nameC">First name</span>
+                      <InputText style={{ width: "50%" }} />
+                    </Col>
+                    <Col span={10} push={1}>
+                      <span className="Last-nameC">Last name</span>
+
+                      <InputText style={{ width: "50%" }} />
+                    </Col>
+                  </Row>
+                  <Row gutter={[24, 16]}>
+                    <Col span={10} push={5}>
+                      <span className="Email-addressC">Email address</span>
+
+                      <Input style={{ width: "120%" }} />
+                    </Col>
+                  </Row>
+                  <Row gutter={[24, 16]}>
+                    <Col span={10} push={5}>
+                      <span className="MessageC">Message</span>
+
+                      <Input style={{ width: "120%", height: "300%" }} />
+                    </Col>
+                  </Row>
+                </div>
+              </Col>
+            </Row>
+          </div>
+
+          <div className="ConnectContentForSmallScreen">
+            <Row gutter={[16, 40]}>
+              <Col push={6}>
+                <span className="Lets-connectC">
+                  <div>Let’s</div>
+                  <div>connect</div>
+                </span>
+              </Col>
+            </Row>
+            <Row>
+              <Col push={6}>
                 <img
                   src={location}
                   srcSet={`${location2} 2x, ${location3} 3x`}
                   className="LocationC"
                 />
+              </Col>
+              <Col push={7}>
                 <span className="areeba-sal-M1-Group-M1-Building-Omar-Daouk-St-Beirut-2020-3315-Lebanon-Email-on-supportareebacomC">
                   <div>areeba s.a.l. – M1 Group</div>
                   <div> M1 Building – Omar Daouk St.</div>
                   <div> Beirut 2020 3315 – Lebanon </div>
                   <div>Email on support@areeba.com</div>
                 </span>
-              </div>
-              <div className="phoneConnectPage">
+              </Col>
+            </Row>
+            <Row>
+              <Col push={6}>
                 <img
                   src={phone}
                   srcSet={`${phone2} 2x, ${phone3} 3x`}
                   className="PhoneC"
                 />
-
+              </Col>
+              <Col push={7}>
                 <span className="-or-01-954-333C">1557 or 01 954 333</span>
-              </div>
-              <div className="emailConnectPage">
+              </Col>
+            </Row>
+            <Row>
+              <Col push={6}>
                 <img
                   src={email}
                   srcSet={`${email2} 2x, ${email3} 3x`}
                   className="EmailC"
                 />
-
+              </Col>
+              <Col push={7}>
                 <span className="SupportareebacomC">Support@areeba.com</span>
-              </div>
-            </div>
-            <div className="Line-5301C"></div>
-            <div className="socialIconsConnectPage">
-              <img
-                src={social}
-                srcSet={`${social2} 2x, ${social3} 3x`}
-                className="Social-media-iconsC"
-              />
-            </div>
-          </div>
+              </Col>
+            </Row>
+            <Row>
+              <Col push={6}>
+                <div className="Line-5301C"></div>
+              </Col>
+            </Row>
+            <Row>
+              <Col push={6}>
+                <img
+                  src={social}
+                  srcSet={`${social2} 2x, ${social3} 3x`}
+                  className="Social-media-iconsC"
+                />
+              </Col>
+            </Row>
 
-          <div className="ConnectFieldswithTitle">
-            <span className="Tell-us-more-about-yourselfC">
-              Tell us more about yourself
-            </span>
+            <Row>
+              <Col push={5}>
+                <span className="Tell-us-more-about-yourselfC">
+                  Tell us more about yourself
+                </span>
+              </Col>
+            </Row>
             <div className="ConnectFields">
-              <div className="FirstLastConnectPage">
-                <div className="FirstNameConnectPage">
+              <Row gutter={[24, 16]}>
+                <Col span={10} push={8}>
                   <span className="Fist-nameC">First name</span>
-                  <div className="Rectangle-24148C"></div>
-                </div>
-                <div className="FirstNameConnectPage">
+                  <InputText style={{ width: "50%" }} />
+                </Col>
+                <Col span={10} push={4}>
                   <span className="Last-nameC">Last name</span>
-                  <div className="Rectangle-24148C"></div>
+
+                  <InputText style={{ width: "50%" }} />
+                </Col>
+              </Row>
+              <Row gutter={[24, 16]}>
+                <Col span={10} push={8}>
+                  <span className="Email-addressC">Email address</span>
+
+                  <Input style={{ width: "120%" }} />
+                </Col>
+              </Row>
+              <Row gutter={[24, 16]}>
+                <Col span={10} push={8}>
+                  <span className="MessageC">Message</span>
+
+                  <Input style={{ width: "120%", height: "300%" }} />
+                </Col>
+              </Row>
+            </div>
+          </div>
+
+          <Row gutter={[16, 40]}>
+            <div>
+              <div className="FooterLineConnectPage"></div>
+              <div className="FooterConnectPage">
+                <img
+                  src={areeba}
+                  srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+                  className="AreebaC"
+                ></img>
+                <img
+                  src={master}
+                  srcSet={`${master2} 2x, ${master3} 3x`}
+                  className="MastercardC"
+                ></img>
+
+                <span className="Privacy-PolicyC">Privacy Policy</span>
+                <span className="Terms-of-ServiceC">Terms of Service</span>
+                <span className="Cookie-PolicyC">Cookie Policy</span>
+                <div>
+                  <span className="-Bex-All-Rights-Reserved">
+                    2021 Bex. All Rights Reserved.
+                  </span>
                 </div>
               </div>
 
-              <div className="EmailConnectPage">
-                <span className="Email-addressC">Email address</span>
-                <div className="Rectangle-24150C"></div>
+              <div className="FooterConnectPageMobile">
+                <Row gutter={[30, 16]}>
+                  <Col span={5} push={2}>
+                    <img
+                      src={areeba}
+                      srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+                      className="AreebaCMobile"
+                    ></img>
+                  </Col>
+                  <Col span={8} push={1}>
+                    <img
+                      src={master}
+                      srcSet={`${master2} 2x, ${master3} 3x`}
+                      className="MastercardCMobile"
+                    ></img>
+                  </Col>
+                  <Col span={3}>
+                    <span className="-Bex-All-Rights-ReservedMobile">
+                      2021 Bex. All Rights Reserved.
+                    </span>
+                  </Col>
+                </Row>
+                <Row gutter={[30, 16]}>
+                  <Col span={8}>
+                    <span className="Privacy-PolicyCMobile">
+                      Privacy Policy
+                    </span>
+                  </Col>
+                  <Col span={8}>
+                    <span className="Terms-of-ServiceCMobile">
+                      Terms of Service
+                    </span>
+                  </Col>
+                  <Col span={8}>
+                    <span className="Cookie-PolicyCMobile">Cookie Policy</span>
+                  </Col>
+                </Row>
               </div>
-
-              <div className="MessageConnectPage">
-                <span className="MessageC">Message</span>
-                <div className="Path-162308C"></div> 
-              </div>
-              <div className="connectPageButton1">
-                 <span className="Get-in-TouchC">Get in Touch</span>
-               
-              </div>
             </div>
-          </div>
-        </div>
-        <div>
-          <div className="FooterLineConnectPage"></div>
-          <div className="FooterConnectPage">
-            <img
-              src={areeba}
-              srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-              className="AreebaC"
-            ></img>
-            <img
-              src={master}
-              srcSet={`${master2} 2x, ${master3} 3x`}
-              className="MastercardC"
-            ></img>
-
-            <span className="Privacy-PolicyC">Privacy Policy</span>
-            <span className="Terms-of-ServiceC">Terms of Service</span>
-            <span className="Cookie-PolicyC">Cookie Policy</span>
-            <div>
-              <span className="-Bex-All-Rights-Reserved">
-                2021 Bex. All Rights Reserved.
-              </span>
-            </div>
-          </div>
-
-          <div className="FooterConnectPageMobile">
-            <div>
-              <img
-                src={areeba}
-                srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-                className="AreebaCMobile"
-              ></img>
-              <img
-                src={master}
-                srcSet={`${master2} 2x, ${master3} 3x`}
-                className="MastercardCMobile"
-              ></img>
-
-              <span className="-Bex-All-Rights-ReservedMobile">
-                2021 Bex. All Rights Reserved.
-              </span>
-            </div>
-            <div>
-              <span className="Privacy-PolicyCMobile">Privacy Policy</span>
-              <span className="Terms-of-ServiceCMobile">Terms of Service</span>
-              <span className="Cookie-PolicyCMobile">Cookie Policy</span>
-            </div>
-          </div>
+          </Row>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
@@ -219,6 +357,7 @@ const mapDispatchToProps = {
 /**
  * Connects component to redux store
  */
+
 const connector = connect(mapStateToProps, mapDispatchToProps);
 const ConnectComponentRedux = connector(ConnectComponent);
 

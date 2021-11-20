@@ -1,0 +1,50 @@
+/* .text input, */
+.text,
+.text:active,
+.text:focus,
+.text:hover {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none !important;
+  border-radius: 0;
+  padding-left: 0;
+  padding-right: 0;
+  height: 38px;
+  width: 100%;
+  font-family: Montserrat-Regular !important;
+  font-size: 18px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+.text:active,
+.text:focus,
+.text:hover {
+  border-bottom-color: #754e9e;
+}
+
+.text input {
+  font-family: Montserrat-Regular !important;
+  font-size: 18px !important;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+}
+
+.text {
+  width: 30%;
+}
+@media only screen and (max-width: 600px) {
+  .text {
+    width: 30%;
+  }
+  .text input {
+    width: 30%;
+  }
+}

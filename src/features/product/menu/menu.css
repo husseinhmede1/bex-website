@@ -2,7 +2,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
@@ -10,25 +10,28 @@
 .App-linkm {
   color: rgb(112, 76, 182);
 }
- 
 
-.LinksColor{
-
+.LinksColor {
   color: #ffffff;
 }
-@media only screen and (min-width: 100px) and (max-width: 900px) {
+
+.ant-drawer-body {
+  background-color: #00194a;
+  color: #fff;
+}
+@media only screen and (max-width: 900px) {
   .navbarMenu {
-    display: flex; 
+    display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
     align-items: stretch;
     align-content: stretch;
-    flex:100%;
+    flex: 100%;
     margin-top: 2%;
   }
 
-  .navbar-namesMenu { 
+  .navbar-namesMenu {
     display: none;
   }
 
@@ -56,7 +59,6 @@
     color: #feffff;
     white-space: nowrap;
     margin-left: -5%;
-  
   }
 
   .navbar-imagesMenu {
@@ -92,7 +94,6 @@
     margin-top: -11%;
     margin-left: 80%;
     visibility: visible;
-    
   }
 
   .bexMenu {
@@ -114,6 +115,10 @@
     color: #feffff;
     margin-left: -60%;
     margin-top: 1vh;
+  }
+
+  .areebaMasterLogoLeftRight {
+    margin-left: 5%;
   }
 
   .BEXm {
@@ -143,26 +148,37 @@
     margin: 7px 0 122px 23px;
     object-fit: contain;
   }
-  img.Try-for-freeMenu {
-
-    object-fit: contain;
-    margin-left: -1%;
-    margin-top: 0%;
-    margin-left: 5%;
+  .Try-for-freeMenu {
+    background-color: rgba(48, 107, 221);
+    width: 35vw;
+    height: 110%;
   }
-  img.Get-demoMenu {
+  .tryForfreeSpan {
+    color: #ffffff;
+    font-family: Lato-Regular;
+    font-size: 4.5vw;
+    margin-left: 0%;
+    margin-top: 3%;
+  }
 
-    object-fit: contain;
-    margin-left: 2%;
-    margin-top:12%;
+  .get-Your-Demo {
+    width: 35vw;
+    height: 110%;
+  }
 
+  .getYourDemoSpan {
+    color: #ffffff;
+    font-family: Lato-Regular;
+    font-size: 4.5vw;
+    margin-left: -5%;
+    margin-top: 3%;
   }
 
   .Powered-byMenu {
     width: 130%;
     height: 23px;
     font-family: Poppins-Regular;
-    font-size: 100%;
+    font-size: 70%;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -171,7 +187,6 @@
     text-align: left;
     color: #d7d9de;
     white-space: nowrap;
-  margin-left: 10%;
   }
 
   .In-partnership-withMenu {
@@ -189,27 +204,18 @@
     color: #d7d9de;
   }
   img.Areeba-logoMenu {
-    width: 66.7px;
+    width: 50px;
     height: 18px;
-    object-fit: contain;
-    margin-left: -5%;
-  }
-  img.MastercardMenu {
-    width: 32.5px;
-    height: 20px;
-    margin: 8px 29.8px 0 22.3px;
     object-fit: contain;
   }
 
   img.chatbotMenu {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
-    margin-left: -50%;
-    margin-top: -150%;
+    margin-top: -15%;
   }
 
-  
   .menuBackground {
     background-image: -webkit-image-set(
       url("../../../assets/img/Main-BG.png") 1x,
@@ -260,7 +266,6 @@
     align-content: flex-start;
     margin-left: 10%;
     margin-top: -10%;
-    
   }
   .Control-Spend-SaveMenu {
     width: 270vw;
@@ -289,10 +294,9 @@
     margin-top: 70%;
   }
   .lineMenu {
-    width: 0px;
-    height: 40px;
+    height: 5vh;
     border: solid 0.2px #d7d9de;
-    margin-top: 0%;
+    opacity: 0.5;
   }
   .areeba-masterMenu {
     display: flex;
@@ -306,13 +310,12 @@
   }
 
   .GreenCercleMenu {
-    width: 50px;
-    height: 50px;
-    margin: 24px 21px 2.7px 1500px;
+    width: 70px;
+    height: 70px;
     padding: 22px 17.5px 21.4px 17px;
     background-color: rgb(48, 198, 117);
     border-radius: 50%;
-    margin-left: 80%;
+    margin-left: -5%;
     margin-top: 20%;
   }
 
@@ -332,8 +335,7 @@
 
 
 
-
-@media only screen and (min-width: 901px) and (max-width:3000px ) {
+@media only screen and (min-width: 1001px) {
   .navbarMenu {
     display: flex;
     flex-direction: row;
@@ -341,7 +343,6 @@
     justify-content: space-around;
     align-items: stretch;
     align-content: stretch;
-
     margin-top: 2%;
   }
 
@@ -367,7 +368,7 @@
     text-align: left;
     color: #feffff;
     white-space: nowrap;
-    font-size: 1.2vw;
+    font-size: 1vw;
     margin-left: 15%;
   }
 
@@ -382,9 +383,8 @@
     text-align: left;
     color: #feffff;
     white-space: nowrap;
-    margin-left: -5%;
-    font-size: 1.2vw;
-    
+    margin-left: 10%;
+    font-size: 1vw;
   }
 
   .navbar-imagesMenu {
@@ -396,6 +396,7 @@
     align-content: stretch;
     margin-left: -10%;
     width: 10%;
+    height: 10%;
   }
 
   img.Menu {
@@ -416,7 +417,6 @@
     justify-content: space-between;
     align-items: flex-start;
     align-content: stretch;
-
     font-family: Gilroy-ExtraBold;
     font-size: 350%;
     font-weight: 800;
@@ -457,25 +457,51 @@
     margin: 7px 0 122px 23px;
     object-fit: contain;
   }
-  img.Try-for-freeMenu {
-    width: 147px;
-    height: 52px;
-    margin: 96px 14px 24px 0;
-    object-fit: contain;
+  .Try-for-freeMenu {
+    background-color: rgba(48, 107, 221);
+    width: 8vw;
+    height: 60%;
+    margin-top: 40%;
   }
-  img.Get-demoMenu {
-    width: 147px;
-    height: 52px;
-    margin: 96px 79px 24px 14px;
-    object-fit: contain;
+
+  .areebaMasterLogoLeftRight {
+    margin-left: -2%;
+    margin-top: 3%;
+  }
+  .tryForfreeSpan {
+    color: #ffffff;
+    font-family: Lato-Regular;
+    font-size: 1vw;
+    margin-left: -70%;
+    margin-top: 3%;
+  }
+
+  .get-Your-Demo {
+    width: 8vw;
+    height: 60%;
+    margin-top: 40%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .getYourDemoSpan {
+    color: #ffffff;
+    font-family: Lato-Regular;
+    font-size: 0.9vw;
+    margin-left: -5vw;
+    margin-top: 1vh;
   }
 
   .Powered-byMenu {
-    width: 100px;
+    width: 130%;
     height: 23px;
-    margin: 91px 23.5px 8px 0;
     font-family: Poppins-Regular;
-    font-size: 14px;
+    font-size: 100%;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -483,14 +509,10 @@
     letter-spacing: normal;
     text-align: left;
     color: #d7d9de;
-    white-space: nowrap;
-    margin-left: 5%;
-    
   }
-
   .In-partnership-withMenu {
     width: 169px;
-    height: 23px; 
+    height: 23px;
     margin: 91px 88px 8px 22.5px;
     font-family: Poppins-Regular;
     font-size: 14px;
@@ -505,9 +527,7 @@
   img.Areeba-logoMenu {
     width: 66.7px;
     height: 18px;
-    margin: 9px 40.8px 1px 0;
     object-fit: contain;
-    margin-left: 5%;
   }
   img.MastercardMenu {
     width: 32.5px;
@@ -524,11 +544,11 @@
   .GreenCercleMenu {
     width: 70px;
     height: 70px;
-    margin: 24px 21px 2.7px 1500px;
     padding: 22px 17.5px 21.4px 17px;
     background-color: rgb(48, 198, 117);
     border-radius: 50%;
-    margin-left: 80%;
+    margin-left: 2.5%;
+    margin-top: 5%;
   }
 
   .menuBackground {
@@ -612,11 +632,9 @@
     margin-left: 8%;
   }
   .lineMenu {
-    width: 0;
-    height: 33.3px;
-    margin: 2.7px 0 12px;
-    
+    height: 5vh;
     border: solid 0.8px #d7d9de;
+    opacity: 0.5;
   }
   .areeba-masterMenu {
     margin-left: 10%;
@@ -639,7 +657,338 @@
     display: flex;
     flex-direction: column;
     margin-top: -5%;
-
   }
 }
 
+
+
+@media only screen and (min-width: 901px) and (max-width: 1000px){
+  .navbarMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 2%;
+  }
+
+  .navbar-namesMenu {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top: 3%;
+    margin-left: -20%;
+  }
+
+  .navbar-names-fontMenu {
+    font-family: Lato-Regular;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #feffff;
+    white-space: nowrap;
+    font-size: 1vw;
+    margin-left: 15%;
+  }
+
+  .navbar-names-font1Menu {
+    width: 50px;
+    font-family: Lato-Regular;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #feffff;
+    white-space: nowrap;
+    margin-left: 10%;
+    font-size: 1vw;
+  }
+
+  .navbar-imagesMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-left: -10%;
+    width: 10%;
+    height: 10%;
+  }
+
+  img.Menu {
+    visibility: hidden;
+  }
+
+  .menuImgPosition {
+    visibility: hidden;
+  }
+
+  .GplayImg {
+    margin-left: 10%;
+  }
+  .bexMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: stretch;
+    font-family: Gilroy-ExtraBold;
+    font-size: 350%;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #feffff;
+    margin-left: -2%;
+    margin-top: -1%;
+  }
+
+  .BEXm {
+    width: 10px;
+    height: 49px;
+    margin: 0 37.5px 140px 40px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 40px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  img.Apple-IconMenu {
+    width: 60px;
+    height: 60px;
+    margin: 7px 23px 122px 292px;
+    object-fit: contain;
+  }
+  img.Google-playMenu {
+    width: 60px;
+    height: 60px;
+    margin: 7px 0 122px 23px;
+    object-fit: contain;
+  }
+  .Try-for-freeMenu {
+    background-color: rgba(48, 107, 221);
+    width: 8vw;
+    height: 60%;
+    margin-top: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .areebaMasterLogoLeftRight {
+    margin-left: -2%;
+    margin-top: 3%;
+  }
+  .tryForfreeSpan {
+    color: #ffffff;
+    font-family: Lato-Regular;
+    font-size: 1vw;
+    margin-left: -5%;
+    margin-top: 3%;
+  }
+
+  .get-Your-Demo {
+    width: 8vw;
+    height: 60%;
+    margin-top: 40%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .getYourDemoSpan {
+    color: #ffffff;
+    font-family: Lato-Regular;
+    font-size: 0.9vw;
+    margin-left: 0vw;
+    margin-top: 0vh;
+  }
+
+  .Powered-byMenu {
+    width: 130%;
+    height: 23px;
+    font-family: Poppins-Regular;
+    font-size: 100%;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d7d9de;
+  }
+  .In-partnership-withMenu {
+    width: 169px;
+    height: 23px;
+    margin: 91px 88px 8px 22.5px;
+    font-family: Poppins-Regular;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.86;
+    letter-spacing: normal;
+    text-align: left;
+    color: #d7d9de;
+  }
+  img.Areeba-logoMenu {
+    width: 66.7px;
+    height: 18px;
+    object-fit: contain;
+  }
+  img.MastercardMenu {
+    width: 32.5px;
+    height: 20px;
+    margin: 8px 29.8px 0 22.3px;
+    object-fit: contain;
+  }
+
+  img.chatbotMenu {
+    width: 35.5px;
+    height: 26.6px;
+    object-fit: contain;
+  }
+  .GreenCercleMenu {
+    width: 70px;
+    height: 70px;
+    padding: 22px 17.5px 21.4px 17px;
+    background-color: rgb(48, 198, 117);
+    border-radius: 50%;
+    margin-left: 2.5%;
+    margin-top: 5%;
+  }
+
+  .menuBackground {
+    background-image: -webkit-image-set(
+      url("../../../assets/img/BG-Cover.png") 1x,
+      url("../../../assets/img/BG-Cover@2x.png") 2x,
+      url("../../../assets/img/BG-Cover@3x.png") 3x
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    contain: content;
+
+    width: 100vw;
+    height: 105vh;
+
+    background-position: center;
+    background-size: cover;
+  }
+
+  .Business-expense-management-made-easyMenu {
+    width: 598px;
+    height: 184px;
+    display: inline-block;
+    margin-top: 5%;
+    margin-bottom: 100px;
+    margin-right: 500px;
+    margin-left: 3%;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.24);
+    font-family: Gilroy-ExtraBold;
+    font-size: 55px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgb(255, 255, 255);
+  }
+  .contrlMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-start;
+    margin-top: -5%;
+  }
+  .tryDemoMenu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    align-content: flex-start;
+    margin-left: 10%;
+    margin-top: -5%;
+  }
+  .Control-Spend-SaveMenu {
+    width: 279px;
+    height: 29px;
+    margin: 24px 108px 96px 0;
+    font-family: Lato-Bold;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: left;
+    color: rgb(255, 255, 255);
+    margin-left: 3%;
+    margin-top: 0%;
+  }
+  .Busines-cntrlMenu {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: space-around;
+    margin-left: 8%;
+  }
+  .lineMenu {
+    height: 5vh;
+    border: solid 0.8px #d7d9de;
+    opacity: 0.5;
+  }
+  .areeba-masterMenu {
+    margin-left: 10%;
+    margin-top: -2%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-content: stretch;
+
+    flex-wrap: wrap-reverse;
+    align-items: stretch;
+  }
+  .areebaMenu1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+  }
+  .mastercardMenu2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: -5%;
+  }
+}

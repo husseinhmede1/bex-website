@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
-import { Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./policy.css";
 
@@ -19,7 +19,7 @@ import chatbot2 from "&assets/img/chatbot@2x.png";
 import chatbot3 from "&assets/img/chatbot@3x.png";
 
 import menu from "&assets/img/Burger-menu.png";
-import menu2 from "&assets/img/Burger-menu@2x.png"; 
+import menu2 from "&assets/img/Burger-menu@2x.png";
 import menu3 from "&assets/img/Burger-menu@3x.png";
 /*
  * These are actions imported from the feature slices.
@@ -28,8 +28,7 @@ import menu3 from "&assets/img/Burger-menu@3x.png";
  */
 //import { homeActions } from "./home.slice";
 import { loginActions } from "&features/demo/login/login.slice";
-
-const { innerWidth: width, innerHeight: height } = window;
+import { Col, Row } from "antd";
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
@@ -55,13 +54,46 @@ const PolicyComponent = (props: ReduxProps) => {
         </Link>
 
         <div className="navbarLinksPolicy">
-          <span className="How-bex-worksP">How bex works</span>
-
-          <span className="PricingP">Pricing</span>
-
-          <span className="About-usP">About us</span>
-
-          <span className="Contact-usP">Contact us</span>
+          <Col>
+            <Row>
+              <Col pull={1}>
+                <Link
+                  onClick={() => window.location.replace("/#handlesId")}
+                  to="/main"
+                  className="How-bex-worksP"
+                >
+                  HOW BEX WORKS
+                </Link>
+              </Col>
+              <Col>
+                <Link
+                  onClick={() => window.location.replace("/#packagesId")}
+                  to="/main"
+                  className="PricingP"
+                >
+                  PRICING
+                </Link>
+              </Col>
+              <Col>
+                <Link
+                  onClick={() => window.location.replace("/#infoId")}
+                  to="/main"
+                  className="About-usP"
+                >
+                  ABOUT US
+                </Link>
+              </Col>
+              <Col>
+                <Link
+                  onClick={() => window.location.replace("/#connectId")}
+                  to="/main"
+                  className="Contact-usP"
+                >
+                  CONTACT US
+                </Link>
+              </Col>
+            </Row>
+          </Col>
         </div>
 
         <div className="policyMobileMenuNavbar">
@@ -75,7 +107,7 @@ const PolicyComponent = (props: ReduxProps) => {
         </div>
       </div>
       <div className="PrivacyPolicyToLeft">
-        <div className="PrivacyPolicyTitlePosition"> 
+        <div className="PrivacyPolicyTitlePosition">
           <span className="Privacy-policyP">Privacy policy</span>
         </div>
         <div className="PrivacyPolicyRules">
@@ -103,7 +135,7 @@ const PolicyComponent = (props: ReduxProps) => {
               </Link>{" "}
             </span>
           </div>
-          <div className="spaceBetween"> 
+          <div className="spaceBetween">
             <span className="span1P">3.</span>
 
             <span className="Data-retention-and-data-probabilityP">
@@ -191,15 +223,13 @@ const PolicyComponent = (props: ReduxProps) => {
           </div>
         </div>
       </div>
-
-      <div className="greencercle">
-        <img
-          src={chatbot}
-          srcSet={`${chatbot2} 2x, ${chatbot3} 3x`}
-          className="chatbotP"
-        />
-      </div>
-
+        <div className="greencercle">
+          <img
+            src={chatbot}
+            srcSet={`${chatbot2} 2x, ${chatbot3} 3x`}
+            className="chatbotP"
+          />
+        </div>
       <div className="areeba-masterP">
         <div className="areebaP">
           <span className="Powered-byP">Powered by</span>
@@ -209,9 +239,9 @@ const PolicyComponent = (props: ReduxProps) => {
             className="Areeba-logoP"
           ></img>
         </div>
-      
+
         <span className="areebaMasterLinePolicy"></span>
-        
+
         <div className="areebaP">
           <span className="In-partnership-withP">In partnership with</span>
           <img

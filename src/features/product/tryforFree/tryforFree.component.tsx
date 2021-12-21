@@ -13,7 +13,7 @@ import try11 from "&assets/img/Try-BEX-Mobile.png";
 import try12 from "&assets/img/Try-BEX-Mobile@2x.png";
 import try13 from "&assets/img/Try-BEX-Mobile@3x.png";
 
-import apple from "&assets/img/Apple-Icon.png"; 
+import apple from "&assets/img/Apple-Icon.png";
 import apple2 from "&assets/img/Apple-Icon@2x.png";
 import apple3 from "&assets/img/Apple-Icon@3x.png";
 
@@ -34,8 +34,6 @@ import demo3 from "&assets/img/Get-your-demo@3x.png";
  */
 import { loginActions } from "&features/demo/login/login.slice";
 
-const { innerWidth: width, innerHeight: height } = window;
-
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const TryforFreeComponent = (props: ReduxProps) => {
@@ -53,7 +51,7 @@ const TryforFreeComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="tryforfreeBackground" id={'tryforFreeId'}>
+    <div className="tryforfreeBackground" id={"tryforFreeId"}>
       <div className="tryforfreerightSide">
         <div className="tryforfreeTitle">
           <span className="Try-BEX-For-Free">Try BEX For Free</span>
@@ -66,8 +64,8 @@ const TryforFreeComponent = (props: ReduxProps) => {
             src={demo}
             srcSet={`${demo2} 2x, ${demo3} 3x`}
             className="Get-your-demo"
-          ></img> 
- 
+          ></img>
+
           <div className="applePlayTryforFree">
             <img
               src={apple}

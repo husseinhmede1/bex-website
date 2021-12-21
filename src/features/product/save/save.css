@@ -1,217 +1,50 @@
-.SaveBackground {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: stretch;
-
-  background-color: #306bdd;
-  height: 100vh; 
+.saveToBottom {
+  margin-top: 42%;
 }
-
-img.Save-imgs {
-  width: 130%;
-  height: 150%;
-  margin: 0 0 0 147.1px;
-  object-fit: contain;
-  margin-left: -30%;
+.FirstSideSaveToBottom {
+  margin-top: 30%;
 }
-
-img.Save-imgsMobile {
-  width: 0px;
-  height: 0px;
-  visibility: hidden;
-}
-
-.Rectangle-24989s {
-  width: 46px;
-  height: 46px;
-  margin: 61.9px 24px 65px 0;
-  padding: 11px 17px 18px;
-  border-radius: 47px;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-  border: solid 1px #30c6c6;
-  background-color: #fff;
-  margin-left: 50%;
-  margin-top: 6%;
-}
-
-.span1s {
-  width: 11px;
-  height: 24px;
-  font-family: Gilroy-ExtraBold;
-  font-size: 20px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.75;
-  letter-spacing: normal;
-  text-align: left;
-  color: #30c6c6;
-  margin-top: 100%;
-  margin-left: -30%;
-}
-
-.Saves {
-  width: 70px;
-  height: 37px;
-  margin: 66.9px 340.1px 69px 24px;
-  font-family: Gilroy-ExtraBold;
-  font-size: 30px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.53;
-  letter-spacing: normal;
-  text-align: left;
-  color: #30c6c6;
-}
-
-.Time-is-money-Save-boths {
-  width: 261px;
-  height: 54px;
-  margin: 65px 219.1px 50px 0;
-  font-family: Gilroy-ExtraBold;
-  font-size: 22px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fcfcfc;
-  margin-top: -20%;
-  margin-left: 0%;
-}
-
-img.Signs {
-  width: 21.8px;
-  height: 16.4px;
-  margin: 4.4px 14.2px 82px 0;
-  object-fit: contain;
-  margin-top: 5%;
-}
-
-.Digitize-your-business-expense-process-to-reduce-your-admin-costs {
-  width: 297px;
-  height: 54px;
-  margin: 0 0 48.8px 14.2px;
-  font-family: Lato-Regular;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fff;
-}
-
-.Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess {
-  width: 287px;
-  height: 54px;
-  margin: 147px 157.1px 89.9px 36px;
-  font-family: Lato-Regular;
-  font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: left;
-  color: #fff;
-}
-
-.HeadPartSave {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  align-content: center;
-}
-
-.numberWithSave {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: stretch;
-  margin-top: -5%;
-}
-
-.TextTitleSave {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: center;
+.digitizeIdentityToBottom {
   margin-top: 10%;
-  margin-left: 44%;
 }
-
-.signedTextone {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: center;
-  margin-top: 0%;
-}
-
-.signedTexttwo {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: center;
-  margin-top: 5%;
-}
-.TextTitleSave {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: center;
-  height: 5%;
-}
-
-@media only screen and (min-width: 100px) and (max-width: 800px) {
-  .SaveBackground {
+@media only screen and (max-width: 1000px) {
+  .SaveBackgroundMobile {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center; 
+    justify-content: center;
     align-items: stretch;
     align-content: stretch;
     width: 100%;
-    height: 130vh;
+    height: 150vh;
     background-color: #306bdd;
+    visibility: visible;
   }
 
-  img.Save-imgs {
-    width: 130%;
-    height: 150%;
+  .SaveBackground {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+
+  img.Save-imgsSave {
+    width: 0px;
+    height: 0px;
     margin: 0 0 0 147.1px;
     object-fit: contain;
     margin-left: -30%;
-    display: none;
+    visibility: hidden;
   }
 
   img.Save-imgsMobile {
-    width:90vw;
-    height:50vh;
+    width: 90vw;
+    height: 50vh;
     margin: 58.2px 0 0;
     object-fit: contain;
     visibility: visible;
     margin-top: 20%;
-margin-left: 5%;  }
+    margin-left: 5%;
+  }
 
   .Rectangle-24989s {
     width: 40px;
@@ -268,7 +101,6 @@ margin-left: 5%;  }
   .Time-is-money-Save-boths {
     width: 250px;
     height: 21px;
-    margin: 65px 219.1px 50px 0;
     font-family: Gilroy-ExtraBold;
     font-size: 6vw;
     font-weight: 800;
@@ -278,27 +110,31 @@ margin-left: 5%;  }
     letter-spacing: normal;
     text-align: left;
     color: #fcfcfc;
-    margin-top: 0%;
-    margin-left: -30vw;
-
+    margin-top: -15%;
+    white-space: nowrap;
   }
-  .TextSave{
+
+  .TextSave {
     margin-left: 0%;
-        width: 50%;
+    width: 50%;
   }
 
   img.Signs {
     width: 21.8px;
     height: 16.4px;
-    margin: 4.4px 14.2px 82px 0;
     object-fit: contain;
   }
 
+  img.Signs2 {
+    width: 21.8px;
+    height: 16.4px;
+    object-fit: contain;
+  }
   .Digitize-your-business-expense-process-to-reduce-your-admin-costs {
     width: 100px;
     height: 70px;
     font-family: Lato-Regular;
-    font-size: 12px;
+    font-size: 2.5vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -306,14 +142,13 @@ margin-left: 5%;  }
     letter-spacing: normal;
     text-align: left;
     color: #fff;
-    margin-left: -2%;
   }
 
   .Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess {
     width: 100px;
     height: 70px;
     font-family: Lato-Regular;
-    font-size: 12px;
+    font-size: 2.5vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -321,11 +156,10 @@ margin-left: 5%;  }
     letter-spacing: normal;
     text-align: left;
     color: #fff;
-    margin-left: -1%;
+    white-space: normal;
   }
 
   .HeadPartSave {
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -335,7 +169,6 @@ margin-left: 5%;  }
   }
 
   .numberWithSave {
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -367,7 +200,6 @@ margin-left: 5%;  }
     margin-left: -80%;
   }
   .TextTitleSave {
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -380,53 +212,72 @@ margin-left: 5%;  }
   }
 }
 
-
-@media only screen and (min-width: 800px) and (max-width: 3000px) {
+@media only screen and (min-width: 1701px) {
+  .SaveBackgroundMobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    width: 0px;
+    height: 0px;
+    background-color: #306bdd;
+    visibility: hidden;
+  }
+  .imageSaveToBottom {
+    margin-top: 7%;
+  }
 
   .SaveBackground {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center; 
-    align-content: stretch;
-  
-    background-color: #306bdd;
+    width: 100%;
     height: 100vh;
+    visibility: visible;
+    background-color: #306bdd;
   }
-  
-  img.Save-imgs {
-    width: 130%;
-    height: 150%;
-    margin: 0 0 0 147.1px;
+
+  img.Save-imgsSave {
+    width: 45vw;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 20%;
     object-fit: contain;
-    margin-left: -30%;
+    visibility: visible;
   }
-  
+
   img.Save-imgsMobile {
     width: 0px;
     height: 0px;
     visibility: hidden;
   }
-  
+
+  .TextSaveToBottom {
+    margin-top: 20%;
+  }
   .Rectangle-24989s {
-    width: 46px;
-    height: 46px;
+    width: 70px;
+    height: 70px;
     margin: 61.9px 24px 65px 0;
-    padding: 11px 17px 18px;
+    padding: 11px 17px 11px 18px;
     border-radius: 47px;
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
     border: solid 1px #30c6c6;
     background-color: #fff;
-    margin-left: 50%;
-    margin-top: 6%;
+    margin-left: 5%;
+    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
   }
-  
+
   .span1s {
     width: 11px;
     height: 24px;
     font-family: Gilroy-ExtraBold;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -434,16 +285,15 @@ margin-left: 5%;  }
     letter-spacing: normal;
     text-align: left;
     color: #30c6c6;
-    margin-top: 100%;
-    margin-left: -30%;
+    margin-left: -20%;
   }
-  
+
   .Saves {
     width: 70px;
     height: 37px;
     margin: 66.9px 340.1px 69px 24px;
     font-family: Gilroy-ExtraBold;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -451,14 +301,15 @@ margin-left: 5%;  }
     letter-spacing: normal;
     text-align: left;
     color: #30c6c6;
+    margin-top: -10%;
+    margin-left: 5%;
   }
-  
+
   .Time-is-money-Save-boths {
-    width: 261px;
-    height: 54px;
-    margin: 65px 219.1px 50px 0;
+    width: 250px;
+    height: 21px;
     font-family: Gilroy-ExtraBold;
-    font-size: 22px;
+    font-size: 2vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -466,24 +317,29 @@ margin-left: 5%;  }
     letter-spacing: normal;
     text-align: left;
     color: #fcfcfc;
-    margin-top: -20%;
-    margin-left: 0%;
+    margin-top: 0%;
   }
-  
+  .TextSave {
+    margin-left: 0%;
+    width: 50%;
+  }
+
   img.Signs {
     width: 21.8px;
     height: 16.4px;
-    margin: 4.4px 14.2px 82px 0;
     object-fit: contain;
-    margin-top: 5%;
   }
-  
+
+  img.Signs2 {
+    width: 21.8px;
+    height: 16.4px;
+    object-fit: contain;
+  }
   .Digitize-your-business-expense-process-to-reduce-your-admin-costs {
-    width: 297px;
-    height: 54px;
-    margin: 0 0 48.8px 14.2px;
+    width: 20vw;
+    height: 12vh;
     font-family: Lato-Regular;
-    font-size: 20px;
+    font-size: 1.2vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -492,13 +348,12 @@ margin-left: 5%;  }
     text-align: left;
     color: #fff;
   }
-  
+
   .Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess {
-    width: 287px;
-    height: 54px;
-    margin: 147px 157.1px 89.9px 36px;
+    width: 20vw;
+    height: 15vh;
     font-family: Lato-Regular;
-    font-size: 20px;
+    font-size: 1.2vw;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -506,38 +361,28 @@ margin-left: 5%;  }
     letter-spacing: normal;
     text-align: left;
     color: #fff;
+    white-space: normal;
   }
-  
+
   .HeadPartSave {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: stretch;
-    align-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
   }
-  
+
   .numberWithSave {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: stretch;
-    margin-top: -5%;
-  }
-  
-  .TextTitleSave {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: center;
-    margin-top: 10%;
-    margin-left: 44%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: -40%;
+    margin-left: 5%;
   }
-  
   .signedTextone {
     display: flex;
     flex-direction: row;
@@ -545,9 +390,10 @@ margin-left: 5%;  }
     justify-content: space-around;
     align-items: stretch;
     align-content: center;
-    margin-top: 0%;
+    margin-top: 45%;
+    margin-left: -80%;
   }
-  
+
   .signedTexttwo {
     display: flex;
     flex-direction: row;
@@ -555,16 +401,633 @@ margin-left: 5%;  }
     justify-content: space-around;
     align-items: stretch;
     align-content: center;
-    margin-top: 5%;
+    margin-top: -15%;
+    margin-left: -80%;
   }
   .TextTitleSave {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 70%;
+    margin-top: -20%;
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+  .SaveBackgroundMobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    width: 0px;
+    height: 0px;
+    background-color: #306bdd;
+    visibility: hidden;
+  }
+  .imageSaveToBottom {
+    margin-top: 7%;
+  }
+
+  .SaveBackground {
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
+    background-color: #306bdd;
+  }
+
+  img.Save-imgsSave {
+    width: 55vw;
+    height: auto;
+    margin-left: 55%;
+    margin-top: -90%;
+    object-fit: contain;
+    visibility: visible;
+  }
+
+  img.Save-imgsMobile {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+
+  .TextSaveToBottom {
+    margin-top: 20%;
+  }
+  .Rectangle-24989s {
+    width: 70px;
+    height: 70px;
+    margin: 61.9px 24px 65px 0;
+    padding: 11px 17px 11px 18px;
+    border-radius: 47px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #30c6c6;
+    background-color: #fff;
+    margin-left: 5%;
+    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span1s {
+    width: 11px;
+    height: 24px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 30px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #30c6c6;
+    margin-left: -20%;
+  }
+
+  .Saves {
+    width: 70px;
+    height: 37px;
+    margin: 66.9px 340.1px 69px 24px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 50px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #30c6c6;
+    margin-top: -10%;
+    margin-left: 5%;
+  }
+
+  .Time-is-money-Save-boths {
+    width: 250px;
+    height: 21px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 2vw;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fcfcfc;
+    margin-top: 0%;
+  }
+  .TextSave {
+    margin-left: 0%;
+    width: 50%;
+  }
+
+  img.Signs {
+    width: 21.8px;
+    height: 16.4px;
+    object-fit: contain;
+  }
+
+  img.Signs2 {
+    width: 21.8px;
+    height: 16.4px;
+    object-fit: contain;
+  }
+  .Digitize-your-business-expense-process-to-reduce-your-admin-costs {
+    width: 20vw;
+    height: 12vh;
+    font-family: Lato-Regular;
+    font-size: 1.2vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess {
+    width: 20vw;
+    height: 15vh;
+    font-family: Lato-Regular;
+    font-size: 1.2vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    white-space: normal;
+  }
+
+  .HeadPartSave {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .numberWithSave {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: -40%;
+    margin-left: 5%;
+  }
+  .signedTextone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: stretch;
     align-content: center;
-    height: 5%;
+    margin-top: 45%;
+    margin-left: -80%;
+  }
+
+  .signedTexttwo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    margin-top: -15%;
+    margin-left: -80%;
+  }
+  .TextTitleSave {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 70%;
+    margin-top: -20%;
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1500px) {
+  .SaveBackgroundMobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    width: 0px;
+    height: 0px;
+    background-color: #306bdd;
+    visibility: hidden;
+  }
+  .imageSaveToBottom {
+    margin-top: 7%;
+  }
+
+  .SaveBackground {
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
+    background-color: #306bdd;
+  }
+
+  img.Save-imgsSave {
+    width: 45vw;
+    height: auto;
+    margin-left: 0%;
+    margin-top: 30%;
+    visibility: visible;
+  }
+
+  img.Save-imgsMobile {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+
+  .TextSaveToBottom {
+    margin-top: 20%;
+  }
+  .Rectangle-24989s {
+    width: 70px;
+    height: 70px;
+    margin: 61.9px 24px 65px 0;
+    padding: 11px 17px 11px 18px;
+    border-radius: 47px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #30c6c6;
+    background-color: #fff;
+    margin-left: 5%;
+    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span1s {
+    width: 11px;
+    height: 24px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 30px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #30c6c6;
+    margin-left: -20%;
+  }
+
+  .Saves {
+    width: 70px;
+    height: 37px;
+    margin: 66.9px 340.1px 69px 24px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 50px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #30c6c6;
+    margin-top: -10%;
+    margin-left: 5%;
+  }
+
+  .Time-is-money-Save-boths {
+    width: 250px;
+    height: 21px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 2vw;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fcfcfc;
+    margin-top: 0%;
+  }
+  .TextSave {
+    margin-left: 0%;
+    width: 50%;
+  }
+
+  img.Signs {
+    width: 21.8px;
+    height: 16.4px;
+    object-fit: contain;
+  }
+
+  img.Signs2 {
+    width: 21.8px;
+    height: 16.4px;
+    object-fit: contain;
+  }
+  .Digitize-your-business-expense-process-to-reduce-your-admin-costs {
+    width: 20vw;
+    height: 12vh;
+    font-family: Lato-Regular;
+    font-size: 1.2vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess {
+    width: 20vw;
+    height: 15vh;
+    font-family: Lato-Regular;
+    font-size: 1.2vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    white-space: normal;
+  }
+
+  .HeadPartSave {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .numberWithSave {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: -40%;
+    margin-left: 5%;
+  }
+  .signedTextone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    margin-top: 45%;
+    margin-left: -80%;
+  }
+
+  .signedTexttwo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    margin-top: -15%;
+    margin-left: -80%;
+  }
+  .TextTitleSave {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 70%;
+    margin-top: -20%;
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (min-width: 1501px) and (max-width: 1700px) {
+  .SaveBackgroundMobile {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    width: 0px;
+    height: 0px;
+    background-color: #306bdd;
+    visibility: hidden;
+  }
+  .imageSaveToBottom {
+    margin-top: 7%;
+  }
+
+  .SaveBackground {
+    width: 100%;
+    height: 100vh;
+    visibility: visible;
+    background-color: #306bdd;
+  }
+
+  img.Save-imgsSave {
+    width: 45vw;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 20%;
+    object-fit: contain;
+    visibility: visible;
+  }
+
+  img.Save-imgsMobile {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+
+  .TextSaveToBottom {
+    margin-top: 20%;
+  }
+  .Rectangle-24989s {
+    width: 70px;
+    height: 70px;
+    margin: 61.9px 24px 65px 0;
+    padding: 11px 17px 11px 18px;
+    border-radius: 47px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    border: solid 1px #30c6c6;
+    background-color: #fff;
+    margin-left: 5%;
+    margin-top: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+  }
+
+  .span1s {
+    width: 11px;
+    height: 24px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 30px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.75;
+    letter-spacing: normal;
+    text-align: left;
+    color: #30c6c6;
+    margin-left: -20%;
+  }
+
+  .Saves {
+    width: 70px;
+    height: 37px;
+    margin: 66.9px 340.1px 69px 24px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 50px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.53;
+    letter-spacing: normal;
+    text-align: left;
+    color: #30c6c6;
+    margin-top: -10%;
+    margin-left: 5%;
+  }
+
+  .Time-is-money-Save-boths {
+    width: 250px;
+    height: 21px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 2vw;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.23;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fcfcfc;
+    margin-top: 0%;
+  }
+  .TextSave {
+    margin-left: 0%;
+    width: 50%;
+  }
+
+  img.Signs {
+    width: 21.8px;
+    height: 16.4px;
+    object-fit: contain;
+  }
+
+  img.Signs2 {
+    width: 21.8px;
+    height: 16.4px;
+    object-fit: contain;
+  }
+  .Digitize-your-business-expense-process-to-reduce-your-admin-costs {
+    width: 20vw;
+    height: 12vh;
+    font-family: Lato-Regular;
+    font-size: 1.2vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+  }
+
+  .Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess {
+    width: 20vw;
+    height: 15vh;
+    font-family: Lato-Regular;
+    font-size: 1.2vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fff;
+    white-space: normal;
+  }
+
+  .HeadPartSave {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .numberWithSave {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin-top: -40%;
+    margin-left: 5%;
+  }
+  .signedTextone {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    margin-top: 45%;
+    margin-left: -80%;
+  }
+
+  .signedTexttwo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+    margin-top: -15%;
+    margin-left: -80%;
+  }
+  .TextTitleSave {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 70%;
+    margin-top: -20%;
+    margin-left: 40%;
   }
 }
 

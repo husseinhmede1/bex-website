@@ -1,9 +1,10 @@
-import React, { useEffect } from "react";
-import { connect, ConnectedProps } from "react-redux";
+import React, { useEffect, useState } from "react";
+import { connect, ConnectedProps, useStore } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
-import { Router, Route, Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
+import { Drawer, Row, Col, Button, Divider } from "antd";
+import { CookieComponent } from "&styled/cookies/cookie.component";
 import "./menu.css";
 
 import Apple from "&assets/img/Apple-Icon.png";
@@ -48,12 +49,12 @@ import menu3 from "&assets/img/Menu@3x.png";
 import { loginActions } from "&features/demo/login/login.slice";
 
 const { innerWidth: width, innerHeight: height } = window;
-
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const MenuComponent = (props: ReduxProps) => {
   const { logout } = props;
   const { t } = useTranslation(["Menu"]);
+  const [visible, steVisibility] = useState(true);
 
   /**
    * useEffect performs side-effects on component rendering.
@@ -64,7 +65,9 @@ const MenuComponent = (props: ReduxProps) => {
   useEffect(() => {
     // Write your side-effects here
   }, []);
-
+  const onClose = () => {
+    steVisibility(false);
+  };
   return (
     <div className="menuBackground">
       <div className="navbarMenu">
@@ -73,43 +76,35 @@ const MenuComponent = (props: ReduxProps) => {
         </Link>
 
         <div className="navbar-namesMenu">
-          <span className="navbar-names-font1Menu">
-            <Link
-              onClick={() => window.location.replace("/#handlesId")}
-              to="/main"
-              className="LinksColor"
-            >
-              HOW BEX WORKS
-            </Link>
-          </span>
-          <span className="navbar-names-fontMenu">
-            {" "}
-            <Link
-              onClick={() => window.location.replace("/#packagesId")}
-              to="/main"
-              className="LinksColor"
-            >
-              PRICING
-            </Link>
-          </span>
-          <span className="navbar-names-fontMenu">
-            <Link
-              onClick={() => window.location.replace("/#infoId")}
-              to="/main"
-              className="LinksColor"
-            >
-              ABOUT US
-            </Link>
-          </span>
-          <span className="navbar-names-fontMenu">
-            <Link
-              onClick={() => window.location.replace("/#connectId")}
-              to="/main"
-              className="LinksColor"
-            >
-              CONTACT US
-            </Link>
-          </span>
+          <Link
+            onClick={() => window.location.replace("/#handlesId")}
+            to="/main" 
+            className="LinksColor"
+          >
+            <span className="navbar-names-font1Menu">HOW BEX WORKS</span>
+          </Link>
+
+          <Link
+            onClick={() => window.location.replace("/#packagesId")}
+            to="/main"
+            className="LinksColor"
+          >
+            <span className="navbar-names-fontMenu">PRICING</span>
+          </Link>
+          <Link
+            onClick={() => window.location.replace("/#infoId")}
+            to="/main"
+            className="LinksColor"
+          >
+            <span className="navbar-names-fontMenu">ABOUT US</span>
+          </Link>
+          <Link
+            onClick={() => window.location.replace("/#connectId")}
+            to="/main"
+            className="LinksColor"
+          >
+            <span className="navbar-names-fontMenu">CONTACT US</span>
+          </Link>
         </div>
 
         <div className="navbar-imagesMenu">
@@ -140,7 +135,6 @@ const MenuComponent = (props: ReduxProps) => {
           <span className="Business-expense-management-made-easyMenu">
             <div> BUSINESS EXPENSE </div>
             <div>MANAGMENT </div>
-            <div>Made Easy.</div>
           </span>
         </div>
         <div className="contrlMenu">
@@ -148,48 +142,85 @@ const MenuComponent = (props: ReduxProps) => {
         </div>
       </div>
       <div className="tryDemoMenu">
-        <Link
-          onClick={() => window.location.replace("/#tryforFreeId")}
-          to="/main"
-        >
-          <img
-            src={tryForFree}
-            srcSet={`${tryForFree2} 2x, ${tryForFree3} 3x`}
-            className="Try-for-freeMenu"
-          ></img>
-        </Link>
-        <img
-          src={getDemo}
-          srcSet={`${getDemo2} 2x, ${getDemo3} 3x`}
-          className="Try-for-freeMenu"
-        ></img>
+        <Row>
+          <Col push={1}>
+            <Link
+              onClick={() => window.location.replace("/#tryforFreeId")}
+              to="/main"
+            >
+              <Button type="text" className="Try-for-freeMenu">
+                <span className="tryForfreeSpan">Try for free</span>
+              </Button>
+            </Link>
+          </Col>
+          <Col push={2}>
+            <Button className="get-Your-Demo" ghost>
+              <span className="getYourDemoSpan">Get your Demo</span>
+            </Button>
+          </Col>
+        </Row>
       </div>
-      <div className="GreenCercleMenu">
-        <img
-          src={chatbot}
-          srcSet={`${chatbot2} 2x, ${chatbot3} 3x`}
-          className="chatbotMenu"
-        />
-      </div>
-      <div className="areeba-masterMenu">
-        <div className="areebaMenu1">
-          <span className="Powered-byMenu">Powered by</span>
+      <Col push={20}>
+        <div className="GreenCercleMenu">
           <img
-            src={areeba}
-            srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-            className="Areeba-logoMenu"
-          ></img>
+            src={chatbot}
+            srcSet={`${chatbot2} 2x, ${chatbot3} 3x`}
+            className="chatbotMenu"
+          />
         </div>
-        <span className="lineMenu"></span>
-        <div className="mastercardMenu2">
-          <span className="Powered-byMenu">In partnership with</span>
-          <img
-            src={mastercard}
-            srcSet={`${mastercard2} 2x, ${mastercard3} 3x`}
-            className="Areeba-logoMenu"
-          ></img>
-        </div>
+      </Col>
+      <div className="areebaMasterLogoLeftRight">
+        <Col push={3}>
+          <Row>
+            <Col>
+              <Row>
+                <Col>
+                  <span className="Powered-byMenu">Powered by</span>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <img
+                    src={areeba}
+                    srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+                    className="Areeba-logoMenu"
+                  ></img>
+                </Col>
+              </Row>
+            </Col>
+            <Col>
+              <Divider type="vertical" className="lineMenu" />
+            </Col>
+            <Col>
+              <Row>
+                <Col>
+                  <span className="Powered-byMenu">In partnership with</span>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <img
+                    src={mastercard}
+                    srcSet={`${mastercard2} 2x, ${mastercard3} 3x`}
+                    className="Areeba-logoMenu"
+                  ></img>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Col>
       </div>
+      <Drawer
+        placement="bottom"
+        closable={false}
+        visible={visible}
+        onClose={onClose}
+        key="bottom"
+        className="cookieColor"
+        height={450}
+      >
+        <CookieComponent />
+      </Drawer>
     </div>
   );
 };

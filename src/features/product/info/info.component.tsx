@@ -21,7 +21,7 @@ import master from "&assets/img/Mastercard-Txt.png";
 import master2 from "&assets/img/Mastercard-Txt@2x.png";
 import master3 from "&assets/img/Mastercard-Txt@3x.png";
 /**
- * 
+ *
  *
  * These are actions imported from the feature slices.
  * You can use 'useDispatch' hook or 'mapDispatchToProps'
@@ -29,8 +29,7 @@ import master3 from "&assets/img/Mastercard-Txt@3x.png";
  */
 //import { homeActions } from "./home.slice";
 import { loginActions } from "&features/demo/login/login.slice";
-
-const { innerWidth: width, innerHeight: height } = window;
+import { Col, Row } from "antd";
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
@@ -49,10 +48,10 @@ const InfoComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div className="infoPageBackground" id={'infoId'}>
+    <div className="infoPageBackground" id={"infoId"}>
       <div className="navyBlueColorInfo" />
       <div className="twoPartsInfoPage">
-        <div className="firstPartInfoPage">
+        <div className="firstPartInfoPage"> 
           <span className="We-are-BEXI">WE ARE BEX</span>
 
           <span className="Designed-by-a-team-of-experts-from-areeba-and-Mastercard-with-extensive-knowledge-in-fintech-and-digital-payments-with-the-mission-of-helping-businesses-save-time-and-moneyI">
@@ -63,13 +62,7 @@ const InfoComponent = (props: ReduxProps) => {
           <img
             src={mask}
             srcSet={`${mask2} 2x, ${mask3} 3x`}
-            className="Mask-Group-545I" 
-          ></img>
-
-          <img
-            src={maskmobile} 
-            srcSet={`${maskmobile2} 2x, ${maskmobile3} 3x`}
-            className="Mobile-Img-Info"
+            className="Mask-Group-545I"
           ></img>
         </div>
 
@@ -104,6 +97,84 @@ const InfoComponent = (props: ReduxProps) => {
             </span>
           </div>
         </div>
+      </div>
+
+      <div className="secondPartInfoPageMobile">
+        <Row className="SpaceBetweenTextsInfo">
+          <Col push={3}>
+            <Row>
+              <span className="We-are-BEXI">WE ARE BEX</span>
+            </Row>
+
+            <Row className="SecondSpaceBetweenTextsInfo">
+              
+                <span className="Designed-by-a-team-of-experts-from-areeba-and-Mastercard-with-extensive-knowledge-in-fintech-and-digital-payments-with-the-mission-of-helping-businesses-save-time-and-moneyI">
+                  Designed by a team of experts from areeba and Mastercard with
+                  extensive knowledge in fintech and digital payments, with the
+                  mission of helping businesses save time and money
+                </span>
+            </Row>
+          </Col>
+        </Row>
+        <Row className="SpaceBetweenTextsInfo">
+          <Col pull={2}>
+            <img
+              src={maskmobile}
+              srcSet={`${maskmobile2} 2x, ${maskmobile3} 3x`}
+              className="Mobile-Img-Info"
+            ></img>
+          </Col>
+        </Row>
+        <Row className="SpaceBetweenTextsAndImageInfo">
+          <Col push={3}>
+            <Row>
+              <Col>
+                <Row>
+                  <Col>
+                    <img
+                      src={areeba}
+                      srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+                      className="areeba-whiteI"
+                    ></img>
+                  </Col>
+                </Row>
+                <Row>
+                  
+                    <span className="areeba-is-a-leading-financial-technology-company-driven-forward-by-the-innovative-approach-of-changing-the-way-payments-are-made-For-more-info-visit-our-website-areebacomI">
+                      areeba is a leading financial technology company driven
+                      forward by the innovative approach of changing the way
+                      payments are made. For more info visit our website
+                      <span className="text-style-1I">areeba.com</span>
+                    </span>
+                  
+                </Row>
+              </Col>
+            </Row>
+            <Row className="SecondSpaceBetweenTowTextsInfo">
+              <Col>
+                <Row>
+                  <Col>
+                    <img
+                      src={master}
+                      srcSet={`${master2} 2x, ${master3} 3x`}
+                      className="Mastercard-TxtI"
+                    ></img>
+                  </Col>
+                </Row>
+                <Row>
+                  <span className="Mastercard-is-a-global-technology-company-in-the-payments-industry-Our-mission-is-to-connect-and-power-an-inclusive-digital-economy-that-benefits-everyone-everywhere-by-making-transactions-safe-simple-smart-and-accessible-For-more-info-visit-our-websI">
+                    Mastercard is a global technology company in the payments
+                    industry. Our mission is to connect and power an inclusive,
+                    digital economy that benefits everyone, everywhere by making
+                    transactions safe, simple, smart and accessible. For more
+                    info visit our website
+                    <span className="text-style-1I">mastercard.com</span>
+                  </span>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
       </div>
     </div>
   );

@@ -3,7 +3,6 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 import { connect, ConnectedProps } from "react-redux";
 
 import { history, RootState } from "&store/store";
-import { ProtectedRoute } from "&route/protectedRoute";
 // TODO remove demo routes
 
 import { ChallangesComponent } from "&features/product/challanges/challanges.component";
@@ -12,6 +11,7 @@ import { MenuComponent } from "&features/product/menu/menu.component";
 import { HandlesComponent } from "&features/product/handles/handles.component";
 import { SaveComponent } from "&features/product/save/save.component";
 import { PackagesComponent } from "&features/product/packages/packages.component";
+
 import { TryforFreeComponent } from "&features/product/tryforFree/tryforFree.component";
 import { BenefitsComponent } from "&features/product/benefits/benefits.component";
 import { InfoComponent } from "&features/product/info/info.component";
@@ -22,7 +22,6 @@ import { PolicyComponent } from "&features/privacy/policy/policy.component";
 import { TermsComponent } from "&features/privacy/terms/terms.component";
 import { MainprivacyComponent } from "&features/privacy/mainprivacy/mainprivacy.component";
 import { MenumobileComponent } from "&features/product/menumobile/menumobile.component";
-
 
 type ReduxProps = ConnectedProps<typeof connector>;
 

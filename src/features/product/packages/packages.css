@@ -1,727 +1,36 @@
-.packagesBackground {
-  width: 99.2vw;
-  height: 100vh;
-  background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-.OUR-Packagesp {
-  width: 296px;
-  height: 49px;
-  margin: 117px 9px 10px 11px;
-  font-family: Gilroy-ExtraBold;
-  font-size: 40px;
-  font-weight: 800;
-  font-stretch: normal; 
-  font-style: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
-  color: #00194a;
-  margin-left: 2%;
-}
-
-.Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp {
-  width: 492px;
-  height: 44px;
-  margin: 10px 437px 75px;
-  opacity: 0.6;
-  font-family: Lato-Regular;
-  font-size: 18px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.22;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-
-.HeadOfPagePackages {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-  margin-top: 4%;
-  margin-left: -8%;
-}
-
-.firstRectanglePackages {
-  width: 337px;
-  height: 490px;
-  padding: 37px 77px 32px;
-  background-color: #fffdfd;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  align-content: flex-end;
-  margin-top: 7%;
-}
-
-.secondRectanglePackages {
-  width: 337px;
-  height: 509px;
-  margin: 75px 516px 141px 513px;
-  padding: 43px 76px 41px 77px;
-  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
-  background-color: #fffefe;
-  margin-left: -15px;
-  margin-right: -15px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: stretch;
-  align-content: flex-end;
-  z-index: 1;
-}
-
-.thyrdRectanglePackages {
-  width: 337px;
-  height: 490px;
-  margin: 85px 188px 150px 9px;
-  padding: 41px 60.8px 42px 61px;
-  background-color: #fffefe;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: space-between;
-}
-
-.MobileRectanglesecondPackages {
-  width: 0px;
-  height: 0px;
-
-  visibility: hidden;
-}
-
-.miniBlueCerclePackages {
-  width: 0px;
-  height: 0px;
-  visibility: hidden;
-
-  margin: 0 3px 0 0;
-  background-color: #306bdd;
-}
-.minisecondCerclePackages {
-  width: 0px;
-  height: 0px;
-  visibility: hidden;
-
-  margin: 0 3px;
+.ant-carousel .slick-dots li button {
+  width: 8px;
+  height: 8px;
+  background: #306bdd;
   opacity: 0.2;
-}
-.minithyrdCerclePackages {
-  width: 0px;
-  height: 0px;
-  visibility: hidden;
-
-  margin: 0 0 0 3px;
-  opacity: 0.2;
+  border-radius: 100%;
 }
 
-.cercleMobileExistPackages {
-  visibility: hidden;
-}
-.PagePackagesContent {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: center;
-  margin-left: 8%;
-}
-
-.Essentialp {
-  width: 94px;
-  height: 37px;
-  margin: 0 45px 2px;
-  opacity: 0.6;
-  font-family: Poppins-Regular;
-  font-size: 22px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.95;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-
-.prop {
-  width: 34px;
-  height: 37px;
-  margin: 0 75px 6px;
-  opacity: 0.6;
-  font-family: Poppins-Regular;
-  font-size: 22px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-.entreprisep {
-  width: 102px;
-  height: 27px;
-  margin: 0 57.2px 8px 57px;
-  opacity: 0.6;
-  font-family: Lato-Regular;
-  font-size: 22px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.95;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-  margin-top: -7%;
-  margin-left: 30%;
-}
-
-.Starting-atp {
-  width: 64px;
-  height: 17px;
-  margin: 2px 60px 38px;
-  opacity: 0.3;
-  font-family: Lato-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-  margin-top: -10%;
-  white-space: nowrap;
-}
-.Starting-at1p {
-  width: 64px;
-  width: 64px;
-  height: 17px;
-  margin: 2px 60px 38px;
-  opacity: 0.3;
-  font-family: Lato-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-  margin-top: -5%;
-  white-space: nowrap;
-}
-.AED300p {
-  width: 122px;
-  height: 41px;
-  margin: 18px 31px 36px;
-  font-family: Gilroy-ExtraBold;
-  font-size: 33px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-  margin-top: -15%;
-}
-.AED300p .text-style-1p {
-  font-size: 28px;
-  font-family: Gilroy-ExtraBold;
-  color: #000;
-}
-
-.AED500p {
-  width: 122px;
-  height: 41px;
-  margin: 22px 31px 35.6px;
-  font-family: Gilroy-ExtraBold;
-  font-size: 33px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-  margin-top: -15%;
-}
-.AED500p .text-style-1p {
-  font-size: 28px;
-  font-family: Gilroy-ExtraBold;
-  color: #000;
-}
-
-.AED1000p {
-  width: 136px;
-  height: 41px;
-  margin: 24px 40.2px 36px 40px;
-  font-family: Gilroy-ExtraBold;
-  font-size: 33px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 0.67;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-  margin-top: -13%;
-}
-.AED1000p .text-style-1p {
-  font-size: 28px;
-  font-family: Gilroy-ExtraBold;
-  color: #000;
-}
-.User-Monthp {
-  width: 82px;
-  height: 17px;
-  margin: 38px 51px 21px;
-  font-family: Lato-Regular;
-  font-size: 14px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.57;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-  margin-top: -19%;
-}
-
-img.Signp {
-  width: 18.2px;
-  height: 13.7px;
-  margin: 3px 9.9px 1.3px 0;
-  object-fit: contain;
-}
-
-.Digital-onboardingp {
-  width: 122px;
-  height: 18px;
-  margin: 0 0 0 9.9px;
-  font-family: Lato-Regular;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.53;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-}
-
-.Physical-card-requestp {
-  width: 140px;
-  height: 18px;
-  margin: 0 6px 13.7px 8px;
-  font-family: Lato-Regular;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.53;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-}
-
-.Dedicated-support-agentp {
-  width: 162px;
-  height: 18px;
-  margin: 0 0 0 10px;
-  font-family: Lato-Regular;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.53;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-}
-
-.Digital-cardp {
-  width: 76px;
-  height: 18px;
-  margin: 0 0 0 10px;
-  font-family: Lato-Regular;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.53;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-}
-
-.Card-controlsp {
-  width: 90px;
-  height: 18px;
-  margin: 0 0 0 10px;
-  font-family: Lato-Regular;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.53;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-}
-
-.Priority-in-call-centerp {
-  width: 136px;
-  height: 18px;
-  margin: 13.7px 8px 13.7px 10px;
-  font-family: Lato-Regular;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.53;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-}
-
-.Multiple-admin-accessp {
-  width: 144px;
-  height: 18px;
-  margin: 0 0 0 10px;
-  font-family: Lato-Regular;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.53;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-}
-
-.Multiple-entity-consolidationp {
-  width: 188px;
-  height: 18px;
-  margin: 0 0 0 10px;
-  font-family: Lato-Regular;
-  font-size: 15px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.53;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-  margin-left: -1%;
-}
-
-.Stolen-card-feep {
-  width: 106px;
-  height: 23px;
-  margin: 0 0 15px;
-  font-family: Poppins-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-  margin-left: 17%;
-}
-.Stolen-card-fee1p {
-  width: 106px;
-  height: 23px;
-  margin: 0 0 15px;
-  font-family: Poppins-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-  margin-left: 20%;
-  margin-top: 5%;
-}
-
-.Stolen-card-fee2p {
-  width: 106px;
-  height: 23px;
-  margin: 0 0 15px;
-  font-family: Poppins-Regular;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-  margin-left: 10%;
-  margin-top: 4%;
-}
-
-.AED-5p {
-  width: 40px;
-  height: 17px;
-  margin: 21px 32px 0 34px;
-  font-family: Lato-Regular;
-  font-size: 14px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-  margin-top: -10%;
-  margin-left: 30%;
-}
-
-.Free-up-to-3-then-AED-5p {
-  width: 152px;
-  height: 17px;
-  margin: 21px 0 0;
-  font-family: Lato-Regular;
-  font-size: 14px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-  margin-top: -10%;
-  margin-left: 10%;
-}
-
-.Free-up-to-5-then-AED-5p {
-  width: 152px;
-  height: 17px;
-  margin: 2px 32.2px 23px 32px;
-  font-family: Lato-Regular;
-  font-size: 14px;
-  font-weight: 800;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #2e2e2e;
-  margin-top: 10%;
-  margin-left: 0%;
-}
-.firstContactButton {
-  width: 166px;
-  height: 56px;
-  margin: 23px 9px 28px;
-  background-color: #306bdd;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-}
-img.Contact-us-bluep {
-  width: 166px;
-  height: 56px;
-  margin: 23px 9px 28px;
-  object-fit: contain;
-}
-.Contact-Usp {
-  width: 94px;
-  height: 23px;
-  font-family: Lato-Bold;
-  font-size: 19px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.16;
-  letter-spacing: normal;
-  text-align: center;
-  color: #f0f0f0;
-}
-
-.aed-10-on-Additional-account-Up-to-5-usersp {
-  width: 184px;
-  height: 38px;
-  margin: 28px 0 0;
-  opacity: 0.45;
-  font-family: Lato-Bold;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-.aed-10-on-Additional-account-Up-to-5-usersp .text-style-1p {
-  font-weight: bold;
-  font-family: Lato-Bold;
-  color: #000;
-  width: 184px;
-  height: 38px;
-  font-size: 14px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
+.ant-carousel .slick-dots li.slick-active button {
+  width: 10px;
+  height: 10px;
   opacity: 1;
+  background: #306bdd;
+  border-radius: 100%;
 }
-
-.secondContactButton {
-  width: 166px;
-  height: 56px;
-  margin: 23px 9px 28px;
-  background-color: #30c675;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-}
-
-.thyrdContactButton {
-  width: 8vw;
-
-  height: 5.5vh;
-  background-color: #00194a;
-  margin-left: 15%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: stretch;
-  margin-top: 1%;
-}
-
-.aed-15-on-Additional-account-Up-to-10-usersp {
-  width: 184px;
-  height: 38px;
-  margin: 28px 0 0;
-  opacity: 0.46;
-  font-family: Lato-Bold;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-.aed-15-on-Additional-account-Up-to-10-usersp .text-style-1p {
-  font-weight: bold;
-  font-family: Lato-Bold;
-  color: #000;
-  width: 184px;
-  height: 38px;
-  font-size: 14px;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  opacity: 1;
-}
-
-.Unlimitedp {
-  width: 62px;
-  height: 17px;
-  margin: 39px 77.2px 0 77px;
-  opacity: 0.46;
-  font-family: Lato-Bold;
-  font-size: 14px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: normal;
-  text-align: center;
-  color: #000;
-}
-
-.packagesTitleFirstRows {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-  margin-left: -10%;
-  margin-top: 0%;
-}
-
-.packagesRectangleSignedText {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: stretch;
-  margin-top: -15%;
-}
-
-.packagesStolenAED {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: stretch;
-  align-content: stretch;
-}
-.packagesStolenAEDtwo {
-  margin-left: 18%;
-  margin-top: -5%;
-  white-space: nowrap;
-}
-
-@media only screen and (min-width: 414px) and (max-width: 766px) {
-  .packagesBackground {
+@media only screen and (max-width: 1000px) {
+  .MobilePackages {
     width: 100vw;
     height: 100vh;
-
     background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    visibility: visible;
   }
-
-  .OUR-Packagesp {
+  .packagesBackground {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+  .OUR-PackagesC {
     width: 221px;
     height: 37px;
 
     font-family: Gilroy-ExtraBold;
-    font-size: 30px;
+    font-size: 6vw;
     font-weight: 800;
     font-stretch: normal;
     font-style: normal;
@@ -730,304 +39,198 @@ img.Contact-us-bluep {
     text-align: center;
     color: #00194a;
     white-space: nowrap;
-    margin-left: 1%;
   }
 
-  .Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp {
-    width: 314px;
+  .Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsC {
+    width: 100px;
     height: 20vh;
-    margin: 10px 437px 75px;
     opacity: 0.6;
+    font-family: Lato-Regular;
+    font-size: 3vw;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+  }
+  .PackagesToTheLeft {
+    margin-left: 10%;
+    margin-top: 20%;
+  }
+
+  .dotsPackages {
+    height: 70vh;
+  }
+
+  .EssentialMobilePackages {
+    width: 94px;
+    height: 37px;
+    margin: 0 45px 2px;
+    opacity: 0.5;
+    font-family: Poppins-Regular;
+    font-size: 20px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.95;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+  }
+
+  .propMobilePackages {
+    width: 34px;
+    height: 37px;
+    margin: 0 75px 6px;
+    opacity: 0.6;
+    font-family: Poppins-Regular;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+  }
+  .entrepriseMobilePackages {
+    width: 102px;
+    height: 27px;
+    opacity: 0.6;
+    font-family: Lato-Regular;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.95;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin-top: -7%;
+    margin-left: 30%;
+  }
+
+  .Starting-atMobilePackages {
+    width: 64px;
+    height: 17px;
+    opacity: 0.3;
+    font-family: Lato-Regular;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+
+    white-space: nowrap;
+  }
+  .AED300MobilePackages {
+    width: 122px;
+    height: 15px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 25px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+  }
+  .AED300MobilePackages .text-style-1MobilePackages {
+    font-size: 25px;
+    font-family: Gilroy-ExtraBold;
+    color: #000;
+  }
+
+  .AED500p {
+    width: 122px;
+    height: 41px;
+    margin: 22px 31px 35.6px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 33px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin-top: -15%;
+  }
+  .AED500p .text-style-1p {
+    font-size: 28px;
+    font-family: Gilroy-ExtraBold;
+    color: #000;
+  }
+
+  .AED1000p {
+    width: 136px;
+    height: 41px;
+    margin: 24px 40.2px 36px 40px;
+    font-family: Gilroy-ExtraBold;
+    font-size: 33px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    margin-top: -13%;
+  }
+  .AED1000p .text-style-1p {
+    font-size: 28px;
+    font-family: Gilroy-ExtraBold;
+    color: #000;
+  }
+  .User-MonthMobilePackages {
+    width: 82px;
+    height: 1vh;
+    font-family: Lato-Regular;
+    font-size: 13px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    color: #000;
+    white-space: nowrap;
+  }
+
+  img.SignMobilePackages {
+    width: 15.2px;
+    height: 10px;
+    object-fit: contain;
+    margin-top: 40%;
+  }
+
+  .Digital-onboardingMobilePackages {
+    width: 122px;
+    height: 1vh;
+
     font-family: Lato-Regular;
     font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-
-  .HeadOfPagePackages {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: -20%;
-    margin-left: -1%;
-  }
-
-  .firstRectanglePackages {
-    width: 314px;
-    height: 456px;
-    margin: 85px 11px 150px 186px;
-    padding: 37px 77px 32px;
-    background-color: #fffdfd;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: flex-end;
-    margin-left: 6%;
-    z-index: 1;
-  }
-
-  .secondRectanglePackages {
-    display: none;
-  }
-
-  .thyrdRectanglePackages {
-    display: none;
-  }
-
-  .MobileRectanglesecondPackages {
-    width: 60px;
-    height: 439.6px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    visibility: visible;
-    margin-top: 24%;
-    margin-left: -3%;
-  }
-
-  .miniBlueCerclePackages {
-    width: 8px;
-    height: 8px;
-    visibility: visible;
-    margin-left: -100%;
-    background-color: #306bdd;
-    border-radius: 50%;
-  }
-  .minisecondCerclePackages {
-    width: 8px;
-    height: 8px;
-    visibility: visible;
-    margin-left: 0%;
-    margin-top: -72%;
-    opacity: 0.2;
-    background-color: #306bdd;
-    border-radius: 50%;
-  }
-  .minithyrdCerclePackages {
-    width: 8px;
-    height: 8px;
-    visibility: visible;
-    opacity: 0.2;
-    background-color: #306bdd;
-    margin-left: 100%;
-    margin-top: -72%;
-    border-radius: 50%;
-  }
-
-  .cercleMobileExistPackages {
-    visibility: visible;
-    margin-top: -20%;
-  }
-  .PagePackagesContent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: center;
-    margin-top: -30%;
-    margin-left: 2%;
-  }
-
-  .Essentialp {
-    width: 94px;
-    height: 37px;
-    margin: 0 45px 2px;
-    opacity: 0.6;
-    font-family: Poppins-Regular;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.95;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-
-  .prop {
-    width: 34px;
-    height: 37px;
-    margin: 0 75px 6px;
-    opacity: 0.6;
-    font-family: Poppins-Regular;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-  .entreprisep {
-    width: 102px;
-    height: 27px;
-    margin: 0 57.2px 8px 57px;
-    opacity: 0.6;
-    font-family: Lato-Regular;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.95;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -7%;
-    margin-left: 30%;
-  }
-
-  .Starting-atp {
-    width: 64px;
-    height: 17px;
-    margin: 2px 60px 38px;
-    opacity: 0.3;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -10%;
-    white-space: nowrap;
-  }
-  .Starting-at1p {
-    width: 64px;
-    width: 64px;
-    height: 17px;
-    margin: 2px 60px 38px;
-    opacity: 0.3;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -5%;
-    white-space: nowrap;
-  }
-  .AED300p {
-    width: 122px;
-    height: 41px;
-    margin: 18px 31px 36px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 33px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.67;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -15%;
-  }
-  .AED300p .text-style-1p {
-    font-size: 28px;
-    font-family: Gilroy-ExtraBold;
-    color: #000;
-  }
-
-  .AED500p {
-    width: 122px;
-    height: 41px;
-    margin: 22px 31px 35.6px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 33px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.67;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -15%;
-  }
-  .AED500p .text-style-1p {
-    font-size: 28px;
-    font-family: Gilroy-ExtraBold;
-    color: #000;
-  }
-
-  .AED1000p {
-    width: 136px;
-    height: 41px;
-    margin: 24px 40.2px 36px 40px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 33px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.67;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -13%;
-  }
-  .AED1000p .text-style-1p {
-    font-size: 28px;
-    font-family: Gilroy-ExtraBold;
-    color: #000;
-  }
-  .User-Monthp {
-    width: 82px;
-    height: 17px;
-    margin: 38px 51px 21px;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.57;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -19%;
-  }
-
-  img.Signp {
-    width: 18.2px;
-    height: 13.7px;
-    margin: 3px 9.9px 1.3px 0;
-    object-fit: contain;
-  }
-
-  .Digital-onboardingp {
-    width: 122px;
-    height: 18px;
-    margin: 0 0 0 9.9px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.53;
     letter-spacing: normal;
     text-align: center;
     color: #2e2e2e;
+    white-space: nowrap;
   }
 
-  .Physical-card-requestp {
+  .Physical-card-requestMobilePackages {
     width: 140px;
     height: 18px;
-    margin: 0 6px 13.7px 8px;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 13px;
+
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1037,12 +240,11 @@ img.Contact-us-bluep {
     color: #2e2e2e;
   }
 
-  .Dedicated-support-agentp {
+  .Dedicated-support-agentMobilePackages {
     width: 162px;
     height: 18px;
-    margin: 0 0 0 10px;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1052,12 +254,11 @@ img.Contact-us-bluep {
     color: #2e2e2e;
   }
 
-  .Digital-cardp {
+  .Digital-cardMobilePackages {
     width: 76px;
-    height: 18px;
-    margin: 0 0 0 10px;
+    height: 1vh;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1065,14 +266,14 @@ img.Contact-us-bluep {
     letter-spacing: normal;
     text-align: center;
     color: #2e2e2e;
+    white-space: nowrap;
   }
 
-  .Card-controlsp {
+  .Card-controlsMobilePackages {
     width: 90px;
-    height: 18px;
-    margin: 0 0 0 10px;
+    height: 1vh;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1080,14 +281,14 @@ img.Contact-us-bluep {
     letter-spacing: normal;
     text-align: center;
     color: #2e2e2e;
+    white-space: nowrap;
   }
 
-  .Priority-in-call-centerp {
+  .Priority-in-call-centerMobilePackages {
     width: 136px;
     height: 18px;
-    margin: 13.7px 8px 13.7px 10px;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1097,12 +298,11 @@ img.Contact-us-bluep {
     color: #2e2e2e;
   }
 
-  .Multiple-admin-accessp {
+  .Multiple-admin-accessMobilePackages {
     width: 144px;
     height: 18px;
-    margin: 0 0 0 10px;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1112,12 +312,11 @@ img.Contact-us-bluep {
     color: #2e2e2e;
   }
 
-  .Multiple-entity-consolidationp {
+  .Multiple-entity-consolidationMobilePackages {
     width: 188px;
     height: 18px;
-    margin: 0 0 0 10px;
     font-family: Lato-Regular;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -1125,844 +324,33 @@ img.Contact-us-bluep {
     letter-spacing: normal;
     text-align: center;
     color: #2e2e2e;
-    margin-left: -1%;
   }
 
-  .Stolen-card-feep {
-    width: 106px;
-    height: 23px;
-    margin: 0 0 15px;
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: 17%;
-  }
-  .Stolen-card-fee1p {
-    width: 106px;
-    height: 23px;
-    margin: 0 0 15px;
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: 20%;
+  .signedTextToBotom {
     margin-top: 5%;
   }
 
-  .Stolen-card-fee2p {
-    width: 106px;
-    height: 23px;
-    margin: 0 0 15px;
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: 10%;
-    margin-top: 4%;
-  }
-
-  .AED-5p {
-    width: 40px;
-    height: 17px;
-    margin: 21px 32px 0 34px;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-top: -10%;
-    margin-left: 30%;
-  }
-
-  .Free-up-to-3-then-AED-5p {
-    width: 152px;
-    height: 17px;
-    margin: 21px 0 0;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-top: -10%;
-    margin-left: 10%;
-  }
-
-  .Free-up-to-5-then-AED-5p {
-    width: 152px;
-    height: 17px;
-    margin: 2px 32.2px 23px 32px;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-top: 10%;
-    margin-left: 0%;
-  }
-  .firstContactButton {
-    width: 166px;
-    height: 56px;
-    margin: 23px 9px 28px;
+  .ContactUsButton1MobilePackages {
+    width: 110px;
+    height: 45px;
     background-color: #306bdd;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
   }
-  img.Contact-us-bluep {
-    width: 166px;
-    height: 56px;
-    margin: 23px 9px 28px;
-    object-fit: contain;
-  }
-  .Contact-Usp {
-    width: 94px;
-    height: 23px;
-    font-family: Lato-Bold;
-    font-size: 19px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.16;
-    letter-spacing: normal;
-    text-align: center;
-    color: #f0f0f0;
-  }
-
-  .aed-10-on-Additional-account-Up-to-5-usersp {
-    width: 184px;
-    height: 38px;
-    margin: 28px 0 0;
-    opacity: 0.45;
-    font-family: Lato-Bold;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-  .aed-10-on-Additional-account-Up-to-5-usersp .text-style-1p {
-    font-weight: bold;
-    font-family: Lato-Bold;
-    color: #000;
-    width: 184px;
-    height: 38px;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    opacity: 1;
-  }
-
-  .secondContactButton {
-    width: 166px;
-    height: 56px;
-    margin: 23px 9px 28px;
+  .ContactUsButton2MobilePackages {
+    width: 110px;
+    height: 45px;
     background-color: #30c675;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
   }
-
-  .thyrdContactButton {
-    width: 8vw;
-
-    height: 5.5vh;
+  .ContactUsButton3MobilePackages {
+    width: 110px;
+    height: 45px;
     background-color: #00194a;
-    margin-left: 15%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: 1%;
   }
 
-  .aed-15-on-Additional-account-Up-to-10-usersp {
-    width: 184px;
-    height: 38px;
-    margin: 28px 0 0;
-    opacity: 0.46;
-    font-family: Lato-Bold;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-  .aed-15-on-Additional-account-Up-to-10-usersp .text-style-1p {
-    font-weight: bold;
-    font-family: Lato-Bold;
-    color: #000;
-    width: 184px;
-    height: 38px;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    opacity: 1;
-  }
-
-  .Unlimitedp {
-    width: 62px;
-    height: 17px;
-    margin: 39px 77.2px 0 77px;
-    opacity: 0.46;
-    font-family: Lato-Bold;
-    font-size: 14px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-
-  .packagesTitleFirstRows {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    margin-left: -10%;
-    margin-top: 0%;
-  }
-
-  .packagesRectangleSignedText {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    margin-top: -15%;
-  }
-
-  .packagesStolenAED {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-  }
-  .packagesStolenAEDtwo {
-    margin-left: 18%;
-    margin-top: -5%;
-    white-space: nowrap;
-  }
-}
-
-
-
-@media only screen and (min-width: 100px) and (max-width: 413px) {
-  .packagesBackground {
-    width: 101.7vw;
-    height: 130vh;
-
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .OUR-Packagesp {
-    width: 70vw;
-    height: 37px;
-
-    font-family: Gilroy-ExtraBold;
-    font-size: 8vw;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: center;
-    color: #00194a;
-    white-space: nowrap;
-    margin-left: 1%;
-  }
-
-  .Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp {
-    width: 90vw;
-    height: 50px;
-    margin: 10px 437px 75px;
-    opacity: 0.6;
-    font-family: Lato-Regular;
-    font-size: 4vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-
-  .HeadOfPagePackages {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: -20%;
-    margin-left: -1%;
-  }
-
-  .firstRectanglePackages {
-    width: 80vw;
-    height: 70vh;
-    margin: 85px 11px 150px 186px;
-    padding: 37px 77px 32px;
-    background-color: #fffdfd;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: flex-end;
-    margin-left: 6%;
-    z-index: 1;
-  }
-
-  .secondRectanglePackages {
-    display: none;
-  }
-
-  .thyrdRectanglePackages {
-    display: none;
-  }
-
-  .MobileRectanglesecondPackages {
-    width: 16vw;
-    height: 65vh;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    visibility: visible;
-    margin-top: 28%;
-    margin-left: -10%;
-  }
-
-  .miniBlueCerclePackages {
-    width: 8px;
-    height: 8px;
-    visibility: visible;
-    margin-left: -100%;
-    background-color: #306bdd;
-    border-radius: 50%;
-  }
-  .minisecondCerclePackages {
-    width: 8px;
-    height: 8px;
-    visibility: visible;
-    margin-left: 0%;
-    margin-top: -72%;
-    opacity: 0.2;
-    background-color: #306bdd;
-    border-radius: 50%;
-  }
-  .minithyrdCerclePackages {
-    width: 8px;
-    height: 8px;
-    visibility: visible;
-    opacity: 0.2;
-    background-color: #306bdd;
-    margin-left: 100%;
-    margin-top: -72%;
-    border-radius: 50%;
-  }
-
-  .cercleMobileExistPackages {
-    visibility: visible;
-    margin-top: -20%;
-  }
-  .PagePackagesContent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: center;
-    margin-top: -30%;
-    margin-left: 2%;
-  }
-
-  .Essentialp {
-    width: 94px;
-    height: 37px;
-    margin: 0 45px 2px;
-    opacity: 0.6;
-    font-family: Poppins-Regular;
-    font-size: 6vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.95;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-
-  .prop {
-    width: 34px;
-    height: 37px;
-    margin: 0 75px 6px;
-    opacity: 0.6;
-    font-family: Poppins-Regular;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-  .entreprisep {
-    width: 102px;
-    height: 27px;
-    margin: 0 57.2px 8px 57px;
-    opacity: 0.6;
-    font-family: Lato-Regular;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.95;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -7%;
-    margin-left: 30%;
-  }
-
-  .Starting-atp {
-    width: 64px;
-    height: 17px;
-    margin: 2px 60px 38px;
-    opacity: 0.3;
-    font-family: Lato-Regular;
-    font-size: 4vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -10%;
-    white-space: nowrap;
-  }
-  .Starting-at1p {
-    width: 64px;
-    width: 64px;
-    height: 17px;
-    margin: 2px 60px 38px;
-    opacity: 0.3;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -5%;
-    white-space: nowrap;
-  }
-  .AED300p {
-    width: 122px;
-    height: 15px;
-    margin: 18px 31px 36px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 8vw;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.67;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -15%;
-  }
-  .AED300p .text-style-1p {
-    font-size: 8vw;
-    font-family: Gilroy-ExtraBold;
-    color: #000;
-  }
-
-  .AED500p {
-    width: 122px;
-    height: 41px;
-    margin: 22px 31px 35.6px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 33px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.67;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -15%;
-  }
-  .AED500p .text-style-1p {
-    font-size: 28px;
-    font-family: Gilroy-ExtraBold;
-    color: #000;
-  }
-
-  .AED1000p {
-    width: 136px;
-    height: 41px;
-    margin: 24px 40.2px 36px 40px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 33px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.67;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -13%;
-  }
-  .AED1000p .text-style-1p {
-    font-size: 28px;
-    font-family: Gilroy-ExtraBold;
-    color: #000;
-  }
-  .User-Monthp {
-    width: 82px;
-    height: 1vh;
-    margin: 38px 51px 21px;
-    font-family: Lato-Regular;
-    font-size: 4vw;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.57;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -19%;
-    white-space:nowrap ;
-  }
-
-.signAndTextSameLine{
-  display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-start;
-	align-content: flex-start;
-  height: 3vh;
-}
-
-  img.Signp {
-    width: 15.2px;
-    height: 1.5vh;
-    object-fit: contain;
-  }
-
-  .Digital-onboardingp {
-    width: 122px;
-    height: 1vh;
-    font-family: Lato-Regular;
-    font-size: 4vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    white-space: nowrap;
-    margin-left: 5%;
-  }
-
-  .Physical-card-requestp {
-    width: 140px;
-    height: 18px;
-    margin: 0 6px 13.7px 8px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Dedicated-support-agentp {
-    width: 162px;
-    height: 18px;
-    margin: 0 0 0 10px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Digital-cardp {
-    width: 76px;
-    height: 1vh;
-    margin: 0 0 0 10px;
-    font-family: Lato-Regular;
-    font-size: 4vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    white-space: nowrap;
-  }
-
-  .Card-controlsp {
-    width: 90px;
-    height: 1vh;
-    margin: 0 0 0 10px;
-    font-family: Lato-Regular;
-    font-size: 4vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    white-space: nowrap;
-
-  }
-
-  .Priority-in-call-centerp {
-    width: 136px;
-    height: 18px;
-    margin: 13.7px 8px 13.7px 10px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Multiple-admin-accessp {
-    width: 144px;
-    height: 18px;
-    margin: 0 0 0 10px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Multiple-entity-consolidationp {
-    width: 188px;
-    height: 18px;
-    margin: 0 0 0 10px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: -1%;
-  }
-
-  .Stolen-card-feep {
-    width: 106px;
-    height: 23px;
-    margin: 0 0 15px;
-    font-family: Poppins-Regular;
-    font-size: 4vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    opacity: 0.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: 17%;
-        white-space: nowrap;
-
-  }
-  .Stolen-card-fee1p {
-    width: 106px;
-    height: 23px;
-    margin: 0 0 15px;
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: 20%;
-    margin-top: 5%;
-  }
-
-  .Stolen-card-fee2p {
-    width: 106px;
-    height: 23px;
-    margin: 0 0 15px;
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: 10%;
-    margin-top: 4%;
-  }
-
-  .AED-5p {
-    width: 40px;
-    height: 17px;
-    margin: 21px 32px 0 34px;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-top: -10%;
-    margin-left: 30%;
-  }
-
-  .Free-up-to-3-then-AED-5p {
-    width: 152px;
-    height: 17px;
-    margin: 21px 0 0;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-top: -10%;
-    margin-left: 10%;
-  }
-
-  .Free-up-to-5-then-AED-5p {
-    width: 152px;
-    height: 17px;
-    margin: 2px 32.2px 23px 32px;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-top: 10%;
-    margin-left: 0%;
-  }
-  .firstContactButton {
-    width: 40vw;
-    height:7vh;
-    background-color: #306bdd;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-  }
-  img.Contact-us-bluep {
-    width: 166px;
-    height: 56px;
-    object-fit: contain;
-    align-items: center;
-  }
-  .Contact-Usp {
+  .Contact-UsMobilePackages {
     width: 94px;
     height: 23px;
     font-family: Lato-Bold;
-    font-size: 5vw;
+    font-size: 18px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -1970,77 +358,45 @@ img.Contact-us-bluep {
     letter-spacing: normal;
     text-align: center;
     color: #f0f0f0;
-  }
-
-  .aed-10-on-Additional-account-Up-to-5-usersp {
-    width: 184px;
-    height: 15px;
-    margin: 28px 0 0;
-    opacity: 0.45;
-    font-family: Lato-Bold;
-    font-size: 3vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: 1vh;
     margin-left: -7%;
   }
-  .aed-10-on-Additional-account-Up-to-5-usersp .text-style-1p {
-    font-weight: bold;
-    font-family: Lato-Bold;
-    color: #000;
-    opacity:1;
-    width: 184px;
-    height: 38px;
-    font-size: 3vw;
+
+  .Stolen-card-fee1MobilePackages {
+    width: 106px;
+    height: 23px;
+    font-family: Poppins-Regular;
+    font-size: 11px;
+    font-weight: normal;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: normal;
-    opacity: 1;
-    margin-top: 1vh;
-
+    text-align: center;
+    white-space: nowrap;
+    color: #2e2e2e;
   }
 
-  .secondContactButton {
-    width: 166px;
-    height: 56px;
-    margin: 23px 9px 28px;
-    background-color: #30c675;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
+  .Free-up-to-3-then-AED-5MobilePackages {
+    width: 152px;
+    height: 17px;
+    font-family: Lato-Regular;
+    font-size: 11px;
+    font-weight: 800;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #2e2e2e;
+    white-space: nowrap;
   }
 
-  .thyrdContactButton {
-    width: 8vw;
-
-    height: 5.5vh;
-    background-color: #00194a;
-    margin-left: 15%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: 1%;
-  }
-
-  .aed-15-on-Additional-account-Up-to-10-usersp {
+  .aed-15-on-Additional-account-Up-to-10-usersMobilePackages {
     width: 184px;
     height: 38px;
-    margin: 28px 0 0;
-    opacity: 0.46;
+    opacity: 0.3;
     font-family: Lato-Bold;
-    font-size: 14px;
+    font-size: 10px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -2049,78 +405,35 @@ img.Contact-us-bluep {
     text-align: center;
     color: #000;
   }
-  .aed-15-on-Additional-account-Up-to-10-usersp .text-style-1p {
+  .aed-15-on-Additional-account-Up-to-10-usersMobilePackages
+    .text-style-1MobilePackages {
     font-weight: bold;
     font-family: Lato-Bold;
     color: #000;
     width: 184px;
     height: 38px;
-    font-size: 14px;
+    font-size: 10px;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: normal;
     opacity: 1;
   }
-
-  .Unlimitedp {
-    width: 62px;
-    height: 17px;
-    margin: 39px 77.2px 0 77px;
-    opacity: 0.46;
-    font-family: Lato-Bold;
-    font-size: 14px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-
-  .packagesTitleFirstRows {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    margin-left: -10%;
-    margin-top: 0%;
-  }
-
-  .packagesRectangleSignedText {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    margin-top: -15%;
-  }
-
-  .packagesStolenAED {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-  }
-  .packagesStolenAEDtwo {
-    margin-left: 18%;
-    margin-top: -5%;
-    white-space: nowrap;
+  .toBottomPackages {
+    margin-top: 10%;
   }
 }
 
-
-@media only screen and (min-width: 801px) and (max-width: 3000px) {
+@media only screen and (min-width: 1001px) {
+  .MobilePackages {
+    width: 0vw;
+    height: 0vh;
+    visibility: hidden;
+  }
 
   .packagesBackground {
     width: 99.2vw;
-    height: 100vh;
+    height: 120vh;
     background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
@@ -2128,8 +441,9 @@ img.Contact-us-bluep {
     justify-content: center;
     align-items: center;
     align-content: center;
+    visibility: visible;
   }
-  
+
   .OUR-Packagesp {
     width: 296px;
     height: 49px;
@@ -2145,7 +459,7 @@ img.Contact-us-bluep {
     color: #00194a;
     margin-left: 2%;
   }
-  
+
   .Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp {
     width: 492px;
     height: 44px;
@@ -2161,7 +475,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #000;
   }
-  
+
   .HeadOfPagePackages {
     display: flex;
     flex-direction: column;
@@ -2169,10 +483,10 @@ img.Contact-us-bluep {
     justify-content: center;
     align-items: center;
     align-content: stretch;
-    margin-top: 4%;
+    margin-top: -5%;
     margin-left: -8%;
   }
-  
+
   .firstRectanglePackages {
     width: 337px;
     height: 490px;
@@ -2186,7 +500,7 @@ img.Contact-us-bluep {
     align-content: flex-end;
     margin-top: 7%;
   }
-  
+
   .secondRectanglePackages {
     width: 337px;
     height: 509px;
@@ -2204,7 +518,7 @@ img.Contact-us-bluep {
     align-content: flex-end;
     z-index: 1;
   }
-  
+
   .thyrdRectanglePackages {
     width: 337px;
     height: 490px;
@@ -2218,19 +532,19 @@ img.Contact-us-bluep {
     align-items: stretch;
     align-content: space-between;
   }
-  
+
   .MobileRectanglesecondPackages {
     width: 0px;
     height: 0px;
-  
+
     visibility: hidden;
   }
-  
+
   .miniBlueCerclePackages {
     width: 0px;
     height: 0px;
     visibility: hidden;
-  
+
     margin: 0 3px 0 0;
     background-color: #306bdd;
   }
@@ -2238,7 +552,7 @@ img.Contact-us-bluep {
     width: 0px;
     height: 0px;
     visibility: hidden;
-  
+
     margin: 0 3px;
     opacity: 0.2;
   }
@@ -2246,11 +560,11 @@ img.Contact-us-bluep {
     width: 0px;
     height: 0px;
     visibility: hidden;
-  
+
     margin: 0 0 0 3px;
     opacity: 0.2;
   }
-  
+
   .cercleMobileExistPackages {
     visibility: hidden;
   }
@@ -2263,7 +577,7 @@ img.Contact-us-bluep {
     align-content: center;
     margin-left: 8%;
   }
-  
+
   .Essentialp {
     width: 94px;
     height: 37px;
@@ -2279,7 +593,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #000;
   }
-  
+
   .prop {
     width: 34px;
     height: 37px;
@@ -2312,7 +626,7 @@ img.Contact-us-bluep {
     margin-top: -7%;
     margin-left: 30%;
   }
-  
+
   .Starting-atp {
     width: 64px;
     height: 17px;
@@ -2368,7 +682,7 @@ img.Contact-us-bluep {
     font-family: Gilroy-ExtraBold;
     color: #000;
   }
-  
+
   .AED500p {
     width: 122px;
     height: 41px;
@@ -2389,7 +703,7 @@ img.Contact-us-bluep {
     font-family: Gilroy-ExtraBold;
     color: #000;
   }
-  
+
   .AED1000p {
     width: 136px;
     height: 41px;
@@ -2425,14 +739,14 @@ img.Contact-us-bluep {
     color: #000;
     margin-top: -19%;
   }
-  
+
   img.Signp {
     width: 18.2px;
     height: 13.7px;
     margin: 3px 9.9px 1.3px 0;
     object-fit: contain;
   }
-  
+
   .Digital-onboardingp {
     width: 122px;
     height: 18px;
@@ -2447,7 +761,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #2e2e2e;
   }
-  
+
   .Physical-card-requestp {
     width: 140px;
     height: 18px;
@@ -2462,7 +776,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #2e2e2e;
   }
-  
+
   .Dedicated-support-agentp {
     width: 162px;
     height: 18px;
@@ -2477,7 +791,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #2e2e2e;
   }
-  
+
   .Digital-cardp {
     width: 76px;
     height: 18px;
@@ -2492,7 +806,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #2e2e2e;
   }
-  
+
   .Card-controlsp {
     width: 90px;
     height: 18px;
@@ -2507,7 +821,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #2e2e2e;
   }
-  
+
   .Priority-in-call-centerp {
     width: 136px;
     height: 18px;
@@ -2522,7 +836,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #2e2e2e;
   }
-  
+
   .Multiple-admin-accessp {
     width: 144px;
     height: 18px;
@@ -2537,7 +851,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #2e2e2e;
   }
-  
+
   .Multiple-entity-consolidationp {
     width: 188px;
     height: 18px;
@@ -2553,7 +867,7 @@ img.Contact-us-bluep {
     color: #2e2e2e;
     margin-left: -1%;
   }
-  
+
   .Stolen-card-feep {
     width: 106px;
     height: 23px;
@@ -2585,7 +899,7 @@ img.Contact-us-bluep {
     margin-left: 20%;
     margin-top: 5%;
   }
-  
+
   .Stolen-card-fee2p {
     width: 106px;
     height: 23px;
@@ -2602,7 +916,7 @@ img.Contact-us-bluep {
     margin-left: 10%;
     margin-top: 4%;
   }
-  
+
   .AED-5p {
     width: 40px;
     height: 17px;
@@ -2619,7 +933,7 @@ img.Contact-us-bluep {
     margin-top: 0%;
     margin-left: 30%;
   }
-  
+
   .Free-up-to-3-then-AED-5p {
     width: 152px;
     height: 17px;
@@ -2636,7 +950,7 @@ img.Contact-us-bluep {
     margin-top: -10%;
     margin-left: 10%;
   }
-  
+
   .Free-up-to-5-then-AED-5p {
     width: 152px;
     height: 17px;
@@ -2684,7 +998,7 @@ img.Contact-us-bluep {
     text-align: center;
     color: #f0f0f0;
   }
-  
+
   .aed-10-on-Additional-account-Up-to-5-usersp {
     width: 184px;
     height: 38px;
@@ -2707,712 +1021,6 @@ img.Contact-us-bluep {
     width: 184px;
     height: 38px;
     font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    opacity: 1;
-  }
-  
-  .secondContactButton {
-    width: 166px;
-    height: 56px;
-    margin: 23px 9px 28px;
-    background-color: #30c675;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-  }
-  
-  .thyrdContactButton {
-    width: 8vw;
-  
-    height: 5.5vh; 
-    background-color: #00194a;
-    margin-left: 15%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: 1%;
-  }
-  
-  .aed-15-on-Additional-account-Up-to-10-usersp {
-    width: 184px;
-    height: 38px;
-    margin: 28px 0 0;
-    opacity: 0.46;
-    font-family: Lato-Bold;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-  .aed-15-on-Additional-account-Up-to-10-usersp .text-style-1p {
-    font-weight: bold;
-    font-family: Lato-Bold;
-    color: #000;
-    width: 184px;
-    height: 38px;
-    font-size: 14px;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    opacity: 1;
-  }
-  
-  .Unlimitedp {
-    width: 62px;
-    height: 17px;
-    margin: 39px 77.2px 0 77px;
-    opacity: 0.46;
-    font-family: Lato-Bold;
-    font-size: 14px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-  
-  .packagesTitleFirstRows {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    margin-left: -10%;
-    margin-top: 0%;
-  }
-  
-  .packagesRectangleSignedText {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: stretch;
-    margin-top: -15%;
-  }
-  
-  .packagesStolenAED {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap; 
-    justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
-  }
-  .packagesStolenAEDtwo {
-    margin-left: 18%;
-    margin-top: -5%;
-    white-space: nowrap;
-  }
-  
-}
-
-
-
-@media only screen and (min-width: 767px) and (max-width: 800px) {
-  .packagesBackground {
-    width: 100vw;
-    height: 150vh;
-
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  }
-
-  .OUR-Packagesp {
-    width: 221px;
-    height: 37px;
-
-    font-family: Gilroy-ExtraBold;
-    font-size: 50px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.25;
-    letter-spacing: normal;
-    text-align: center;
-    color: #00194a;
-    white-space: nowrap;
-    margin-left: -9%;
-  }
-
-  .Choose-the-features-and-functionalities-your-teams-need-today-Easily-upgrade-as-your-company-growsp {
-    width: 314px;
-    height: 50px;
-    margin: 10px 437px 75px;
-    opacity: 0.6;
-    font-family: Lato-Regular;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.22;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-
-  .HeadOfPagePackages {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-top: -10%;
-    margin-left: -1%;
-  }
-
-  .firstRectanglePackages {
-    width: 500px;
-    height: 650px;
-    margin: 85px 11px 150px 186px;
-    padding: 37px 77px 32px;
-    background-color: #fffdfd;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: flex-end;
-    margin-left: 6%;
-    z-index: 1;
-  }
-
-  .secondRectanglePackages {
-    display: none;
-  }
-
-  .thyrdRectanglePackages {
-    display: none;
-  }
-
-  .MobileRectanglesecondPackages {
-    width: 80px;
-    height: 600.6px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    visibility: visible;
-    margin-top: 18%;
-    margin-left: -3%;
-  }
-
-  .miniBlueCerclePackages {
-    width: 15px;
-    height: 15px;
-    visibility: visible;
-    margin-left: -100%;
-    background-color: #306bdd;
-    border-radius: 50%;
-  }
-  .minisecondCerclePackages {
-    width: 15px;
-    height: 15px;
-    visibility: visible;
-    margin-left: 0%;
-    margin-top: -85%;
-    opacity: 0.2;
-    background-color: #306bdd;
-    border-radius: 50%;
-  }
-  .minithyrdCerclePackages {
-    width: 15px;
-    height: 15px;
-    visibility: visible;
-    opacity: 0.2;
-    background-color: #306bdd;
-    margin-left: 100%;
-    margin-top: -81%;
-    border-radius: 50%;
-  }
-
-  .cercleMobileExistPackages {
-    visibility: visible;
-    margin-top: -10%;
-  }
-  .PagePackagesContent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-    align-content: center;
-    margin-top: -13%;
-    margin-left: 2%;
-  }
-
-  .Essentialp {
-    width: 94px;
-    height: 80px;
-    margin: 0 45px 2px;
-    opacity: 0.6;
-    font-family: Poppins-Regular;
-    font-size: 28px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.95;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-
-  .prop {
-    width: 34px;
-    height: 37px;
-    margin: 0 75px 6px;
-    opacity: 0.6;
-    font-family: Poppins-Regular;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-  }
-  .entreprisep {
-    width: 102px;
-    height: 27px;
-    margin: 0 57.2px 8px 57px;
-    opacity: 0.6;
-    font-family: Lato-Regular;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.95;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -7%;
-    margin-left: 30%;
-  }
-
-  .Starting-atp {
-    width: 64px;
-    height: 80px;
-    margin: 2px 60px 38px;
-    opacity: 0.3;
-    font-family: Lato-Regular;
-    font-size: 20px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -15%;
-    white-space: nowrap;
-
-  }
-  .Starting-at1p {
-    width: 64px;
-    width: 64px;
-    height: 17px;
-    margin: 2px 60px 38px;
-    opacity: 0.3;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -5%;
-    white-space: nowrap;
-  }
-  .AED300p {
-    width: 122px;
-    height: 80px;
-    margin: 18px 31px 36px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 45px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.67;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -15%;
-  }
-  .AED300p .text-style-1p {
-    font-size: 45px;
-    font-family: Gilroy-ExtraBold;
-    color: #000;
-  }
-
-  .AED500p {
-    width: 122px;
-    height: 80px;
-    margin: 22px 31px 35.6px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 33px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.67;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: 30%;
-  }
-  .AED500p .text-style-1p {
-    font-size: 28px;
-    font-family: Gilroy-ExtraBold;
-    color: #000;
-  }
-
-  .AED1000p {
-    width: 136px;
-    height: 41px;
-    margin: 24px 40.2px 36px 40px;
-    font-family: Gilroy-ExtraBold;
-    font-size: 33px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 0.67;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -13%;
-  }
-  .AED1000p .text-style-1p {
-    font-size: 28px;
-    font-family: Gilroy-ExtraBold;
-    color: #000;
-    margin-top: -13%;
-  }
-  .User-Monthp {
-    width: 82px;
-    height: 80px;
-    margin: 38px 51px 21px;
-    font-family: Lato-Regular;
-    font-size: 25px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.57;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-top: -19%;
-    white-space: nowrap;
-  }
-
-  img.Signp {
-    width: 18.2px;
-    height: 13.7px;
-    margin: 3px 9.9px 1.3px 0;
-    object-fit: contain;
-  }
-
-  .Digital-onboardingp {
-    width: 122px;
-    height: 18px;
-    margin: 0 0 0 9.9px;
-    font-family: Lato-Regular;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Physical-card-requestp {
-    width: 140px;
-    height: 18px;
-    margin: 0 6px 13.7px 8px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Dedicated-support-agentp {
-    width: 162px;
-    height: 18px;
-    margin: 0 0 0 10px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Digital-cardp {
-    width: 76px;
-    height: 18px;
-    margin: 0 0 0 10px;
-    font-family: Lato-Regular;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Card-controlsp {
-    width: 90px;
-    height: 18px;
-    margin: 0 0 0 10px;
-    font-family: Lato-Regular;
-    font-size: 22px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Priority-in-call-centerp {
-    width: 136px;
-    height: 18px;
-    margin: 13.7px 8px 13.7px 10px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Multiple-admin-accessp {
-    width: 144px;
-    height: 18px;
-    margin: 0 0 0 10px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-  }
-
-  .Multiple-entity-consolidationp {
-    width: 188px;
-    height: 18px;
-    margin: 0 0 0 10px;
-    font-family: Lato-Regular;
-    font-size: 15px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.53;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: -1%;
-  }
-
-  .Stolen-card-feep {
-    width: 106px;
-    height: 50px;
-    margin: 0 0 15px;
-    font-family: Poppins-Regular;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: 30%;
-    
-    white-space: nowrap;
-  }
-  .Stolen-card-fee1p {
-    width: 106px;
-    height: 23px;
-    margin: 0 0 15px;
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: 20%;
-    margin-top: 5%;
-  }
-
-  .Stolen-card-fee2p {
-    width: 106px;
-    height: 23px;
-    margin: 0 0 15px;
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-left: 10%;
-    margin-top: 4%;
-  }
-
-  .AED-5p {
-    width: 40px;
-    height: 17px;
-    margin: 21px 32px 0 34px;
-    font-family: Lato-Regular;
-    font-size: 16px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-top: -10%;
-    margin-left: 40%;
-    white-space: nowrap;
-  }
-
-  .Free-up-to-3-then-AED-5p {
-    width: 152px;
-    height: 17px;
-    margin: 21px 0 0;
-    font-family: Lato-Regular;
-    font-size: 14px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-top: -10%;
-    margin-left: 10%;
-  }
-
-  .Free-up-to-5-then-AED-5p {
-    width: 152px;
-    height: 17px;
-    margin: 2px 32.2px 23px 32px;
-    font-family: Lato-Regular;
-    font-size: 22px;
-    font-weight: 800;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #2e2e2e;
-    margin-top: 10%;
-    margin-left: 0%;
-  }
-  .firstContactButton {
-    width: 250px;
-    height: 80px;
-    margin: 23px 9px 28px;
-    background-color: #306bdd;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: stretch;
-    margin-left: 16%;
-  }
-  img.Contact-us-bluep {
-    width: 166px;
-    height: 56px;
-    margin: 23px 9px 28px;
-    object-fit: contain;
-  }
-  .Contact-Usp {
-    width: 94px;
-    height: 23px;
-    font-family: Lato-Bold;
-    font-size: 19px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.16;
-    letter-spacing: normal;
-    text-align: center;
-    color: #f0f0f0;
-  }
-
-  .aed-10-on-Additional-account-Up-to-5-usersp {
-    width: 184px;
-    height: 38px;
-    margin: 28px 0 0;
-    opacity: 0.45;
-    font-family: Lato-Bold;
-    font-size: 16px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.5;
-    letter-spacing: normal;
-    text-align: center;
-    color: #000;
-    margin-left: 25%;
-  }
-  .aed-10-on-Additional-account-Up-to-5-usersp .text-style-1p {
-    font-weight: bold;
-    font-family: Lato-Bold;
-    color: #000;
-    width: 184px;
-    height: 38px;
-    font-size: 16px;
     font-stretch: normal;
     font-style: normal;
     line-height: 1.5;
@@ -3511,8 +1119,7 @@ img.Contact-us-bluep {
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
-    margin-top: -10%;
-    margin-left: 20%;
+    margin-top: -15%;
   }
 
   .packagesStolenAED {
@@ -3529,4 +1136,3 @@ img.Contact-us-bluep {
     white-space: nowrap;
   }
 }
-

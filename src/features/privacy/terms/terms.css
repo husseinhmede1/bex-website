@@ -13,14 +13,15 @@
   color: #000;
   margin-left: 0%;
 }
-html,body{
+html,
+body {
   overflow-x: hidden;
 }
 .-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe {
   font-family: Lato-Regular;
   font-size: 200%;
 
-  font-stretch: semi-condensed; 
+  font-stretch: semi-condensed;
   font-style: normal;
   line-height: 1.4;
   letter-spacing: normal;
@@ -197,7 +198,7 @@ html,body{
   margin-top: 2%;
 }
 
-.footerColorTe { 
+.footerColorTe {
   background-color: #306bdd;
   height: 25vh;
   width: 99.2vw;
@@ -207,10 +208,9 @@ html,body{
 .footerLineTerms {
   width: 90vw;
   height: 0;
-  margin: 123.9px 0 0;
   opacity: 0.3;
   border: solid 1px #ddd;
-  margin-top: 1%;
+  margin-top: 30%;
   margin-left: 4.5%;
 }
 
@@ -233,7 +233,6 @@ html,body{
 img.AreebaTe {
   width: 62.8px;
   height: 17.1px;
-  margin: 30.2px 21.6px 6.4px 0.5px;
   object-fit: contain;
   margin-left: 5%;
 }
@@ -241,7 +240,6 @@ img.AreebaTe {
 img.MastercardTe {
   width: 47.3px;
   height: 29.2px;
-  margin: 24.1px 75.3px 0.4px 21.6px;
   object-fit: contain;
   margin-left: -50%;
 }
@@ -253,7 +251,6 @@ img.MastercardTe {
 .Cookie-PolicyTe {
   width: 73px;
   height: 15px;
-  margin: 35.1px 47.5px 3.7px 41px;
   font-family: Lato-Bold;
   font-size: 12px;
   font-weight: bold;
@@ -263,14 +260,15 @@ img.MastercardTe {
   letter-spacing: normal;
   text-align: left;
   color: white;
-  margin-left: 4%;
+
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 .-Bex-All-Rights-ReservedTe {
   width: 162px;
   height: 15px;
-  margin: 38.8px 0px 0 486px;
+
   opacity: 0.7;
   font-family: Lato-Bold;
   font-size: 12px;
@@ -281,7 +279,8 @@ img.MastercardTe {
   letter-spacing: normal;
   text-align: right;
   color: white;
-  margin-left: -55%;
+
+  white-space: nowrap;
 }
 
 .Privacy-PolicyTe {
@@ -303,7 +302,6 @@ img.MastercardTe {
 .Terms-of-ServiceTe {
   width: 88px;
   height: 15px;
-  margin: 35.1px 41px 3.7px 34px;
   font-family: Lato-Bold;
   font-size: 12px;
   font-weight: bold;
@@ -314,6 +312,7 @@ img.MastercardTe {
   text-align: left;
   color: white;
   text-decoration: underline;
+  white-space: nowrap;
 }
 
 .Download-nowTe {
@@ -334,18 +333,14 @@ img.MastercardTe {
 img.Group-17Te {
   width: 142px;
   height: 50px;
-  margin: 0 20px 26.2px 43px;
   object-fit: contain;
-margin-left: 5%;
 }
 
 img._play-store-icon-android-app-on-google-playTe {
   width: 143px;
   height: 50px;
-  margin: 0 740.5px 26.2px 20px;
   object-fit: contain;
   border-radius: 6px;
-  margin-left: 0%;
 }
 
 .storePlay {
@@ -413,20 +408,33 @@ img.MastercardTeMobile {
   align-items: center;
   align-content: stretch;
 }
-.screenWidth{
- 
-  display: flex; 
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: stretch;
-	align-content: stretch;
-  
+.screenWidth {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
 }
 
-
 @media only screen and (min-width: 414px) and (max-width: 800px) {
- 
+  .FooterTermsAntBigScreen {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+  .BexTermsareebaMasterRightsMobile{
+
+    margin-top: -50%;
+  }
+
+  .FooterTermsAntMobile {
+    visibility: visible;
+  }
+  .playFooterToTop{
+
+      }
+
   .-Acceptance-of-termsTe {
     width: 207px;
     height: 40px;
@@ -445,7 +453,7 @@ img.MastercardTeMobile {
   }
   .-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe {
     font-family: Lato-Regular;
-    font-size:90%;
+    font-size: 90%;
     font-stretch: semi-condensed;
     font-style: normal;
     line-height: 1.4;
@@ -495,11 +503,17 @@ img.MastercardTeMobile {
   }
 
   .textTerms {
-    margin-top: 30%; 
-    margin-left:-30%;
+    margin-top: 30%;
+    margin-left: -30%;
     width: 50%;
   }
 
+  .footerTermsColorAnt {
+    background-color: #306bdd;
+height: 40vh;
+    width:100%;
+    margin-top: 20%;
+  }
   .-Privacy-complaintsTe {
     width: 207px;
     height: 10px;
@@ -616,7 +630,7 @@ img.MastercardTeMobile {
   .termsFlex {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     align-content: stretch;
@@ -706,8 +720,6 @@ img.MastercardTeMobile {
     height: 40px;
     object-fit: contain;
     visibility: visible;
-    margin-left: 10vw;
-    
   }
 
   img.MastercardTeMobile {
@@ -715,11 +727,9 @@ img.MastercardTeMobile {
     height: 40px;
     object-fit: contain;
     visibility: visible;
-    margin-left: 5vw;
   }
-  .bex-RightsMobile { 
+  .bex-RightsMobile {
     visibility: visible;
-    
   }
   .bex-Rights {
     display: none;
@@ -740,8 +750,7 @@ img.MastercardTeMobile {
     white-space: nowrap;
     visibility: visible;
     margin-top: 20vh;
-    margin-left:10vw;
-
+    margin-left: 10vw;
   }
 
   .-Bex-All-Rights-ReservedTeMobile {
@@ -749,13 +758,13 @@ img.MastercardTeMobile {
     height: 15px;
     opacity: 0.5;
     font-family: Lato-Bold;
-    font-size: 10px;
+    font-size: 2vw;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 2.33;
     letter-spacing: normal;
-    margin-left:15vw;
+    margin-left: 15vw;
     margin-top: 0vh;
     color: #fff;
     white-space: nowrap;
@@ -798,7 +807,6 @@ img.MastercardTeMobile {
     visibility: visible;
     margin-top: 20vh;
     margin-left: 10vw;
-
   }
   .foterLinksMobile {
     display: flex;
@@ -833,17 +841,19 @@ img.MastercardTeMobile {
     width: 100px;
     height: 100px;
     object-fit: contain;
-
   }
+.playFooterToTop{
 
+  margin-top: 0%;
+
+}
   img._play-store-icon-android-app-on-google-playTe {
     width: 100px;
     height: 100px;
     object-fit: contain;
-  
+    margin-left: 60%;
   }
-  .StorePlayReplaceTerms{
-
+  .StorePlayReplaceTerms {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -869,10 +879,24 @@ img.MastercardTeMobile {
   }
 }
 
+@media only screen  and (max-width: 413px) {
+  .FooterTermsAntBigScreen {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+  .playFooterToTop{
+margin-top: 21%;
+  }
+  .FooterTermsAntMobile {
+    visibility: visible;
+  }
 
-@media only screen and (min-width: 100px) and (max-width: 413px) {
-  
-
+  .footerTermsColorAnt {
+    background-color: #306bdd;
+    height: 50vh;
+    margin-top: 20%;
+  }
 
   .-Acceptance-of-termsTe {
     width: 207px;
@@ -892,7 +916,7 @@ img.MastercardTeMobile {
   }
   .-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe {
     font-family: Lato-Regular;
-    font-size:90%;
+    font-size: 90%;
     font-stretch: semi-condensed;
     font-style: normal;
     line-height: 1.4;
@@ -942,8 +966,8 @@ img.MastercardTeMobile {
   }
 
   .textTerms {
-    margin-top: 30%; 
-    margin-left:-30%;
+    margin-top: 30%;
+    margin-left: -30%;
     width: 50%;
   }
 
@@ -1063,7 +1087,7 @@ img.MastercardTeMobile {
   .termsFlex {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     align-content: stretch;
@@ -1166,7 +1190,6 @@ img.MastercardTeMobile {
   }
   .bex-RightsMobile {
     visibility: visible;
-    
   }
   .bex-Rights {
     display: none;
@@ -1175,7 +1198,7 @@ img.MastercardTeMobile {
     width: 100px;
     height: 15px;
     font-family: Lato-Bold;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -1186,9 +1209,8 @@ img.MastercardTeMobile {
     text-decoration: underline;
     white-space: nowrap;
     visibility: visible;
-    margin-top: 20vh;
-    margin-left:10vw;
-
+    margin-top: 30vh;
+    margin-left: 7vw;
   }
 
   .-Bex-All-Rights-ReservedTeMobile {
@@ -1196,13 +1218,13 @@ img.MastercardTeMobile {
     height: 15px;
     opacity: 0.5;
     font-family: Lato-Bold;
-    font-size: 10px;
+    font-size: 2vw;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
     line-height: 2.33;
     letter-spacing: normal;
-    margin-left:15vw;
+    margin-left: -5vw;
     margin-top: 0vh;
     color: #fff;
     white-space: nowrap;
@@ -1213,7 +1235,7 @@ img.MastercardTeMobile {
     width: 100px;
     height: 18px;
     font-family: Lato-Bold;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -1224,15 +1246,14 @@ img.MastercardTeMobile {
     text-decoration: underline;
     white-space: nowrap;
     visibility: visible;
-    margin-top: 20vh;
-    margin-left: 10vw;
+    margin-top: 30vh;
   }
 
   .Terms-of-ServiceTeMobile {
     width: 100px;
     height: 15px;
     font-family: Lato-Bold;
-    font-size: 10px;
+    font-size: 3vw;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -1243,9 +1264,8 @@ img.MastercardTeMobile {
     text-decoration: underline;
     white-space: nowrap;
     visibility: visible;
-    margin-top: 20vh;
-    margin-left: 10vw;
-
+    margin-top: 30vh;
+    margin-left: 5vw;
   }
   .foterLinksMobile {
     display: flex;
@@ -1311,13 +1331,28 @@ img.MastercardTeMobile {
   }
 }
 
-
-
-@media only screen and (min-width:801px) and (max-width: 3000px) {
-
-  html,body{
+@media only screen and (min-width: 801px) {
+  html,
+  body {
     overflow-x: hidden;
-}
+  }
+  .FooterTermsAntBigScreen {
+    visibility: visible;
+  }
+
+  .FooterTermsAntMobile {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+    display:none;
+  }
+
+  .footerTermsColorAnt {
+    background-color: #306bdd;
+    width: 100%;
+    margin-top: 20%;
+    height: 30vh;
+  }
   .-Acceptance-of-termsTe {
     width: 407px;
     height: 40px;
@@ -1336,7 +1371,7 @@ img.MastercardTeMobile {
   .-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe {
     font-family: Lato-Regular;
     font-size: 200%;
-  
+
     font-stretch: semi-condensed;
     font-style: normal;
     line-height: 1.4;
@@ -1345,12 +1380,12 @@ img.MastercardTeMobile {
     color: #626262;
     font-weight: 100;
   }
-  
+
   .-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe
     .text-style-1Te {
     font-weight: bold;
     font-size: 100%;
-  
+
     font-stretch: semi-condensed;
     font-style: normal;
     line-height: 1.4;
@@ -1358,12 +1393,12 @@ img.MastercardTeMobile {
     text-align: center;
     color: #4e4a4a;
   }
-  
+
   .-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe
     .text-style-2Te {
     font-weight: bold;
     font-size: 100%;
-  
+
     font-stretch: semi-condensed;
     font-style: normal;
     line-height: 1.4;
@@ -1371,12 +1406,12 @@ img.MastercardTeMobile {
     text-align: center;
     color: #4e4a4a;
   }
-  
+
   .-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industryLorem-Ipsum-is-simply-dummy-text-of-the-printing-and-typesetting-industry-Lorem-Ipsum-is-simply-duTe
     .text-style-3Te {
     font-weight: bold;
     font-size: 100%;
-  
+
     font-stretch: semi-condensed;
     font-style: normal;
     line-height: 1.4;
@@ -1384,7 +1419,7 @@ img.MastercardTeMobile {
     text-align: center;
     color: #4e4a4a;
   }
-  
+
   .textTerms {
     margin-top: 9%;
     margin-left: 5%;
@@ -1405,7 +1440,7 @@ img.MastercardTeMobile {
     color: #000;
     margin-left: 0%;
   }
-  
+
   .-Data-retention-and-data-probabilityTe {
     width: 656px;
     height: 40px;
@@ -1436,7 +1471,7 @@ img.MastercardTeMobile {
     color: #000;
     margin-left: 0%;
   }
-  
+
   .-Links-to-third-party-siteTe {
     width: 445px;
     height: 40px;
@@ -1452,7 +1487,7 @@ img.MastercardTeMobile {
     color: #000;
     margin-left: 0%;
   }
-  
+
   .-Non-discriminationTe {
     width: 373px;
     height: 40px;
@@ -1468,7 +1503,7 @@ img.MastercardTeMobile {
     color: #000;
     margin-left: 0%;
   }
-  
+
   .-Data-retention-and-data-probabilityTe {
     width: 656px;
     height: 40px;
@@ -1484,7 +1519,7 @@ img.MastercardTeMobile {
     color: #000;
     margin-left: 0%;
   }
-  
+
   .-How-your-personal-information-is-usedTe {
     width: 725px;
     height: 40px;
@@ -1500,7 +1535,7 @@ img.MastercardTeMobile {
     color: #000;
     margin-left: 0%;
   }
-  
+
   .div1Te {
     display: flex;
     flex-direction: column;
@@ -1509,18 +1544,18 @@ img.MastercardTeMobile {
     align-items: center;
     align-content: stretch;
   }
-  
+
   .textTitle {
     margin-top: 2%;
   }
-  
-  .footerColorTe { 
+
+  .footerColorTe {
     background-color: #306bdd;
     height: 25vh;
     width: 99.2vw;
     margin-top: 15%;
   }
-  
+
   .footerLineTerms {
     width: 90vw;
     height: 0;
@@ -1530,7 +1565,7 @@ img.MastercardTeMobile {
     margin-top: 1%;
     margin-left: 4.5%;
   }
-  
+
   .footerDivTermsMobile {
     width: 0px;
     height: 0px;
@@ -1546,31 +1581,28 @@ img.MastercardTeMobile {
     white-space: nowrap;
     margin-top: 0%;
   }
-  
+
   img.AreebaTe {
     width: 62.8px;
     height: 17.1px;
-    margin: 30.2px 21.6px 6.4px 0.5px;
     object-fit: contain;
-    margin-left: 5%;
+    margin-top: 50%;
   }
-  
+
   img.MastercardTe {
     width: 47.3px;
     height: 29.2px;
-    margin: 24.1px 75.3px 0.4px 21.6px;
     object-fit: contain;
-    margin-left: -50%;
+    margin-top: 50%;
   }
-  
+
   .foterLinks {
     margin-left: -50%;
   }
-  
+
   .Cookie-PolicyTe {
     width: 73px;
     height: 15px;
-    margin: 35.1px 47.5px 3.7px 41px;
     font-family: Lato-Bold;
     font-size: 12px;
     font-weight: bold;
@@ -1580,14 +1612,14 @@ img.MastercardTeMobile {
     letter-spacing: normal;
     text-align: left;
     color: white;
-    margin-left: 4%;
     text-decoration: underline;
+    white-space: nowrap;
+    margin-top: 10%;
   }
-  
+
   .-Bex-All-Rights-ReservedTe {
     width: 162px;
     height: 15px;
-    margin: 38.8px 0px 0 486px;
     opacity: 0.7;
     font-family: Lato-Bold;
     font-size: 12px;
@@ -1598,13 +1630,13 @@ img.MastercardTeMobile {
     letter-spacing: normal;
     text-align: right;
     color: white;
-    margin-left: -55%;
+    white-space: nowrap;
+    margin-top: 10%;
   }
-  
+
   .Privacy-PolicyTe {
     width: 75px;
     height: 18px;
-    margin: 35.1px 34px 0.7px 8.9px;
     font-family: Lato-Bold;
     font-size: 12px;
     font-weight: bold;
@@ -1615,12 +1647,13 @@ img.MastercardTeMobile {
     text-align: left;
     color: white;
     text-decoration: underline;
+    white-space: nowrap;
+    margin-top: 10%;
   }
-  
+
   .Terms-of-ServiceTe {
     width: 88px;
     height: 15px;
-    margin: 35.1px 41px 3.7px 34px;
     font-family: Lato-Bold;
     font-size: 12px;
     font-weight: bold;
@@ -1631,12 +1664,14 @@ img.MastercardTeMobile {
     text-align: left;
     color: white;
     text-decoration: underline;
+    margin-top: 10%;
   }
-  
+  .PTCToBotom {
+    margin-top: 1.7%;
+  }
   .Download-nowTe {
     width: 175px;
     height: 25px;
-    margin: 14.5px 43px 36.7px 102.5px;
     font-family: Gilroy-ExtraBold;
     font-size: 25px;
     font-weight: 800;
@@ -1646,16 +1681,17 @@ img.MastercardTeMobile {
     letter-spacing: normal;
     text-align: left;
     color: #fff;
+    white-space: nowrap;
   }
-  
+
   img.Group-17Te {
     width: 142px;
     height: 50px;
     margin: 0 20px 26.2px 43px;
     object-fit: contain;
-  margin-left: 5%;
+    margin-left: 5%;
   }
-  
+
   img._play-store-icon-android-app-on-google-playTe {
     width: 143px;
     height: 50px;
@@ -1664,30 +1700,30 @@ img.MastercardTeMobile {
     border-radius: 6px;
     margin-left: 0%;
   }
-  
+
   .storePlay {
     margin-top: -11%;
     z-index: 1;
   }
-  
+
   .areebaMastercardRightsTermsMobile {
     visibility: hidden;
     width: 0px;
     height: 0px;
   }
-  
+
   img.AreebaTeMobile {
     visibility: hidden;
     width: 0px;
     height: 0px;
   }
-  
+
   img.MastercardTeMobile {
     visibility: hidden;
     width: 0px;
     height: 0px;
   }
-  
+
   .bex-RightsMobile {
     visibility: hidden;
     width: 0px;
@@ -1698,19 +1734,19 @@ img.MastercardTeMobile {
     width: 0px;
     height: 0px;
   }
-  
+
   .-Bex-All-Rights-ReservedTeMobile {
     visibility: hidden;
     width: 0px;
     height: 0px;
   }
-  
+
   .Privacy-PolicyTeMobile {
     visibility: hidden;
     width: 0px;
     height: 0px;
   }
-  
+
   .Terms-of-ServiceTeMobile {
     visibility: hidden;
     width: 0px;
@@ -1721,7 +1757,7 @@ img.MastercardTeMobile {
     width: 0px;
     height: 0px;
   }
-  
+
   .termsFlex {
     display: flex;
     flex-direction: column;
@@ -1730,17 +1766,12 @@ img.MastercardTeMobile {
     align-items: center;
     align-content: stretch;
   }
-  .screenWidth{
-  
-    display: flex; 
+  .screenWidth {
+    display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
-    
   }
-  
 }
-
-

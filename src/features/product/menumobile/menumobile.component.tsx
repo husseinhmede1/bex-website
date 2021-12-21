@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
-import { Router, Route, Link } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 import "./menumobile.css";
 
@@ -21,8 +20,6 @@ import close2 from "&assets/img/close@3x.png";
 //import { homeActions } from "./home.slice";
 import { loginActions } from "&features/demo/login/login.slice";
 
-const { innerWidth: width, innerHeight: height } = window;
-
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const MenumobileComponent = (props: ReduxProps) => {
@@ -39,46 +36,36 @@ const MenumobileComponent = (props: ReduxProps) => {
     // Write your side-effects here
   }, []);
 
-  return <>
-  <div className="menuMobileBackground">
- 
-<Link to='/main' className='closeMarginMenuMobile'>
-  <img
+  return (
+    <>
+      <div className="menuMobileBackground">
+        <Link to="/main" className="closeMarginMenuMobile">
+          <img
             src={close}
             srcSet={`${close1} 2x, ${close2} 3x`}
             className="closeMenuMobile"
           />
-          </Link>
- <div className='menuMobileTitleBex'>
-  <span className="BEXMenuMobile">
-  BEX
-</span>
-</div>
-<div className='linesMarginMenuMobile'>
-<div className="LineoneMenuMobile"></div>
-<span className="How-bex-worksMenuMobile">
-  How bex works
-</span>
-<div className="LineTwoMenuMobile"></div>
-<span className="About-usMenuMobile">
-  About us
-</span>
+        </Link>
+        <div className="menuMobileTitleBex">
+          <span className="BEXMenuMobile">BEX</span>
+        </div>
+        <div className="linesMarginMenuMobile">
+          <div className="LineoneMenuMobile"></div>
+          <span className="How-bex-worksMenuMobile">How bex works</span>
+          <div className="LineTwoMenuMobile"></div>
+          <span className="About-usMenuMobile">About us</span>
 
-<div className="LinethreeMenuMobile"></div>
-<span className="PricingMenuMobile">
-  Pricing
-</span>
+          <div className="LinethreeMenuMobile"></div>
+          <span className="PricingMenuMobile">Pricing</span>
 
-<div className="LinefourMenuMobile"></div>
-<span className="Contact-usMenuMobile">
-  Contact us
-</span>
+          <div className="LinefourMenuMobile"></div>
+          <span className="Contact-usMenuMobile">Contact us</span>
 
-<div className="LinefiveMenuMobile"></div>
-</div>
-  </div>
-
-  </>;
+          <div className="LinefiveMenuMobile"></div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 /**

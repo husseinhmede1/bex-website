@@ -28,6 +28,8 @@ import store3 from "&assets/img/Group-17@3x.png";
  */
 //import { homeActions } from "./home.slice";
 import { loginActions } from "&features/demo/login/login.slice";
+import { Col, Layout, Row } from "antd";
+import { Footer } from "antd/lib/layout/layout";
 
 const { innerWidth: width, innerHeight: height } = window;
 
@@ -320,72 +322,138 @@ const TermsComponent = (props: ReduxProps) => {
             </div>
           </div>
         </div>
+        <div className="FooterTermsAntBigScreen">
+          <Row>
+            <Col className="footerTermsColorAnt">
+              <Row>
+                <Col>
+                  <Row>
+                    <Col>
+                      <span className="Download-nowTe">Download Now!</span>
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col push={2}>
+                      <img
+                        src={store}
+                        srcSet={`${store2} 2x, ${store3} 3x`}
+                        className="Group-17Te"
+                      ></img>
+                    </Col>
+                    <Col push={2}>
+                      <img
+                        src={play}
+                        srcSet={`${play2} 2x, ${play3} 3x`}
+                        className="_play-store-icon-android-app-on-google-playTe"
+                      ></img>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+              <div className="footerLineTerms"></div>
 
-        <div className="footerColorTe"></div>
-        <div className="storePlay">
-          <span className="Download-nowTe">Download Now!</span>
-          
-          <div className='StorePlayReplaceTerms'>
-            <img
-              src={store}
-              srcSet={`${store2} 2x, ${store3} 3x`}
-              className="Group-17Te"
-            ></img>
-            <img
-              src={play}
-              srcSet={`${play2} 2x, ${play3} 3x`}
-              className="_play-store-icon-android-app-on-google-playTe"
-            ></img>
-          </div>
+              <Row>
+                <Col push={1}>
+                  <img
+                    src={areeba}
+                    srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+                    className="AreebaTe"
+                  ></img>
+                </Col>
+                <Col push={2}>
+                  <img
+                    src={master}
+                    srcSet={`${master2} 2x, ${master3} 3x`}
+                    className="MastercardTe"
+                  ></img>
+                </Col>
+                <Col className="PTCToBotom" push={4}>
+                  <span className="Privacy-PolicyTe">Privacy Policy</span>
+                </Col>
+                <Col className="PTCToBotom" push={5}>
+                  <span className="Terms-of-ServiceTe">Terms of Service</span>
+                </Col>
+                <Col className="PTCToBotom" push={6}>
+                  <span className="Cookie-PolicyTe">Cookie Policy</span>
+                </Col>
+                <Col className="PTCToBotom" push={12}>
+                  <span className="-Bex-All-Rights-ReservedTe">
+                    2021 Bex. All Rights Reserved.
+                  </span>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
         </div>
-        <div className="footerLineTerms"></div>
 
-        <div className="footerDivTerms">
-          <img
-            src={areeba}
-            srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-            className="AreebaTe"
-          ></img>
-          <img
-            src={master}
-            srcSet={`${master2} 2x, ${master3} 3x`}
-            className="MastercardTe"
-          ></img>
-          <div className="foterLinks">
-            <span className="Privacy-PolicyTe">Privacy Policy</span>
-            <span className="Terms-of-ServiceTe">Terms of Service</span>
-            <span className="Cookie-PolicyTe">Cookie Policy</span>
-          </div>
-          <div className="bex-Rights">
-            <span className="-Bex-All-Rights-ReservedTe">
-              2021 Bex. All Rights Reserved.
-            </span>
-          </div>
-        </div>
-        <div className="footerDivTermsMobile">
-          <div className="areebaMastercardRightsTermsMobile">
-              <img
-                src={areeba}
-                srcSet={`${areeba2} 2x, ${areeba3} 3x`}
-                className="AreebaTeMobile"
-              ></img>
-              <img
-                src={master}
-                srcSet={`${master2} 2x, ${master3} 3x`}
-                className="MastercardTeMobile"
-              ></img>
-            <div className="bex-RightsMobile">
-              <span className="-Bex-All-Rights-ReservedTeMobile">
-                2021 Bex. All Rights Reserved.
-              </span>
-            </div>
-          </div>
+        <div className="FooterTermsAntMobile">
+          <Row>
+            <Col className="footerTermsColorAnt">
+              <Row>
+                <Col>
+                  <Row>
+                    <Col push={2}>
+                      <span className="Download-nowTe">Download Now!</span>
+                    </Col>
+                  </Row>
+                  <Row gutter={[16, 16]}>
+                    <Col push={2} span={12}>
+                      <img
+                        src={store}
+                        srcSet={`${store2} 2x, ${store3} 3x`}
+                        className="Group-17Te"
+                      ></img>
+                    </Col>
+                    <Col span={12} pull={7} className="playFooterToTop">
+                      <img
+                        src={play}
+                        srcSet={`${play2} 2x, ${play3} 3x`}
+                        className="_play-store-icon-android-app-on-google-playTe"
+                      ></img>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+              <div style={{ height: 50 }}></div>
+              <div className="footerLineTerms"></div>
 
-          <div className="foterLinksMobile">
-            <span className="Privacy-PolicyTeMobile">Privacy Policy</span>
-            <span className="Terms-of-ServiceTeMobile">Terms of Service</span>
-            <span className="Cookie-PolicyTeMobile">Cookie Policy</span>
-          </div>
+              <Row>
+                <Col push={2}>
+                  <img
+                    src={areeba}
+                    srcSet={`${areeba2} 2x, ${areeba3} 3x`}
+                    className="AreebaTeMobile"
+                  ></img>
+                </Col>
+                <Col push={3}>
+                  <img
+                    src={master}
+                    srcSet={`${master2} 2x, ${master3} 3x`}
+                    className="MastercardTeMobile"
+                  ></img>
+                </Col>
+
+                <Col className="PTCToBotom" push={8}>
+                  <span className="-Bex-All-Rights-ReservedTeMobile">
+                    2021 Bex. All Rights Reserved.
+                  </span>
+                </Col>
+              </Row>
+              <Row>
+                <Col className="PTCToBotom" push={3}>
+                  <span className="Privacy-PolicyTeMobile">Privacy Policy</span>
+                </Col>
+                <Col className="PTCToBotom" push={3}>
+                  <span className="Terms-of-ServiceTeMobile">
+                    Terms of Service
+                  </span>
+                </Col>
+                <Col className="PTCToBotom" push={3}>
+                  <span className="Cookie-PolicyTeMobile">Cookie Policy</span>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
         </div>
       </div>
     </>

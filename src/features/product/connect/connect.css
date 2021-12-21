@@ -11,9 +11,11 @@
 
   background-color: #fff;
 }
+.LastNameFieldWidth {
+  width: 52%;
+}
 
-
-@media only screen and (min-width: 801px) and (max-width: 3000px) {
+@media only screen and (min-width: 801px) {
   .connectPageBackground {
     width: 100vw;
     height: 100vh;
@@ -30,7 +32,28 @@
     background-position: center;
     background-size: cover;
   }
+  .LastNameFieldWidth {
+    width: 56%;
+    height: 54%;
+  }
 
+  .LastConnectToBotom{
+
+    margin-top: 5%;
+  }
+  .GetInTouchConnect {
+    background-color: #30c675;
+    width:23.7vw;
+    height: 30%;
+    margin-top: 45%;
+    margin-left: 1%;
+  }
+  .GetInTouchConnectSpan {
+    font-family: Lato-Bold;
+    color: #fff;
+    margin-left: -20%;
+    font-size: 1vw;
+  }
   .connectPageContentTwoParts {
     width: 100vw;
     height: 100vh;
@@ -130,7 +153,6 @@
   img.EmailC {
     width: 1vw;
     height: 14px;
-    margin: 0 20.1px 1px 0;
     object-fit: contain;
   }
 
@@ -162,7 +184,7 @@
     text-align: left;
     color: #fff;
     margin-top: 30%;
-    margin-left: -5%;
+    margin-left: -7%;
     white-space: nowrap;
   }
 
@@ -203,6 +225,7 @@
     text-align: left;
     color: #fff;
     white-space: nowrap;
+    margin-left: 0%;
   }
 
   .Rectangle-24153C {
@@ -501,7 +524,7 @@
     letter-spacing: normal;
     text-align: right;
     color: white;
-    margin-left: -110%;
+    margin-left: 70%;
   }
 
   .FooterConnectPage {
@@ -622,7 +645,7 @@
 @media only screen and (max-width: 800px) {
   .connectPageBackground {
     width: 100vw;
-    height: 200vh;
+    height: 210vh;
 
     background-image: -webkit-image-set(
       url("../../../assets/img/Footer-bg-img.png") 1x,
@@ -637,9 +660,13 @@
     background-size: cover;
   }
 
+  .LastNameFieldWidth {
+    width: 56%;
+  }
+
   .connectPageContentTwoParts {
     width: 100vw;
-    height: 200vh;
+    height: 210vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
     contain: content;
@@ -659,7 +686,24 @@
     width: 0px;
     height: 0px;
   }
-  
+
+  .GetInTouchConnect {
+    background-color: #30c675;
+    width:56vw;
+    height: 20%;
+    margin-top: 100%;
+    margin-left: 30%;
+  }
+  .GetInTouchConnectSpan {
+    font-family: Lato-Bold;
+    color: #fff;
+    margin-left: 0%;
+    font-size: 3vw;
+  }
+.LastConnectToBotom{
+
+  margin-top: 10%;
+}
   .ConnectContentForSmallScreen {
     visibility: visible;
   }
@@ -696,6 +740,7 @@
     height: 25.6px;
     object-fit: contain;
     margin-left: 26%;
+    margin-top: 200%;
   }
 
   .areeba-sal-M1-Group-M1-Building-Omar-Daouk-St-Beirut-2020-3315-Lebanon-Email-on-supportareebacomC {
@@ -716,6 +761,7 @@
     width: 3vw;
     height: 25.3px;
     object-fit: contain;
+    margin-left: 40%;
   }
 
   .-or-01-954-333C {
@@ -736,6 +782,7 @@
     width: 3vw;
     height: 25px;
     object-fit: contain;
+    margin-left: 50%;
   }
 
   .SupportareebacomC {
@@ -764,8 +811,7 @@
     letter-spacing: normal;
     text-align: left;
     color: #fff;
-    white-space:nowrap;
-  
+    white-space: nowrap;
   }
 
   .Fist-nameC {
@@ -805,6 +851,7 @@
     text-align: left;
     color: #fff;
     white-space: nowrap;
+    margin-left: -1%;
   }
 
   .Rectangle-24153C {
@@ -1141,7 +1188,7 @@
 
   .-Bex-All-Rights-ReservedMobile {
     width: 162px;
-    
+
     opacity: 0.5;
     font-family: Lato-Bold;
     font-size: 2.5vw;

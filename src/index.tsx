@@ -11,6 +11,7 @@ import { store, persistor } from "./store/store";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
+  
   // <React.StrictMode>
   /* Links store to redux store */
   <Provider store={store}>

@@ -40,32 +40,30 @@ const MainComponent = (props: ReduxProps) => {
    */
   useEffect(() => {
     // Write your side-effects here
-
   }, []);
 
   return (
-     <div className="MainComponent">
-      <div> 
-      <MenuComponent />
-      </div>
-      <div className='backGround'>  
-      <div className="challangesSize">
-        <ChallangesComponent />
-      </div>
-      </div>
-     <div id={'section1'} className='divChallange'> 
-      <HandlesComponent />  
-      </div> 
+    <div className="MainComponent">
       <div>
-      <SaveComponent /> 
+        <MenuComponent />
       </div>
-      <PackagesComponent />   
-      <TryforFreeComponent /> 
-     <BenefitsComponent/>
-      
-     <InfoComponent/>
-     <ConnectComponent/>
-    
+      <div className="backGround">
+        <div className="challangesSize">
+          <ChallangesComponent />
+        </div>
+      </div>
+      <div id={"section1"} className="divChallange">
+        <HandlesComponent />
+      </div>
+      <div>
+        <SaveComponent />
+      </div>
+      <PackagesComponent />
+      <TryforFreeComponent />
+      <BenefitsComponent />
+
+      <InfoComponent />
+      <ConnectComponent />
     </div>
   );
 };

@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
-import { Router, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./challanges.css";
 
@@ -43,8 +43,6 @@ import icons63 from "&assets/img/Icons2MobileChallenges@3x.png";
 //import { homeActions } from "./home.slice";
 import { loginActions } from "&features/demo/login/login.slice";
 
-const { innerWidth: width, innerHeight: height } = window;
-
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const ChallangesComponent = (props: ReduxProps) => {
@@ -62,12 +60,12 @@ const ChallangesComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    <div  id={"downArrowId"}>
+    <div id={"downArrowId"}>
       <div className="CornerChallanges">
         <Link
           onClick={() => window.location.replace("/#downArrowId")}
           to="/main"
-        > 
+        >
           <img
             src={down}
             srcSet={`${down2} 2x, ${down3} 3x`}

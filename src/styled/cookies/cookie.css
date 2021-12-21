@@ -1,16 +1,9 @@
 .cookieBackground {
-  width: 100wv;
-  height: 45vh;
-
   background-color: #00194a;
-
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: stretch;
-  align-content: flex-end;
 }
+
+
+@media only screen and (min-width: 901px) {
 
 .Cookie-Policy {
   width: 189px;
@@ -25,19 +18,22 @@
   letter-spacing: normal;
   text-align: left;
   color: #fff;
+  white-space: nowrap;
 }
+.textWidthCookie{
 
+  width: 60vw;
+}
 .This-site-uses-cookies-small-text-files-that-are-placed-on-your-machine-to-help-the-site-provide-a-better-user-experience-In-general-cookies-are-used-to-retain-user-preferences-store-information-for-things-like-shopping-carts-and-provide-anonymized-t {
-  width: 718px;
-  height: 133px;
-  margin: 21px 88px 0 3px;
+  width: 10%;
+  height: 133vh;
   font-family: Lato-Regular;
-  font-size: 12px;
+  font-size: 1vw;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.75;
-  letter-spacing: no rmal;
+  letter-spacing: normal;
   text-align: left;
   color: #fff;
 }
@@ -71,21 +67,66 @@ img.Accept {
   align-items: stretch;
   align-content: flex-end;
 }
+.iAcceptButtonCookie {
+  height: 6.5vh;
+  width: 10vw;
+  margin-left: 30%;
+}
+.iAcceptCookie {
+  font-family: Gilroy-Light;
+  font-size: 1vw;
+  color: #fff;
+  margin-left: -30%;
+}
+.iDoNotAcceptCookie {
+  font-family: Gilroy-Light;
+  font-size: 1vw;
 
-@media only screen and (max-width: 600px) {
-  .cookieBackground {
-    width: 75.5ch;
-    height: 50vh;
+  color: #fff;
+  margin-left: -80%;
+}
+.ButtonToBottom {
+  margin-top: 5%;
+  height: 200px;
+}
+.cookieButtons {
+  visibility: visible;
+}
 
-    background-color: #00194a;
+.cookieButtonsForMobile {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
+}
+}
+@media only screen and (max-width: 900px) {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-    align-content: flex-end;
+    .cookieButtonsForMobile {
+      visibility: visible;
+    margin-top: 20%;
+    }
+  
+    .cookieButtons {
+      width: 0px;
+      height: 0px;
+      visibility: hidden;
+    }
 
+
+  .iAcceptButtonCookie {
+    height: 7vh;
+    width: 40vw;
+  }
+  .iAcceptCookie {
+    font-family: Gilroy-Light;
+    color: #fff;
+    margin-left: 0%;
+  }
+  .iDoNotAcceptCookie {
+    font-family: Gilroy-Light;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 0%;
   }
 
   .Cookie-Policy {
@@ -101,25 +142,21 @@ img.Accept {
     letter-spacing: normal;
     text-align: left;
     color: #fff;
-    margin-left: 20%;
-    margin-top: -20%;
+    white-space: nowrap;
   }
 
   .This-site-uses-cookies-small-text-files-that-are-placed-on-your-machine-to-help-the-site-provide-a-better-user-experience-In-general-cookies-are-used-to-retain-user-preferences-store-information-for-things-like-shopping-carts-and-provide-anonymized-t {
     width: 500px;
     height: 133px;
-    margin: 21px 88px 0 3px;
     font-family: Lato-Regular;
     font-size: 15px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    letter-spacing: no rmal;
+    letter-spacing: normal;
     line-height: 1.75;
     text-align: left;
     color: #fff;
-    margin-left: 20%;
-    margin-top: 0%;
   }
 
   img.Do-not-accept {
@@ -127,13 +164,13 @@ img.Accept {
     height: 52px;
     margin: 33px 17px 69px 88px;
     object-fit: contain;
-z-index: 1;
+    z-index: 1;
 
-
-margin-top: 60%;
-margin-left: -220%;}
+    margin-top: 60%;
+    margin-left: -220%;
+  }
   .cookieButtons {
-margin-left: -20%;
+    margin-left: -20%;
     margin-top: 33%;
   }
 
@@ -142,9 +179,9 @@ margin-left: -20%;
     height: 52px;
     margin: 33px 0 69px 17px;
     object-fit: contain;
-z-index: 1;
-margin-top: 60%;
-margin-left: -0%;
+    z-index: 1;
+    margin-top: 60%;
+    margin-left: -0%;
   }
 
   .textCookie {

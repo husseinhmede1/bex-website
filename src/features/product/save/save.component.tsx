@@ -2,12 +2,13 @@ import React, { useEffect } from "react";
 import { connect, ConnectedProps } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { RootState } from "&store/store";
+import { Col, Row } from "antd";
 
 import "./save.css";
 
 import save from "&assets/img/Save-img.png";
 import save2 from "&assets/img/Save-img@2x.png";
-import save3 from "&assets/img/Save-img@3x.png"; 
+import save3 from "&assets/img/Save-img@3x.png";
 
 import sign from "&assets/img/Sign2.png";
 import sign2 from "&assets/img/Sign2@2x.png";
@@ -25,8 +26,6 @@ import saveMobile3 from "&assets/img/save-imgMobile@3x.png";
  */
 import { loginActions } from "&features/demo/login/login.slice";
 
-const { innerWidth: width, innerHeight: height } = window;
-
 type ReduxProps = ConnectedProps<typeof connector>;
 
 const SaveComponent = (props: ReduxProps) => {
@@ -39,74 +38,151 @@ const SaveComponent = (props: ReduxProps) => {
    * When dependency list is empty, useEffect runs each time the component rerenders
    * Adding variables to the dependency list will cause useEffect to run each time a variable changes
    */
-  useEffect(() => { 
+  useEffect(() => {
     // Write your side-effects here
-  }, []); 
+  }, []);
 
   return (
-    <div className="SaveBackground">
-      <div className="HeadPartSave">
-        <div className="numberWithSave">
-          <div className="Rectangle-24989s">
-            <span className="span1s">3</span>
-          </div>
-
-          <span className="Saves">Save</span> 
-        </div>
-
-        <div className="TextTitleSave">
-          <div className="TextSave">
-          <span className="Time-is-money-Save-boths">
-            TIME IS MONEY. SAVE BOTH
-          </span>
-</div>
-          <div className="TextSave">
-            <div className="signedTextone">
-              <img
-                src={sign}
-                srcSet={`${sign2} 2x, ${sign3} 3x`}
-                className="Signs" 
-              ></img>
-
-              <div> 
-                <span className="Digitize-your-business-expense-process-to-reduce-your-admin-costs">
-                  Digitize your business expense process to reduce your admin
-                  cost
+    <>
+      <div className="SaveBackgroundMobile">
+        <Col>
+          <Row>
+            <Col push={2}>
+              <Row>
+                <div className="Rectangle-24989s">
+                  <span className="span1s">3</span>
+                </div>
+              </Row>
+              <Row>
+                <span className="Saves">Save</span>
+              </Row>
+            </Col>
+          </Row>
+          <Row>
+            <Col push={3}>
+              <Row>
+                <span className="Time-is-money-Save-boths">
+                  TIME IS MONEY.SAVE BOTH
                 </span>
-              </div>
-            </div>
+              </Row>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="digitizeIdentityToBottom" push={3}>
+              <Row>
+                <Col>
+                  <img
+                    src={sign}
+                    srcSet={`${sign2} 2x, ${sign3} 3x`}
+                    className="Signs"
+                  ></img>
+                </Col>
+                <Col push={1}>
+                  <span className="Digitize-your-business-expense-process-to-reduce-your-admin-costs">
+                    Digitize your business expense process to reduce your admin
+                    cost
+                  </span>
+                </Col>
+              </Row>
+              <Row>
+                <Col>
+                  <img
+                    src={sign}
+                    srcSet={`${sign2} 2x, ${sign3} 3x`}
+                    className="Signs2"
+                  ></img>
+                </Col>
+                <Col push={1}>
+                  <span className="Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess">
+                    Identify wasteful spend with one dashboard for all your
+                    expenses
+                  </span>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+          <Row>
+            <img
+              src={saveMobile}
+              srcSet={`${saveMobile2} 2x, ${saveMobile3} 3x`}
+              className="Save-imgsMobile"
+            ></img>
+          </Row>
+        </Col>
+      </div>
+
+      <div className="SaveBackground">
+        <Row>
+          <Col push={1}>
+            <Row>
+              <Col className="FirstSideSaveToBottom" push={3}>
+                <div className="Rectangle-24989s">
+                  <span className="span1s">3</span>
+                </div>
+              </Col>
+              <Col push={3} className="saveToBottom">
+                <span className="Saves">Save</span>
+              </Col>
+            </Row>
+            <Row>
+              <Col push={3}>
+                <span className="Time-is-money-Save-boths">
+                  <div>TIME IS MONEY.</div>
+                  <div> SAVE BOTH</div>
+                </span>
+              </Col>
+            </Row>
+            <Row className="TextSaveToBottom">
+              <Col push={3}>
+                <Row>
+                  <Col>
+                    <img
+                      src={sign}
+                      srcSet={`${sign2} 2x, ${sign3} 3x`}
+                      className="Signs"
+                    ></img>
+                  </Col>
+                  <Col
+                    className="Digitize-your-business-expense-process-to-reduce-your-admin-costs"
+                    push={1}
+                  >
+                    <span className="Digitize-your-business-expense-process-to-reduce-your-admin-costs">
+                      Digitize your business expense process to reduce your
+                      admin cost
+                    </span>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col>
+                    <img
+                      src={sign}
+                      srcSet={`${sign2} 2x, ${sign3} 3x`}
+                      className="Signs2"
+                    ></img>
+                  </Col>
+                  <Col
+                    className="Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess"
+                    push={1}
+                  >
+                    <span className="Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess">
+                      Identify wasteful spend with one dashboard for all your
+                      expenses
+                    </span>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
  
-            <div className="signedTexttwo">
-              <img
-                src={sign2}
-                srcSet={`${sign2} 2x, ${sign3} 3x`}
-                className="Signs"
-              ></img>
-
-              <div>
-                <span className="Identify-wasteful-spend-with-one-dashboard-for-all-your-expensess">
-                  Identify wasteful spend with one dashboard for all your
-                  expenses
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
+          <Col push={1}>
+            <img
+              src={save3} 
+              className="Save-imgsSave"
+            ></img>
+          </Col>
+        </Row>
       </div>
-
-      <div>
-        <img
-          src={saveMobile}
-          srcSet={`${saveMobile2} 2x, ${saveMobile3} 3x`}
-          className="Save-imgsMobile"
-        ></img>
-        <img
-          src={save}
-          srcSet={`${save2} 2x, ${save3} 3x`}
-          className="Save-imgs"
-        ></img>
-      </div>
-    </div>
+    </>
   );
 };
 

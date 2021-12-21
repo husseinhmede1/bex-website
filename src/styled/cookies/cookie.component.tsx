@@ -21,8 +21,7 @@ import dont3 from "&assets/img/Do-not-accept@3x.png";
  * to dispatch these actions
  */
 import { loginActions } from "&features/demo/login/login.slice";
-
-const { innerWidth: width, innerHeight: height } = window;
+import { Button, Col, Row } from "antd";
 
 type ReduxProps = ConnectedProps<typeof connector>;
 
@@ -41,41 +40,72 @@ const CookieComponent = (props: ReduxProps) => {
   }, []);
 
   return (
-    
-      <div className="cookieBackground">
-        <div className="textCookie">
-          <span className="Cookie-Policy">COOKIE</span>
+    <div className="cookieBackground">
+      <Col>
+        <Row>
+          <Col>
+            <span className="Cookie-Policy">COOKIE</span>
+          </Col>
+        </Row>
+        <Row>
+          <Col style={{ width: 1000 }}>
+            <div className="textWidthCookie">
+              <span className="This-site-uses-cookies-small-text-files-that-are-placed-on-your-machine-to-help-the-site-provide-a-better-user-experience-In-general-cookies-are-used-to-retain-user-preferences-store-information-for-things-like-shopping-carts-and-provide-anonymized-t">
+                This site uses cookies – small text files that are placed on
+                your machine to help the site provide a better user experience.
+                In general, cookies are used to retain user preferences, store
+                information for things like shopping carts, and provide
+                anonymized tracking data to third party applications like Google
+                Analytics. As a rule, cookies will make your browsing experience
+                better. However, you may prefer to disable cookies on this site
+                and on others. The most effective way to do this is to disable
+                cookies in your browser. We suggest consulting the Help section
+                of your browser or taking a look at the About Cookies website
+                which offers guidance for all modern browsers
+              </span>
+            </div>
+          </Col>
+        </Row>
 
-          <span className="This-site-uses-cookies-small-text-files-that-are-placed-on-your-machine-to-help-the-site-provide-a-better-user-experience-In-general-cookies-are-used-to-retain-user-preferences-store-information-for-things-like-shopping-carts-and-provide-anonymized-t">
-            This site uses cookies – small text files that are placed on your
-            machine to help the site provide a better user experience. In
-            general, cookies are used to retain user preferences, store
-            information for things like shopping carts, and provide anonymized
-            tracking data to third party applications like Google Analytics. As
-            a rule, cookies will make your browsing experience better. However,
-            you may prefer to disable cookies on this site and on others. The
-            most effective way to do this is to disable cookies in your browser.
-            We suggest consulting the Help section of your browser or taking a
-            look at the About Cookies website which offers guidance for all
-            modern browsers
-          </span>
+        <div className="cookieButtonsForMobile">
+          <Row className="ButtonToBottom">
+            <Col push={1}>
+              <Button className="iAcceptButtonCookie" ghost>
+                <span className="iAcceptCookie">I Do not Accept</span>
+              </Button>
+            </Col>
+            <Col push={2}>
+              <Button
+                type="text"
+                style={{ background: "#306bdd" }}
+                className="iAcceptButtonCookie"
+              >
+                <span className="iDoNotAcceptCookie">I Accept</span>
+              </Button>
+            </Col>
+          </Row>
         </div>
+      </Col>
 
-        <div className="cookieButtons">
-          <img
-            src={dont}
-            srcSet={`${dont2} 2x, ${dont3} 3x`}
-            className="Do-not-accept"
-          ></img>
-
-          <img
-            src={accept}
-            srcSet={`${accept2} 2x, ${accept3} 3x`}
-            className="Accept"
-          ></img>
-        </div>
-      </div>
-    
+      <Col push={14} className="cookieButtons">
+        <Row gutter={[8, 8]} className="ButtonToBottom">
+          <Col span={12}>
+            <Button className="iAcceptButtonCookie" ghost>
+              <span className="iDoNotAcceptCookie">I Do not Accept</span>
+            </Button>
+          </Col>
+          <Col span={12} pull={9}>
+            <Button
+              type="text"
+              style={{ background: "#306bdd" }}
+              className="iAcceptButtonCookie"
+            >
+              <span className="iAcceptCookie">I Accept</span>
+            </Button>
+          </Col>
+        </Row>
+      </Col>
+    </div>
   );
 };
 

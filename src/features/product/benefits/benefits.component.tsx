@@ -11,7 +11,7 @@ import mask3 from "&assets/img/Mask-Group@3x.png";
 
 import mask1 from "&assets/img/SalonBENEFITS.png";
 import mask12 from "&assets/img/SalonBENEFITS@2x.png";
-import mask13 from "&assets/img/SalonBENEFITS@3x.png";
+import mask13 from "&assets/img/SalonBENEFITS@3x.png"; 
 /**
  *
  *
@@ -31,11 +31,8 @@ const BenefitsComponent = (props: ReduxProps) => {
    * useEffect performs side-effects on component rendering.
    * It takes a function for side-effects and a dependency list.
    * When dependency list is empty, useEffect runs each time the component rerenders
-   * Adding variables to the dependency list will cause useEffect to run each time a variable changes
+   * Adding variables to the dependency list will cause useEffect to rub each time a variable changes
    */
-  useEffect(() => {
-    // Write your side-effects here
-  }, []);
 
   return (
     <>
